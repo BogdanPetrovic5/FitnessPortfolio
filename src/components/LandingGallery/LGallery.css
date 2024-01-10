@@ -1,0 +1,49 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
+    height: 1000px;
+    width: 100%;
+    background-color: #DCDCDC;
+}
+.Grid-Overlay{
+    display: none;
+}
+.First-Image-Section{
+    width: 60%;
+    height: 100%;
+    gap:5px;
+    background-size: cover;
+}
+.Second-Image-Section{
+    width: 40%;
+    background-size: cover;
+    
+    height: 100%;
+}
+.div3 section, .div4 section{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 97%); */
+}
+.div2 section, .div1 section{
+   
+}
+#First, #Fifth, #Third{
+    clip-path: polygon(0 4%, 100% 0, 100% 97%, 0 100%);
+}
+#Second, #Fourth, #Sixth{
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 97%);
+}
+.div1 { grid-area: 1 / 1 / 2 / 3;  margin-top: 7px; display: flex; flex-direction: row; gap:7px;}
+.div2 { grid-area: 2 / 2 / 3 / 4;  display: flex; flex-direction: row; gap:7px; margin-bottom: 7px;}
+.div3 { grid-area: 1 / 3 / 2 / 4;  margin-top: 7px; }
+.div4 { grid-area: 2 / 1 / 3 / 2; margin-bottom: 7px;}
+.parent div section{
+    position: relative;
+    cursor: pointer;
+    
+}

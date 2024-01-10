@@ -1,0 +1,216 @@
+.Workout-Plans{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #111111; */
+}
+.Workout-Title{
+  width: 100%;
+  
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Workout-Title h1{
+  margin-top: 50px;
+  color: white;
+  font-size: 55px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Workout-Title p{
+  color: white;
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: -34px;
+  margin-bottom: 50px;
+  width: 50%;
+  text-align: center;
+}
+.Workout-Plans-Wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+ 
+  width: 350px;
+  z-index: 9999 !important;
+  padding: 20px 1px;
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 97%);
+  border-radius: 1px;
+  background-color: #DCDCDC;
+  
+  overflow: hidden;
+  
+  position: relative;
+}
+.card:last-child::before {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  content: "";
+  
+  
+  background: rgb(186,0,0);
+background: linear-gradient(225deg, rgba(181,0,0,0.5998774509803921) 0%, rgba(179,0,27,0) 97%);
+   /* Adjust background size for smoother transition */
+   clip-path: circle(99.3% at 77% 20%);
+  
+  filter: blur(45px);
+  transition: ease-in-out;
+}
+.card:nth-child(1)::before {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  content: "";
+  
+  
+  background: rgb(124, 124, 124);
+background: linear-gradient(225deg, rgb(124, 124, 124) 0%, rgba(124,124,124,0.26934523809523814) 97%);
+   /* Adjust background size for smoother transition */
+   clip-path: circle(99.3% at 77% 20%);
+  
+  filter: blur(45px);
+  transition: ease-in-out;
+}
+.card:nth-child(2):before {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  content: "";
+  
+  
+  background: rgb(205,127,50);
+background: linear-gradient(225deg, rgba(205,127,50,1) 0%, rgba(255,255,255,0) 97%);
+   /* Adjust background size for smoother transition */
+   clip-path: circle(99.3% at 77% 20%);
+  
+  filter: blur(45px);
+  transition: ease-in-out;
+}
+.card:last-child:hover::before, .card:nth-child(2):hover::before, .card:first-child:hover::before {
+  animation: fadeIn ease-in-out 1000ms;
+  transition: 1000ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-100%) translateX(100%);
+  }
+  100% {
+    transform: translateY(0%) translateX(0%);
+  }
+}
+
+.card:last-child::before,.card:nth-child(2)::before,.card:first-child::before {
+  animation: fadeOut 800ms forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translateY(0%) translateX(0%);
+  }
+  100% {
+    transform: translateY(-100%) translateX(100%);
+  }
+}
+.card .description p{
+  text-transform: uppercase;
+}
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.content .price {
+  color: #111111;
+ 
+  font-size: 35px;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content .description {
+  color: #111111;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content .title {
+  
+  text-transform: uppercase;
+  color: #111111;
+  margin-top: 10px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+  color:#111111;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: 1px solid #B3001B;
+  cursor: pointer;
+  position: relative;
+ 
+}
+.card p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.card p img{
+  width: 20px;
+  height: 20px;
+}
+  .Workout-Plans label{
+    align-self: center;
+    border-bottom:5px solid #1F192B;
+  }
+ 
+.Workout-Plans label h1{
+    
+    margin: 0 !important;
+    margin-top: 50px !important;
+    color: #940000;
+    align-self: center;
+    font-size: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,106 @@
+.Footer{
+    width: 100%;
+    
+    background-color: #111111 !important;
+    background-size: cover;
+}
+.Footer-Content{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 170px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Logo-Location{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.Logo-Location p{
+    margin: 0 !important;
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(167, 167, 167);
+    margin-left: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+   
+}
+.Logo-Location img{
+    width: 100%;
+    height: 110px;
+}
+.Footer-Newsletter h1{
+    color: #dd0021;;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.Footer-Nav{
+
+}
+.Footer-Nav h1{
+    color: #dd0021;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.Footer-Nav p{
+    margin-bottom: 5px !important;
+    
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(167, 167, 167);
+    
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.Footer-Newsletter{
+    align-self: flex-start;
+}
+.search {
+    display: inline-block;
+    position: relative;
+    
+  }
+  
+  .search input[type="text"] {
+    width:100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #B3001B(0, 0, 0, 0.1);
+    outline: none;
+  }
+  
+  .search button[type="submit"] {
+    background-color: #B3001B;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #B3001B;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    transition: .9s ease;
+    
+  }
+  
+  .search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: #B3001B;
+  }
+  
