@@ -85,6 +85,7 @@ const hasJsxRuntime = (() => {
   }
 })();
 
+
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
 module.exports = function (webpackEnv) {
@@ -105,8 +106,10 @@ module.exports = function (webpackEnv) {
   const shouldUseReactRefresh = env.raw.FAST_REFRESH;
 
   // common function to get style loaders
+  
   const getStyleLoaders = (cssOptions, preProcessor) => {
     const loaders = [
+      
       isEnvDevelopment && require.resolve('style-loader'),
       isEnvProduction && {
         loader: MiniCssExtractPlugin.loader,
@@ -300,6 +303,12 @@ module.exports = function (webpackEnv) {
       modules: ['node_modules', paths.appNodeModules].concat(
         modules.additionalModulePaths || []
       ),
+      fallback: {
+        querystring: require.resolve('querystring-es3')
+      },
+      alias: {
+        'querystring': 'querystring-es3',
+      },
       // These are the reasonable defaults supported by the Node ecosystem.
       // We also include JSX as a common component filename extension to support
       // some tools, although we do not recommend using it, see:
@@ -335,6 +344,9 @@ module.exports = function (webpackEnv) {
           babelRuntimeRegenerator,
         ]),
       ],
+    
+      
+    
     },
     module: {
       strictExportPresence: true,
@@ -345,6 +357,10 @@ module.exports = function (webpackEnv) {
           exclude: /@babel(?:\/|\\{1,2})runtime/,
           test: /\.(js|mjs|jsx|ts|tsx|css)$/,
           loader: require.resolve('source-map-loader'),
+          
+        },
+        {
+          
         },
         {
           // "oneOf" will traverse all following loaders until one will

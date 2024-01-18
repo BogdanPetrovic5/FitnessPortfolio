@@ -1162,6 +1162,7 @@ backdrop-filter: blur(2.7px);
     
 }
 @media only screen and (min-width:841px) and (max-width:1022px) {
+    
     .Contact-Form-Form{
         width: 50% !important;
         display: flex;
@@ -1177,7 +1178,417 @@ backdrop-filter: blur(2.7px);
         background-repeat: no-repeat;
       }
 }
+@media only screen and (min-width:280px) and (max-width:378px){
+  .Article-Date{
+    width: 70px !important;
+    height: 70px !important;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: 30px;
+    border-radius: 5px;
+    background-color: #B3001B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .Article-Date h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px !important;
+    font-weight: 200;
+  }
+  .Article-Info-Text{
+    margin-top: 60px !important;
+    
+  }
+  .Article-Info-Text .Article-Title h1{
+    font-size: 17px !important;
+    color: black;
+    font-family:fantasy;
+    margin-left: 30px;
+    font-weight: 100;
+  }
+  .Article-Paragraph{
+    margin-left: 30px;
+  }
+  .Article-Paragraph p{
+    width: 90% !important;
+    font-size: 15px !important;
+    font-weight: 300;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+  }
+  .Article-Tags{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(85, 85, 85);
+  }
+}
+@media only screen and (min-width:379px) and (max-width:404px){
+  .Article-Date{
+    width: 70px !important;
+    height: 70px !important;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: 30px;
+    border-radius: 5px;
+    background-color: #B3001B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .Article-Date h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px !important;
+    font-weight: 200;
+  }
+  .Article-Info-Text{
+    margin-top: 60px !important;
+    
+  }
+  .Article-Info-Text .Article-Title h1{
+    font-size: 17px !important;
+    color: black;
+    font-family:fantasy;
+    margin-left: 30px;
+    font-weight: 100;
+  }
+  .Article-Paragraph{
+    margin-left: 30px;
+  }
+  .Article-Paragraph p{
+    width: 90% !important;
+    font-size: 15px !important;
+    font-weight: 300;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+  }
+  .Article-Tags{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(85, 85, 85);
+  }
+}
+@media only screen and (min-width:405px) and (max-width:443px){
+  .Article-Date{
+    width: 70px !important;
+    height: 70px !important;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: 30px;
+    border-radius: 5px;
+    background-color: #B3001B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .Article-Date h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px !important;
+    font-weight: 200;
+  }
+  .Article-Info-Text{
+    margin-top: 60px !important;
+    
+  }
+  .Article-Info-Text .Article-Title h1{
+    font-size: 17px !important;
+    color: black;
+    font-family:fantasy;
+    margin-left: 30px;
+    font-weight: 100;
+  }
+  .Article-Paragraph{
+    margin-left: 30px;
+  }
+  .Article-Paragraph p{
+    width: 90% !important;
+    font-size: 15px !important;
+    font-weight: 300;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+  }
+  .Article-Tags{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(85, 85, 85);
+  }
+}
+@media only screen and (min-width:444px) and (max-width:496px){
+  .Article-Date{
+    width: 85px !important;
+    height: 85px !important;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: 30px;
+    border-radius: 5px;
+    background-color: #B3001B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .Article-Date h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px !important;
+    font-weight: 200;
+  }
+  .Article-Info-Text{
+    margin-top: 60px !important;
+    
+  }
+  .Article-Info-Text .Article-Title h1{
+    font-size: 20px !important;
+    color: black;
+    font-family:fantasy;
+    margin-left: 30px;
+    font-weight: 100;
+  }
+  .Article-Paragraph{
+    margin-left: 30px;
+  }
+  .Article-Paragraph p{
+    width: 90% !important;
+    font-size: 17px !important;
+    font-weight: 300;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+  }
+  .Article-Tags{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(85, 85, 85);
+  }
+}
+@media only screen and (max-width:497px){
+  .Article{
+    width: 100% !important; 
+    height: 630px !important;
+    box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 100px;
+  }
+  
+  .IG-Embed{
+    width:89% !important;
+    align-self: center;
+    
+  }
+  .Buttons-Wrap{
+    width: 95% !important;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .Buttons-Wrap{
+    width: 95% !important;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .Buttons-Wrap button{
+    width: 150px !important;
+    height:50px !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #EB3406;
+    font-size: 25px;
+    border: 1px solid #EB3406;
+    border-color: #EB3406;
+  }
+  .Buttons-Wrap img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width:498px) and (max-width:723px){
+  .Article{
+    width: 100% !important; 
+    height: 620px !important;
+    box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 100px;
+  }
+  .Article-Date h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px !important;
+    font-weight: 200;
+  }
+  .Article-Info-Text{
+    margin-top: 100px;
+  }
+  .Article-Info-Text .Article-Title h1{
+    font-size: 19px !important;
+    color: black;
+    font-family:fantasy;
+    margin-left: 30px;
+    font-weight: 100;
+  }
+  .Article-Paragraph{
+    margin-left: 30px;
+  }
+  .Article-Paragraph p{
+    width: 90%;
+    font-size: 17px !important;
+    font-weight: 300;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+  }
+  .Article-Tags{
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(85, 85, 85);
+  }
+  .IG-Embed{
+    width:70% !important;
+    align-self: center;
+    
+  }
+  .Buttons-Wrap{
+    width: 55% !important;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .Buttons-Wrap button{
+    width: 150px !important;
+    height:50px !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #EB3406;
+    font-size: 25px;
+    border: 1px solid #EB3406;
+    border-color: #EB3406;
+  }
+  .Buttons-Wrap img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width:724px) and (max-width:1022px){
+  .Article{
+    width: 100% !important; 
+    height: 600px !important;
+    box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .IG-Embed{
+    width:60% !important;
+    align-self: center;
+    
+  }
+  .Buttons-Wrap{
+    width: 50% !important;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+} 
 @media only screen and (max-width:1023px){
+  .Content{
+    display: flex;
+    flex-direction: column !important;
+  }
+  
+  .Content .Content-Articles{
+    width: 80% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-self: center;
+}
+  .Content-Options{
+    align-self: center;
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    
+  }
+    .Content-Options .Content-Options-Search{
+      width: 90% !important;
+      height: 200px;
+      background-color: #fbf9ff;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .Content-Options .Content-Options-Categories{
+      width: 90% !important;
+      background-color: #fbf9ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+      align-self: center;
+    }
+    
+    
+    .Article{
+      width: 100% !important; 
+      
+      box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+    }
   .HiddenDropDown{
     display: none !important;
   }
@@ -1554,6 +1965,46 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
       
 }
 @media only screen and (min-width:1024px) and (max-width:1150px) {
+  .Content-Options .Content-Options-Search{
+    width: 82% !important;
+    height: 200px;
+    background-color: #fbf9ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Content-Options-Categories{
+    width: 82% !important;
+    background-color: #fbf9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  
+  }
+  .IG-Embed{
+    width:83% !important;
+  }
+  .Article{
+    width: 85% !important; 
+    height: 650px !important;
+    box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 100px;
+  }
+  .Buttons-Wrap{
+    width: 55% !important;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
     .Header .Header-Section{
         width: 95% !important;
     }
@@ -1670,6 +2121,46 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
       }
 }
 @media only screen and (min-width:1151px) and (max-width:1420px) {
+  .Buttons-Wrap{
+    width: 50% !important;
+    height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+    .Content-Options .Content-Options-Search{
+      width: 82% !important;
+      height: 200px;
+      background-color: #fbf9ff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .Content-Options-Categories{
+      width: 82% !important;
+      background-color: #fbf9ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+    
+    }
+    .IG-Embed{
+      width:83% !important;
+    }
+    .Article{
+      width: 85% !important; 
+      height: 650px !important;
+      box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+    }
     .About-Paragraph h1{
         margin: 0 !important;
         margin-bottom: 5px !important;

@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d727f0c.css",
-    "main.js": "/static/js/main.05105da5.js",
-    "static/js/787.38f16daf.chunk.js": "/static/js/787.38f16daf.chunk.js",
+    "main.css": "/static/css/main.97deaf99.css",
+    "main.js": "/static/js/main.ea8099b0.js",
+    "static/js/107.8e51db12.chunk.js": "/static/js/107.8e51db12.chunk.js",
     "static/media/LilitaOne-Regular.ttf": "/static/media/LilitaOne-Regular.e970d047065ed950bb8c.ttf",
     "index.html": "/index.html",
-    "main.0d727f0c.css.map": "/static/css/main.0d727f0c.css.map",
-    "main.05105da5.js.map": "/static/js/main.05105da5.js.map",
-    "787.38f16daf.chunk.js.map": "/static/js/787.38f16daf.chunk.js.map"
+    "main.97deaf99.css.map": "/static/css/main.97deaf99.css.map",
+    "main.ea8099b0.js.map": "/static/js/main.ea8099b0.js.map",
+    "107.8e51db12.chunk.js.map": "/static/js/107.8e51db12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d727f0c.css",
-    "static/js/main.05105da5.js"
+    "static/css/main.97deaf99.css",
+    "static/js/main.ea8099b0.js"
   ]
 }

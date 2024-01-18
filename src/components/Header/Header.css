@@ -99,3 +99,7 @@
       transform: translateY(0%);
     }
   }
+  .ActiveDropDown a, .HiddenDropDown a{
+    text-decoration:  none;
+    color: inherit;
+  }

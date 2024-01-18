@@ -1,6 +1,105 @@
 import './BlogPage.css'
+import LeftArrow from './leftarrow.png';
+import RightArrow from './rightarrow.png';
+import React, { useEffect, useState, useRef } from 'react';
+import { InstagramEmbed } from 'react-social-media-embed';
 // import InstagramEmbed from 'react-instagram-embed';
 function BlogPage(){
+    const articlesData = [
+        {
+          title: 'Samo od mene za vas 100 nacina da jebete',
+          tags: ['Food', 'Lifestyle'],
+          subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+          date: '15 Jan',
+          image: '/assets/blog1.jpg',
+        },
+        {
+            title: 'Samo od mene za vas 100 nacina da jebete',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          },
+        
+          {
+            title: 'Samo od mene za vas 100 nacina da jebete',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          },
+          {
+            title: 'Samo od mene za vas 100 nacina da zaradite kurac',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          },
+        
+          {
+            title: 'Samo od mene za vas 100 nacina da zaradite kurac',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          },
+          {
+            title: 'Samo od mene za vas 100 nacina da zaradite kurac',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          },
+        
+          {
+            title: 'Samo od mene za vas 100 nacina da izadjete iz klozeta',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          },
+          {
+            title: 'Samo od mene za vas 100 nacina da izadjete iz klozeta',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          },
+        
+          {
+            title: 'Samo od mene za vas 100 nacina da izadjete iz klozeta',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          },
+          {
+            title: 'Samo od mene za vas 100 nacina da izadjete iz obdanista',
+            tags: ['Food', 'Lifestyle'],
+            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
+          }
+
+        // Add more articles as needed
+      ];
+      const [LowerEdge, setLowerEdge] = useState(0);
+      const [HigherEdge, setHigherEdge] = useState(3);
+      const targetDivRef = useRef(null);
+      const updateEdges = (direction) => {
+        if (direction === 'next' && HigherEdge < articlesData.length) {
+          setLowerEdge(LowerEdge + 3);
+          setHigherEdge(HigherEdge + 3);
+        } else if (direction === 'prev' && LowerEdge > 0) {
+          setLowerEdge(LowerEdge - 3);
+          setHigherEdge(HigherEdge - 3);
+        }
+        if (targetDivRef.current) {
+            targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
+          }
+      };
+    
+      const ArrayToShow = articlesData.slice(LowerEdge, HigherEdge);
     return(
         <div className="Container">   
             <div className='Banner'>
@@ -10,117 +109,62 @@ function BlogPage(){
                     </div>
                 </div>
             </div>
-            <div className='Content'>
-                <div className='Content-Articles'>
-                    <div className='Article'> 
-                        <div className='Article-Date'>
-                            <h1>15 <br></br> Jan</h1>
-                        </div>
-                        <div className='Article-Img' style={{ backgroundImage: `url(/assets/blog1.jpg)` }} >
-
-                        </div>
-                        <div className= 'Article-Info'>
-                            <div className = 'Article-Info-Text'>
-                                <div className= 'Article-Title'>
-                                    <h1>
-                                        Samo od mene za vas 100 nacina da jebete
-                                    </h1>
+            <div className='Content' ref={targetDivRef}>
+                <div className='Content-Articles' >
+                    {ArrayToShow.map((article, index) => (
+                        <div key={index} className='Article'>
+                            <div className='Article-Date'>
+                                <h1>{article.date}</h1>
+                            </div>
+                            <div className='Article-Img' style={{ backgroundImage: `url(${article.image})` }}></div>
+                            <div className='Article-Info'>
+                                <div className='Article-Info-Text'>
+                                <div className='Article-Title'>
+                                    <h1>{article.title}</h1>
                                 </div>
-                                <div className= 'Article-Paragraph'>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                    </p>
+                                <div className='Article-Paragraph'>
+                                    <p>{article.subject}</p>
                                 </div>
-                                <div className = 'Article-Tags'>
-                                    <img src="assets/trend.png"></img>
-                                    <p>Food, lifestyle</p>
+                                <div className='Article-Tags'>
+                                    <img src="assets/trend.png" alt="Trend Icon" />
+                                    <p className='Tags'>{article.tags.join(', ')}</p>
+                                </div>
                                 </div>
                             </div>
+                        
                         </div>
-                    </div>
-                    <div className='Article'> 
-                        <div className='Article-Date'>
-                            <h1>15 <br></br> Jan</h1>
-                        </div>
-                        <div className='Article-Img' style={{ backgroundImage: `url(/assets/blog1.jpg)` }} >
-
-                        </div>
-                        <div className= 'Article-Info'>
-                            <div className = 'Article-Info-Text'>
-                                <div className= 'Article-Title'>
-                                    <h1>
-                                        Samo od mene za vas 100 nacina da jebete
-                                    </h1>
-                                </div>
-                                <div className= 'Article-Paragraph'>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                    </p>
-                                </div>
-                                <div className = 'Article-Tags'>
-                                    <img src="assets/trend.png"></img>
-                                    <p>Food, lifestyle</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='Article'> 
-                        <div className='Article-Date'>
-                            <h1>15 <br></br> Jan</h1>
-                        </div>
-                        <div className='Article-Img' style={{ backgroundImage: `url(/assets/blog1.jpg)` }} >
-
-                        </div>
-                        <div className= 'Article-Info'>
-                            <div className = 'Article-Info-Text'>
-                                <div className= 'Article-Title'>
-                                    <h1>
-                                        Samo od mene za vas 100 nacina da jebete
-                                    </h1>
-                                </div>
-                                <div className= 'Article-Paragraph'>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                    </p>
-                                </div>
-                                <div className = 'Article-Tags'>
-                                    <img src="assets/trend.png"></img>
-                                    <p>Food, lifestyle</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='Article'> 
-                        <div className='Article-Date'>
-                            <h1>15 <br></br> Jan</h1>
-                        </div>
-                        <div className='Article-Img' style={{ backgroundImage: `url(/assets/blog1.jpg)` }} >
-
-                        </div>
-                        <div className= 'Article-Info'>
-                            <div className = 'Article-Info-Text'>
-                                <div className= 'Article-Title'>
-                                    <h1>
-                                        Samo od mene za vas 100 nacina da jebete
-                                    </h1>
-                                </div>
-                                <div className= 'Article-Paragraph'>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                    </p>
-                                </div>
-                                <div className = 'Article-Tags'>
-                                    <img src="assets/trend.png"></img>
-                                    <p>Food, lifestyle</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
+                    ))}
+      
+                    <div className='Navigation-Buttons'>
+                        <div className='Buttons-Wrap'>
+                        
+                            <button
+                            src={LeftArrow}
+                            onClick={() => updateEdges('prev')}
+                            alt="Previous"
+                            className={LowerEdge === 0 ? 'first-button' : ''}
+                            >
+                            Prev
+                            </button>
+                        
+                            
+                        
+                        <button
+                        src={RightArrow}
+                        onClick={() => updateEdges('next')}
+                        alt="Next"
+                        className={HigherEdge >= articlesData.length ? 'last-button' : ''}
+                        >
+                        Next
+                        </button>
                     
+                        </div>
+                    </div>
                 </div>
                 <div className='Content-Options'>
                     <div className='Content-Options-Search'>
-                        <div class="input-container">
+                        <div class="input-wrap">
                             <input placeholder="SEARCH" type="text" class="input"/>
                             <span> <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
                         <g>
@@ -158,21 +202,15 @@ function BlogPage(){
                                 Pain
                             </span>
                         </div>
-                            {/* <InstagramEmbed
-                                url="https://www.instagram.com/p/CzwEZ4wttt-/?utm_source=ig_web_copy_link"
-                                maxWidth={540}
-                                hideCaption={false}
-                                containerTagName="div"
-                                protocol=""
-                                injectScript
-                                onLoading={() => {}}
-                                onSuccess={() => {}}
-                                onAfterRender={() => {}}
-                                onFailure={() => {}}
-                            /> */}
+                        
+                    </div>
+                    <div className='IG-Embed' style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', gap:'50px', marginBottom:'50px'}}>
+                        <InstagramEmbed url="https://www.instagram.com/p/CyvoH8YtmMs/" style={{ width: '100%'}}/ >
+                        <InstagramEmbed url="https://www.instagram.com/p/CzwEZ4wttt-/?img_index=5" style={{ width: '100%' }}/ >
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

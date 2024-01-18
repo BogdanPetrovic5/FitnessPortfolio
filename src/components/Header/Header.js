@@ -41,7 +41,7 @@ function Header({ onNavClick }) {
   const handleMenuClick = () => {
     setIsClicked(!isClicked);
   };
-
+  const [hrefValue, setHrefValue] = useState('Blog');
   return (
     <header className={`Header ${isSticky ? 'sticky' : ''}`} id='Header'>
       <section className='Header-Section'>
@@ -78,9 +78,10 @@ function Header({ onNavClick }) {
           </div>
         </div>
         <div className={isClicked ? 'ActiveDropDown' : 'HiddenDropDown'}>
+          <span onClick={() => onNavClick('main')}><a>home</a></span>
           <span>programs</span>
           <span>about</span>
-          <span>blog</span>
+          <span onClick={() => onNavClick('blog')}> <a >blog</a></span>
           <span>contact</span>
           <span>join</span>
         </div>
