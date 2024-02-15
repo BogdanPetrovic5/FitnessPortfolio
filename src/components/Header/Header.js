@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types'; // Import PropTypes
 import './Header.css'
-import { Link } from 'react-scroll';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-function Header({ onNavClick }) {
+import { Link } from 'react-router-dom';
+function Header() {
   const [isSticky, setSticky] = useState(false);
   useEffect(() => {
     AOS.init();
@@ -41,7 +41,7 @@ function Header({ onNavClick }) {
   const handleMenuClick = () => {
     setIsClicked(!isClicked);
   };
-  const [hrefValue, setHrefValue] = useState('Blog');
+ 
   return (
     <header className={`Header ${isSticky ? 'sticky' : ''}`} id='Header'>
       <section className='Header-Section'>
@@ -49,17 +49,17 @@ function Header({ onNavClick }) {
           <img src='/assets/DJOLENCELOGO.png' alt='Logo' />
         </div>
         <nav className='Header-Section-Nav'>
-          <li onClick={() => onNavClick('main')}>
-            <a>Home</a>
+          <li>
+          <Link to='/'>Home</Link>
           </li>
           <li>
             <a>programs</a>
           </li>
           <li>
-            <a>about</a>
+            <Link to='/about'>About</Link>
           </li>
-          <li onClick={() => onNavClick('blog')}>
-            <a>Blog</a>
+          <li>
+            <Link to='/blog'>Blog</Link>
           </li>
           <li>
             <Link to='Form' smooth={true} duration={800} offset={-250}>contact</Link>
@@ -78,10 +78,10 @@ function Header({ onNavClick }) {
           </div>
         </div>
         <div className={isClicked ? 'ActiveDropDown' : 'HiddenDropDown'}>
-          <span onClick={() => onNavClick('main')}><a>home</a></span>
+          <span><a>home</a></span>
           <span>programs</span>
           <span>about</span>
-          <span onClick={() => onNavClick('blog')}> <a >blog</a></span>
+          <span> <a >blog</a></span>
           <span>contact</span>
           <span>join</span>
         </div>

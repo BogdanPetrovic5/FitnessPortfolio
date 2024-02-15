@@ -27,6 +27,7 @@
 .Socials .Socials-Images img:hover{
     transform: rotateY(180deg);
     transition: 500ms;
+    animation-duration: infinite;
     cursor: pointer;
 }
 
