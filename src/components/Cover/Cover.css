@@ -7,14 +7,14 @@
     z-index: 1;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: left;
-    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    
 }
+/*  */
 .Title-Decoration{
   color: #B3001B;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -34,6 +34,68 @@
   
  
 }
+.Cover-Images{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+.Cover-Images-Content {
+  width: 96%;
+  height: 87%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.Cover-Images-Content .First-Bar {
+  width: 20%;
+  height: 44%;
+  clip-path: polygon(60% 0, 100% 0, 40% 100%, 0 100%);
+  align-self: center;
+  background: rgb(148, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(148, 0, 0, 0.3617822128851541) 50%,
+    rgba(148, 0, 0, 0) 100%
+  );
+  position: relative;
+  z-index: 0; /* Ensure it's above Second-Bar */
+}
+
+.Cover-Images-Content .Second-Bar {
+  width: 42%;
+  height: 56%;
+  align-self: center;
+  clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
+  margin-left: -13.5%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background: white !important;
+  
+  z-index: 1; 
+  background-size: cover;/* Lower than First-Bar */
+}
+
+.Cover-Images-Content .Second-Bar .Inner-First-Bar {
+  position: relative;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 50%;
+  clip-path: polygon(40% 0, 80% 0, 60% 100%, 20% 100%);
+  background: rgb(148, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(148, 0, 0, 0.3617822128851541) 50%,
+    rgba(148, 0, 0, 0) 100%
+  );
+  /* Ensure it's below Second-Bar */
+}
+
 .Title{
     width: 50%;
     margin-top: 110px;
@@ -41,7 +103,19 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
-    
+    position: relative;
+}
+.Title button{
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color:#940000;
+  font-size: 1em;
+
+}
+.Title button:hover{
+  cursor: pointer;
+  outline: 1px solid white;
 }
 .Title h1{
     

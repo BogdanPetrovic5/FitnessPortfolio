@@ -96,7 +96,7 @@ function BlogPage(){
         }
         if (targetDivRef.current) {
             targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
-          }
+        }
       };
     
       const ArrayToShow = articlesData.slice(LowerEdge, HigherEdge);

@@ -19,6 +19,7 @@ import {
 
 import HomePage from './components/HomePage/HomePage';
 import AboutPage from './components/AboutPage/AboutPage';
+import Overlay from './components/Overlay/Overlay';
 
 function App() {
   
@@ -32,6 +33,7 @@ function App() {
         <Route path='/about' element={<AboutPage />} />
       </Routes>
       <Footer />
+      <Overlay></Overlay>
     </div>
   </Router>
     

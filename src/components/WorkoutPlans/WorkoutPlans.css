@@ -35,7 +35,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 50px;
     flex-wrap: wrap;
     margin-top: 150px;
   margin-bottom: 150px;
@@ -71,7 +71,7 @@
   
   
   background: rgb(186,0,0);
-background: linear-gradient(225deg, rgba(181,0,0,0.5998774509803921) 0%, rgba(179,0,27,0) 97%);
+  background: linear-gradient(225deg, rgba(181,0,0,0.5998774509803921) 0%, rgba(179,0,27,0) 97%);
    /* Adjust background size for smoother transition */
    clip-path: circle(99.3% at 77% 20%);
   

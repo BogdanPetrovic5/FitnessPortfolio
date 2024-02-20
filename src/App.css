@@ -534,7 +534,7 @@ backdrop-filter: blur(2.7px);
 }
   .Contact-Form-Wrap-Image{
     width: 100% !important;
-    height: 95% !important;
+    height: 800px !important;
    
     background-size: cover;
     background-repeat: no-repeat;
@@ -667,7 +667,7 @@ backdrop-filter: blur(2.7px);
  
   .Contact-Form-Wrap-Image{
     width: 100% !important;
-    height: 95% !important;
+    height: 800px !important;
    
     background-size: cover;
     background-repeat: no-repeat;
@@ -766,7 +766,7 @@ backdrop-filter: blur(2.7px);
 @media only screen and (min-width:626px) and (max-width:840px) {
   .Contact-Form-Wrap-Image{
     width: 90% !important;
-    height: 90%;
+    height: 800px !important;
    
     background-size: cover;
     background-repeat: no-repeat;
@@ -1172,7 +1172,7 @@ backdrop-filter: blur(2.7px);
       }
       .Contact-Form-Wrap-Image{
         width: 50% !important;
-        height: 90%;
+        height: 800px !important;
        
         background-size: cover;
         background-repeat: no-repeat;
@@ -1964,7 +1964,188 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
      
       
 }
+@media only screen and (min-width:0px) and (max-width:1150px) {
+  .Education-Content-Paragraph{
+    margin-top: 50px !important;
+    background-attachment: fixed;
+  }
+  .Banner-Goal{
+    text-align: center !important;
+  }
+  .Education-Banner{
+    display: none !important;
+  }
+  .Phone{
+    display: flex !important;
+    align-self: center;
+    width: 100%;
+    height: 1200px !important;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .About-Page-Dekstop{
+    display: none !important;
+  }
+  .About-Page-Container .About-Page-Bio{
+    display: flex;
+    flex-direction: column !important;
+    width: 70%;
+    gap: 50px;
+    margin-top: 50px !important;
+    
+}
+.About-Page-Bio{
+  width: 100% !important;
+}
+.About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph{
+    width: 95% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    gap:30px;
+    align-self: center !important;
+}
+.About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph p{
+  text-align: center !important;
+  width: 55% !important;
+  align-self: center !important;
+}
+.About-Paragraph-Desktop-h1{
+  text-align: center !important;
+}
+.About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title{
+  display: flex;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title div{
+  display: none !important;
+}
+.About-Page-Container .About-Page-Bio .About-Page-Bio-Image{
+    width: 100% !important;
+}
+.About-Page-Container .About-Page-Bio .About-Page-Bio-Image img{
+    width: 100%;
+    --s: none !important; /* control the size */
+    padding: none !important;
+    border: none !important;
+    outline: none !important;
+    outline-offset: none !important;
+    background: none !important;
+}
+
+  .Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 20px;
+}
+.Education-Content .Education-Content-Hs .Education-Content-Paragraph .Education-Content-Paragraph-Title{
+  display: flex;
+  flex-direction: row-reverse !important;
+  justify-content: center !important;
+  align-items: center;
+  gap: 20px;
+
+} 
+.Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title h1{
+    text-align: right;
+}
+.Education-Content-Paragraph-Title h1{
+    font-size: 1.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center !important;
+}
+.Education-Content-Paragraph-Title div{
+  display: none !important;
+    height: 3px;
+    width: 150px;
+    background-color: #940000;
+}
+.Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title-h1{
+    font-size: 2.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    text-transform: uppercase !important;
+    font-weight: 1000 !important;
+    text-align: center !important;
+    color: #002044 !important;
+    letter-spacing: 1.5px !important;
+    align-self: center !important;
+}
+.Education-Content .Education-Content-Hs .Education-Content-Paragraph .Education-Content-Paragraph-Title-h1{
+    font-size: 38px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    text-transform: uppercase !important;
+    font-weight: 1000 !important;
+    text-align: center !important;
+    color: #002044 !important;
+    letter-spacing: 1.5px !important;
+    align-self: center !important;
+}
+
+
+
+
+  .Education-Content{
+    width: 100% !important;
+  }
+  .Education-Content .Education-Content-Hs{
+    display: flex;
+    flex-direction: column !important;
+    gap:90px;
+    margin-bottom: 50px;
+    width: 100% !important;
+    margin: 0 !important
+}
+.Education-Content .Education-Content-Uni{
+    display: flex;
+    flex-direction: column !important;
+    gap:90px;
+    margin-bottom: 50px;
+    width: 100% !important;
+    margin: 0 !important
+}
+.Education-Content .Education-Content-Hs .Education-Content-Image, .Education-Content .Education-Content-Uni .Education-Content-Image{
+  width: 100% !important;
+  margin: 0 !important;
+}
+.Education-Content .Education-Content-Hs .Education-Content-Image img, .Education-Content .Education-Content-Uni .Education-Content-Image img{
+  height: 1400px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  --s: none !important; /* control the size */
+    padding: none !important;
+    border: none !important;
+    outline: none !important;
+    outline-offset: none !important;
+    background:none !important;
+}
+.Education-Content .Education-Content-Uni .Education-Content-Paragraph{
+  width: 95% !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-self: center !important;
+}
+.Education-Content .Education-Content-Hs .Education-Content-Paragraph{
+  width: 95% !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-self: center !important;
+  
+}
+.Education-Content-Paragraph p{
+  width: 55% !important;
+  align-self: center !important;
+  text-align: center !important;
+}
+}
 @media only screen and (min-width:1024px) and (max-width:1150px) {
+  
+
   .Content-Options .Content-Options-Search{
     width: 82% !important;
     height: 200px;
@@ -2051,7 +2232,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
       }
       .Contact-Form-Wrap-Image{
         width: 43% !important;
-        height: 90%;
+        height: 800px !important;
        
         background-size: cover;
         background-repeat: no-repeat;
@@ -2206,7 +2387,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
       }
       .Contact-Form-Wrap-Image{
         width: 38% !important;
-        height: 90%;
+        height: 800px !important;
        
         background-size: cover;
         background-repeat: no-repeat;
@@ -2274,4 +2455,18 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
         letter-spacing: 3px;
         width: 100%;
       }
+}
+@media only screen and (min-width:1151px) and (max-width:1500px){
+  .Education-Content .Education-Content-Hs .Education-Content-Image, .Education-Content .Education-Content-Uni .Education-Content-Image{
+    width: 50% !important;
+  }
+  .Education-Content .Education-Content-Hs .Education-Content-Paragraph{
+    width: 50% !important;
+  }
+  .Education-Content-Paragraph p{
+    width: 100% !important;
+  }
+  .Education-Content{
+    width: 80% !important;
+  }
 }

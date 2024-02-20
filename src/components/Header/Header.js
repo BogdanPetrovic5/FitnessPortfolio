@@ -78,10 +78,13 @@ function Header() {
           </div>
         </div>
         <div className={isClicked ? 'ActiveDropDown' : 'HiddenDropDown'}>
-          <span><a>home</a></span>
+          <span><Link to='/'>Home</Link></span>
           <span>programs</span>
-          <span>about</span>
-          <span> <a >blog</a></span>
+          <span>
+          <Link to='/about'>About</Link>
+          </span>
+          
+          <span><Link to='/blog'>Blog</Link></span>
           <span>contact</span>
           <span>join</span>
         </div>
@@ -90,7 +93,7 @@ function Header() {
   );
 }
 
-// Define propTypes to avoid ESLint errors
+
 Header.propTypes = {
   onNavClick: PropTypes.func.isRequired,
 };
