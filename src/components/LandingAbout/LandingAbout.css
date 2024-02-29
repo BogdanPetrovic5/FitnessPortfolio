@@ -1,3 +1,19 @@
+.Home-Page-About-Container{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DCDCDC;
+  overflow: hidden;
+}
+.Home-Page-About-Container .About-Page-Bio{
+  margin-top: 50px;
+  margin-bottom: 50px !important;
+}
+.About-Page-Image-Phone-Wrapper{
+  display: none;
+}
 .About{
     display: flex;
     flex-direction: row;
@@ -33,7 +49,7 @@
 }
 .About-Paragraph-Desktop-h1{
   font-size: 38px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  font-family: sans-serif !important;
   text-transform: uppercase !important;
   font-weight: 1000 !important;
   text-align: right;
@@ -121,6 +137,7 @@ button {
   flex-direction: row-reverse;
   align-items: center;
   gap: 20px;
+  overflow: hidden;
 }
 .About-Paragraph-Desktop .About-Paragraph-Desktop-Title div, .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title div{
   width: 150px;

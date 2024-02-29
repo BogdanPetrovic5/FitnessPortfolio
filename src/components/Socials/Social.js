@@ -1,17 +1,20 @@
 import './Social.css'
+import Fb from './facebook.png'
+import Ig from './instagram.png'
+import Tt from './tiktok.png'
 function Social(){
     
     return(
         <section className="Socials">
            
             <div className='Socials-Images'>
-                <img src='/assets/instagram.png' alt='Socials' 
+                <img src={Fb} alt='Socials' 
      data-aos-easing="ease-out-cubic"
      data-aos-duration="1000"/>
-                <img src='/assets/facebook.png' alt='Socials' 
+                <img src={Ig} alt='Socials' 
      data-aos-easing="ease-out-cubic"
      data-aos-duration="1000"/>
-                <img src='/assets/video.png' alt='Socials'
+                <img src={Tt} alt='Socials'
      data-aos-easing="ease-out-cubic"
      data-aos-duration="1000"/>
 

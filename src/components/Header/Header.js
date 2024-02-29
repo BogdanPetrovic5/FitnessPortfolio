@@ -4,7 +4,7 @@ import './Header.css'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation  } from 'react-router-dom';
 function Header() {
   const [isSticky, setSticky] = useState(false);
   useEffect(() => {
@@ -41,7 +41,23 @@ function Header() {
   const handleMenuClick = () => {
     setIsClicked(!isClicked);
   };
- 
+  const hideMenu = () =>{
+    setIsClicked(!isClicked)
+  }
+  const scrollToContact = () =>{
+    const specificSection = document.getElementById('Form');
+    if (specificSection) {
+        
+        const offset = 100; // Adjust this value as needed
+        const offsetPosition = specificSection.offsetTop - offset;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+  }
+  const location = useLocation();
+
   return (
     <header className={`Header ${isSticky ? 'sticky' : ''}`} id='Header'>
       <section className='Header-Section'>
@@ -49,20 +65,20 @@ function Header() {
           <img src='/assets/DJOLENCELOGO.png' alt='Logo' />
         </div>
         <nav className='Header-Section-Nav'>
-          <li>
-          <Link to='/'>Home</Link>
+          <li className={location.pathname === '/' ? 'Active-Route' : ''}>
+            <Link  to='/' >Home</Link>
           </li>
           <li>
             <a>programs</a>
           </li>
-          <li>
-            <Link to='/about'>About</Link>
+          <li className={location.pathname === '/about' ? 'Active-Route' : ''}>
+            <Link onClick={hideMenu} to='/about'>About</Link>
+          </li>
+          <li className={location.pathname === '/blog' ? 'Active-Route' : ''}>
+            <Link onClick={hideMenu}  to='/blog'>Blog</Link>
           </li>
           <li>
-            <Link to='/blog'>Blog</Link>
-          </li>
-          <li>
-            <Link to='Form' smooth={true} duration={800} offset={-250}>contact</Link>
+            <a onClick={scrollToContact}>contact</a>
           </li>
           <li>
             <a>join</a>
@@ -78,13 +94,13 @@ function Header() {
           </div>
         </div>
         <div className={isClicked ? 'ActiveDropDown' : 'HiddenDropDown'}>
-          <span><Link to='/'>Home</Link></span>
+          <span><Link onClick={hideMenu}  to='/'>Home</Link></span>
           <span>programs</span>
           <span>
-          <Link to='/about'>About</Link>
+          <Link onClick={hideMenu}  to='/about'>About</Link>
           </span>
           
-          <span><Link to='/blog'>Blog</Link></span>
+          <span><Link onClick={hideMenu}  to='/blog'>Blog</Link></span>
           <span>contact</span>
           <span>join</span>
         </div>

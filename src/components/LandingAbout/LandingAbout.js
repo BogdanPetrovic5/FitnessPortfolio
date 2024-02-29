@@ -1,6 +1,9 @@
 import "./LandingAbout.css"
 import { useState } from 'react';
 import { useEffect } from 'react';
+import DjoleAbout1 from './DjoleAbout1.jpg'
+import DjoleAbout2 from './DjoleAbout2.jpg'
+import DjoleAbout3 from './DjoleAbout3.jpg'
 function LAbout(){
        const [imageUrl, setImageUrl] = useState('/assets/DjoleAbout3.png');
 
@@ -23,50 +26,44 @@ function LAbout(){
     };
   }, []);
     return(
-        <section className = "About" style={{ backgroundImage: `url(${imageUrl})` }}>
+       <div className="Home-Page-About-Container">
+          <div className='About-Page-Bio'>
+            <div className='About-Page-Bio-Paragraph'>
+                <div className="About-Paragraph-Desktop-Title">
+                        <div>
+
+                        </div>
+                        <h1>ABOUT ME</h1>
+                </div>
+                <h1 className="About-Paragraph-Desktop-h1">
+                        Your Personal Trainer and Physical Therapist
+                </h1>
+                <p className='Main-Paragraph'>
+                    <p data-aos="fade-right" data-aos-duration='600'>There are many variations of passages of Lorem Ipsum available, but the majority have </p> <p data-aos="fade-left"  data-aos-duration='600'>suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p> <p data-aos="fade-right"  data-aos-duration='600'>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden</p> <p data-aos="fade-left"  data-aos-duration='600'>in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n</p>
+                </p>
+                
+            </div>
+            <div className='About-Page-Bio-Image About-Page-Dekstop'>
+                {/* <img src="/assets/DjoleAbout.jpg"></img> */}
+                <div className='First-Div' data-aos = "fade-left" data-aos-duration = '900' data-aos-offset = '-150'>
+                    <img src={DjoleAbout1} >
+                    </img>
+                </div>
+                <div className='Second-Div' data-aos = "fade-right" data-aos-duration = '900' data-aos-offset = '-150'>
+                    <img src={DjoleAbout2}>
+                    </img>
+                </div>
+                <div className='Third-Div' data-aos = "fade-left" data-aos-duration = '900' data-aos-offset = '-150'>
+                    <img src={DjoleAbout3}>
+                    </img>
+                </div>
+            </div>
+          </div>
+            {/* <div className='About-Page-Bio-Image-Phone Phone' style={{ backgroundImage: `url(/assets/DjoleAbout.jpg)` }}>
             
-            <div className='About-Paragraph' >
-              <div class="twelve" data-aos="fade-down" data-aos-duration="1000">
-                     <h1>About Me</h1>
-              </div>
-              <p data-aos="fade-down" data-aos-duration="1000">
-                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
-              </p>
-              <a class="fancy" href="#" data-aos="fade-down"
-              data-aos-duration="1000">
-                     <span class="top-key" data-aos="fade-down"
-              data-aos-duration="1000"></span>
-                     <span class="text" data-aos="fade-down"
-              data-aos-duration="1000">LEARN MORE</span>
-                     <span class="bottom-key-1" data-aos="fade-down"
-              data-aos-duration="1000"></span>
-                     <span class="bottom-key-2" data-aos="fade-down"
-              data-aos-duration="1000"></span>
-                     </a>
-            </div>
-            <div className="About-Paragraph-Desktop">
-              <div className="About-Paragraph-Desktop-Title">
-                     <div>
-
-                     </div>
-                     <h1>ABOUT ME</h1>
-              </div>
-              <h1 className="About-Paragraph-Desktop-h1">
-                     Your Personal Trainer and Physical Therapist
-              </h1>
-              <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
-              
-              </p>
-              <button className="learn-more-bttn">
-                     <a href="#" class="btn2"><span class="spn2">LEARN MORE !</span></a>
-              </button>
-            </div>
-            <div className="About-Img">
-                <img src="/assets/DjoleAbout.jpg"></img>
-            </div>
-
-        </section>
+            </div> */}
+       </div>
+       
     )
 }
 export default LAbout

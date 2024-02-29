@@ -5,6 +5,13 @@ import React, { useEffect, useState, useRef } from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
 // import InstagramEmbed from 'react-instagram-embed';
 function BlogPage(){
+    useEffect(()=>{
+        const specifiLocation = document.getElementById('Blog')
+        window.scrollTo({
+            top:0,
+            behavior:'smooth'
+        })
+    })
     const articlesData = [
         {
           title: 'Samo od mene za vas 100 nacina da jebete',
@@ -101,13 +108,11 @@ function BlogPage(){
     
       const ArrayToShow = articlesData.slice(LowerEdge, HigherEdge);
     return(
-        <div className="Container">   
+        <div className="Container" id='Blog'>   
             <div className='Banner'>
-                <div class="app">
-                    <div class="glitch" data-text="Glitchin!">
-                        BLOG
-                    </div>
-                </div>
+                <h1>
+                    BLOG
+                </h1>
             </div>
             <div className='Content' ref={targetDivRef}>
                 <div className='Content-Articles' >

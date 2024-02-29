@@ -1,11 +1,12 @@
 import './LGallery.css'
 import React, { useState, useEffect } from 'react';
 import GalleryIcon from './gallery.png'
+import { Link } from 'react-router-dom';
 function LGallery(){
     const [modalImageUrl, setModalImageUrl] = useState('');
     const [modalVisible, setModalVisible] = useState(false);
     const [hoverDirection, setHoverDirection] = useState('');
-
+    const parameterValue = "Gallery"
     const handleSectionClick = (bgImgUrl) => {
         setModalImageUrl(bgImgUrl);
         setModalVisible(true);
@@ -96,6 +97,7 @@ function LGallery(){
                     hoverDirection['Third'] === 'left' ? 'fromLeft' : ''
                 }`} 
                 style={{ backgroundImage: `url(/assets/DjoleAbout.jpg)` }}
+                onClick={() => handleSectionClick('/assets/DjoleAbout.jpg')}
                 >
                    
                 <div className="image-overlay">
@@ -117,6 +119,7 @@ function LGallery(){
                     hoverDirection['Fourth'] === 'left' ? 'fromLeft' : ''
                 }`}
                 style={{ backgroundImage: `url(/assets/djoleoke.jpg)` }}
+                onClick={() => handleSectionClick('/assets/djoleoke.jpg')}
                 
                 >
                     
@@ -133,6 +136,7 @@ function LGallery(){
             <div class="div3"> 
                 <section  id='Fifth' 
                 style={{ backgroundImage: `url(/assets/djoleoke.jpg)` }} 
+                onClick={() => handleSectionClick('/assets/djoleoke.jpg')}
                 onMouseEnter={(e) => handleHover(e, 'Fifth')}
                 onMouseLeave={handleMouseLeave}
                 className={`${
@@ -163,6 +167,7 @@ function LGallery(){
                     hoverDirection['Sixth'] === 'down' ? 'fromBottom' : ''
                 }`}
                 style={{ backgroundImage: `url(/assets/djoleoke.jpg)` }}
+                onClick={() => handleSectionClick('/assets/djoleoke.jpg')}
                 >
                    
                         <div className="image-overlay">
@@ -181,11 +186,17 @@ function LGallery(){
             <div class="div7" style={{ backgroundImage: `url(/assets/djoleoke.jpg)` }} > </div>
             <div class="div8" style={{ backgroundImage: `url(/assets/djoleoke.jpg)` }} > </div>
 
+
+
+    
+
+
+
             <div className='Grid-Overlay'>
                 <a class="bttn type--A" >
                     <div class="button__line"></div>
                     <div class="button__line"></div>
-                    <span class="button__text">GALLERY</span>
+                    <span class="button__text"><Link to={{ pathname: "/About", search: `?param=${parameterValue}` }}>Gallery</Link></span>
                     <div class="button__drow1"></div>
                     <div class="button__drow2"></div>
                 </a>

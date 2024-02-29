@@ -10,7 +10,7 @@ function Banner(){
                 <h1>MOJI STAVOVI</h1>
                 <h2>KROZ PAKAO I PONORE</h2>
                 <div className="Banner-List">
-                    <div className="List-Item">
+                    <div className="List-Item" data-aos="fade-up" data-aos-duration="500" data-aos-delay = "200">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <h1>
                             LIFT HEAVY
@@ -18,7 +18,7 @@ function Banner(){
                         <img src={Gym}>
                         </img>
                     </div>
-                    <div className="List-Item">
+                    <div className="List-Item" data-aos="fade-up" data-aos-duration="500" data-aos-delay = "150">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <h1>
                             EAT HEALTHY
@@ -26,7 +26,7 @@ function Banner(){
                         <img src={Foods}>
                         </img>
                     </div>
-                    <div className="List-Item">
+                    <div className="List-Item" data-aos="fade-up" data-aos-duration="500" data-aos-delay = "100">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <h1>
                             EDUCATE HEAVY

@@ -1,0 +1,32 @@
+.Mobile-Gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    
+}
+    
+
+
+
+.divMob1 { grid-area: 1 / 1 / 2 / 2; background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; margin-top: 20px;  height: 500px;}
+.divMob2 { grid-area: 2 / 1 / 3 / 2; background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; margin-top: 20px;  height: 500px;}
+.divMob3 { grid-area: 3 / 1 / 4 / 2; background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; margin-top: 20px;  height: 500px;}
+.divMob4 { grid-area: 4 / 1 / 5 / 2; background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; margin-top: 20px;  height: 500px;}
+.divMob5 { grid-area: 5 / 1 / 6 / 2; background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; margin-top: 20px;  height: 500px;}
+.divMob6 { grid-area: 6 / 1 / 7 / 2; background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; margin-top: 20px;  height: 500px;}
+.divMob7 { grid-area: 7 / 1 / 8 / 2; background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; margin-top: 20px;  margin-bottom:20px; height: 500px;}
+.Mobile-Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Mobile-Div div{
+    width: 90%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

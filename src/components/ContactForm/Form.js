@@ -46,15 +46,7 @@ function Form(){
       }
     return (
 
-        <section className="Contact-Form">
-          {/* <div class="flash">
-              <svg id="bolts" height="610" width="700">
-                <path id="bolt1" d="M120 0 L80 240 L120 210 L80 450 L150 170 L125 180 L160 0 Z" fill="yellow" />
-                <path id="bolt2" d="M240 0 L160 240 L240 220 L160 550 L310 160 L240 180 L310 0 Z" fill="yellow" />
-                <path id="bolt3" d="M540 0 L660 340 L580 260 L660 550 L500 160 L580 220 L480 0 Z" fill="yellow" />
-                  <path id="bolt4" d="M380 0 L390 140 L420 130 L460 250 L440 100 L410 110 L410 0 Z" fill="yellow" />
-              </svg>
-          </div> */}
+        <section className="Contact-Form" id='Form'>
             <div className='Contact-Form-Wrap' id='Form'>
                 <div className='Contact-Form-Wrap-Image' style={{ backgroundImage: `url(/assets/djolololo.jpg)` }}>
 
