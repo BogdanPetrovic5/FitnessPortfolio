@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.f96bedaf.css",
-    "main.js": "/static/js/main.c06652fa.js",
+    "main.css": "/static/css/main.80581ee3.css",
+    "main.js": "/static/js/main.f4ca3839.js",
     "static/js/107.8e51db12.chunk.js": "/static/js/107.8e51db12.chunk.js",
+    "static/media/NESTOKAO2.jpg": "/static/media/NESTOKAO2.7c64fd7438788b35d970.jpg",
     "static/media/CV2.png": "/static/media/CV2.08f2ba02868ca5c8e9fd.png",
     "static/media/UNIDjole.jpg": "/static/media/UNIDjole.72ffaa7c44894792b5db.jpg",
     "static/media/podlaktica.jpg": "/static/media/podlaktica.38c872daa223c2f15c21.jpg",
@@ -13,6 +14,7 @@
     "static/media/DjoleAbout3.jpg": "/static/media/DjoleAbout3.293a31be51ab6c46954f.jpg",
     "static/media/sise.jpg": "/static/media/sise.60c05c305ba2019f3f35.jpg",
     "static/media/mortarboard.png": "/static/media/mortarboard.2ace15ca5e551f863a49.png",
+    "static/media/newsletter.png": "/static/media/newsletter.43a1b76ad0323cfb4d9b.png",
     "static/media/LilitaOne-Regular.ttf": "/static/media/LilitaOne-Regular.e970d047065ed950bb8c.ttf",
     "static/media/gallery.png": "/static/media/gallery.a353b34a360ee48a1c59.png",
     "static/media/instagram.png": "/static/media/instagram.3b292f9a4e791f6102ff.png",
@@ -23,12 +25,12 @@
     "static/media/tiktok.png": "/static/media/tiktok.217a4dfd6062a7ffaace.png",
     "static/media/facebook.png": "/static/media/facebook.3e85846bf272a460a28e.png",
     "index.html": "/index.html",
-    "main.f96bedaf.css.map": "/static/css/main.f96bedaf.css.map",
-    "main.c06652fa.js.map": "/static/js/main.c06652fa.js.map",
+    "main.80581ee3.css.map": "/static/css/main.80581ee3.css.map",
+    "main.f4ca3839.js.map": "/static/js/main.f4ca3839.js.map",
     "107.8e51db12.chunk.js.map": "/static/js/107.8e51db12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f96bedaf.css",
-    "static/js/main.c06652fa.js"
+    "static/css/main.80581ee3.css",
+    "static/js/main.f4ca3839.js"
   ]
 }

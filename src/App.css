@@ -1877,6 +1877,56 @@ backdrop-filter: blur(2.7px);
   }
 } 
 @media only screen and (max-width:1023px){
+  .Newsletter-Form{
+    margin-top: 250px !important;
+    margin-bottom: 250px !important;
+    width: 50%;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    position: relative;
+  
+}
+  .Newsletter-Container .Newsletter-Banner h1{
+    font-size: 3em !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+ }
+  .Newsletter-Form{
+    width: 80% !important;
+  }
+  .Newsletter-Form p.First-Paragraph{
+    font-size: 0.8em !important;
+  }
+  .Newsletter-Form p.No-Spam{
+    font-size: 0.6em !important;
+  }
+  .Newsletter-Form h1{
+    margin-top: 50px;
+    font-size: 1.2em !important;
+    align-self: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #002044;
+    text-align: center;
+}
+  .Newsletter-Form .Input-Button{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column !important;
+      gap: 20px;
+      
+  }
+  .Newsletter-Form .Input-Button input{
+    width: 80% !important;
+    padding: 12px !important;
+  }
   .Content{
     display: flex;
     flex-direction: column !important;

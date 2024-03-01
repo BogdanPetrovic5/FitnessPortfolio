@@ -9,6 +9,7 @@ import Form from '../ContactForm/Form';
 import Social from '../Socials/Social';
 import Banner from '../Banner/Banner';
 import Overlay from '../Overlay/Overlay';
+import Newsletter from '../Newsletter/Newsletter';
 function HomePage(){
     return(
         <div className='Main-Page'>
@@ -19,6 +20,7 @@ function HomePage(){
             <LGallery></LGallery>
             <Social></Social>
             <Form id="Form"></Form>
+            <Newsletter></Newsletter>
             
         </div>
     )

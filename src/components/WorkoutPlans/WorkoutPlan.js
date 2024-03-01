@@ -1,9 +1,9 @@
 import './WorkoutPlans.css'
-
+import Weights from './NESTOKAO2.jpg'
 function WPlans(){
     return(
 		
-        <section className="Workout-Plans" >
+        <section className="Workout-Plans" style={{ backgroundImage: `url(${Weights})` }} >
 			<div className='Workout-Title' style={{ backgroundImage: `url(/assets/prim.png)` }} >
 				<h1 data-aos="fade-down"
      				data-aos-offset = "-100"
@@ -15,7 +15,7 @@ function WPlans(){
 					data-aos-duration = "700">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly</p>
 			</div>
             
-            <section  className="Workout-Plans-Wrap">
+            <section  className="Workout-Plans-Wrap" >
 				<div class="card" data-aos="flip-left" data-aos-duration="1000">
 					<div class="content">
 						<div class="title">STANDARD</div>

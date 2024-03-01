@@ -31,7 +31,7 @@
     cursor: pointer;
 }
 
-.Socials, .Workout-Plans {
+.Socials{
     background: linear-gradient(310deg, #030303, #111111, #262626);
     background-size: 600% 600%;
 
