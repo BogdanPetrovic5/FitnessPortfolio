@@ -13,15 +13,13 @@ import { useLocation } from 'react-router';
 import DjoleAbout1 from './DjoleAbout1.jpg'
 import DjoleAbout2 from './DjoleAbout2.jpg'
 import DjoleAbout3 from './DjoleAbout3.jpg'
+import bg from './bg.png'
+import Social from '../Socials/Social';
 function AboutPage(){
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
     const parameterValue = searchParams.get('param');
-    const galleryStyles = {
-        // define your styles here
-        // for example:
-        backgroundColor: 'white'
-    };
+  
 
       
     
@@ -29,7 +27,7 @@ function AboutPage(){
         const specificSection = document.getElementById('Gallery');
         if (specificSection && parameterValue === "Gallery") {
             console.log("ASDSDA")
-            const offset = 100; // Adjust this value as needed
+            
             const offsetPosition = specificSection.offsetTop;
             window.scrollTo({
                 top: offsetPosition,
@@ -43,11 +41,14 @@ function AboutPage(){
         }
     }, []);
     return (
-     <div className='About-Page-Container'>
-        <div className='Banner'>
+     <div className='About-Page-Container' style={{ backgroundImage: `url(${bg})` }} >
+        <div className='Banner'  style={{ backgroundImage: `url(https://assets-global.website-files.com/64db59a28003b5f97686e7b6/64db59ddbcd0c6c9b18db041_pattern02.png)` }} >
+            <div className='Banner-Cover'>
+
+            </div>
             <h1 >ABOUT ME!</h1>
         </div>
-        <Banner></Banner>        
+             
         <div className='About-Page-Bio'>
             <div className='About-Page-Bio-Paragraph'>
                 <div className="About-Paragraph-Desktop-Title">
@@ -61,71 +62,24 @@ function AboutPage(){
                 </h1>
                 <p className='Main-Paragraph'>
                     <p data-aos="fade-right" data-aos-duration='800' data-aos-offset = '-50'>There are many variations of passages of Lorem Ipsum available, but the majority have </p> <p data-aos="fade-left"  data-aos-duration='800' data-aos-offset = '-50'>suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p> <p data-aos="fade-right"  data-aos-duration='800' data-aos-offset = '-50'>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden</p> <p data-aos="fade-left"  data-aos-duration='800' data-aos-offset = '-50'>in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n</p>
-                </p>
+                </p> 
                 
             </div>
             
             <div className='About-Page-Bio-Image About-Page-Dekstop'>
-                {/* <img src="/assets/DjoleAbout.jpg"></img> */}
-                <div className='First-Div' data-aos = "fade-left" data-aos-duration = '800' data-aos-offset = '-150'>
-                    <img src={DjoleAbout1} >
-                    </img>
-                </div>
-                <div className='Second-Div' data-aos = "fade-right" data-aos-duration = '800' data-aos-offset = '-150'>
-                    <img src={DjoleAbout2}>
-                    </img>
-                </div>
-                <div className='Third-Div' data-aos = "fade-left" data-aos-duration = '800' data-aos-offset = '-150'>
-                    <img src={DjoleAbout3}>
-                    </img>
-                </div>
+                
+                <img src='assets/DjoleAbout.jpg'></img>
             </div>
         </div>
         
         <div className='Education-Content'>
-            <div className='Education-Banner'>
-                <div>
-                    <h1>HIGH</h1>
-                    <img src={HighSchool}></img>
-                    <h1>SCHOOL</h1>
-                </div>
-            
-            </div>
-            <div className='Education-Content-Hs'>
-                <div className='Education-Content-Paragraph'>
-                    <div className="Education-Content-Paragraph-Title">
-                        <div>
-
-                        </div>
-                        <h1>GIMNAZIJA</h1>
-                    </div>
-                    <h1 className="Education-Content-Paragraph-Title-h1">
-                        My Early Years Of Being Djole
-                    </h1>
-                    <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
-                    </p>
-                </div>
-               
-                <div className='Education-Content-Image About-Page-Dekstop' >
-                    <img  src={HSDjole}></img>
-                </div>
-            </div>
-            <div className='Education-Banner'>
-                <div>
-                    <h1>UNI</h1>
-                    <img src={MortarBoard}></img>
-                    <h1>VERSITY</h1>
-                </div>
-            
-            </div>
             <div className='Education-Content-Uni'>
                 <div className='Education-Content-Paragraph'>
                     <div className="Education-Content-Paragraph-Title">
                         <div>
 
                         </div>
-                        <h1>MEDICINSKI FAKULTET</h1>
+                        <h1>EDUCATION</h1>
                     </div>
                     <h1 className="Education-Content-Paragraph-Title-h1">
                         My Late Years Of Being Djole
@@ -140,9 +94,8 @@ function AboutPage(){
                 </div>
             </div>
         </div>
-        <div className='Gallery-Banner' id='Gallery' >
-            <h1>GALLERY</h1>
-        </div>
+        <Banner></Banner>   
+        <Social></Social>
         <LGallery ></LGallery>
         <MobileGallery className="Mobile-Gallery-Section"></MobileGallery>
         <div className='Banner-Goal' >

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.80581ee3.css",
-    "main.js": "/static/js/main.f4ca3839.js",
+    "main.css": "/static/css/main.93269edf.css",
+    "main.js": "/static/js/main.10ac2fd4.js",
     "static/js/107.8e51db12.chunk.js": "/static/js/107.8e51db12.chunk.js",
     "static/media/NESTOKAO2.jpg": "/static/media/NESTOKAO2.7c64fd7438788b35d970.jpg",
     "static/media/CV2.png": "/static/media/CV2.08f2ba02868ca5c8e9fd.png",
@@ -12,25 +12,33 @@
     "static/media/ledja.jpg": "/static/media/ledja.5006ce6192e454998d52.jpg",
     "static/media/DjoleAbout1.jpg": "/static/media/DjoleAbout1.7aabdc6110ae6099c003.jpg",
     "static/media/DjoleAbout3.jpg": "/static/media/DjoleAbout3.293a31be51ab6c46954f.jpg",
+    "static/media/logo.png": "/static/media/logo.403b2fb86c41885e15c5.png",
     "static/media/sise.jpg": "/static/media/sise.60c05c305ba2019f3f35.jpg",
+    "static/media/bg.png": "/static/media/bg.9ac5d0a17e65868b9931.png",
     "static/media/mortarboard.png": "/static/media/mortarboard.2ace15ca5e551f863a49.png",
+    "static/media/physiotherapy1.png": "/static/media/physiotherapy1.b842da37b0bbca280931.png",
     "static/media/newsletter.png": "/static/media/newsletter.43a1b76ad0323cfb4d9b.png",
+    "static/media/health1.png": "/static/media/health1.c565f789fce610203f22.png",
     "static/media/LilitaOne-Regular.ttf": "/static/media/LilitaOne-Regular.e970d047065ed950bb8c.ttf",
+    "static/media/health.png": "/static/media/health.78f8e018a6de54608739.png",
+    "static/media/instagramAbout.png": "/static/media/instagramAbout.a5aa8b6fcc68bc96f796.png",
     "static/media/gallery.png": "/static/media/gallery.a353b34a360ee48a1c59.png",
     "static/media/instagram.png": "/static/media/instagram.3b292f9a4e791f6102ff.png",
-    "static/media/dumbell.png": "/static/media/dumbell.d138307edafdf3c3a13f.png",
     "static/media/highschool.png": "/static/media/highschool.91a0163e507a7d84d37f.png",
-    "static/media/open-book.png": "/static/media/open-book.41d8fe61b2f6fba5a819.png",
-    "static/media/cutlery.png": "/static/media/cutlery.c6091e267356583c01f0.png",
+    "static/media/education.png": "/static/media/education.9c9b465a35b3c3e37e98.png",
+    "static/media/tiktokAbout.png": "/static/media/tiktokAbout.98554bf7bf5e09fc9e35.png",
     "static/media/tiktok.png": "/static/media/tiktok.217a4dfd6062a7ffaace.png",
+    "static/media/facebookAbout.png": "/static/media/facebookAbout.a01a19cae79292278d39.png",
+    "static/media/weight1.png": "/static/media/weight1.acc96013212c663eaeb7.png",
     "static/media/facebook.png": "/static/media/facebook.3e85846bf272a460a28e.png",
+    "static/media/dumbell1.png": "/static/media/dumbell1.a66f519acec98cb89236.png",
     "index.html": "/index.html",
-    "main.80581ee3.css.map": "/static/css/main.80581ee3.css.map",
-    "main.f4ca3839.js.map": "/static/js/main.f4ca3839.js.map",
+    "main.93269edf.css.map": "/static/css/main.93269edf.css.map",
+    "main.10ac2fd4.js.map": "/static/js/main.10ac2fd4.js.map",
     "107.8e51db12.chunk.js.map": "/static/js/107.8e51db12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80581ee3.css",
-    "static/js/main.f4ca3839.js"
+    "static/css/main.93269edf.css",
+    "static/js/main.10ac2fd4.js"
   ]
 }

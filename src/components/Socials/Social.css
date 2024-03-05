@@ -1,51 +1,51 @@
 .Socials{
     width: 100%;
-    
-    /* background-color: #111111; */
+    background-color: #0c0f14;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
+    background-position: center;
+    background-size: cover;
 }
-.Socials h1{
-    font-size: 60px;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.Socials .Socials-Images{
+.Socials-Content{
+    width: 70%;
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
-.Socials .Socials-Images img{
-    width: 50px;
-    height: 50px;
+.Socials-Content-Title{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width:70%;
 }
-.Socials .Socials-Images img:hover{
-    transform: rotateY(180deg);
-    transition: 500ms;
-    animation-duration: infinite;
-    cursor: pointer;
+.Socials-Content-Title div{
+    width: 100px;
+    height: 2px;
+    background-color: white;
 }
-
-.Socials{
-    background: linear-gradient(310deg, #030303, #111111, #262626);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 13s ease infinite;
-    animation: AnimationName 13s ease infinite;
+.Socials-Content-Title h2{
+    color: white;
+    margin: 0 !important;
+    font-size: 1.7em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
 }
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+.Socials-Icons{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-@keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+.Socials-Icons img{
+    width: 60px;
+    height: 60px;
+}
+.About-Icon{
+    display: none;
 }

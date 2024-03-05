@@ -1,12 +1,12 @@
 .Newsletter-Container{
     width: 100%;
-    background-color: #111111;
+    background-color:white;
 }
 
 .Newsletter-Container .Newsletter-Banner{
     width: 100%;
     height: 200px;
-    background-color: #b60000;
+    
 
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
    font-size: 4em;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-weight: 600;
-   color: white;
+   color: #0c0f14;
    text-transform: uppercase;
 }
 .Newsletter-Wrap{
@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #111111;
+    background-color: white;
     border-radius: 50%;
     position: absolute;
     top: -12%;
@@ -49,7 +49,7 @@
 .Icon-Container{
     width: 100%;
     height: 100%;
-    background-color: #111111;
+    background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -67,11 +67,11 @@
     height: 70%;
 }
 .Newsletter-Form{
-    margin-top: 350px;
-    margin-bottom: 350px;
+    margin-top: 120px;
+    margin-bottom: 120px;
     width: 50%;
-    border-radius: 25px;
-    background-color: #f1f1f1;
+  
+    background-color: white !important;
     display: flex;
     flex-direction: column;
     font-size: 25px;
@@ -118,10 +118,14 @@
     
     width: 50%;
     outline: none;
-    border: none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #002044;
     padding: 20px;
-    border-radius: 25px;
+    border-bottom-left-radius: 25px;
     font-size: 1em;
+    box-shadow: #002044;
     
 }
 .Newsletter-Form .Input-Button .Submit{

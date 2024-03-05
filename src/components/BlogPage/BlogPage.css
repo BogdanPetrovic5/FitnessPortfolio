@@ -1,10 +1,10 @@
-.Container{
+#Blog{
     width: 100%;
-    
+    background-color: white;
 }
 .Banner{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     
     display: flex;
     align-items: center;
@@ -114,9 +114,9 @@
 
 
 :root {
-    --main-bg-color: #111111;
+    --main-bg-color: #0c0f14;
     --main-txt-color: #F4E9E1;
-  }
+}
   
   body,
   html {
@@ -356,6 +356,7 @@ InstagramEmbed{
 .Article-Tags{
   margin-top: 50px;
   margin-left: 30px;
+  
   display: flex;
   flex-direction: row;
   align-items: center;

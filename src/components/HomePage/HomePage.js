@@ -10,16 +10,24 @@ import Social from '../Socials/Social';
 import Banner from '../Banner/Banner';
 import Overlay from '../Overlay/Overlay';
 import Newsletter from '../Newsletter/Newsletter';
+import MyService from '../MyServices/MyService';
+import BlogPage from '../BlogPage/BlogPage';
+import HomePageBlogBanner from '../HomePageBlogBanner/HomePageBlogBanner';
 function HomePage(){
     return(
         <div className='Main-Page'>
             <Cover></Cover>
-            <Banner></Banner>
+            <MyService></MyService>
             <LAbout></LAbout>
+            
             <WPlans></WPlans>
+            <HomePageBlogBanner></HomePageBlogBanner>
+            <BlogPage></BlogPage>
             <LGallery></LGallery>
-            <Social></Social>
+           
             <Form id="Form"></Form>
+            <Social></Social>
+            
             <Newsletter></Newsletter>
             
         </div>

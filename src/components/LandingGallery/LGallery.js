@@ -39,7 +39,8 @@ function LGallery(){
         
     };
     return(
-        <div class="parent">
+        <div className='Gallery-Container'>
+            <div class="parent">
             <div class="div1"> 
             <section
                 id='First'
@@ -210,6 +211,8 @@ function LGallery(){
                    
                 </div>
             )}
+            </div>
+            
         </div>
 
         

@@ -1,3 +1,53 @@
 .Main-Page{
     position: relative;
 }
+.Main-Page #Blog{
+    background-color: white !important;
+}
+.Main-Page #Blog .Banner{
+    display: none;
+}
+.Main-Page #Blog .Content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 50px;
+    position: relative;
+}
+.Main-Page #Blog .Content .Content-Options{
+    display: none;
+}
+.Main-Page #Blog .Content .Content-Articles{
+    width: 70% !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: row !important;
+    gap: 50px !important;
+    flex-wrap: wrap !important;
+    align-items: end;
+    box-shadow: none;
+}
+.Main-Page #Blog .Content .Content-Articles .Article{
+    width: 400px !important;
+    height: 600px !important;
+ 
+  box-shadow: none;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+position: relative;
+margin-bottom: 100px;
+box-shadow:  0px 10px 20px 0px rgba(221,221,221,0.3);;
+}
+.Main-Page #Blog .Content .Content-Articles .Navigation-Buttons{
+    display: none;
+}
+.Main-Page #Blog .Content .Content-Articles .Article .Article-Tags{
+    display: none !important;
+}
+
+.Main-Page .parent{
+    margin-bottom: 0 !important;
+}

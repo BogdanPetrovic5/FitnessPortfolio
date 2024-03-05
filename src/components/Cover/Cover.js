@@ -4,6 +4,7 @@ import CoverNov from './CV2.png'
 import Sise from './sise.jpg'
 import Podlaktice from './podlaktica.jpg'
 import Ledja from './ledja.jpg'
+import { Link, useLocation  } from 'react-router-dom';
 function Cover(){
    return(
     <section className='Cover'>
@@ -17,9 +18,9 @@ function Cover(){
                             ĐOLE
                      </span> <br></br> U <br></br> TERETANI
               </h1>
-              <button>
-                     LEARN MORE
-              </button>
+              <Link to="/about"> {/* Link to the desired component */}
+                      <button>LEARN MORE</button>
+              </Link>
        </div>
        <div className='Cover-Images'>
               <div className='Cover-Images-Content'>
@@ -90,7 +91,7 @@ function Cover(){
                       */}
               </div>
        </div>
-    
+                            
     </section>
    );
 }

@@ -5,11 +5,7 @@ function Newsletter(){
     return(
         <div className="Newsletter-Container">
             
-            <div className="Newsletter-Banner">
-                <h1>
-                    Pretplati se na novosti!
-                </h1>
-            </div>
+        
             <div className='Newsletter-Wrap'>
                 <form className='Newsletter-Form'>
                     <div className='Newsletter-Icon'>
@@ -20,7 +16,7 @@ function Newsletter(){
                        
                     </div>
                     <h1>
-                        Newsletter
+                        Pretplati se na newsletter
                     </h1>
                     <p className='First-Paragraph'>
                         Ostanite u toku sa svim novim desavnjima!

@@ -25,7 +25,7 @@
     justify-content: center;
     
     z-index: 3;
-    background-color: #111111;
+    background-color: #0c0f14;
   }
   .Header .Header-Section{
     width: 100%;
@@ -104,7 +104,7 @@
     top: 0;
     width: 100%;
     z-index: 900000;
-    
+   
   }
   .Anim{
     animation: SlideDown 500ms ease-in;

@@ -3,6 +3,7 @@ import LeftArrow from './leftarrow.png';
 import RightArrow from './rightarrow.png';
 import React, { useEffect, useState, useRef } from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
+import { useLocation } from 'react-router-dom';
 // import InstagramEmbed from 'react-instagram-embed';
 function BlogPage(){
     useEffect(()=>{
@@ -88,11 +89,12 @@ function BlogPage(){
             image: '/assets/blog1.jpg',
           }
 
-        // Add more articles as needed
+        
       ];
       const [LowerEdge, setLowerEdge] = useState(0);
       const [HigherEdge, setHigherEdge] = useState(3);
       const targetDivRef = useRef(null);
+      const location = useLocation();
       const updateEdges = (direction) => {
         if (direction === 'next' && HigherEdge < articlesData.length) {
           setLowerEdge(LowerEdge + 3);
@@ -105,7 +107,11 @@ function BlogPage(){
             targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
         }
       };
-    
+      useEffect(()=>{
+        if(location.pathname === '/'){
+            setHigherEdge(2);
+        }
+      })
       const ArrayToShow = articlesData.slice(LowerEdge, HigherEdge);
     return(
         <div className="Container" id='Blog'>   

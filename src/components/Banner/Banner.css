@@ -1,12 +1,20 @@
+:root{
+    --borderRadius:50%;
+}
 .Banner-Home-Page{
     width: 100%;
-   
-    background-color: #111111;
+    
+    background-color: #0c0f14;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    /* border-radius: 25% 0% 50% 50% / 0% 54% 150px 150px; */
 }
+
 .Banner-Home-Page-Content{
     width: 70%;
     height: 100%;
@@ -14,28 +22,47 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    margin-top: 50px;
 }
-.Banner-Home-Page .Banner-Home-Page-Content h2{
-    font-size:1.6em;
-    font-weight: 800;
-    letter-spacing: -2px;
-    color:rgb(255, 255, 255);
-    font-family: sans-serif;
-    text-align: center;
-}
-.Banner-Home-Page .Banner-Home-Page-Content h1{
-    margin: 0 !important;
-    font-size: 1em;
-    color:#B54324;
-    font-family: sans-serif;
-    text-align: center;
-}
-.Banner-List{
+.Banner-Home-Page-Content .Banner-Home-Page-Content-Title{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-size: 25px;
+}
+.Banner-Home-Page-Content .Banner-Home-Page-Content-Title div{
+    width: 100px;
+    height: 2px;
+    background-color: #e20000;
+}
+.Banner-Home-Page-Content .Banner-Home-Page-Content-Title h2{
+    font-size: 0.89em;
+    color: #e20000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.Banner-Home-Page-Content .Banner-Home-Page-Content-Description{
+    font-size: 25px;
+    width: 100%;
+    
+}
+.Banner-Home-Page-Content .Banner-Home-Page-Content-Description h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8em;
+}
+.Banner-List{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 70px;
     overflow: hidden;
+    width: 100%;
 }
 .Banner-List .List-Item{
     display: flex;
@@ -61,4 +88,38 @@
 .Banner-List .List-Item img{
     width: 70px;
     height: 70px;
+}
+
+.Banner-List .List-Card{
+    width: 350px;
+    
+    gap: 20px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.Banner-List .List-Card h1{
+    color: black !important;
+    margin-top: 80px !important;
+    font-size: 0.89em !important;
+    text-align: center !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+.Banner-List .List-Card img{
+    width: 50px !important;
+    height: 50px !important;
+}
+.Banner-List .List-Card p{
+    width: 60% !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 200 !important;
+    font-size: 0.6em !important;
+    text-align: center !important;
+    margin-bottom: 80px !important;
 }

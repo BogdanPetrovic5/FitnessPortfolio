@@ -4,12 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #DCDCDC;
+  background-color: white;
   overflow: hidden;
 }
 .Home-Page-About-Container .About-Page-Bio{
-  margin-top: 50px;
-  margin-bottom: 50px !important;
+ margin-bottom: 150px;
 }
 .About-Page-Image-Phone-Wrapper{
   display: none;
@@ -39,21 +38,14 @@
     align-items:center;
     /* background-color: ; */
 }
-.About-Paragraph-Desktop{
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  gap: 30px;
-}
+
 .About-Paragraph-Desktop-h1{
   font-size: 38px;
   font-family: sans-serif !important;
   text-transform: uppercase !important;
   font-weight: 1000 !important;
   text-align: right;
-  color: #002044 !important;
+  color: #2c234d !important;
   letter-spacing: 1.5px !important;
 }
 .learn-more-bttn{
