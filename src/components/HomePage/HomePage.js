@@ -8,11 +8,12 @@ import LGallery from '../LandingGallery/LGallery';
 import Form from '../ContactForm/Form';
 import Social from '../Socials/Social';
 import Banner from '../Banner/Banner';
-import Overlay from '../Overlay/Overlay';
+
 import Newsletter from '../Newsletter/Newsletter';
 import MyService from '../MyServices/MyService';
 import BlogPage from '../BlogPage/BlogPage';
 import HomePageBlogBanner from '../HomePageBlogBanner/HomePageBlogBanner';
+import Feedback from '../ClientsFeedback/Feedback';
 function HomePage(){
     return(
         <div className='Main-Page'>
@@ -21,14 +22,15 @@ function HomePage(){
             <LAbout></LAbout>
             
             <WPlans></WPlans>
-            <HomePageBlogBanner></HomePageBlogBanner>
-            <BlogPage></BlogPage>
+            
             <LGallery></LGallery>
+            <Feedback></Feedback>
            
             <Form id="Form"></Form>
-            <Social></Social>
+            <HomePageBlogBanner></HomePageBlogBanner>
+            <BlogPage></BlogPage>
             
-            <Newsletter></Newsletter>
+            
             
         </div>
     )

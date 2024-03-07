@@ -545,6 +545,17 @@
   }
 }
 @media only screen and (min-width:300px) and (max-width: 439px){
+  .Left{
+    left: 5% !important;
+    top: 40% !important;
+    
+    transform: translateY(50%);
+  }
+  .Right{
+    right: 5% !important;
+    top: 40% !important;
+    transform: translateY(50%);
+  }
   .MyServices-Container{
     width: 100%;
     background-color:#0c0f14 ;
@@ -774,6 +785,17 @@ position: relative !important;
 }
 }
 @media only screen and (min-width:440px) and (max-width: 625px){
+  .Left{
+    left: 5% !important;
+    top: 45% !important;
+    
+    transform: translateY(50%);
+  }
+  .Right{
+    right: 5% !important;
+    top: 45% !important;
+    transform: translateY(50%);
+  }
   .MyServices-Container{
     width: 100%;
     background-color:#0c0f14 ;
@@ -933,6 +955,17 @@ position: relative !important;
   }
 }
 @media only screen and (min-width:626px) and (max-width:840px) {
+  .Left{
+    left: 30% !important;
+    top: 50% !important;
+    
+    transform: translateY(50%);
+  }
+  .Right{
+    right: 30% !important;
+    top: 50% !important;
+    transform: translateY(50%);
+  }
   .MyServices-Container{
     width: 100%;
     background-color:#0c0f14 ;
@@ -1019,6 +1052,20 @@ position: relative !important;
   
 }
 @media only screen and (min-width:840px) and (max-width:1023px){
+  .Feedback-Banner{
+    width: 95% !important;
+  }
+  .Left{
+    left: 40% !important;
+    top: 55% !important;
+    
+    transform: translateY(50%);
+  }
+  .Right{
+    right: 40% !important;
+    top: 55% !important;
+    transform: translateY(50%);
+  }
   .About-Paragraph p{
     margin-top: 50px;
     color: #111111;
@@ -1056,7 +1103,14 @@ position: relative !important;
 }
 
 @media only screen and (max-width:840px){
-  
+  .Results{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+
+    transition: transform 0.5s ease;
+}
   .mouse-btn {
     margin: 10px auto;
     width: 40px;
@@ -2846,6 +2900,20 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 }
 @media only screen and (min-width:1024px) and (max-width:1150px) {
+  .Left{
+    left: 40% !important;
+    top: 60% !important;
+    
+    transform: translateY(50%);
+  }
+  .Right{
+    right: 40% !important;
+    top: 60% !important;
+    transform: translateY(50%);
+  }
+  .Feedback-Banner{
+    width: 90% !important;
+  }
   .MyServices-Container{
     width: 100%;
     background-color:#0c0f14 ;
@@ -3248,6 +3316,9 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
       }
 }
 @media only screen and (min-width:1151px) and (max-width:1500px){
+  .Feedback-Banner{
+    width: 90% !important;
+  }
   .Cover .Title{
     width: 45% !important;
   }
@@ -3284,6 +3355,17 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   align-items: center;
   font-size: 25px;
   margin-top: 100px;
+}
+.Left{
+  left: 40% !important;
+  top: 60% !important;
+  
+  transform: translateY(50%);
+}
+.Right{
+  right: 40% !important;
+  top: 60% !important;
+  transform: translateY(50%);
 }
 }
 @media only screen and (max-width:1155px){

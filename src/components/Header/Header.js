@@ -10,7 +10,7 @@ function Header() {
   useEffect(() => {
     AOS.init();
   }, []);
-
+ 
   useEffect(() => {
     const handleScroll = () => {
       const scrollThreshold = 300;

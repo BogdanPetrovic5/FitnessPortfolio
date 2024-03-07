@@ -1,0 +1,147 @@
+.Feedback-Container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #0c0f14 ;
+    overflow: hidden;
+}
+.Feedback-Banner{
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    align-self: center;
+    position: relative;
+}
+.Feedback-Banner .Feedback-Banner-Title{
+    font: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+}
+.Feedback-Banner .Feedback-Banner-Title div{
+    width: 100px;
+    height: 2px;
+    background-color: #FF0039;
+}
+.Feedback-Banner .Feedback-Banner-Title h2{
+    font-family: 'Teko', sans-serif;
+    color: #FF0039;
+    font-size: 1.8em;
+}
+.Feedback-Banner .Feedback-Banner-Description{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    font-size: 25px;
+    width: 100%;
+}
+.Feedback-Banner .hr{
+    width: 100%;
+    height: 1px;
+    background-color: #272727;
+}
+.Feedback-Banner .Feedback-Banner-Description h1{
+    margin:0 !important;
+    font-size: 2.4em;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+.Results{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+}
+.Results .Result-Item{
+    display: flex;
+    flex-direction: column;
+    
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.Result-Testemonial{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+.Result-Item-Description{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Result-Item .Result-Item-Picture{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.Result-Item .Result-Item-Picture img{
+    width: 100%;
+    height: 100%;
+    
+}
+.Result-Item-Name{
+    font-size: 25px;
+    
+}
+.Result-Item-Name h2{
+    font-size: 1em;
+    font-family: 'Teko', sans-serif;
+    color: white;
+}
+.Quote-Icon img{
+    width: 60px;
+    height: 60px;
+}
+.Quote{
+    font-size: 25px;
+}
+.Quote p{
+    font-size: 0.9em;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+.Contact-Me-Banner{
+    width: 100%;
+    margin-top: 50px;
+    
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Contact-Me-Banner h2{
+    font-size: 2.4em;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    text-align: center;
+}
+.Navigation-Icon{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+}
+.Left{
+    left: -15%;
+    top: 50%;
+    transform: translateY(50%);
+}
+.Right{
+    right: -15%;
+    top: 50%;
+    transform: translateY(50%);
+}
