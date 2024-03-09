@@ -30,82 +30,93 @@ function WPlans(){
             <section  className="Workout-Plans-Wrap" >
 				<div class="card" data-aos="flip-left" data-aos-duration="1000">
 					<div class="content">
-						<div class="title"><h1>STANDARD</h1></div>
+						<div class="title">
+							<h1>STANDARD</h1>
+						</div>
 						<div class="price">$12.99</div>
 						<div class="description">
 							<p>
-							<img src='/assets/check.png'></img>	3x nedeljno
+								<img src='/assets/check.png'></img>	3x nedeljno
 							</p>
 							<p>
-							<img src='/assets/check.png'></img>	Plan treninga
+								<img src='/assets/check.png'></img>	Plan treninga
 							</p>
 							<p>
-							<img src='/assets/check.png'></img>	Ishrana
+								<img src='/assets/check.png'></img>	Ishrana
 							</p>
 							<p>
-							<img src='/assets/x1.png'></img>	Nedeljne konsultacije
+								<img src='/assets/x1.png'></img>	Nedeljne konsultacije
 							</p>
 						</div>
 						<button>
-						Buy now
+							Buy now
 						</button>
 					</div>
-						
 				</div>
 
 				<div class="card" data-aos="flip-left" data-aos-duration="1000" >
 					<div class="content">
-						<div class="title"><h1>Napredni</h1></div>
-							<div class="price">$29.99</div>
-								<div class="description">
-									<p>
-										<img src='/assets/check.png'></img>	
-										4x nedeljno
-									</p>
-									<p>
-										<img src='/assets/check.png'></img>	
-										Plan Treninga
-									</p>
-									<p>
-										<img src='/assets/check.png'></img>	
-										Ishrana
-									</p>
-								<p>
-							<img src='/assets/x1.png'></img>	Nedeljne konsultacije
+						<div class="title">
+							<h1>Napredni</h1>
+						</div>
+						<div class="price">
+							$29.99
+						</div>
+						<div class="description">
+							<p>
+								<img src='/assets/check.png'></img>	
+								4x nedeljno
 							</p>
-					</div>
-							<button>
-          Buy now
-        </button>
-      </div>
-       
-  </div>
+							<p>
+								<img src='/assets/check.png'></img>	
+								Plan Treninga
+							</p>
+							<p>
+								<img src='/assets/check.png'></img>	
+								Ishrana
+							</p>
+							<p>
+								<img src='/assets/x1.png'></img>	Nedeljne konsultacije
+							</p>
+						</div>
+						<button>
+							Buy now
+						</button>
+      				</div>
+  				</div>
 
-  <div class="card" data-aos="flip-left" data-aos-duration="1000" >
-      <div class="content">
-        <div class="title"><h1>PRemium</h1></div>
-			<div class="price">$59.99</div>
-			<div class="description"><p>
-			<img src='/assets/check.png'></img>	5x nedeljno
+			
+				<div class="card" data-aos="flip-left" data-aos-duration="1000" >
+					<div class="content">
+						<div class="title">
+							<h1>
+								PRemium
+							</h1>
+						</div>
+						<div class="price">
+							$59.99
+						</div>
+						<div class="description">
+							<p>
+								<img src='/assets/check.png'></img>	5x nedeljno
 							</p>
 							<p>
-							<img src='/assets/check.png'></img>	Plan treninga
+								<img src='/assets/check.png'></img>	Plan treninga
 							</p>
 							<p>
-							<img src='/assets/check.png'></img>	Ishrana
+								<img src='/assets/check.png'></img>	Ishrana
 							</p>
 							<p>
-							<img src='/assets/check.png'></img>	Nedeljne konsultacije
-							</p></div>
-			<button>
-			Buy now
-			</button>
-      </div>
-        
-  </div>
-  
+								<img src='/assets/check.png'></img>	Nedeljne konsultacije
+							</p>
+						</div>
+						<button>
+							Buy now
+						</button>
+					</div>
+				</div>
             </section>
-        </section>
+		</section>
     );
 }
 export default WPlans;
