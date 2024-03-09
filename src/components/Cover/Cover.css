@@ -226,6 +226,7 @@ padding-right: 35px;
     font-size: 4.5em;
     font-family: 'Teko', sans-serif;
     letter-spacing: 7px;
+    margin-top: 0;
 }
 .Title a{
   cursor: pointer;

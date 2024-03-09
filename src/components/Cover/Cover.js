@@ -1,7 +1,7 @@
 import React from 'react'
 import './Cover.css'
 import CoverNov from './CV2.png'
-import Sise from './sise.jpg'
+import Sise from './ruka.jpeg'
 import Podlaktice from './podlaktica.jpg'
 import Ledja from './ledja.jpg'
 import { Link, useLocation  } from 'react-router-dom';

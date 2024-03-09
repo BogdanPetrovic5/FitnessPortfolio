@@ -30,16 +30,17 @@ function LAbout(){
            <div className='About-Page-Bio'>
             <div className='About-Page-Bio-Paragraph'>
                 <div className="About-Paragraph-Desktop-Title">
-                        <div>
+                        <div data-aos="fade-left" data-aos-duration = "800">
 
                         </div>
-                        <h1 data-aos="fade-left" >ABOUT ME</h1>
+                        <h1 data-aos="fade-left" data-aos-duration = "800">ABOUT ME</h1>
                 </div>
-                <h1 className="About-Paragraph-Desktop-h1" data-aos="fade-right">
+                <h1 className="About-Paragraph-Desktop-h1" data-aos="fade-right" data-aos-duration = "800">
                         Your Personal Trainer and Physical Therapist
                 </h1>
-                <p className='Main-Paragraph'>
-                    <p data-aos="fade-right" data-aos-duration='800' data-aos-offset = '-50'>There are many variations of passages of Lorem Ipsum available, but the majority have </p> <p data-aos="fade-left"  data-aos-duration='800' data-aos-offset = '-50'>suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p> <p data-aos="fade-right"  data-aos-duration='800' data-aos-offset = '-50'>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden</p> <p data-aos="fade-left"  data-aos-duration='800' data-aos-offset = '-50'>in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n</p>
+                <p data-aos="fade-left" >
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
+
                 </p>
                 
             </div>

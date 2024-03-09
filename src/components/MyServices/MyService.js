@@ -1,7 +1,7 @@
 import React from "react"
 import './MyService.css'
 import Weight from './weight1.png'
-import Rehab from './physiotherapy1.png'
+import Rehab from './rehab.png'
 import Food from './health1.png'
 import Online from './online.png'
 function MyService(){

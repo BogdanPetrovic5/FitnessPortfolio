@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.83d74ae5.css",
-    "main.js": "/static/js/main.d149b08d.js",
+    "main.css": "/static/css/main.f342583a.css",
+    "main.js": "/static/js/main.68c894f1.js",
     "static/js/107.8e51db12.chunk.js": "/static/js/107.8e51db12.chunk.js",
     "static/media/NESTOKAO2.jpg": "/static/media/NESTOKAO2.7c64fd7438788b35d970.jpg",
     "static/media/CV2.png": "/static/media/CV2.08f2ba02868ca5c8e9fd.png",
+    "static/media/ruka.jpeg": "/static/media/ruka.7123c9cab76ed14c06a8.jpeg",
     "static/media/UNIDjole.jpg": "/static/media/UNIDjole.72ffaa7c44894792b5db.jpg",
     "static/media/podlaktica.jpg": "/static/media/podlaktica.38c872daa223c2f15c21.jpg",
     "static/media/DjoleSrednja.jpg": "/static/media/DjoleSrednja.cc14093cf7ab7400fda3.jpg",
@@ -13,11 +14,10 @@
     "static/media/DjoleAbout1.jpg": "/static/media/DjoleAbout1.7aabdc6110ae6099c003.jpg",
     "static/media/DjoleAbout3.jpg": "/static/media/DjoleAbout3.293a31be51ab6c46954f.jpg",
     "static/media/logo.png": "/static/media/logo.403b2fb86c41885e15c5.png",
-    "static/media/sise.jpg": "/static/media/sise.60c05c305ba2019f3f35.jpg",
     "static/media/bg.png": "/static/media/bg.9ac5d0a17e65868b9931.png",
     "static/media/man.png": "/static/media/man.5b6adb8e38ee506fde52.png",
+    "static/media/rehab.png": "/static/media/rehab.28079ad92cb4f3343923.png",
     "static/media/mortarboard.png": "/static/media/mortarboard.2ace15ca5e551f863a49.png",
-    "static/media/physiotherapy1.png": "/static/media/physiotherapy1.b842da37b0bbca280931.png",
     "static/media/newsletter.png": "/static/media/newsletter.43a1b76ad0323cfb4d9b.png",
     "static/media/health1.png": "/static/media/health1.c565f789fce610203f22.png",
     "static/media/LilitaOne-Regular.ttf": "/static/media/LilitaOne-Regular.e970d047065ed950bb8c.ttf",
@@ -35,12 +35,12 @@
     "static/media/facebook.png": "/static/media/facebook.3e85846bf272a460a28e.png",
     "static/media/dumbell1.png": "/static/media/dumbell1.a66f519acec98cb89236.png",
     "index.html": "/index.html",
-    "main.83d74ae5.css.map": "/static/css/main.83d74ae5.css.map",
-    "main.d149b08d.js.map": "/static/js/main.d149b08d.js.map",
+    "main.f342583a.css.map": "/static/css/main.f342583a.css.map",
+    "main.68c894f1.js.map": "/static/js/main.68c894f1.js.map",
     "107.8e51db12.chunk.js.map": "/static/js/107.8e51db12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83d74ae5.css",
-    "static/js/main.d149b08d.js"
+    "static/css/main.f342583a.css",
+    "static/js/main.68c894f1.js"
   ]
 }

@@ -8,6 +8,7 @@
     width: 100%;
     overflow: hidden;
 }
+
 .About-Page-Container .Banner{
     display: flex;
     width: 100%;
@@ -16,11 +17,13 @@
     font-family: sans-serif !important;
     background-position: center;
     background-size: cover;
+    font-size: 25px;
 
 }
 .About-Page-Container .Banner h1{
     font-size: 4em !important;
     text-align: center;
+    font-family: 'Teko', sans-serif;
 }
 .About-Page-Bio{
     display: flex;
@@ -42,9 +45,14 @@
     justify-content: right;
     gap:30px;
     position: relative;
-    
+    font-size: 25px;
 }
-
+.About-Page-Bio .About-Page-Bio-Paragraph p{
+    align-self: flex-end;
+    width: 60%;
+    font-size: 0.89em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 
@@ -132,18 +140,19 @@
     display: flex;
     justify-content: left;
     flex-direction: column;
+    font-size: 25px;
 }
 .Education-Content .Education-Content-Hs .Education-Content-Paragraph p{
     
     width: 60%;
-    font-size: 1.3em;
+    font-size: 0.89em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     font-weight:200;
 }
 .Education-Content .Education-Content-Uni .Education-Content-Paragraph p{
     width: 60%;
-    font-size: 1.3em;
+    font-size: 0.89em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     align-self: flex-start;
@@ -167,6 +176,7 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    font-size: 25px;
 }
 .Education-Content .Education-Content-Hs .Education-Content-Paragraph .Education-Content-Paragraph-Title{
     display: flex;
@@ -180,8 +190,8 @@
     align-self: flex-start;
 }
 .Education-Content-Paragraph-Title h1{
-    font-size: 1.8em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+    font-family: 'Teko', sans-serif;
 }
 .Education-Content-Paragraph-Title div{
     height: 3px;
@@ -189,14 +199,15 @@
     background-color: #940000;
 }
 .Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title-h1{
-    font-size: 2.3em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-    text-transform: uppercase !important;
+    font-size: 1.7em;
+    font-family: 'Teko', sans-serif;
     font-weight: 1000 !important;
     text-align: left;
     color: #002044 !important;
+    text-transform: uppercase;
     letter-spacing: 1.5px !important;
 }
+
 .Education-Content .Education-Content-Hs .Education-Content-Paragraph .Education-Content-Paragraph-Title-h1{
     font-size: 38px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
@@ -274,7 +285,7 @@ img.framed {
 }
 .About-Page-Bio .About-Page-Bio-Paragraph .Main-Paragraph {
     margin-top: 0 !important;
-    font-size: 1.3em;
+    font-size: 0.89em;
     width: 100%;
     align-self: flex-end;
 }

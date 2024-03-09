@@ -19,6 +19,7 @@ import {
 
 import HomePage from './components/HomePage/HomePage';
 import AboutPage from './components/AboutPage/AboutPage';
+import Programs from './components/Programs/Programs';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/programs' element = {<Programs/>}/>
       </Routes>
       <Footer />
       

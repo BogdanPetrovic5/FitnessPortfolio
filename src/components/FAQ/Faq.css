@@ -1,0 +1,119 @@
+.Faq-Container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0f14;
+}
+.Faq-Banner{
+    width: 70%;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.Faq-Banner-Title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+}
+.Faq-Banner-Title div{
+    background-color: #FF0039;
+    height: 3px;
+    width: 100px;
+}
+.Faq-Banner-Title h2{
+    font-size: 1em;
+    font-family: 'Teko', sans-serif;
+    color: #FF0039;
+}
+.Faq-Banner h1{
+    margin: 0 !important;
+    font-size: 2.4em;
+    font-family: 'Teko', sans-serif;
+    color: white;
+}
+.Questions{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    width: 70%;
+    margin-bottom: 50px;
+}
+.Questions .Question-Item{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: 500ms ease-in-out;
+}
+.Questions .Question-Item h1{
+    color: rgb(167, 167, 167);
+    font-size: 1.7em;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+.Question-Item .Item-hr{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(167, 167, 167, 0.1);
+}
+.Question-Item h1:hover{
+    color: rgba(167, 167, 167, 0.2);
+    font-size: 1.7em;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+}
+.Answer {
+    width: 95%;
+    gap: 10px;
+    font-size: 25px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    transform-origin: top center;
+}
+
+.Answer.open {
+    max-height: 200px; /* adjust the value according to your content */
+    animation: growDown 400ms ease-in-out forwards;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+.Answer h2{
+    color: rgb(150, 150, 150);
+    font-size: 1.3em;
+    font-family: 'Teko', sans-serif;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.Answer button{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    border: 1px solid #FF0039;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    color: white;
+    align-self: flex-start;
+    cursor: pointer;
+}

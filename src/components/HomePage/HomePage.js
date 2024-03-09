@@ -8,7 +8,7 @@ import LGallery from '../LandingGallery/LGallery';
 import Form from '../ContactForm/Form';
 import Social from '../Socials/Social';
 import Banner from '../Banner/Banner';
-
+import Faq from '../FAQ/Faq';
 import Newsletter from '../Newsletter/Newsletter';
 import MyService from '../MyServices/MyService';
 import BlogPage from '../BlogPage/BlogPage';
@@ -18,6 +18,7 @@ function HomePage(){
     return(
         <div className='Main-Page'>
             <Cover></Cover>
+            
             <MyService></MyService>
             <LAbout></LAbout>
             
@@ -27,6 +28,7 @@ function HomePage(){
             <Feedback></Feedback>
            
             <Form id="Form"></Form>
+            <Faq></Faq>
             <HomePageBlogBanner></HomePageBlogBanner>
             <BlogPage></BlogPage>
             

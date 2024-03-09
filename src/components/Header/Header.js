@@ -68,8 +68,8 @@ function Header() {
           <li className={location.pathname === '/' ? 'Active-Route' : ''}>
             <Link  to='/' >Home</Link>
           </li>
-          <li>
-            <a>programs</a>
+          <li  className={location.pathname === '/programs' ? 'Active-Route' : ''} >
+            <Link onClick={hideMenu} to= '/programs'> Programs</Link>
           </li>
           <li className={location.pathname === '/about' ? 'Active-Route' : ''}>
             <Link onClick={hideMenu} to='/about'>About</Link>

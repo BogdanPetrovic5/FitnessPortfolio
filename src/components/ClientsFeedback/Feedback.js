@@ -13,13 +13,13 @@ function Feedback(){
         },
         {
             testemonial: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          name:"Bogdan Bogdanic",
+          name:"Nikola Bogdanic",
           image: './images/man.jpg',
           },
         
           {
             testemonial: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          name:"Bogdan Bogdani",
+          name:"Nemanja Bogdani",
           image: './images/man.jpg',
           },
           {
@@ -30,81 +30,55 @@ function Feedback(){
         
           {
             testemonial: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          name:"Djole Djokica",
+          name:"Djomla Djokica",
           image: './images/man.jpg',
           },
           {
             testemonial: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          name:"Djole Djokica",
+          name:"Kure Djokica",
           image: './images/man.jpg',
           }
     ]
-const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
-
-useEffect(() => {
-    const handleResize = () => {
+    let [LowerEdge, setLowerEdge] = useState(windowWidth <= 839 ? 0 : 0);
+    let [HigherEdge, setHigherEdge] = useState(windowWidth <= 839 ? 1 : 3);
+    const targetDivRef = useRef(null);
+    let step = windowWidth <= 839 ? 1 : 3; 
+    
+    useEffect(() => {
+        const handleResize = () => {
         setWindowWidth(window.innerWidth);
         setWindowHeight(window.innerHeight);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    
-    return () => {
+        };
+      
+        window.addEventListener('resize', handleResize);
+        
+        
+        return () => {
         window.removeEventListener('resize', handleResize);
-    };
-}, []);
-
-const [ArrayToShow, setArrayToShow] = useState([]);
-const [LowerEdge, setLowerEdge] = useState(0);
-const [HigherEdge, setHigherEdge] = useState(0);
-
-const targetDivRef = useRef(null);
-
-
-
-useEffect(() => {
-    if (windowWidth <= 839) {
-        setLowerEdge(0);
-        setHigherEdge(1);
-        
-    } else {
-        setLowerEdge(0);
-        setHigherEdge(3);
+        };
+    }, []);
+    const updateEdges = (direction) => {
+        if (direction === 'next' && HigherEdge < articlesData.length) {
+          setLowerEdge(LowerEdge + step);
+          setHigherEdge(HigherEdge + step);
+        } else if (direction === 'prev' && LowerEdge > 0) {
+          setLowerEdge(LowerEdge - step);
+          setHigherEdge(HigherEdge - step);
+        }else if(direction === 'prev' && LowerEdge == 0){
+            setLowerEdge(articlesData.length - step)
+            setHigherEdge(articlesData.length)
+        }else if(direction === 'next' && HigherEdge == articlesData.length){
+            setLowerEdge(0)
+            setHigherEdge(0 + step)
+        }
        
-    }
-}, [windowWidth]);
-useEffect(() => {
-    const updateArrayToShow = () => {
-        const newArrayToShow = articlesData.slice(LowerEdge, HigherEdge);
-        setArrayToShow(newArrayToShow);
-    };
-
-    updateArrayToShow();
-}, [LowerEdge, HigherEdge, articlesData]);
-
-const updateEdges = (direction) => {
-    const step = windowWidth <= 839 ? 1 : 3;
-    if (direction === 'next' && HigherEdge < articlesData.length) {
-        setLowerEdge(LowerEdge + step);
-        setHigherEdge(HigherEdge + step);
-        
-    } else if (direction === 'prev' && LowerEdge > 0) {
-        setLowerEdge(LowerEdge - step);
-        setHigherEdge(HigherEdge - step);
-       
-    } else if (direction === 'prev' && LowerEdge === 0) {
-        setLowerEdge(articlesData.length - step);
-        setHigherEdge(articlesData.length);
-       
-    } else if (direction === 'next' && HigherEdge === articlesData.length) {
-        setLowerEdge(0);
-        setHigherEdge(step);
-        
-    }
-};
+      };
+      
+  
+    const ArrayToShow = articlesData.slice(LowerEdge, HigherEdge);
     return(
         <div className="Feedback-Container">
            

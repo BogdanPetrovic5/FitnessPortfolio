@@ -5,6 +5,7 @@ import HighSchool from './highschool.png'
 import UNIDjole from './UNIDjole.jpg'
 import MortarBoard from './mortarboard.png'
 import WPlans from '../WorkoutPlans/WorkoutPlan';
+import Faq from '../FAQ/Faq';
 import LGallery from '../LandingGallery/LGallery';
 import Banner from '../Banner/Banner';
 import MobileGallery from '../MobileGallery/MobileGallery';
@@ -15,6 +16,9 @@ import DjoleAbout2 from './DjoleAbout2.jpg'
 import DjoleAbout3 from './DjoleAbout3.jpg'
 import bg from './bg.png'
 import Social from '../Socials/Social';
+import Feedback from '../ClientsFeedback/Feedback';
+import MyService from '../MyServices/MyService';
+import Form from '../ContactForm/Form';
 function AboutPage(){
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
@@ -48,21 +52,22 @@ function AboutPage(){
             </div>
             <h1 >ABOUT ME!</h1>
         </div>
-             
+        <MyService></MyService>    
         <div className='About-Page-Bio'>
             <div className='About-Page-Bio-Paragraph'>
-                <div className="About-Paragraph-Desktop-Title">
-                        <div>
+            <div className="About-Paragraph-Desktop-Title">
+                        <div data-aos="fade-left" data-aos-duration = "800">
 
                         </div>
-                        <h1 data-aos="fade-left" >ABOUT ME</h1>
+                        <h1 data-aos="fade-left" data-aos-duration = "800">ABOUT ME</h1>
                 </div>
-                <h1 className="About-Paragraph-Desktop-h1" data-aos="fade-right">
+                <h1 className="About-Paragraph-Desktop-h1" data-aos="fade-right" data-aos-duration = "800">
                         Your Personal Trainer and Physical Therapist
                 </h1>
-                <p className='Main-Paragraph'>
-                    <p data-aos="fade-right" data-aos-duration='800' data-aos-offset = '-50'>There are many variations of passages of Lorem Ipsum available, but the majority have </p> <p data-aos="fade-left"  data-aos-duration='800' data-aos-offset = '-50'>suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p> <p data-aos="fade-right"  data-aos-duration='800' data-aos-offset = '-50'>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden</p> <p data-aos="fade-left"  data-aos-duration='800' data-aos-offset = '-50'>in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n</p>
-                </p> 
+                <p data-aos="fade-left" >
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
+
+                </p>
                 
             </div>
             
@@ -95,15 +100,21 @@ function AboutPage(){
             </div>
         </div>
         <Banner></Banner>   
+        
+        <Feedback></Feedback>
+        <Form></Form>
         <Social></Social>
+        
         <LGallery ></LGallery>
         <MobileGallery className="Mobile-Gallery-Section"></MobileGallery>
-        <div className='Banner-Goal' >
+        <Faq></Faq>
+        
+        {/* <div className='Banner-Goal' >
             <h1>
                 MY MINDSET
             </h1>
-        </div>
-        <div className='My-Goal'>
+        </div> */}
+        {/* <div className='My-Goal'>
             <h1 data-aos="fade-down"
                 data-aos-offset="150">
                 POKRET JE LEK
@@ -133,7 +144,7 @@ function AboutPage(){
                data-aos-offset="150" >
                SVE JE TVOJA ODGOVORNOST
             </h1>
-        </div>
+        </div> */}
         
      </div>   
     )

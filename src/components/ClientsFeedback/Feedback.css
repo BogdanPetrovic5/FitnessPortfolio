@@ -103,8 +103,8 @@
     color: white;
 }
 .Quote-Icon img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 .Quote{
     font-size: 25px;
@@ -144,4 +144,8 @@
     right: -15%;
     top: 50%;
     transform: translateY(50%);
+}
+.Navigation-Icon:hover{
+    cursor: pointer;
+    
 }

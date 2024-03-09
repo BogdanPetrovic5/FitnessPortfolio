@@ -24,8 +24,8 @@
     background-color: #b60000;
 }
 .HomePage-Blog-Banner .HomePage-Blog-Banner-Title h2{
-    font-size: 0.89em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    font-family: 'Teko', sans-serif;
     text-transform: uppercase;
     color: #b60000;
 }
@@ -35,8 +35,8 @@
     font-size: 25px;
 }
 .HomePage-Blog-Banner .HomePage-Blog-Banner-Title-h1 h1{
-    font-size: 1.6em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.1em;
+    font-family:'Teko', sans-serif;
     text-transform: uppercase;
     color: #2c234d;
 

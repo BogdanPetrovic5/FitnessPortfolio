@@ -53,7 +53,7 @@ function Form(){
                 </div>
                 <div className='Contact-Form-Form'>
                   <div className='Form-Wrapper'>
-                  <div className='Contact-Form-Form-Title'>
+                    <div className='Contact-Form-Form-Title'>
                         <div>
 
                         </div>
