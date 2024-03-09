@@ -8,11 +8,15 @@ function Programs(){
         <div className='Programs-Container'>
             <div className='Banner'>
                 <h1>
-                    PROGRAMS
+                    PROGRAMS 
+                </h1>
+               
+            </div>
+            <div className='Programs-Content'>
+                <h1>
+                    UNDER THE CONSTRUCTION
                 </h1>
             </div>
-            <MyService></MyService>
-            <WPlans></WPlans>
         </div>
     )
 }

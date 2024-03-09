@@ -9,12 +9,14 @@ import Header from './components/Header/Header'
 // import Social from './components/Socials/Social';
 import Footer from './components/Footer/Footer';
 import BlogPage from './components/BlogPage/BlogPage';
-import React, { useState } from 'react';
+import Load from './components/Loading/Load';
+import React, { useState, useEffect } from 'react'
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link,
+  Switch
 } from "react-router-dom";
 
 import HomePage from './components/HomePage/HomePage';
@@ -23,21 +25,33 @@ import Programs from './components/Programs/Programs';
 
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
   
   return (
     <Router>
-    <div className='Container'>
-      <Header />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/blog' element={<BlogPage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/programs' element = {<Programs/>}/>
-      </Routes>
-      <Footer />
-      
-    </div>
-  </Router>
+      {loading ? (
+        <Load /> 
+      ) : (
+        <div className='Container'>
+          <Header />
+          <Routes>
+            <Route path='/' element={<HomePage setLoading={setLoading}/>} />
+            <Route path='/blog' element={<BlogPage setLoading={setLoading}/>} />
+            <Route path='/about' element={<AboutPage setLoading={setLoading}/>} />
+            <Route path='/programs' element={<Programs setLoading={setLoading}/>} />
+          </Routes>
+          <Footer />
+        </div>
+      )}
+    </Router>
     
   );
 }

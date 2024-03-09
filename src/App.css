@@ -1063,6 +1063,10 @@ position: relative !important;
 }
 
 @media only screen and (max-width:840px){
+  .loading-screen img{
+    width: 90% !important;
+    height: 50% !important;
+  }
   .Navigation-Icon{
     width: 30px !important;
   height: 30px !important;

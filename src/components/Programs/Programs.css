@@ -1,0 +1,12 @@
+.Programs-Container .Banner{
+    display: flex;
+    flex-direction: column;
+}
+.Programs-Container .Programs-Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #0c0f14; 
+    height: 100vh;
+}

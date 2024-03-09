@@ -18,7 +18,7 @@ function Cover(){
                             ĐOLE
                      </span> <br></br> U <br></br> TERETANI
               </h1>
-              <Link to="/about"> {/* Link to the desired component */}
+              <Link to="/about"> 
                       <button>LEARN MORE</button>
               </Link>
        </div>

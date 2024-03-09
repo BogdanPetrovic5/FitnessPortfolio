@@ -4,7 +4,7 @@ import RightArrow from './rightarrow.png';
 import React, { useEffect, useState, useRef } from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
 import { useLocation } from 'react-router-dom';
-// import InstagramEmbed from 'react-instagram-embed';
+
 function BlogPage(){
     useEffect(()=>{
         const specifiLocation = document.getElementById('Blog')
