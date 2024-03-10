@@ -1,7 +1,7 @@
 import './LGallery.css'
 import React, { useState, useEffect } from 'react';
-import GalleryIcon from './gallery.png'
-import Ruka from './ruka.jpeg'
+import GalleryIcon from './images/gallery.png'
+import Ruka from './images/ruka.jpeg'
 import { Link } from 'react-router-dom';
 function LGallery(){
     const [modalImageUrl, setModalImageUrl] = useState('');

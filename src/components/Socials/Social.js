@@ -1,10 +1,10 @@
 import './Social.css'
-import Fb from './facebook.png'
-import Ig from './instagram.png'
-import Tt from './tiktok.png'
-import Fb1 from './facebookAbout.png'
-import Tt1 from './tiktokAbout.png'
-import Ig1 from './instagramAbout.png'
+import Fb from './images/facebook.png'
+import Ig from './images/instagram.png'
+import Tt from './images/tiktok.png'
+import Fb1 from './images/facebookAbout.png'
+import Tt1 from './images/tiktokAbout.png'
+import Ig1 from './images/instagramAbout.png'
 function Social(){
     const openLink = (linkType) =>{
         if(linkType === "ig"){

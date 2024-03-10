@@ -1,9 +1,9 @@
 import React from "react"
 import './MyService.css'
-import Weight from './weight1.png'
-import Rehab from './rehab.png'
-import Food from './health1.png'
-import Online from './online.png'
+import Weight from './images/weight1.png'
+import Rehab from './images/rehab.png'
+import Food from './images/health1.png'
+import Online from './images/online.png'
 function MyService(){
     return (
         <div className="MyServices-Container"  style={{ backgroundImage: `url(https://assets-global.website-files.com/64db59a28003b5f97686e7b6/64db59ddbcd0c6c9b18db041_pattern02.png)` }}>

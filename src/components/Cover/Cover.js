@@ -1,9 +1,9 @@
 import React from 'react'
 import './Cover.css'
-import CoverNov from './CV2.png'
-import Sise from './ruka.jpeg'
-import Podlaktice from './podlaktica.jpg'
-import Ledja from './ledja.jpg'
+
+import Sise from './images/ruka.jpeg'
+import Podlaktice from './images/podlaktica.jpg'
+import Ledja from './images/ledja.jpg'
 import { Link, useLocation  } from 'react-router-dom';
 function Cover(){
    return(

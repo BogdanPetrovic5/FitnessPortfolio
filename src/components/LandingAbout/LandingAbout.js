@@ -1,9 +1,7 @@
 import "./LandingAbout.css"
 import { useState } from 'react';
 import { useEffect } from 'react';
-import DjoleAbout1 from './DjoleAbout1.jpg'
-import DjoleAbout2 from './DjoleAbout2.jpg'
-import DjoleAbout3 from './DjoleAbout3.jpg'
+
 function LAbout(){
        const [imageUrl, setImageUrl] = useState('/assets/DjoleAbout3.png');
 

@@ -1,5 +1,5 @@
 import './WorkoutPlans.css'
-import Weights from './NESTOKAO2.jpg'
+import Weights from './images/weights.jpg'
 function WPlans(){
     return(
 		

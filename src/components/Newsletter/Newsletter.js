@@ -1,6 +1,6 @@
 import './Newsletter.css'
 import React from "react"
-import NewsLetter from './newsletter.png'
+import NewsLetter from './images/newsletter.png'
 function Newsletter(){
     return(
         <div className="Newsletter-Container">

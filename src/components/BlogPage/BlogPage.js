@@ -1,6 +1,6 @@
 import './BlogPage.css'
-import LeftArrow from './leftarrow.png';
-import RightArrow from './rightarrow.png';
+import LeftArrow from './images/leftarrow.png';
+import RightArrow from './images/rightarrow.png';
 import React, { useEffect, useState, useRef } from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
 import { useLocation } from 'react-router-dom';

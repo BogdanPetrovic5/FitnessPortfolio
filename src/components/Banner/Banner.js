@@ -1,8 +1,8 @@
 import React from "react";
 import './Banner.css'
-import Books from './education.png'
-import Foods from './health.png'
-import Gym from './dumbell1.png'
+import Books from './images/education.png'
+import Foods from './images/health.png'
+import Gym from './images/dumbell1.png'
 function Banner(){
     return(
         <div className="Banner-Home-Page" style={{ backgroundImage: `url(https://assets-global.website-files.com/64db59a28003b5f97686e7b6/64db59ddbcd0c6c9b18db041_pattern02.png)` }}>
