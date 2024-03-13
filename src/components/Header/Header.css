@@ -123,3 +123,10 @@
     text-decoration:  none;
     color: inherit;
   }
+  .ActiveDropDown{
+    background: rgba(12, 15, 20, 0.81);
+   
+    
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+  }

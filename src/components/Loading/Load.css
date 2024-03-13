@@ -8,6 +8,7 @@
     background-color: #0c0f14;
     display: flex;
     justify-content: center;
+	overflow: hidden;
     align-items: center;
   }
   .loading-screen img{

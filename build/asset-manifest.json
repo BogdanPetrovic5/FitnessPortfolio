@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.74621a76.css",
-    "main.js": "/static/js/main.22b5f756.js",
+    "main.css": "/static/css/main.8605e51f.css",
+    "main.js": "/static/js/main.0dff21a8.js",
     "static/js/107.8e51db12.chunk.js": "/static/js/107.8e51db12.chunk.js",
-    "static/media/NESTOKAO2.jpg": "/static/media/NESTOKAO2.7c64fd7438788b35d970.jpg",
-    "static/media/CV2.png": "/static/media/CV2.08f2ba02868ca5c8e9fd.png",
+    "static/media/weights.jpg": "/static/media/weights.7c64fd7438788b35d970.jpg",
     "static/media/ruka.jpeg": "/static/media/ruka.7123c9cab76ed14c06a8.jpeg",
     "static/media/UNIDjole.jpg": "/static/media/UNIDjole.72ffaa7c44894792b5db.jpg",
     "static/media/podlaktica.jpg": "/static/media/podlaktica.38c872daa223c2f15c21.jpg",
@@ -36,12 +35,12 @@
     "static/media/facebook.png": "/static/media/facebook.3e85846bf272a460a28e.png",
     "static/media/dumbell1.png": "/static/media/dumbell1.a66f519acec98cb89236.png",
     "index.html": "/index.html",
-    "main.74621a76.css.map": "/static/css/main.74621a76.css.map",
-    "main.22b5f756.js.map": "/static/js/main.22b5f756.js.map",
+    "main.8605e51f.css.map": "/static/css/main.8605e51f.css.map",
+    "main.0dff21a8.js.map": "/static/js/main.0dff21a8.js.map",
     "107.8e51db12.chunk.js.map": "/static/js/107.8e51db12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74621a76.css",
-    "static/js/main.22b5f756.js"
+    "static/css/main.8605e51f.css",
+    "static/js/main.0dff21a8.js"
   ]
 }

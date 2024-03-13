@@ -31,10 +31,10 @@ function LAbout(){
                         <div data-aos="fade-left" data-aos-duration = "800">
 
                         </div>
-                        <h1 data-aos="fade-left" data-aos-duration = "800">ABOUT ME</h1>
+                        <h1 data-aos="fade-left" data-aos-duration = "800">O MENI</h1>
                 </div>
                 <h1 className="About-Paragraph-Desktop-h1" data-aos="fade-right" data-aos-duration = "800">
-                        Your Personal Trainer and Physical Therapist
+                        Tvoj Perosnalni Trener I Fizioterapeut
                 </h1>
                 <p data-aos="fade-left" >
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n

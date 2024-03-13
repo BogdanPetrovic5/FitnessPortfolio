@@ -50,12 +50,12 @@ function AboutPage(){
             <div className='Banner-Cover'>
 
             </div>
-            <h1 >ABOUT ME!</h1>
+            <h1 >O MENI!</h1>
         </div>
         <MyService></MyService>    
         <div className='About-Page-Bio'>
             <div className='About-Page-Bio-Paragraph'>
-            <div className="About-Paragraph-Desktop-Title">
+                <div className="About-Paragraph-Desktop-Title">
                         <div data-aos="fade-left" data-aos-duration = "800">
 
                         </div>
@@ -73,7 +73,7 @@ function AboutPage(){
             
             <div className='About-Page-Bio-Image About-Page-Dekstop'>
                 
-                <img src='assets/DjoleAbout.jpg'></img>
+                <img src='assets/DjoleAbout.jpg' data-aos="flip-right"></img>
             </div>
         </div>
         
@@ -81,21 +81,21 @@ function AboutPage(){
             <div className='Education-Content-Uni'>
                 <div className='Education-Content-Paragraph'>
                     <div className="Education-Content-Paragraph-Title">
-                        <div>
+                        <div data-aos="fade-right" data-aos-duration = "800">
 
                         </div>
-                        <h1>EDUCATION</h1>
+                        <h1 data-aos="fade-right" data-aos-duration = "800">EDUKACIJA</h1>
                     </div>
-                    <h1 className="Education-Content-Paragraph-Title-h1">
-                        My Late Years Of Being Djole
+                    <h1 className="Education-Content-Paragraph-Title-h1" data-aos="fade-left" data-aos-duration = "800">
+                        Moje Kasnije Godine Bivstovanja
                     </h1>
-                    <p>
+                    <p data-aos="fade-right" data-aos-duration = "800">
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
                     </p>
                 </div>
                 
                 <div className='Education-Content-Image About-Page-Dekstop'>
-                    <img className='framed' src={UNIDjole}></img>
+                    <img className='framed' src={UNIDjole} data-aos="flip-right"></img>
                 </div>
             </div>
         </div>

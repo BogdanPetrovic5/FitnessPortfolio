@@ -45,7 +45,7 @@ function WPlans(){
 								<img src='/assets/check.png'></img>	Ishrana
 							</p>
 							<p>
-								<img src='/assets/x1.png'></img>	Nedeljne konsultacije
+								<img src='/assets/x.png'></img>	Nedeljne konsultacije
 							</p>
 						</div>
 						<button>
@@ -76,7 +76,7 @@ function WPlans(){
 								Ishrana
 							</p>
 							<p>
-								<img src='/assets/x1.png'></img>	Nedeljne konsultacije
+								<img src='/assets/x.png'></img>	Nedeljne konsultacije
 							</p>
 						</div>
 						<button>

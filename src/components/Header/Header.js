@@ -65,23 +65,20 @@ function Header() {
           <img src='/assets/DJOLENCELOGO.png' alt='Logo' />
         </div>
         <nav className='Header-Section-Nav'>
-          <li className={location.pathname === '/' ? 'Active-Route' : ''}>
-            <Link  to='/' >Home</Link>
-          </li>
           <li  className={location.pathname === '/programs' ? 'Active-Route' : ''} >
-            <Link onClick={hideMenu} to= '/programs'> Programs</Link>
+            <Link onClick={hideMenu} to= '/programs'> PROGRAMI</Link>
           </li>
           <li className={location.pathname === '/about' ? 'Active-Route' : ''}>
-            <Link onClick={hideMenu} to='/about'>About</Link>
+            <Link onClick={hideMenu} to='/about'>O MENI</Link>
           </li>
           <li className={location.pathname === '/blog' ? 'Active-Route' : ''}>
             <Link onClick={hideMenu}  to='/blog'>Blog</Link>
           </li>
           <li>
-            <a onClick={scrollToContact}>contact</a>
+            <a onClick={scrollToContact}>KONTAKT</a>
           </li>
           <li>
-            <a>join</a>
+            <Link  to='/' >POČETNA</Link>
           </li>
         </nav>
         <div className='Drop-Down'>

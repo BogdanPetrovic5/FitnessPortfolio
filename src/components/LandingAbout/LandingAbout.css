@@ -6,9 +6,11 @@
   align-items: center;
   background-color: white;
   overflow: hidden;
+  position: relative;
 }
 .Home-Page-About-Container .About-Page-Bio{
- margin-bottom: 50px;
+ margin-bottom: 200px;
+ margin-top: 200px !important;
 }
 .About-Page-Image-Phone-Wrapper{
   display: none;
@@ -47,6 +49,7 @@
   text-align: right;
   color: #2c234d !important;
   letter-spacing: 1.5px !important;
+  margin-top: -20px !important;
 }
 
 .learn-more-bttn{
