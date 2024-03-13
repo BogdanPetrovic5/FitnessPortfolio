@@ -4,7 +4,7 @@ import RightArrow from './images/rightarrow.png';
 import React, { useEffect, useState, useRef } from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
 import { useLocation } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 function BlogPage(){
     useEffect(()=>{
         const specifiLocation = document.getElementById('Blog')
@@ -13,84 +13,84 @@ function BlogPage(){
             behavior:'smooth'
         })
     })
+    const navigate = useNavigate();
+
+    const navigateToBlogDetails = (article,postId) => {
+        navigate(`/blog/${postId}`, { state: { article, articlesData, postId } });
+    };
     const articlesData = [
         {
-          title: 'Samo od mene za vas 100 nacina da jebete',
-          tags: ['Food', 'Lifestyle'],
-          subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          date: '15 Jan',
-          image: '/assets/blog1.jpg',
+            title: "Unlock Your Potential: 101 Fitness Tips for Success",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Discover the secrets to reaching your fitness goals and unlocking your full potential!",
+            date: '15 Jan',
+            image: '/assets/blog1.jpg',
         },
         {
-            title: 'Samo od mene za vas 100 nacina da jebete',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+            title: "Transform Your Body: The Ultimate Fitness Guide",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Embark on a transformative journey and achieve the body of your dreams with these expert fitness tips!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          },
-        
-          {
-            title: 'Samo od mene za vas 100 nacina da jebete',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+        },
+        {
+            title: "Master Your Mindset: The Key to Fitness Success",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Learn how to cultivate a winning mindset and conquer your fitness goals!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          },
-          {
-            title: 'Samo od mene za vas 100 nacina da zaradite kurac',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+        },
+        {
+            title: "Elevate Your Workouts: Innovative Techniques for Maximum Results",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Take your workouts to the next level with cutting-edge techniques designed to optimize your performance and results!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          },
-        
-          {
-            title: 'Samo od mene za vas 100 nacina da zaradite kurac',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+        },
+        {
+            title: "Fuel Your Fitness Journey: Nutrition Tips for Peak Performance",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Discover the importance of nutrition in achieving your fitness goals and fueling your body for success!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          },
-          {
-            title: 'Samo od mene za vas 100 nacina da zaradite kurac',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+        },
+        {
+            title: "Revolutionize Your Routine: Fresh Approaches to Fitness",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Break free from boring routines and revolutionize your fitness journey with exciting and effective workouts!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          },
-        
-          {
-            title: 'Samo od mene za vas 100 nacina da izadjete iz klozeta',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+        },
+        {
+            title: "Embrace the Journey: The Path to Fitness Mastery",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Embrace the ups and downs of your fitness journey and emerge as a stronger, fitter version of yourself!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          },
-          {
-            title: 'Samo od mene za vas 100 nacina da izadjete iz klozeta',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+        },
+        {
+            title: "Fit for Life: Sustainable Strategies for Lifelong Fitness",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Discover sustainable strategies to maintain your fitness levels for life and enjoy long-term health and vitality!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          },
-        
-          {
-            title: 'Samo od mene za vas 100 nacina da izadjete iz klozeta',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+        },
+        {
+            title: "Achieve Balance: The Art of Fitness and Wellness",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Find harmony between fitness and wellness as you strive for balance in mind, body, and spirit!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          },
-          {
-            title: 'Samo od mene za vas 100 nacina da izadjete iz obdanista',
-            tags: ['Food', 'Lifestyle'],
-            subject: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
+        },
+        {
+            title: "Empower Yourself: Fitness Tips for Confidence and Strength",
+            tags: ['Fitness', 'Lifestyle'],
+            subject: "Empower yourself with fitness tips that will boost your confidence and strengthen your body from the inside out!",
             date: '15 Jan',
             image: '/assets/blog1.jpg',
-          }
-
-        
-      ];
+        }
+    ];
+    
       const [LowerEdge, setLowerEdge] = useState(0);
       const [HigherEdge, setHigherEdge] = useState(3);
       const targetDivRef = useRef(null);
@@ -113,6 +113,9 @@ function BlogPage(){
         }
       })
       const ArrayToShow = articlesData.slice(LowerEdge, HigherEdge);
+      const navigateToBlogDetail = (article) =>{
+        
+      }
     return(
         <div className="Container" id='Blog'>   
             <div className='Banner'>
@@ -123,7 +126,7 @@ function BlogPage(){
             <div className='Content' ref={targetDivRef}>
                 <div className='Content-Articles' >
                     {ArrayToShow.map((article, index) => (
-                        <div key={index} className='Article'>
+                        <div key={index} className='Article' onClick={()=> navigateToBlogDetails(article, index, articlesData)}>
                             <div className='Article-Date'>
                                 <h1>{article.date}</h1>
                             </div>
