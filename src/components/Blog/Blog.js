@@ -6,15 +6,44 @@ import Share from './images/send.png'
 import { InstagramEmbed } from 'react-social-media-embed';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react'
 function Blog(){
     const location = useLocation();
-    const index = location.state.postId;
-    const arcticles = location.state.articlesData
+    const navigate = useNavigate();
 
-    const article = arcticles[index]
+    const [articles, setArticles] = useState(location.state?.articlesData || []);
+    const [index, setIndex] = useState(location.state ? location.state.postId : 0);
+    const article = articles[index];
 
+    useEffect(() => {
+        const specifiLocation = document.getElementById('Blog-Details')
+        const offset = 200;
+        const offsetPosition = specifiLocation.offsetTop - offset
+        window.scrollTo({
+            top: offsetPosition,
+            behavior:'smooth',
+        })
+        setIndex(location.state ? location.state.postId : 0);
+        setArticles(location.state?.articlesData || []);
+    }, [location]);
 
-    
+    const toNext = () => {
+        if (index < articles.length - 1) {
+            const nextIndex = index + 1;
+            const nextArticle = articles[nextIndex];
+            setIndex(nextIndex);
+            navigate(`/blog/${nextIndex}`, { state: { article: nextArticle, articlesData: articles, postId: nextIndex } });
+        }
+    };
+    const toPrevious = () => {
+        if (index > 0) {
+            const prevIndex = index - 1;
+            const prevArticle = articles[prevIndex];
+            setIndex(prevIndex);
+            navigate(`/blog/${prevIndex}`, { state: { article: prevArticle, articlesData: articles, postId: prevIndex } });
+        }
+    };
+
    return(
         <div className="Blog-Container">
             <div className="Banner">
@@ -23,7 +52,7 @@ function Blog(){
                     
                 </h1>
             </div>
-            <div className="Blog-Details-Content">
+            <div className="Blog-Details-Content" id='Blog-Details'>
                 <div className='Blog-Details-Text'>
                     <div className='Blog-Details-Text-Image'>
                         <img src='/assets/blog1.jpg'>
@@ -80,7 +109,7 @@ function Blog(){
                             </img>
                         </div>
                         <div className='More-Posts'>
-                            <div className='Prev-Post'>
+                            <div className='Prev-Post' onClick={() => toPrevious()}>
                                 <img src='/assets/blog1.jpg'>
                                 </img>
                                 <div className='More-Posts-Description'>
@@ -92,7 +121,7 @@ function Blog(){
                                    </p>
                                 </div>
                             </div>
-                            <div className='Next-Post'>
+                            <div className='Next-Post' onClick={() => toNext()}>
                                 <img src='/assets/blog1.jpg'>
                                 </img>
                                 <div className='More-Posts-Description'>
