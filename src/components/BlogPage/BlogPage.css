@@ -338,10 +338,13 @@ InstagramEmbed{
 .Article-Info-Text{
   margin-top: 100px;
 }
+.Article-Title {
+  font-size: 25px;
+}
 .Article-Info-Text .Article-Title h1{
-  font-size: 20px;
+  font-size: 1em;
   color: black;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Teko', sans-serif;
   margin-left: 30px;
   font-weight:bolder;
 }

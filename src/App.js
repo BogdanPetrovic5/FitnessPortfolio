@@ -29,7 +29,6 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-  
   return (
     <Router>
       {loading ? (

@@ -31,8 +31,11 @@ function Footer(){
                 <section className='Footer-Newsletter'>
                     <h1>Pretplati se</h1>
                     <div class="search">
-                    <input placeholder="Email..." type="text"/>
-                    <button type="submit">PRETPLATI SE</button>
+                        <input type='email'>
+                        </input>
+                        <button>
+                            Pretplati se
+                        </button>
                     </div>
                     <p>&copy; 2024 Đorđe Marinković. Sva prava zadržana.</p>
                     <div className='Footer-Social'>
