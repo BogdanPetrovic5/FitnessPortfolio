@@ -7,7 +7,7 @@ import { InstagramEmbed } from 'react-social-media-embed';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react'
-function Blog(){
+function BlogDetails(){
     const location = useLocation();
     const navigate = useNavigate();
 
@@ -187,4 +187,4 @@ function Blog(){
         </div>
    )
 }
-export default Blog;
+export default BlogDetails;
