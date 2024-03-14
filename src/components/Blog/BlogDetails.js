@@ -3,6 +3,7 @@ import Tag from './images/tag.png'
 import Comment from './images/comment.png'
 import Likes from './images/like.png'
 import Share from './images/send.png'
+import Man from './images/man.png'
 import { InstagramEmbed } from 'react-social-media-embed';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
@@ -13,8 +14,9 @@ function BlogDetails(){
 
     const [articles, setArticles] = useState(location.state?.articlesData || []);
     const [index, setIndex] = useState(location.state ? location.state.postId : 0);
+  
     const article = articles[index];
-
+    const comments = article ? article.comments : [];
     useEffect(() => {
         const specifiLocation = document.getElementById('Blog-Details')
         const offset = 200;
@@ -25,6 +27,7 @@ function BlogDetails(){
         })
         setIndex(location.state ? location.state.postId : 0);
         setArticles(location.state?.articlesData || []);
+       
     }, [location]);
 
     const toNext = () => {
@@ -67,7 +70,7 @@ function BlogDetails(){
                             <img src={Tag}>
                             </img>
                             <p>
-                                Food, Lifestyle | 
+                                {article.tags} |
                             </p>
                             <img src={Comment}>
                             </img>
@@ -132,6 +135,39 @@ function BlogDetails(){
                                     Lorem Ispum
                                    </p>
                                 </div>
+                            </div>
+                        </div>
+                        <div className='hr'>
+
+                        </div>
+                        <div className='Comments'>
+                            <div className='Comments-Title'>
+                                <h1>Comments: 4</h1>
+                            </div>
+                            <div className='Comments-List'>
+                                {comments.map((item, index)=>(
+                                    <div className='Comments-List-Item' key ={index}>
+                                        <div className='Comments-List-Item-Picture'>
+                                            <img src={Man}>
+                                            </img>
+                                        </div>
+                                        <div className='Comments-List-Item-Content'>
+                                            <div className='Comments-List-Item-Content-Text'>
+                                                <p>
+                                                    {item}
+                                                </p>
+                                            </div>
+                                            <div className='Comments-List-Item-Content-Signature'>
+                                                <h1>
+                                                    Bogdan Petrovic
+                                                </h1>
+                                            </div>
+                                          
+                                        </div>
+                                    
+                                    </div>
+                                ))}
+                                
                             </div>
                         </div>
                     </div>

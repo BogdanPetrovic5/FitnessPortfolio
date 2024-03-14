@@ -1780,6 +1780,7 @@ position: relative !important;
   }
 }
 @media only screen and (max-width:497px){
+  
   .Title-Decoration{
     font-size: 0.7em !important;
   }
@@ -2179,6 +2180,20 @@ padding-right: 35px;
   }
 } 
 @media only screen and (max-width:1023px){
+  .Blog-Details-Content{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .Blog-Details-Text{
+    width: 90% !important;
+    
+  }
+  .Blog-Container .Content-Options{
+    width: 90% !important;
+   
+  }
   .Faq-Banner-Title h2{
     font-size: 0.7em !important;
     font-family: 'Teko', sans-serif;
@@ -2920,6 +2935,20 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 }
 @media only screen and (min-width:1024px) and (max-width:1150px) {
+  .Blog-Details-Content{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .Blog-Details-Text{
+    width: 70% !important;
+    
+  }
+  .Blog-Container .Content-Options{
+    width: 70% !important;
+   
+  }
   .Left{
     left: 40% !important;
     top: 60% !important;
@@ -3336,6 +3365,12 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
       }
 }
 @media only screen and (min-width:1151px) and (max-width:1500px){
+  .Blog-Details-Text{
+    width: 60% !important;
+  }
+  .Blog-Container .Content-Options{
+    width: 30% !important;
+  }
   .Feedback-Banner{
     width: 90% !important;
   }

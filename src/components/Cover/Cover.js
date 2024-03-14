@@ -14,9 +14,9 @@ function Cover(){
               </div>
               <h1 className='' 
                      data-aos-duration="1000"> 
-                     <span>
+                     
                             ĐOLE
-                     </span> <br></br> U <br></br> TERETANI
+                      <br></br> U <br></br> <span>TERETANI</span>
               </h1>
               <Link to="/about"> 
                       <button>LEARN MORE</button>
