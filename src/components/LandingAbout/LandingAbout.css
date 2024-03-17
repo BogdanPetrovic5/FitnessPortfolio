@@ -9,8 +9,8 @@
   position: relative;
 }
 .Home-Page-About-Container .About-Page-Bio{
- margin-bottom: 200px;
- margin-top: 200px !important;
+ margin-bottom: 50px;
+ margin-top: 50px !important;
 }
 .About-Page-Image-Phone-Wrapper{
   display: none;
@@ -28,7 +28,7 @@
     background-color: #DCDCDC !important;
 }
 .About-Paragraph{
-    width: 30%;
+    width: 70%;
     height: 90%;
     background: rgba(255, 255, 255, 0.45) !important;
     font-size: 25px;
@@ -42,9 +42,9 @@
 }
 
 .About-Paragraph-Desktop-h1{
-  font-size: 1.7em;
+  font-size: 2.4em;
   font-family:'Teko', sans-serif !important;
-  text-transform: uppercase !important;
+  
   font-weight: 1000 !important;
   text-align: right;
   color: #2c234d !important;
@@ -142,7 +142,7 @@ button {
   background-color: #FF0039;
 }
 .About-Paragraph-Desktop .About-Paragraph-Desktop-Title h1, .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title h1{
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-family: 'Teko', sans-serif;
   
 }

@@ -83,6 +83,7 @@ function Feedback(){
         <div className="Feedback-Container">
            
             <div className='Feedback-Banner'>
+                <h1 className='Absolute'>UTISCI</h1>
                 <img className='Left Navigation-Icon' src={Left} onClick={() => updateEdges('prev')}/>
 
                 <img className='Right Navigation-Icon' src={Right}onClick={() => updateEdges('next')}/>
@@ -91,7 +92,7 @@ function Feedback(){
 
                     </div>
                     <h2>
-                        Pohvale
+                        Utisci 
                     </h2>
                 </div>
                 <div className='Feedback-Banner-Description'>

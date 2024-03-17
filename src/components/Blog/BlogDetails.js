@@ -61,11 +61,12 @@ function BlogDetails(){
                         <img src='/assets/blog1.jpg'>
 
                         </img>
+                        
+                    </div>
+                    <div className='Blog-Details-Text-Content'>
                         <h1>
                             {article.title}
                         </h1>
-                    </div>
-                    <div className='Blog-Details-Text-Content'>
                         <div className='Blog-Tags'>
                             <img src={Tag}>
                             </img>

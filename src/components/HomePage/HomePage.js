@@ -34,10 +34,10 @@ function HomePage(){
                     
                     <Cover></Cover>
                     
-                    <MyService></MyService>
+                   
                     <LAbout></LAbout>
-                    
-                    <WPlans></WPlans>
+                    <MyService></MyService>
+                    {/* <WPlans></WPlans> */}
                     
                     <LGallery></LGallery>
                     <Feedback></Feedback>

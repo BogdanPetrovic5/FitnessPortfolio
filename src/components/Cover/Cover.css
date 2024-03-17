@@ -211,12 +211,13 @@ padding-right: 35px;
   color: white;
   background-color:transparent;
   border: 1px solid #FF0039;
-  font-size: 1.4em;
+  font-size: 1.1em;
   z-index: 99999999999999;
   position: relative;
   cursor: pointer;
   transition: 500ms;
   border-radius: 25px;
+  margin-top: -150px;
 }
 .Title button:hover{
  
@@ -225,7 +226,7 @@ padding-right: 35px;
 .Title h1{
     
     color: white;
-    font-size: 4.5em;
+    font-size: 3.5em;
     font-family: 'Teko', sans-serif;
     letter-spacing: 7px;
     margin-top: 0;

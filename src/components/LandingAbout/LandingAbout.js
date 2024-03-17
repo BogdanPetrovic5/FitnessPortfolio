@@ -25,13 +25,15 @@ function LAbout(){
   }, []);
     return(
        <div className="Home-Page-About-Container">
+            
            <div className='About-Page-Bio'>
             <div className='About-Page-Bio-Paragraph'>
+                <h1 className="Absolute">O MENI</h1>
                 <div className="About-Paragraph-Desktop-Title">
                         <div data-aos="fade-left" data-aos-duration = "800">
 
                         </div>
-                        <h1 data-aos="fade-left" data-aos-duration = "800">O MENI</h1>
+                        <h1 data-aos="fade-left" data-aos-duration = "800">O meni</h1>
                 </div>
                 <h1 className="About-Paragraph-Desktop-h1" data-aos="fade-right" data-aos-duration = "800">
                         Tvoj Perosnalni Trener I Fizioterapeut

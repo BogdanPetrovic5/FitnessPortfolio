@@ -47,84 +47,50 @@ function Form(){
     return (
 
         <section className="Contact-Form" id='Form'>
-            <div className='Contact-Form-Wrap' id='Form'>
-                <div className='Contact-Form-Wrap-Image' style={{ backgroundImage: `url(/assets/djolololo.jpg)` }}>
-
-                </div>
-                <div className='Contact-Form-Form'>
-                  <div className='Form-Wrapper'>
-                    <div className='Contact-Form-Form-Title'>
-                        <div>
-
-                        </div>
-                        <h1>CONTACT FORM</h1>
-                    </div>
-                    <div class="container"> 
-                    <div class="os-phrases" id="os-phrases">
-                    {result}
-                    </div>
-                    </div>
-                    <div className='Form-Inputs'>
-                        <div className='Form-Inputs-Name'>
-                        <div className="wave-group">
-                            <input  required type="text" className="input"/>
-                                <span className="bar"></span>
-                                <label className="label">
-                                <span className="label-char" style={{ '--index': 0 }}>N</span>
-                                <span className="label-char" style={{ '--index': 1 }}>a</span>
-                                <span className="label-char" style={{ '--index': 2 }}>m</span>
-                                <span className="label-char" style={{ '--index': 3 }}>e</span>
-
-                            </label>
-                          </div>
-                          <div className="wave-group">
-                            <input required type="text" className="input"/>
-                                <span className="bar"></span>
-                                <label className="label">
-                                <span className="label-char" style={{ '--index': 0 }}>L</span>
-                                <span className="label-char" style={{ '--index': 1 }}>a</span>
-                                <span className="label-char" style={{ '--index': 2 }}>s</span>
-                                <span className="label-char" style={{ '--index': 3 }}>t</span>
-                                <span className="label-char" style={{ '--index': 4 }}> </span>
-                                <span className="label-char" style={{ '--index': 5 }}>n</span>
-                                <span className="label-char" style={{ '--index': 6 }}>a</span>
-                                <span className="label-char" style={{ '--index': 7 }}>m</span>
-                                <span className="label-char" style={{ '--index': 8 }}>e</span>
-
-                            </label>
-                          </div>
-                        </div>
-                        <div className='Form-Inputs-Info'>
-                        <div className="wave-group">
-                            <input  required type="text" className="input"/>
-                                <span className="bar"></span>
-                                <label className="label">
-                                <span className="label-char" style={{ '--index': 0 }}>E</span>
-                                <span className="label-char" style={{ '--index': 1 }}>m</span>
-                                <span className="label-char" style={{ '--index': 2 }}>a</span>
-                                <span className="label-char" style={{ '--index': 3 }}>i</span>
-                                <span className="label-char" style={{ '--index': 4 }}>l</span>
-                            </label>
-                          </div>
-                          <div className="wave-group">
-                            <input required type="text" className="input"/>
-                                <span className="bar"></span>
-                                <label className="label">
-                                <span className="label-char" style={{ '--index': 0 }}>M</span>
-                                <span className="label-char" style={{ '--index': 1 }}>e</span>
-                                <span className="label-char" style={{ '--index': 2 }}>s</span>
-                                <span className="label-char" style={{ '--index': 3 }}>s</span>
-                                <span className="label-char" style={{ '--index': 4 }}>a</span>
-                                <span className="label-char" style={{ '--index': 5 }}>g</span>
-                                <span className="label-char" style={{ '--index': 6 }}>e</span>
-                            </label>
-                          </div>
-                        </div>
-                    </div>
+          
+          <div className='Contact-Form-Wrap'>
+          
+              <div className='Form'> 
+                  <div className='Form-Name'>
+                    <span id='name'>Name</span>
+                    <input type='name' className='Name'></input>
+                    <span id='email'>Email</span>
+                    <input type='email'></input>
                   </div>
-                    
-                </div>
+                  <div className='Form-Details'>
+                    <span>
+                      Message
+                    </span>
+                    <textarea>
+                      
+                    </textarea>
+                  </div>
+                  <div className='Button-Wrap'>
+                    <button>SEND</button>
+                  </div>
+                  
+              </div>
+          </div>
+          <div className='Contact-Form-Description'>
+            <h1 className='Absolute'>
+              KONTAKT
+            </h1>
+            <div className='Contact-Form-Title'>
+              <div>
+                
+              </div>
+              <h1>
+                Kontakt Forma
+              </h1>
             </div>
+            <h1 className='Contact-Form-Description-h1'>
+              Brz način da stupis u kontakt sa mnom!
+            </h1>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+
+                </p>
+          </div>
             
         </section>
     )

@@ -8,15 +8,18 @@ function Faq(){
         setSelectedQuestion(itemId === selectedQuestion ? null : itemId);
     };
     return(
-        <div className="Faq-Container" >
+        <div className="Faq-Container">
             <div className="Faq-Banner">
+                <h1 className="Absolute">
+                    FAQ
+                </h1>
                 <div className="Faq-Banner-Title">
                     <div>
 
                     </div>
                     <h2>FAQ</h2>
                 </div>
-                <h1>
+                <h1 className="Faq-Banner-Title-h1">
                     Cesto postavljana pitanja
                 </h1>
             </div>
