@@ -24,36 +24,35 @@ function LAbout(){
     };
   }, []);
     return(
-       <div className="Home-Page-About-Container">
+    
             
-           <div className='About-Page-Bio'>
+           <div className='About-Page-Bio' data-aos='fade-up'>
             <div className='About-Page-Bio-Paragraph'>
                 <h1 className="Absolute">O MENI</h1>
                 <div className="About-Paragraph-Desktop-Title">
-                        <div data-aos="fade-left" data-aos-duration = "800">
+                        <div >
 
                         </div>
-                        <h1 data-aos="fade-left" data-aos-duration = "800">O meni</h1>
+                        <h1 className="Decoration-Titles">O meni</h1>
                 </div>
-                <h1 className="About-Paragraph-Desktop-h1" data-aos="fade-right" data-aos-duration = "800">
-                        Tvoj Perosnalni Trener I Fizioterapeut
+                <h1 className="About-Paragraph-Desktop-h1 AllTitles">
+                        Tvoj Perosnalni Trener I <span>Fizioterapeut</span>
                 </h1>
-                <p data-aos="fade-left" >
+                <p >
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
 
                 </p>
                 
             </div>
             
-            <div className='About-Page-Bio-Image About-Page-Dekstop'>
+            <div className='About-Page-Bio-Image'>
                 
                 <img src='assets/DjoleAbout.jpg'></img>
             </div>
-        </div>
-            {/* <div className='About-Page-Bio-Image-Phone Phone' style={{ backgroundImage: `url(/assets/DjoleAbout.jpg)` }}>
-            
-            </div> */}
-       </div>
+          </div>
+    
+                              
+     
        
     )
 }

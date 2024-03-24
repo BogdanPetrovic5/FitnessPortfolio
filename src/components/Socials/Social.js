@@ -24,9 +24,6 @@ function Social(){
         <section className="Socials" >
             <div className='Socials-Content'>
                 <div className='Socials-Content-Title'>
-                    <div >
-
-                    </div>
                     <h2 >
                         Zaprati me na socijalnim mrezama!
                     </h2>

@@ -3,12 +3,29 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow: hidden;
     
 }
 .Main-Page{
   display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #0c0c14;
+}
+.Decorational-Bars{
+  position: absolute;
+  width: 330px;
+  height: 40px;
+  background: rgb(255,0,57);
+  background: linear-gradient(270deg, rgba(255,0,57,1) 0%, rgba(255,0,57,0) 100%) !important;
+  bottom: -20px;
+  z-index: 99999999;
+  right: 0 ; 
+ 
+}
+.Decorational-Bars:last-child{
+  width: 200px;
+  bottom: 50px;
 }
 @media only screen and (max-width:578px){
   
@@ -37,7 +54,8 @@
     width: 100% !important;
   }
   .Footer-Newsletter .search button{
-    width: 35% !important;
+  max-width: 40% !important;
+    width: 40% !important;
   }
   .Footer-Newsletter h1{
     text-align: center !important;
@@ -473,7 +491,44 @@
   }
 }
 @media only screen and (min-width:300px) and (max-width: 439px){
- 
+  .About-Page-Bio, .Education-Content{
+    gap: 0px !important;
+    flex-direction: column-reverse !important;
+    width: 95% !important;
+  }
+  .About-Page-Bio{
+    align-items: flex-end !important;
+
+  }
+  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
+    width: 90% !important;
+    align-self: center !important;
+    margin-bottom: 10% !important;
+    margin-top: 0px !important;
+    
+  }
+  .About-Page-Bio-Image, .Education-Content-Image{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% !important;
+  }
+  .About-Page-Bio-Image img, .Education-Content-Image img{
+    width: 80% !important;
+  }
+  .About-Page-Bio-Image img{
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+  .Education-Content-Image img{
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
   .MyServices-Container{
     width: 100%;
     background-color:#0c0f14 ;
@@ -661,6 +716,45 @@
 }
 }
 @media only screen and (min-width:440px) and (max-width: 625px){
+  .About-Page-Bio, .Education-Content{
+    gap: 10px !important;
+    flex-direction: column-reverse !important;
+    width: 95% !important;
+  }
+  .About-Page-Bio{
+    align-items: flex-end !important;
+
+  }
+  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
+    width: 90% !important;
+    align-self: center !important;
+    margin-bottom: 10% !important;
+    margin-top: 0 !important;
+    
+  }
+  .About-Page-Bio-Image, .Education-Content-Image{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% !important;
+    
+  }
+  .About-Page-Bio-Image img, .Education-Content-Image img{
+    width: 80% !important;
+  }
+  .About-Page-Bio-Image img{
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+    .Education-Content-Image img{
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
   .Absolute{
     font-size: 4em !important;
   }
@@ -772,8 +866,13 @@
 
   }
 }
+@media only screen and (max-width:839px){
+  .Feedback-Banner{
+    width: 90% !important;
+  }
+}
 @media only screen and (min-width:626px) and (max-width:840px) {
- 
+  
   .MyServices-Container{
     width: 100%;
     background-color:#0c0f14 ;
@@ -859,33 +958,67 @@
   }
   
 }
-@media only screen and (min-width:840px) and (max-width:1023px){
+@media only screen and (min-width:841px) and (max-width:1023px){
   .Feedback-Banner{
     width: 95% !important;
   }
- 
-  .About-Paragraph p{
-    margin-top: 50px;
-    color: #111111;
-    font-size: 22px !important;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
-    text-align: center;
-    width: 55%;
-    letter-spacing: 2px;
-
+  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
+    width: 45% !important;
+  }
+  .About-Page-Bio-Image, .Education-Content-Image{
+    width: 56% !important;
+  }
 }
-.About-Paragraph h1{
-  font-size: 35px !important;
-}
-}
-@media only screen and (min-width:626px) and (max-width:840px) {
+@media only screen and (min-width:626px) and (max-width:839px) {
   .Absolute{
     font-size: 5em !important;
+  }
+  .About-Page-Bio, .Education-Content{
+    gap: 10px !important;
+    flex-direction: column-reverse !important;
+    width: 60% !important;
+  }
+  .About-Page-Bio{
+    align-items: flex-end !important;
+
+  }
+  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
+    width: 90% !important;
+    align-self: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 5% !important;
+  }
+  .About-Page-Bio-Image, .Education-Content-Image{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5% !important;
+  }
+  .About-Page-Bio-Image img, .Education-Content-Image img{
+    width: 90% !important;
+  }
+  .About-Page-Bio-Image img{
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+    .Education-Content-Image img{
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
   }
 }
 
 @media only screen and (max-width:840px){
-  
+  .AllTitles{
+    font-size: 1.75em !important;
+  }
+  .Decoration-Titles{
+    font-size: 0.9em !important;
+  }
   .loading-screen img{
     width: 90% !important;
     height: 50% !important;
@@ -894,17 +1027,7 @@
     width: 30px !important;
   height: 30px !important;
   }
-  .Left{
-    left: -15% !important;
-    top: 30% !important;
-    
-    transform: translateY(50%);
-  }
-  .Right{
-    right: -15% !important;
-    top: 30% !important;
-    transform: translateY(50%);
-  }
+ 
   .Results{
     width: 100%;
     display: flex;
@@ -1244,7 +1367,7 @@
         font-size: 25px;
         display: flex;
         flex-direction: row;
-        justify-content: left !important;
+        justify-content: center !important;
         align-items: center;
     
     }
@@ -1255,21 +1378,31 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: left !important;
-      align-items: center;
+      justify-content: center !important;
+      align-items: center !important;
       background-color: white;
   }
   .HomePage-Blog-Banner .HomePage-Blog-Banner-Title-h1{
     width: 80% !important;
+    align-self: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .HomePage-Blog-Banner h1{
-    text-align:  left !important;
+  .HomePage-Blog-Banner-Title-h1 h1{
+    text-align:  center !important;
     font-size: 1.3em !important;
   }
 }
 @media only screen and (min-width:841px) and (max-width:1022px) {
   .Absolute{
     font-size: 6em !important;
+  }
+  .AllTitles{
+    font-size: 1.75em !important;
+  }
+  .Decoration-Titles{
+    font-size: 0.9em !important;
   }
   .MyServices-Container{
     width: 100%;
@@ -1546,6 +1679,19 @@
   }
 }
 @media only screen and (max-width:497px){
+  .Decorational-Bars{
+    position: absolute;
+    width: 230px !important;
+    height: 40px;
+    background-color: #FF0039;
+    bottom: -20px;
+    z-index: 1;
+   
+  }
+  .Decorational-Bars:last-child{
+    width: 100px !important;
+    bottom: 50px;
+  }
   .Blog-Details-Text-Image img{
     height: 250px !important;
     max-height: 250px !important;
@@ -1598,7 +1744,7 @@ padding-right: 35px;
     background-position: center;
     background-size: cover;
     background-color: #111111 !important;
-    overflow: hidden;
+    
   }
   .Cover-Images{
     bottom:0;
@@ -1622,7 +1768,7 @@ padding-right: 35px;
   
   }
   .First-Image, .Second-Image{
-    width: 70% !important;
+    width: 90% !important;
     height: 56% !important;
     position: relative;
     z-index: -1;
@@ -1643,7 +1789,7 @@ padding-right: 35px;
     display: none;
   }
   .First-Image .Second-Bar{
-    left: 30% !important;
+    left: 17% !important;
   }
   .First-Image .First-Bar{
     left: 14% !important;
@@ -1653,7 +1799,7 @@ padding-right: 35px;
     left: 100% !important;
   }
   .First-Image{
-   
+   top: 7%;
     align-self: flex-end !important;
     margin-bottom:90px !important;
   }
@@ -1715,6 +1861,19 @@ padding-right: 35px;
   }
 }
 @media only screen and (min-width:498px) and (max-width:723px){
+  .Decorational-Bars{
+    position: absolute;
+    width: 260px !important;
+    height: 40px;
+    background-color: #FF0039;
+    bottom: -20px;
+    z-index: 1;
+    
+  }
+  .Decorational-Bars:last-child{
+    width: 130px !important;
+    bottom: 50px;
+  }
   .Blog-Details-Text-Image img{
     height: 330px !important;
     max-height: 330px !important;
@@ -1738,7 +1897,7 @@ padding-right: 35px;
     background-position: center;
     background-size: cover;
     background-color: #111111 !important;
-    overflow: hidden;
+   
   }
   .Cover-Images{
     bottom:0;
@@ -1861,6 +2020,19 @@ padding-right: 35px;
   }
 }
 @media only screen and (min-width:724px) and (max-width:1022px){
+  .Decorational-Bars{
+    position: absolute;
+    width: 260px !important;
+    height: 40px;
+    background-color: #FF0039;
+    bottom: -20px;
+    z-index: 1;
+   
+  }
+  .Decorational-Bars:last-child{
+    width: 130px !important;
+    bottom: 50px;
+  }
   .Blog-Details-Text-Image img{
     height: 450px !important;
     max-height: 450px !important;
@@ -1884,7 +2056,7 @@ padding-right: 35px;
     background-position: center;
     background-size: cover;
     background-color: #111111 !important;
-    overflow: hidden;
+    
   }
  
   .Cover-Images{
@@ -1957,14 +2129,21 @@ padding-right: 35px;
   }
 } 
 @media only screen and (max-width:1023px){
+  .Faq-Banner{
+    width: 90% !important;
+    
+}
+.Questions{
+  width: 90% !important;
+}
   .Contact-Form{
     display: flex;
     justify-content: center;
     flex-direction: column-reverse !important;
     align-items: center;
-    gap: 50px;
+    gap: 0px !important;
     
-    width: 100%;
+    width: 95% !important;
   
    
     background-color: white;
@@ -1976,6 +2155,11 @@ padding-right: 35px;
 }
 .Contact-Form-Wrap{
   width: 90% !important;
+  margin-top: 0px !important;
+  margin-bottom: 5% !important;
+}
+.Form{
+  border-bottom-right-radius: 50px !important;
 }
 .Contact-Form-Title{
   flex-direction: row !important;
@@ -1986,6 +2170,7 @@ padding-right: 35px;
   font-size: 2.4em;
   font-family: 'Teko', sans-serif;
   text-align: left !important;
+  align-self: flex-start;
   margin-top:-20px !important;
   position: relative;
   z-index: 1;
@@ -2291,8 +2476,8 @@ padding-right: 35px;
   width: 100%;
   height: 0.125rem;
   border-radius: 2px;
-  background-color: rgb(0, 122, 255);
-  box-shadow: 0 .5px 2px 0 hsla(0, 0%, 0%, .2);
+  background-color: rgba(197, 197, 197,0.3);
+
   transition: background-color .4s;
   position: relative;
 }
@@ -2339,7 +2524,7 @@ padding-right: 35px;
 
 .menu__icon span.clicked:nth-child(3) {
   animation: ease 0.8s menu-icon-bottom forwards;
-  background-color: rgb(255, 59, 48);
+  background-color: rgba(197, 197, 197,0.3);
 }
 
 .menu__icon span:not(.clicked) {
@@ -2473,48 +2658,7 @@ padding-right: 35px;
         flex-direction: column !important;
         gap: 50px;
       }
-    .About-Paragraph{
-        width: 90% !important;
-        height: 90% !important;
-       /* From https://css.glass */
-/* From https://css.glass */
-/* background: rgba(255, 255, 255, 0.45) !important;
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.7px);
--webkit-backdrop-filter: blur(2.7px);
-border: 1px solid rgba(255, 255, 255, 0.3); */
-        margin-top: 100px !important;
-        margin-bottom: 100px !important;
-        position: absolute;
-        clip-path: none !important;
-        z-index: 1;
-        display: flex !important;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
-        
-        /* background-color: ; */
-    }
-    .About-Paragraph-Desktop{
-      display: none !important;
-    }
-    .About-Img {
-        position: relative;
-        width: 100% !important;
-        height: 100% !important; 
-        clip-path: none !important;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-attachment: fixed;
-        
-        background-position: 100% 20% ;
-        
-      }
-      .About-Img img{
-        display: none !important;
-      }
+    
       .Flash {
         display: none !important;
         position: absolute;
@@ -2528,33 +2672,45 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
      
      
       
+}@media only screen and (min-width:841px) and (max-width:1149px){
+  .About-Page-Bio, .Education-Content{
+    
+   
+    width: 95% !important;
+    
+   
+    margin-bottom: 50px !important;
+    
+    }
 }
 @media only screen and (min-width:0px) and (max-width:1150px) {
   .Cover{
     z-index: 2;
   }
-  .Home-Page-About-Container{
-   
+  .About-Paragraph-Desktop-Title h1, .Education-Content-Paragraph-Title h1{
+     
   }
-  .Home-Page-About-Container .About-Page-Bio{
-    margin-top: 50px !important;
- 
-    z-index: 1;
+ .About-Page-Bio-Paragraph p, .Education-Content-Paragraph p, .Contact-Form-Description p{
+    font-size: 0.7em !important;
+    width: 100% !important;
+ }
+ .MyServices-Container-Title-h1 button{
+  font-size: 0.89em !important;
+  padding-left: 25px !important;
+    padding-right: 25px !important;
+ }
+  .About-Paragraph-Desktop-h1, .Education-Content-Paragraph-Title-h1{
     
- 
-    position: relative !important;
-  }
-  .About-Paragraph-Desktop-h1{
-    font-size: 38px;
-    font-family: sans-serif !important;
+    align-self: flex-start !important;
+    font-family: 'Teko', sans-serif !important;
     text-transform: uppercase !important;
     font-weight: 1000 !important;
-    text-align: center !important;
+   
     color: #002044 !important;
     letter-spacing: 1.5px !important;
   }
   .Education-Content-Paragraph{
-    margin-top: 50px !important;
+    
     
   }
   .Banner-Goal{
@@ -2563,12 +2719,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   .Education-Banner{
     display: none !important;
   }
-  .About-Page-Bio-Image-Wrapper{
-    
-    
-    position: relative;
-  
-  }
+
 
   .Phone{
     width: 100%;
@@ -2586,164 +2737,17 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
     text-align: center !important;
   }
 
-   .About-Page-Bio{
-    display: flex;
-    flex-direction: column-reverse !important;
-    width: 90% !important;
-    gap: 0px !important;
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
-    
-}
-
- .About-Page-Bio .About-Page-Bio-Paragraph{
-    width:100% !important;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-    gap:30px;
-    align-self: center !important;
-  
-    
-    
-}
- .About-Page-Bio .About-Page-Bio-Paragraph p{
-  text-align: center !important;
-  width: 55% !important;
-  align-self: center !important;
   
 
-}
-.About-Page-Bio .About-Page-Bio-Paragraph p{
-  text-align: center !important;
-  margin: 0 !important;
-}
-.About-Paragraph-Desktop-h1{
-  text-align: center !important;
-}
- .About-Page-Bio .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title{
-  display: flex;
-  justify-content: center !important;
-  text-align: center !important;
-}
- .About-Page-Bio .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title div{
-  display: none !important;
-}
-
-
-  .Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title{
-    display: flex;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center;
-    gap: 20px;
-}
-.Education-Content .Education-Content-Hs .Education-Content-Paragraph .Education-Content-Paragraph-Title{
-  display: flex;
-  flex-direction: row-reverse !important;
-  justify-content: center !important;
-  align-items: center;
-  gap: 20px;
-
-} 
-.Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title h1{
-    text-align: right;
-}
-.Education-Content-Paragraph-Title h1{
-    font-size: 1.8em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center !important;
-}
-.Education-Content-Paragraph-Title div{
-  display: none !important;
-    height: 3px;
-    width: 150px;
-    background-color: #940000;
-}
-.Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title-h1{
-    font-size: 2.3em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-    text-transform: uppercase !important;
-    font-weight: 1000 !important;
-    text-align: center !important;
-    color: #002044 !important;
-    letter-spacing: 1.5px !important;
-    align-self: center !important;
-}
-.Education-Content .Education-Content-Hs .Education-Content-Paragraph .Education-Content-Paragraph-Title-h1{
-    font-size: 38px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-    text-transform: uppercase !important;
-    font-weight: 1000 !important;
-    text-align: center !important;
-    color: #002044 !important;
-    letter-spacing: 1.5px !important;
-    align-self: center !important;
-}
-
-
-
-
-  .Education-Content{
-    width: 90% !important;
-  }
-  .Education-Content .Education-Content-Hs{
-    display: flex;
-    flex-direction: column !important;
-    gap:90px;
-    margin-bottom: 50px;
-    width: 100% !important;
-    margin: 0 !important
-}
-.Education-Content .Education-Content-Uni{
-    display: flex;
-    flex-direction: column !important;
-    gap:90px;
-    margin-bottom: 50px;
-    width: 100% !important;
-    margin: 0 !important
-}
-.Education-Content .Education-Content-Hs .Education-Content-Image, .Education-Content .Education-Content-Uni .Education-Content-Image, .About-Page-Bio-Image{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100% !important;
-  margin-bottom: 50px !important;
-}
-.Education-Content .Education-Content-Hs .Education-Content-Image img, .Education-Content .Education-Content-Uni .Education-Content-Image img, .About-Page-Bio-Image img{
-  align-self: center !important;
-  width: 80% !important;
  
-  --s: 10px; /* control the size */
-    padding: var(--s);
-    border: calc(2*var(--s)) solid #0000;
-    outline: 1px solid #c50000;
-    outline-offset: calc(-1*var(--s));
-    background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#c50000 0);
-}
-.Education-Content .Education-Content-Uni .Education-Content-Paragraph{
-  width: 95% !important;
-  display: flex;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-self: center !important;
-}
-.Education-Content .Education-Content-Hs .Education-Content-Paragraph{
-  width: 95% !important;
-  display: flex;
-  flex-direction: column !important;
-  justify-content: center;
-  align-self: center !important;
-  
-}
-.Education-Content-Paragraph p{
-  width: 55% !important;
-  align-self: center !important;
-  text-align: center !important;
-}
 }
 @media only screen and (min-width:1024px) and (max-width:1150px) {
+  .AllTitles{
+    font-size: 1.75em !important;
+  }
+  .Decoration-Titles{
+    font-size: 0.9em !important;
+  }
   .Contact-Form{
     display: flex;
     justify-content: center;
@@ -2794,17 +2798,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
     width: 70% !important;
    
   }
-  .Left{
-    left: 40% !important;
-    top: 60% !important;
-    
-    transform: translateY(50%);
-  }
-  .Right{
-    right: 40% !important;
-    top: 60% !important;
-    transform: translateY(50%);
-  }
+
   .Feedback-Banner{
     width: 90% !important;
   }
@@ -2887,7 +2881,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
     background-position: center;
     background-size: cover;
     background-color: #111111 !important;
-    overflow: hidden;
+   
   }
 
 .Cover-Images-Content{
@@ -2948,24 +2942,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
     .Header .Header-Section{
         width: 95% !important;
     }
-    .About-Paragraph h1{
-        margin: 0 !important;
-        margin-bottom: 5px !important;
-          color:#111111;
-          font-size: 34px !important;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          letter-spacing: 2px;
-      }
-      .About-Paragraph p{
-          margin-top: 50px !important;
-          color: #111111;
-          font-size: 19px !important;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
-          text-align: center;
-          width: 55%;
-          letter-spacing: 2px;
-      
-      }
+   
       .Flash {
         display: none !important;
         position: absolute;
@@ -2977,50 +2954,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
       }
      
      
-      .About-Paragraph-Desktop{
-        width: 45% !important;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: right;
-        gap: 30px;
-      }
-      .About-Img{
-        height: 600px !important;
-        width: 35% !important;
-      }
-      .About-Paragraph-Desktop p{
-        width: 100%;
-        font-size: 16px !important;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: right;
-        font-weight:200;
-      }
-      .About-Paragraph-Desktop .About-Paragraph-Desktop-Title{
-        width: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        gap: 20px;
-      }
-      .About-Paragraph-Desktop .About-Paragraph-Desktop-Title div{
-        width: 150px;
-        height: 3px;
-        background-color: #940000;
-      }
-      .About-Paragraph-Desktop .About-Paragraph-Desktop-Title h1{
-        font-size: 22px !important;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-      .About-Paragraph-Desktop-h1{
-        font-size: 32px !important;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-        text-transform: uppercase !important;
-        font-weight: 1000 !important;
-        text-align: center !important;
-        color: #002044 !important;
-        letter-spacing: 1.5px !important;
-      }
+     
       .learn-more-bttn{
         width: 32% !important;
         align-self: flex-end;
@@ -3041,7 +2975,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
         width: 100%;
       }
 }
-@media only screen and (min-width:1151px) and (max-width:1420px) {
+@media only screen and (min-width:1151px) and (max-width:1550px) {
   .Title h1{
     
     color: white;
@@ -3138,13 +3072,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
         height: 600px !important;
         width: 35% !important;
       }
-      .About-Paragraph-Desktop p{
-        width: 100%;
-        font-size: 16px !important;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: right;
-        font-weight:200;
-      }
+      
       .About-Paragraph-Desktop .About-Paragraph-Desktop-Title{
         width: 100%;
         display: flex;
@@ -3153,20 +3081,20 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
         gap: 20px;
       }
       .About-Paragraph-Desktop .About-Paragraph-Desktop-Title div{
-        width: 150px;
+        width: 100px;
         height: 3px;
         background-color: #940000;
       }
-      .About-Paragraph-Desktop .About-Paragraph-Desktop-Title h1{
-        font-size: 22px !important;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title h1, .Education-Content-Paragraph-Title h1{
+        font-size: 1em !important;
+        
       }
-      .About-Paragraph-Desktop-h1{
-        font-size: 32px !important;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+      .About-Paragraph-Desktop-h1, .Education-Content-Paragraph-Title-h1{
+        font-size: 1.8em !important;
+        font-family: 'Teko',sans-serif;
         text-transform: uppercase !important;
         font-weight: 1000 !important;
-        text-align: right !important;
+        
         color: #002044 !important;
         letter-spacing: 1.5px !important;
       }
@@ -3191,7 +3119,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
       }
    
 }
-@media only screen and (min-width:1151px) and (max-width:1500px){
+@media only screen and (min-width:1151px) and (max-width:1700px){
   .Contact-Form-Description{
     width: 55% !important;
   }
@@ -3213,17 +3141,22 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   .Cover .Cover-Images{
     width: 55% !important;
   }
-  .Education-Content .Education-Content-Hs .Education-Content-Image, .Education-Content .Education-Content-Uni .Education-Content-Image, .About-Page-Bio-Image{
-    width: 50% !important;
+  .Education-Content .Education-Content-Image, .About-Page-Bio-Image{
+    width: 45% !important;
   }
-  .Education-Content .Education-Content-Hs .Education-Content-Paragraph, .About-Page-Bio-Paragraph{
-    width: 50% !important;
+ 
+  .About-Page-Bio-Image{
+    width: 45% !important;
+  }
+  .Education-Content-Paragraph , .About-Page-Bio-Paragraph{
+    width: 45% !important;
   }
   .Education-Content-Paragraph p, .About-Page-Bio-Paragraph p{
-    width: 100% !important;
+    width: 95% !important;
+    font-size: 0.7em !important;
   }
   .Education-Content, .About-Page-Bio{
-    width: 80% !important;
+    width: 90% !important;
   }
   .MyServices-Container .MyServices-Wrap{
     
@@ -3244,19 +3177,12 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   font-size: 25px;
   margin-top: 100px;
 }
-.Left{
-  left: 40% !important;
-  top: 60% !important;
-  
-  transform: translateY(50%);
-}
-.Right{
-  right: 40% !important;
-  top: 60% !important;
-  transform: translateY(50%);
-}
+
 }
 @media only screen and (max-width:1155px){
+  .Banner-Home-Page-Content{
+    width: 90% !important;
+  }
   .Workout-Title{
     width: 100%;
     position: relative;
@@ -3269,6 +3195,9 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
     
     align-items: center;
     /* background-color: transparent !important; */
+  }
+  .MyServices-Wrap{
+    margin-top: 10px !important;
   }
   .Workout-Title-Text{
     width: 100% !important;
@@ -3285,4 +3214,7 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
     cursor: pointer;
     
   }
+}
+.AllTitles{
+  font-size: 2.4em;
 }

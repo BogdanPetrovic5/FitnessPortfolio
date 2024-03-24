@@ -22,7 +22,7 @@ function HomePage(){
     useEffect(() => {
         const timer = setTimeout(() => {
           setLoading(false);
-        }, 1000);
+        }, 1300);
     
         return () => clearTimeout(timer);
       }, []);
@@ -38,7 +38,7 @@ function HomePage(){
                     <LAbout></LAbout>
                     <MyService></MyService>
                     {/* <WPlans></WPlans> */}
-                    
+                    <Social></Social>
                     <LGallery></LGallery>
                     <Feedback></Feedback>
                 

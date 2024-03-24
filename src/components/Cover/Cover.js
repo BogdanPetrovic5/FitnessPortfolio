@@ -1,7 +1,7 @@
 import React from 'react'
 import './Cover.css'
 
-import Sise from './images/ruka.jpeg'
+import Ruka from './images/ruka.jpeg'
 import Podlaktice from './images/podlaktica.jpg'
 import Ledja from './images/ledja.jpg'
 import { Link, useLocation  } from 'react-router-dom';
@@ -51,7 +51,7 @@ function Cover(){
 
                      </div> */}
                      <div className='First-Image' data-aos="slide-down" data-aos-duration = "900">
-                            <div className='Second-Bar' style={{ backgroundImage: `url(${Sise})` }}data-aos-delay="200">
+                            <div className='Second-Bar' style={{ backgroundImage: `url(${Ruka})` }}data-aos-delay="200">
                                    
                             </div>
                             <div className='First-Bar' data-aos-delay="500">
@@ -91,7 +91,7 @@ function Cover(){
                       */}
               </div>
        </div>
-                            
+       
     </section>
    );
 }

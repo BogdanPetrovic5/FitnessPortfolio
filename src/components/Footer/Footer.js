@@ -5,6 +5,20 @@ import Ig from './images/instagram.png'
 import Tt from './images/tiktok.png'
 import { Link, useLocation  } from 'react-router-dom';
 function Footer(){
+    const openLink = (linkType) =>{
+        if(linkType === "ig"){
+            window.location.href = 'https://www.instagram.com/marinkovic.djordjee/'
+            console.log('ASDASDASD')
+        }
+        if(linkType === "Tt"){
+            window.location.href = 'https://www.tiktok.com/@imarinkovici'
+            console.log('ASDASDASD')
+        }
+        if(linkType === "Fb"){
+            window.location.href = 'https://www.facebook.com/djordjedjole.marinkovic'
+            console.log('ASDASDASD')
+        }
+    }
     return(
         <div className="Footer">
             <div className='Footer-Content'>
@@ -39,11 +53,11 @@ function Footer(){
                     </div>
                     <p>&copy; 2024 Đorđe Marinković. Sva prava zadržana.</p>
                     <div className='Footer-Social'>
-                        <img src={Tt}>
+                        <img src={Tt} onClick={()=>openLink('Tt')}>
                         </img>
-                        <img src={Ig}>
+                        <img src={Ig} onClick={()=>openLink('ig')}>
                         </img>
-                        <img src={Fb}>
+                        <img src={Fb} onClick={()=>openLink('Fb')}>
                         </img>
                     </div>
                     

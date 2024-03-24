@@ -45,7 +45,7 @@ function AboutPage(){
         }
     }, []);
     return (
-     <div className='About-Page-Container' style={{ backgroundImage: `url(${bg})` }} >
+     <div className='About-Page-Container' >
         <div className='Banner'  style={{ backgroundImage: `url(https://assets-global.website-files.com/64db59a28003b5f97686e7b6/64db59ddbcd0c6c9b18db041_pattern02.png)` }} >
             <div className='Banner-Cover'>
 
@@ -53,16 +53,16 @@ function AboutPage(){
             <h1 >O MENI!</h1>
         </div>
         <MyService></MyService>    
-        <div className='About-Page-Bio'>
+        <div className='About-Page-Bio' data-aos='fade-up'>
             <div className='About-Page-Bio-Paragraph'>
                 <div className="About-Paragraph-Desktop-Title">
-                        <div data-aos="fade-left" data-aos-duration = "800">
+                        <div data-aos="fade-left" data-aos-duration="900">
 
                         </div>
-                        <h1 data-aos="fade-left" data-aos-duration = "800">ABOUT ME</h1>
+                        <h1 data-aos="fade-left" data-aos-duration = "800" className="Decoration-Titles">O Meni</h1>
                 </div>
-                <h1 className="About-Paragraph-Desktop-h1" data-aos="fade-right" data-aos-duration = "800">
-                        Your Personal Trainer and Physical Therapist
+                <h1 className="About-Paragraph-Desktop-h1 AllTitles" data-aos="fade-right" data-aos-duration = "800">
+                        Tvoj Personalni Trener I <span>Fizioterapeut</span>
                 </h1>
                 <p data-aos="fade-left" >
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
@@ -73,21 +73,21 @@ function AboutPage(){
             
             <div className='About-Page-Bio-Image About-Page-Dekstop'>
                 
-                <img src='assets/DjoleAbout.jpg' data-aos="flip-right"></img>
+                <img src='assets/DjoleAbout.jpg'></img>
             </div>
         </div>
         
-        <div className='Education-Content'>
-            <div className='Education-Content-Uni'>
+        <div className='Education-Content' data-aos='fade-up' data-aos-duration="900">
+    
                 <div className='Education-Content-Paragraph'>
                     <div className="Education-Content-Paragraph-Title">
                         <div data-aos="fade-right" data-aos-duration = "800">
 
                         </div>
-                        <h1 data-aos="fade-right" data-aos-duration = "800">EDUKACIJA</h1>
+                        <h1 data-aos="fade-right" data-aos-duration = "800" className="Decoration-Titles">Edukacija</h1>
                     </div>
-                    <h1 className="Education-Content-Paragraph-Title-h1" data-aos="fade-left" data-aos-duration = "800">
-                        Moje Kasnije Godine Bivstovanja
+                    <h1 className="Education-Content-Paragraph-Title-h1 AllTitles" data-aos="fade-left" data-aos-duration = "800">
+                        Moje Kasnije Godine <span>Bivstovanja</span>
                     </h1>
                     <p data-aos="fade-right" data-aos-duration = "800">
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
@@ -97,7 +97,7 @@ function AboutPage(){
                 <div className='Education-Content-Image About-Page-Dekstop'>
                     <img className='framed' src={UNIDjole} data-aos="flip-right"></img>
                 </div>
-            </div>
+            
         </div>
         <Banner></Banner>   
         
@@ -106,7 +106,7 @@ function AboutPage(){
         <Social></Social>
         
         <LGallery ></LGallery>
-        <MobileGallery className="Mobile-Gallery-Section"></MobileGallery>
+        
         <Faq></Faq>
         
         {/* <div className='Banner-Goal' >

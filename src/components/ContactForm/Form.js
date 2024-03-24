@@ -46,7 +46,7 @@ function Form(){
       }
     return (
 
-        <section className="Contact-Form" id='Form'>
+        <section className="Contact-Form" id='Form' data-aos="fade-up" data-aos-duration="800">
           
           <div className='Contact-Form-Wrap'>
           
@@ -76,17 +76,17 @@ function Form(){
               KONTAKT
             </h1>
             <div className='Contact-Form-Title'>
-              <div>
+              <div data-aos="fade-left" data-aos-duration = "800">
                 
               </div>
-              <h1>
+              <h1 data-aos="fade-left" data-aos-duration = "800" className="Decoration-Titles">
                 Kontakt Forma
               </h1>
             </div>
-            <h1 className='Contact-Form-Description-h1'>
-              Brz način da stupis u kontakt sa mnom!
+            <h1 className='Contact-Form-Description-h1 AllTitles' data-aos="fade-left" data-aos-duration = "800" data-aos-delay='100'>
+              Brz način da stupis u kontakt <span>sa mnom!</span>
             </h1>
-            <p>
+            <p data-aos="fade-left" data-aos-duration = "800">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
                 </p>

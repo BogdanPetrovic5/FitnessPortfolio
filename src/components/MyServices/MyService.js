@@ -6,19 +6,19 @@ import Food from './images/health1.png'
 import Online from './images/online.png'
 function MyService(){
     return (
-    <div className="MyServices-Container"  style={{ backgroundImage: `url        (https://assets-global.website-files.com/64db59a28003b5f97686e7b6/64db59ddbcd0c6c9b18db041_pattern02.png)` }}>
+    <div className="MyServices-Container"  >
             <div className="MyServices-Container-Banner">
-                <h1 className="Absolute">USLUGE</h1>
-                <div className="MyServices-Container-Title">
+                <h1 className="Absolute" >USLUGE</h1>
+                <div className="MyServices-Container-Title ">
                     <div data-aos = 'fade-right'>
 
                     </div>
-                    <h1  data-aos = 'fade-right'>
+                    <h1  data-aos = 'fade-right' className="Decoration-Titles">
                         Moje usluge
                     </h1>
                 </div>
                <div className="MyServices-Container-Title-h1" data-aos = 'fade-left'>
-                <h1>Izaberi uslugu koja ti <span>odgovara! </span></h1>
+                <h1 className="AllTitles">Izaberi uslugu koja ti <span>odgovara! </span></h1>
                     <button>
                     POGLEDAJ VIŠE
                 </button>

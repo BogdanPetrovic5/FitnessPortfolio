@@ -191,7 +191,7 @@ function BlogPage(){
     return(
         <div className="Container" id='Blog'>   
             <div className='Banner'>
-                <h1>
+                <h1 className='AllTitles'>
                     BLOG
                 </h1>
             </div>

@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
+    position: relative;
 }
 .HomePage-Blog-Banner .HomePage-Blog-Banner-Title{
     width: 70%;
@@ -16,14 +17,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 }
+.HomePage-Blog-Banner .Absolute{
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .HomePage-Blog-Banner .HomePage-Blog-Banner-Title div{
     width: 60px;
     height: 3px;
     background-color: #b60000;
 }
-.HomePage-Blog-Banner .HomePage-Blog-Banner-Title h2{
+.HomePage-Blog-Banner .HomePage-Blog-Banner-Title h1{
     font-size: 1em;
     font-family: 'Teko', sans-serif;
     text-transform: uppercase;

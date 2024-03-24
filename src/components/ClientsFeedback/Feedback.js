@@ -88,15 +88,15 @@ function Feedback(){
 
                 <img className='Right Navigation-Icon' src={Right}onClick={() => updateEdges('next')}/>
                 <div className='Feedback-Banner-Title'>
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration = "800">
 
                     </div>
-                    <h2>
+                    <h1 data-aos="fade-right" data-aos-duration = "800" className="Decoration-Titles">
                         Utisci 
-                    </h2>
+                    </h1>
                 </div>
                 <div className='Feedback-Banner-Description'>
-                    <h1>Rezultati mojih klijenata</h1>
+                    <h1 data-aos="fade-left" data-aos-duration = "800" className='AllTitles'> Rezultati mojih klijenata</h1>
                 </div>
                
                <div className='Results  ${slideDirection}`' ref={targetDivRef}>
@@ -130,11 +130,11 @@ function Feedback(){
                    
                     
                </div>
-               <div className='Contact-Me-Banner'>
-                    <h2>
+               {/* <div className='Contact-Me-Banner'>
+                    <h2 data-aos="fade-down" data-aos-duration = "800">
                         Zelis i ti da radis sa mnnom? Imas neka dodatna pitanja? Popuni formu ispod!
                     </h2>
-               </div>
+               </div> */}
             </div>
         </div>
     )

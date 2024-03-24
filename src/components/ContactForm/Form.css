@@ -3,11 +3,12 @@
     justify-content: center;
     flex-direction: row-reverse;
     gap: 50px;
-    
-    width: 100%;
+    width: 98%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
   overflow: hidden;
    
-    background-color: white;
+    background-color: #24242C;
     position: relative;
     
 }
@@ -33,6 +34,7 @@
     justify-content: right;
     gap: 10px;
     align-items: flex-end;
+    overflow: hidden;
 }
 .Form{
     width: 100%;
@@ -41,7 +43,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: #0c0f14;
+    background-color: #0c0c14;
     position: relative;
     z-index: 1;
     
@@ -68,6 +70,13 @@
     text-stroke: 1px rgb(235, 235, 235);/* Standard */
     color: transparent;
     
+}
+.Contact-Form-Description-h1 span{
+    color: #FF0039;
+}
+.Contact-Form-Description .Absolute{
+    -webkit-text-stroke: 1px rgb(65, 65, 65); /* For Safari/Chrome */
+    text-stroke: 1px rgb(65, 65, 65);
 }
 .Form .Button-Wrap{
     margin-top: -50px;
@@ -139,10 +148,12 @@
     gap: 20px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 .Contact-Form-Title h1{
     font-size: 1.4em;
     font-family: 'Teko',sans-serif;
+    color: white;
 }
 .Contact-Form-Title div{
     width: 100px;
@@ -154,8 +165,10 @@
     font-family: 'Teko', sans-serif;
     text-align: right;
     margin-top:-20px;
+    width: 75%;
     position: relative;
     z-index: 1;
+   color: white
 }
 .Contact-Form-Description p{
     font-size: 0.89em;
@@ -165,4 +178,5 @@
     position: relative;
     margin-top: -15px;
     z-index: 1;
+    color: white;
 }

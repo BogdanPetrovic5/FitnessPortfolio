@@ -12,8 +12,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #0c0f14!important;
-    overflow: hidden;
+    background-color: #0c0c14!important;
+    
     
 }
 
@@ -38,7 +38,7 @@
  
 }
 .Cover-Images{
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: right;

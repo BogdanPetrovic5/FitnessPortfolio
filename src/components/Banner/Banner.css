@@ -4,7 +4,7 @@
 .Banner-Home-Page{
     width: 100%;
     
-    background-color: #0c0f14;
+    background-color: #0c0c14;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,17 +32,18 @@
     gap: 20px;
     align-items: center;
     font-size: 25px;
+    overflow: hidden;
 }
 .Banner-Home-Page-Content .Banner-Home-Page-Content-Title div{
     width: 100px;
     height: 2px;
     background-color: #e20000;
 }
-.Banner-Home-Page-Content .Banner-Home-Page-Content-Title h2{
-    font-size: 0.89em;
+.Banner-Home-Page-Content .Banner-Home-Page-Content-Title h1{
+    font-size: 1.3em;
     color: #e20000;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
+    font-family: 'Teko', sans-serif !important;
+    
 }
 .Banner-Home-Page-Content .Banner-Home-Page-Content-Description{
     font-size: 25px;
@@ -50,9 +51,10 @@
     
 }
 .Banner-Home-Page-Content .Banner-Home-Page-Content-Description h1{
+    margin-top: -20px;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.8em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.4em;
 }
 .Banner-List{
     margin-top: 50px;

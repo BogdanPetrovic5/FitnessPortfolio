@@ -13,7 +13,7 @@ function Header() {
  
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 300;
+      const scrollThreshold = 500;
       setSticky(window.scrollY > scrollThreshold);
     };
 

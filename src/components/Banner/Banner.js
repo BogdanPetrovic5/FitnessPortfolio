@@ -8,13 +8,13 @@ function Banner(){
         <div className="Banner-Home-Page" style={{ backgroundImage: `url(https://assets-global.website-files.com/64db59a28003b5f97686e7b6/64db59ddbcd0c6c9b18db041_pattern02.png)` }}>
             <div className="Banner-Home-Page-Content" >
                 <div className='Banner-Home-Page-Content-Title'>
-                    <div>
+                    <div data-aos = 'fade-right'>
 
                     </div>
-                    <h2>Moji stavovi</h2>
+                    <h1 data-aos = 'fade-right' className="Decoration-Titles">Moji stavovi</h1>
                 </div>
                 <div className="Banner-Home-Page-Content-Description">
-                    <h1>
+                    <h1 data-aos="fade-left" data-aos-duration = "800" className="AllTitles">
                         Kroz pakao i ponore
                     </h1>
                 </div>

@@ -3,12 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #DCDCDC; */
+    background-color: #0c0c14;
 
     width: 100%;
     overflow: hidden;
 }
-
+.About-Page-Container .Contact-Form{
+    align-self: flex-start;
+}
 .About-Page-Container .Banner{
     display: flex;
     width: 100%;
@@ -24,35 +26,57 @@
     font-size: 4em !important;
     text-align: center;
     font-family: 'Teko', sans-serif;
+    
 }
+
+
+
 .About-Page-Bio{
     display: flex;
     flex-direction: row;
-    width: 70%;
+   justify-content: center;
+    align-self: flex-end !important;
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
     overflow: hidden;
     
 }
+ .About-Page-Bio{
+     border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: #24242c;
+  width: 75%;
+}
 .About-Page-Container .Mobile-Gallery{
     display: none;
 }
- .About-Page-Bio .About-Page-Bio-Paragraph{
-    width: 65%;
+.About-Page-Bio-Paragraph{
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: right;
     gap:10px;
     position: relative;
     font-size: 25px;
+    margin-top: 50px;
+}
+.About-Page-Bio-Paragraph .Absolute{
+    right: 0 !important;
+    z-index: 0;
+    left: unset;
+    -webkit-text-stroke: 1px rgb(65, 65, 65); /* For Safari/Chrome */
+    text-stroke: 1px rgb(65, 65, 65);
 }
 .About-Page-Bio .About-Page-Bio-Paragraph p{
     align-self: flex-end;
-    width: 90%;
-    font-size: 0.89em;
+    width: 85%;
+    font-size: 0.78em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: -5px;
+   color: white;
+   font-weight: 200;
+   text-align: right;
 }
 
 
@@ -112,14 +136,7 @@
     width: 150px;
     height: 150px;
 }
-.Education-Content{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    align-self: center;
-    overflow: hidden;
 
-}
 .Education-Content .Education-Content-Hs{
     display: flex;
     flex-direction: row-reverse;
@@ -127,103 +144,101 @@
     margin-bottom: 50px;
     width: 100%;
 }
-.Education-Content .Education-Content-Uni{
+.Education-Content {
     display: flex;
+    height: fit-content !important;
     flex-direction: row-reverse;
+    justify-content: center;
+    align-self: flex-start;
     gap:50px;
     margin-bottom: 50px;
-    width: 100%;
+    width: 75%;
     overflow: hidden;
+    background-color: #24242c;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
-.Education-Content .Education-Content-Hs .Education-Content-Paragraph{
-    width: 65%;
-}
-.Education-Content .Education-Content-Uni .Education-Content-Paragraph{
-    width: 65%;
+
+.Education-Content .Education-Content-Paragraph{
+    width: 55%;
     display: flex;
     justify-content: left;
     flex-direction: column;
     font-size: 25px;
+    margin-top: 50px;
     overflow: hidden;
 }
-.Education-Content .Education-Content-Hs .Education-Content-Paragraph p{
-    
-    width: 60%;
-    font-size: 0.89em;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-    font-weight:200;
-}
-.Education-Content .Education-Content-Uni .Education-Content-Paragraph p{
-    width: 60%;
-    font-size: 0.89em;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
+
+.Education-Content .Education-Content-Paragraph p{
     align-self: flex-start;
-    font-weight:200;
+    width: 95%;
+    font-size: 0.78em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: -5px;
+   color: white;
+   font-weight: 200;
+   text-align: left;
 }
-.Education-Content .Education-Content-Hs .Education-Content-Image, .Education-Content .Education-Content-Uni .Education-Content-Image, .About-Page-Bio-Image{
+.Education-Content-Paragraph-Title-h1, .About-Paragraph-Desktop-h1{
+    font-size: 2.4em;
+    font-family:'Teko', sans-serif !important;
+    width:100%;
+    align-self: flex-end;
+    font-weight: 1000 !important;
+    text-align: right;
+    color:white !important;
+    letter-spacing: 1.5px !important;
+    margin-top: -20px !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  .Education-Content-Paragraph-Title-h1{
+    text-align: left !important;
+    align-self: flex-start;
+  }
+  .Education-Content-Paragraph-Title-h1 span{
+    color: #FF0039;
+  }
+.Education-Content-Image, .About-Page-Bio-Image{
     width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;;
+    margin-bottom: 50px;
 }
-.Education-Content .Education-Content-Hs .Education-Content-Image img, .Education-Content .Education-Content-Uni .Education-Content-Image img, .About-Page-Bio-Image img{
-    width: 85%;
-    
-    --s: 10px; /* control the size */
-    padding: var(--s);
-    border: calc(2*var(--s)) solid #0000;
-    outline: 1px solid #c50000;
-    outline-offset: calc(-1*var(--s));
-    background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#c50000 0);
+.Education-Content-Image img, .About-Page-Bio-Image img{
+    width: 100%;
+    max-height: 100% !important;
+    border-radius: 25px;
+    outline: none !important;
+    background: none !important;
+   
 }
-.Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title{
+.Education-Content .Education-Content-Paragraph .Education-Content-Paragraph-Title{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     font-size: 25px;
     overflow: hidden;
+    
 }
-.Education-Content .Education-Content-Hs .Education-Content-Paragraph .Education-Content-Paragraph-Title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
 
-} 
-.Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title h1{
-    text-align: left;
-    align-self: flex-start;
-}
 .Education-Content-Paragraph-Title h1{
-    font-size: 1.4em;
+     font-size: 1.3em;
     font-family: 'Teko', sans-serif;
+    color: white;
 }
+
 .Education-Content-Paragraph-Title div{
     height: 3px;
-    width: 150px;
+    width: 100px;
     background-color: #FF0039;
 }
-.Education-Content .Education-Content-Uni .Education-Content-Paragraph .Education-Content-Paragraph-Title-h1{
-    font-size: 1.7em;
-    font-family: 'Teko', sans-serif;
-    font-weight: 1000 !important;
-    text-align: left;
-    color: #002044 !important;
-    text-transform: uppercase;
-    letter-spacing: 1.5px !important;
-    margin-top: -20px;
-}
 
-.Education-Content .Education-Content-Hs .Education-Content-Paragraph .Education-Content-Paragraph-Title-h1{
-    font-size: 38px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-    text-transform: uppercase !important;
-    font-weight: 1000 !important;
-    text-align: left;
-    color: #002044 !important;
-    letter-spacing: 1.5px !important;
-}
+
 :root {
     --red: tomato;
     --bgColor: bisque;
@@ -234,7 +249,7 @@ img.framed {
 .Banner-Goal{
     width: 100%;
     height: 150px;
-    background-color: #0c0f14;
+    background-color: #0c0c14;
     
     
 
@@ -254,7 +269,7 @@ img.framed {
     display: flex;
     flex-direction: column;
     gap: 250px;
-    background-color: #0c0f14;
+    background-color: #0c0c14;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -284,7 +299,7 @@ img.framed {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#0c0f14;
+    background-color:#0c0c14;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     color: #DCDCDC;
@@ -303,7 +318,7 @@ img.framed {
     align-self: flex-end;
     font-weight:200;
     margin: 0 !important;
-    width: 100%;
+    width: 95%;
   }
   .About-Page-Container .Socials{
     margin-top: 7px;
@@ -311,13 +326,13 @@ img.framed {
   }
   .About-Page-Container .Socials{
     background-color: unset;
-    color: #002044;
+
   }
   .About-Page-Container .Socials .Socials-Content .Socials-Content-Title div{
     background-color: #002044;
   }
   .About-Page-Container .Socials .Socials-Content .Socials-Content-Title h2{
-    color: #002044 !important;
+    
   }
   .About-Page-Container .About-Icon{
     display: none;
