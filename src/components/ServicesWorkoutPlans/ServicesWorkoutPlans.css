@@ -1,0 +1,158 @@
+.Workout-Plans-Container{
+    width: 98%;
+    background-color: #191b1f;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.Workout-Plans-Container-Banner{
+    width: 80%;
+    font-size: 25px;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Workout-Plans-Container-Banner .Absolute{
+    z-index: -1;
+    top: -30%;
+    -webkit-text-stroke: 1px rgb(65, 65, 65); /* For Safari/Chrome */
+    text-stroke: 1px rgb(235, 235, 235);
+}
+.Workout-Plans-Container-Title{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    
+    z-index: 2;
+}
+.Workout-Plans-Container-Title div{
+    width: 100px;
+    height: 3px;
+    background-color: #FF0039;;
+}
+.Workout-Plans-Container-Title h1{
+    font-size: 1em;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    
+}
+.Workout-Plans-Container-Title-h1{
+    font-size: 2.4em;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    margin: 0;
+    align-self: center;
+}
+.Workout-Plans-Container-Wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.Workout-Plans-Selection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 70%;
+    list-style: none;
+    border-bottom: 1px solid rgb(50, 50, 58);
+    align-self: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+.Workout-Plans-Selection li{
+    color: white;
+    font-family: 'Teko', sans-serif;
+    cursor: pointer;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 2px solid transparent;
+}
+.Workout-Plans-Selection li:hover{
+    border-bottom:2px solid #FF0039;
+}
+.Workout-Plans-Items{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.Item{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2e3338;
+    border-radius: 10px;
+    
+}
+.Item-Description{
+    align-self: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Horisontal-Line{
+    width: 100%;
+    height: 1px;
+    background-color:#2e3338;
+    margin-top: 50px;
+}
+.Item-Description .Item-Title{
+    margin-top: 0px;
+    font-size: 1.2em;
+    color: white;
+    width: 40%;
+    font-family: 'Teko', sans-serif;
+}
+.Item-Description p{
+    color: #c3c9d0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 0.65em;
+    margin-top: -20px;
+    width: 90%;
+}
+.Workout-Plan-Advanced{
+    background-color: #0c0c14;
+}
+.Selected{
+    border-bottom: 2px solid #FF0039 !important;
+}
+.Item-Price{
+    color: white;
+    opacity: 0.5;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    font-family: 'Teko', sans-serif;
+}
+.Item-Description button{
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Teko', sans-serif;
+    border: 1px solid #FF0039;
+    border-radius: 50px;
+    color: white;
+    background-color: #0c0c14;
+    
+}

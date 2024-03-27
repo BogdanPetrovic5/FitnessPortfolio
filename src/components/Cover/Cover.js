@@ -4,23 +4,66 @@ import './Cover.css'
 import Ruka from './images/ruka.jpeg'
 import Podlaktice from './images/podlaktica.jpg'
 import Ledja from './images/ledja.jpg'
+import CoverPhoto from './images/DjoleCover.png'
+import IG from './images/instagram.png'
+import TT from './images/tik-tok.png'
+import FB from './images/facebook.png'
 import { Link, useLocation  } from 'react-router-dom';
 function Cover(){
    return(
-    <section className='Cover'>
+    <section className='Cover'  style={{backgroundImage: `url('https://assets-global.website-files.com/65656d367ef06b6df2247915/657029cc9670bafa97954427_muscular-sportsman-building-biceps-with-dumbbell_73891bba2b5546b1bb17eef7d6d184ea%201.webp')`}}>
+      
          <div className='Title' data-aos="fade-right" data-aos-duration="1500">
-              <div className='Title-Decoration' 
-                     data-aos-duration="1000"><div></div> SA DJOLETOM KROZ PAKAO
+              <div className='Cover-Title'>
+                     <div className='Title-Decoration' 
+                            data-aos-duration="1000">
+                            <div></div> 
+                            <h1>SA DJOLETOM KROZ PAKAO</h1>
+                     </div>
+                     <h1 className='Cover-Title-h1'>
+                     Lorem Ipsum is simply <span>dummy text</span> 
+                     </h1>
+                     <Link to="/about"> 
+                            <button>LEARN MORE</button>
+                     </Link>
               </div>
-              <h1 className='' 
-                     data-aos-duration="1000"> 
-                     
-                            ĐOLE
-                      <br></br> U <br></br> <span>TERETANI</span>
-              </h1>
-              <Link to="/about"> 
-                      <button>LEARN MORE</button>
-              </Link>
+              
+              <div className='Overview'>
+                     <div className='Overview-Wrap'>
+                            <div className='Clients Overview-Item'>
+                                   <h1>
+                                       130+   
+                                   </h1>
+                                   <p>Klijenata</p>
+                            </div>
+                            <div className='Patients Overview-Item'>
+                                   <h1>
+                                       1000+ 
+                                   </h1>
+                                   <p>Pacijenata</p>
+                            </div>
+                            <div className='Experience Overview-Item'>
+                                   <h1>
+                                       4+ 
+                                   </h1>
+                                   <p>Godine iskustva</p>
+                            </div>
+                     </div>
+                     <div className='Overview-Socials'>
+                            <div className='Overview-Socials-TikTok Soc'>
+                                   <img src={TT}>
+                                   </img>
+                            </div>
+                            <div className='Overview-Socials-Facebook Soc'>
+                            <img src={IG}>
+                                   </img>
+                            </div >
+                            <div className='Overview-Socials-Instagram Soc'>
+                            <img src={FB}>
+                                   </img>
+                            </div>
+                     </div>
+              </div>
        </div>
        <div className='Cover-Images'>
               <div className='Cover-Images-Content'>

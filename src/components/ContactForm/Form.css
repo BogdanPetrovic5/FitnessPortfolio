@@ -6,9 +6,10 @@
     width: 98%;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    border-radius: 10px !important;
   overflow: hidden;
-   
-    background-color: #24242C;
+    align-self: center !important;
+    background-color: #191b1f;
     position: relative;
     
 }

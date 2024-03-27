@@ -16,8 +16,10 @@ import BlogPage from '../BlogPage/BlogPage';
 import HomePageBlogBanner from '../HomePageBlogBanner/HomePageBlogBanner';
 import Feedback from '../ClientsFeedback/Feedback';
 import { useEffect, useState } from 'react';
+import ServicesWorkoutPlans from '../ServicesWorkoutPlans/ServicesWorkoutPlans';
 
-function HomePage(){
+function HomePage({articles}){
+  
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -32,23 +34,34 @@ function HomePage(){
                 {loading ? (<Load />) : (
                     <div className='Main-Page'>
                     
-                    <Cover></Cover>
+                      <Cover></Cover>
+                      
                     
-                   
-                    <LAbout></LAbout>
-                    <MyService></MyService>
-                    {/* <WPlans></WPlans> */}
-                    <Social></Social>
-                    <LGallery></LGallery>
-                    <Feedback></Feedback>
+                      <LAbout></LAbout>
+                      <MyService></MyService>
+                      {/* <WPlans></WPlans> */}
+                      {/* <Social></Social> */}
+                      {/* <LGallery></LGallery> */}
+                        
+                      <Feedback></Feedback>
+                      <ServicesWorkoutPlans></ServicesWorkoutPlans>
+                      
+                      <Faq></Faq>
+                      <Form id="Form"></Form>
+                      <HomePageBlogBanner articles = {articles}></HomePageBlogBanner>
+                      {/* <BlogPage ></BlogPage> */}
+                      <div className='Contact-Banner-Container'>
+                        <div className='Contact-Banner-Title'>
+                            <h1 >
+                              Kreni da radiš sa mnom!
+                            </h1>
+                            <button>
+                              Kontaktiraj me!
+                            </button>
+                        </div>
+                      </div>
                 
-                    <Form id="Form"></Form>
-                    <Faq></Faq>
-                    <HomePageBlogBanner></HomePageBlogBanner>
-                    <BlogPage></BlogPage>
-                    
-                
-                
+
                     </div>
                 )}
                 

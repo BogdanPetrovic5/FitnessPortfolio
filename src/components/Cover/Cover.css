@@ -3,31 +3,54 @@
 }
 .Cover{
     width: 100%;
-    height: 1080px;
+    
    
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:  top center ;
     background-size: cover;
-    background-color: #0c0c14!important;
-    
+    /* background-color: #0c0c14; */
+
+   
     
 }
-
+.Cover::before{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgb(12,12,20);
+  background: linear-gradient(90deg, rgba(12,12,20,1) 3%, rgba(12,12,20,0) 100%);
+}
+.Cover::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(12,12,20);
+  background: linear-gradient(180deg, rgba(12,12,20,1) 0%, rgba(12,12,20,0) 100%);
+}
+.Cover-Images{
+  display: none !important;
+}
 /*  */
 .Title-Decoration{
   color: #FF0039;
   font-family: 'Teko', sans-serif;
-  font-size: 1em;
+  font-size:25px;
   letter-spacing: 2px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  margin-bottom: 30px;
+ 
 }
 .Title-Decoration div{
   content: "";
@@ -37,172 +60,28 @@
   
  
 }
-.Cover-Images{
-  width: 80%;
-  height: 100%;
-  display: flex;
-  justify-content: right;
-  overflow: hidden;
- 
- 
-}
-.Cover-Images-Content {
-  width: 96%;
-  height: 87%;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  gap:0 !important;
-  overflow: hidden;
-  z-index: auto;
-}
-.First-Image, .Second-Image, .Third-Image{
-  width: 40%;
-  height: 56%;
-  position: relative;
-  align-self: center;
- 
-}
-/* THIRD */
-.Cover-Images-Content .Third-Image .Sixth-Bar{
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 2; 
-  align-self: center;
-}
-
-.Cover-Images-Content .Third-Image .Seventh-Bar{
-  width: 60%;
-  height: 50%;
-  top:-30%;
-  left: 65%;
-  transform: translateX(-50%);
-  position: absolute;
-  clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
-  z-index: -1 !important;
-  background: rgb(148,0,0);
-background: linear-gradient(0deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
-
-}
-.Cover-Images-Content .Third-Image .Eight-Bar{
-  width:55%;
-  height: 54%;
-  top: 50%;
-  transform: translateY(-50%);
-  right:-10%;
-  clip-path: polygon(40% 0, 100% 0, 60% 100%, 0 100%);
-  background: rgb(148,0,0);
-  background: linear-gradient(180deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
-  position: absolute;
-  z-index: -1 !important;
-}
-
-
-
-
-/* THIRD */
-
-/* SECOND */
-.Cover-Images-Content .Second-Image .Fifth-Bar{
-
-  
-  align-self: flex-start;
-  left: 60%;
-  transform: translateX(-50%);
-  bottom: -30%;
-  width: 60%;
-  height: 50%;
-  position: absolute;
-  z-index: -1;
-  clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
-  /* background: rgb(148, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(148, 0, 0, 0.3617822128851541) 50%,
-    rgba(148, 0, 0, 0) 100%
-  ); */
-  /* background: rgb(148,0,0);
-  background: linear-gradient(0deg, rgba(148,0,0,0.35898109243697474) 50%, rgba(148,0,0,0) 100%); */
-  /* Ensure it's below Second-Bar */
-  --animate-delay: 1.5s;
-  background: rgb(148,0,0);
-  background: linear-gradient(180deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
-}
-.Cover-Images-Content .Second-Image .Fourth-Bar{
-  width: 100%;
-  height: 100%;
-  right: -30%;
-  align-self: center;
-  
-  clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
-  background-position: center;
-  background-size: cover;
-  position: relative; /* Ensure positioning context */
-  z-index: 2 !important;
-}
-/* SECOND */
-
-/* FIRST */
-.Cover-Images-Content .First-Image .Second-Bar {
-  width: 100%;
-  height: 100%;
-  align-self: center;
- right: -60%;
-  clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
-  background-position: center;
-  background-size: cover;
-  position: relative; /* Ensure positioning context */
-  z-index: 2 !important;/* Lower than First-Bar */
-}
-.Cover-Images-Content .First-Image .First-Bar {
-  width:55%;
-  height: 54%;
-  top: 50%;
-  transform: translateY(-50%);
-  left:45%;
-  clip-path: polygon(40% 0, 100% 0, 60% 100%, 0 100%);
-  background: rgb(148,0,0);
-  background: linear-gradient(0deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
-  position: absolute;
-  z-index: -1 !important;
-}
-.Cover-Images-Content .First-Image .Third-Bar{
-  width: 60%;
-  height: 50%;
-  top:-30%;
-  left: 130%;
-  transform: translateX(-50%);
-  position: absolute;
-  clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
-  z-index: -1 !important;
-  background: rgb(148,0,0);
-background: linear-gradient(0deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
- 
-}
-/* FIRST */
-
-.Cover-Images-Content .Fourth-Bar{
-
+.Title-Decoration h1{
+  font-size: 1em ;
+  font-family: 'Teko', sans-serif;
 }
 
 
 
 
 .Title{
-    width: 50%;
-    margin-top: 110px;
-    margin-left: 150px;
+    width: 70% !important;
+    
+    
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    align-items: flex-start;
+    justify-content: center;
     position: relative;
-    font-size: 20px;
+    
+    z-index: 1;
+    font-size: 25px;
 }
-.Title button{
+.Cover-Title button{
 padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 35px;
@@ -212,30 +91,110 @@ padding-right: 35px;
   background-color:transparent;
   border: 1px solid #FF0039;
   font-size: 1.1em;
-  z-index: 99999999999999;
+  background-color: #ff0039;
   position: relative;
   cursor: pointer;
   transition: 500ms;
-  border-radius: 25px;
-  margin-top: -150px;
+  border-radius: 50px;
+  
 }
-.Title button:hover{
+.Cover-Title{
+  margin-top: 180px;
+  font-size: 25px;
+  width: 100%;
+}
+.Cover-Title button:hover{
  
   border: 1px solid white;
 }
-.Title h1{
+.Cover-Title-h1{
+  width: 60%;
+}
+.Cover-Title-h1{
     
     color: white;
     font-size: 3.5em;
     font-family: 'Teko', sans-serif;
     letter-spacing: 7px;
     margin-top: 0;
+    margin-bottom: 0;
 }
-.Title h1 span{
+.Cover-Title-h1 span{
   color: #FF0039;
 }
 .Title a{
   cursor: pointer;
+}
+.Title .Overview{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+.Overview-Socials{
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+.Overview-Socials .Soc{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2e3338;
+  background: rgba(36, 36, 44, 0.46);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  cursor: pointer;
+}
+.Soc img{
+  width: 50%;
+  height: 50%;
+}
+.Overview-Item{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.Overview-Wrap{
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  border-radius: 10px;
+  border: 1px solid #2e3338;
+  background: rgba(36, 36, 44, 0.46);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+
+}
+.Overview-Item h1{
+  font-family: 'Teko', sans-serif;
+  font-size: 2.2em;
+  margin: 0;
+  color: #FF0039;
+
+}
+.Overview-Item p{
+  color: #c3c9d0;
+  font-family: 'Nunito',sans-serif;
+  margin-top: -20px;
+  font-size: 0.6em;
 }
 .fancy {
     margin: 0;
@@ -387,3 +346,161 @@ padding-right: 35px;
     right: 0;
     width: 0;
    }
+
+
+
+
+
+
+
+   .Cover-Images{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+   
+   
+  }
+  .Cover-Images-Content {
+    width: 96%;
+    height: 87%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap:0 !important;
+    overflow: hidden;
+    z-index: auto;
+  }
+  .First-Image, .Second-Image, .Third-Image{
+    width: 40%;
+    height: 56%;
+    position: relative;
+    align-self: center;
+   
+  }
+  /* THIRD */
+  .Cover-Images-Content .Third-Image .Sixth-Bar{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2; 
+    align-self: center;
+  }
+  
+  .Cover-Images-Content .Third-Image .Seventh-Bar{
+    width: 60%;
+    height: 50%;
+    top:-30%;
+    left: 65%;
+    transform: translateX(-50%);
+    position: absolute;
+    clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
+    z-index: -1 !important;
+    background: rgb(148,0,0);
+  background: linear-gradient(0deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
+  
+  }
+  .Cover-Images-Content .Third-Image .Eight-Bar{
+    width:55%;
+    height: 54%;
+    top: 50%;
+    transform: translateY(-50%);
+    right:-10%;
+    clip-path: polygon(40% 0, 100% 0, 60% 100%, 0 100%);
+    background: rgb(148,0,0);
+    background: linear-gradient(180deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
+    position: absolute;
+    z-index: -1 !important;
+  }
+  
+  
+  
+  
+  /* THIRD */
+  
+  /* SECOND */
+  .Cover-Images-Content .Second-Image .Fifth-Bar{
+  
+    
+    align-self: flex-start;
+    left: 60%;
+    transform: translateX(-50%);
+    bottom: -30%;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
+    /* background: rgb(148, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(148, 0, 0, 0.3617822128851541) 50%,
+      rgba(148, 0, 0, 0) 100%
+    ); */
+    /* background: rgb(148,0,0);
+    background: linear-gradient(0deg, rgba(148,0,0,0.35898109243697474) 50%, rgba(148,0,0,0) 100%); */
+    /* Ensure it's below Second-Bar */
+    --animate-delay: 1.5s;
+    background: rgb(148,0,0);
+    background: linear-gradient(180deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
+  }
+  .Cover-Images-Content .Second-Image .Fourth-Bar{
+    width: 100%;
+    height: 100%;
+    right: -30%;
+    align-self: center;
+    
+    clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
+    background-position: center;
+    background-size: cover;
+    position: relative; /* Ensure positioning context */
+    z-index: 2 !important;
+  }
+  /* SECOND */
+  
+  /* FIRST */
+  .Cover-Images-Content .First-Image .Second-Bar {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+   right: -60%;
+    clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
+    background-position: center;
+    background-size: cover;
+    position: relative; /* Ensure positioning context */
+    z-index: 2 !important;/* Lower than First-Bar */
+  }
+  .Cover-Images-Content .First-Image .First-Bar {
+    width:55%;
+    height: 54%;
+    top: 50%;
+    transform: translateY(-50%);
+    left:45%;
+    clip-path: polygon(40% 0, 100% 0, 60% 100%, 0 100%);
+    background: rgb(148,0,0);
+    background: linear-gradient(0deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
+    position: absolute;
+    z-index: -1 !important;
+  }
+  .Cover-Images-Content .First-Image .Third-Bar{
+    width: 60%;
+    height: 50%;
+    top:-30%;
+    left: 130%;
+    transform: translateX(-50%);
+    position: absolute;
+    clip-path: polygon(34% 0, 100% 0, 66% 100%, 0 100%);
+    z-index: -1 !important;
+    background: rgb(148,0,0);
+  background: linear-gradient(0deg, rgba(148,0,0,0.8995973389355743) 55%, rgba(148,0,0,0) 100%);
+   
+  }
+  /* FIRST */
+  
+  .Cover-Images-Content .Fourth-Bar{
+  
+  }

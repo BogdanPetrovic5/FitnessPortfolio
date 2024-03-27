@@ -66,7 +66,7 @@ function Header() {
         </div>
         <nav className='Header-Section-Nav'>
           <li  className={location.pathname === '/programs' ? 'Active-Route' : ''} >
-            <Link onClick={hideMenu} to= '/programs'> PROGRAMI</Link>
+            <Link onClick={hideMenu} to= '/programs'> USLUGE</Link>
           </li>
           <li className={location.pathname === '/about' ? 'Active-Route' : ''}>
             <Link onClick={hideMenu} to='/about'>O MENI</Link>
@@ -91,15 +91,15 @@ function Header() {
           </div>
         </div>
         <div className={isClicked ? 'ActiveDropDown' : 'HiddenDropDown'}>
-          <span><Link onClick={hideMenu}  to='/'>Home</Link></span>
-          <span>programs</span>
+          <span><Link onClick={hideMenu}  to='/'>POČETNA</Link></span>
+          <span><Link onClick={hideMenu} to='/programs'>USLUGE</Link></span>
           <span>
-          <Link onClick={hideMenu}  to='/about'>About</Link>
+          <Link onClick={hideMenu}  to='/about'>O MENI</Link>
           </span>
           
-          <span><Link onClick={hideMenu}  to='/blog'>Blog</Link></span>
+          <span><Link onClick={hideMenu}  to='/blog'>BLOG</Link></span>
           <span>contact</span>
-          <span>join</span>
+          
         </div>
       </section>
     </header>

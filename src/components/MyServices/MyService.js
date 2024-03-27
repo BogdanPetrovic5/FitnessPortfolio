@@ -4,9 +4,10 @@ import Weight from './images/weight1.png'
 import Rehab from './images/rehab.png'
 import Food from './images/health1.png'
 import Online from './images/online.png'
+
 function MyService(){
     return (
-    <div className="MyServices-Container"  >
+    <div className="MyServices-Container"  data-aos = 'fade-up'>
             <div className="MyServices-Container-Banner">
                 <h1 className="Absolute" >USLUGE</h1>
                 <div className="MyServices-Container-Title ">
@@ -27,14 +28,14 @@ function MyService(){
             </div>
             <div className="MyServices-Wrap">
                 <div className="MyServices-Wrap-First-Two Wrappers">
-                    <div className="MyServices-Card Personal-Training" data-aos = 'fade-right'>
+                    <div className="MyServices-Card Personal-Training" data-aos = 'fade-right' data-aos-offset = "250">
                         <h1>
                             planovi treninga
                         </h1>
                         <img src={Weight}></img>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                     </div>
-                    <div className="MyServices-Card Rehab" data-aos = 'fade-left'>
+                    <div className="MyServices-Card Rehab" data-aos = 'fade-left' data-aos-offset = "250">
                         <h1>
                             rehabilitacija
                         </h1>
@@ -43,14 +44,14 @@ function MyService(){
                     </div>
                 </div>
                 <div className="MyServices-Wrap-First-Two Wrappers">
-                    <div className="MyServices-Card Online"  data-aos = 'fade-right'>
+                    <div className="MyServices-Card Online"  data-aos = 'fade-right' data-aos-offset = "250">
                         <h1>
                             online personalni treninzi
                         </h1>
                         <img src={Online}></img>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                     </div>
-                    <div className="MyServices-Card Nutrition" data-aos = 'fade-left'>
+                    <div className="MyServices-Card Nutrition" data-aos = 'fade-left' data-aos-offset = "250">
                         <h1>
                             ishrana
                         </h1>
@@ -60,6 +61,7 @@ function MyService(){
                 </div>
                 
             </div>
+            
         </div>
     )
 

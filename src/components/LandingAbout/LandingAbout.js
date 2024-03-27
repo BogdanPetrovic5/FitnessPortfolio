@@ -39,15 +39,28 @@ function LAbout(){
                         Tvoj Perosnalni Trener I <span>Fizioterapeut</span>
                 </h1>
                 <p >
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure 
 
                 </p>
+                <button>
+                  VIŠE
+                </button>
                 
             </div>
             
             <div className='About-Page-Bio-Image'>
-                
-                <img src='assets/DjoleAbout.jpg'></img>
+                <div className="About-Page-Bio-Image-First-Section">
+                    <img src="assets/DjoleAbout.jpg" data-aos="fade-down-right" data-aos-duration = "900">
+                    </img>
+                    <img src="assets/DjoleAbout.jpg" data-aos="fade-up-right" data-aos-duration = "900">
+                    </img>
+                </div>
+                <div className="About-Page-Bio-Image-Second-Section">
+                    <img src="assets/DjoleAbout.jpg" data-aos="fade-down-left" data-aos-duration = "900">
+                    </img>
+                    <img src="assets/DjoleAbout.jpg" data-aos="fade-up-left" data-aos-duration = "900">
+                    </img>
+                </div>
             </div>
           </div>
     

@@ -42,7 +42,7 @@ function LGallery(){
         
     };
     return(
-        <div className='Gallery-Container'>
+        <div className='Gallery-Container' data-aos = 'fade-up'>
             
                 <div class="parent">
                     <div className='div1'>

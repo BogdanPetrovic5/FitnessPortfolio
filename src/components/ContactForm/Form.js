@@ -46,7 +46,7 @@ function Form(){
       }
     return (
 
-        <section className="Contact-Form" id='Form' data-aos="fade-up" data-aos-duration="800">
+        <section className="Contact-Form" id='Form' data-aos="fade-up" data-aos-duration='1200'>
           
           <div className='Contact-Form-Wrap'>
           

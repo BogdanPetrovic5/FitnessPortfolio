@@ -71,9 +71,19 @@ function AboutPage(){
                 
             </div>
             
-            <div className='About-Page-Bio-Image About-Page-Dekstop'>
-                
-                <img src='assets/DjoleAbout.jpg'></img>
+            <div className='About-Page-Bio-Image'>
+                <div className="About-Page-Bio-Image-First-Section">
+                    <img src="assets/DjoleAbout.jpg">
+                    </img>
+                    <img src="assets/DjoleAbout.jpg">
+                    </img>
+                </div>
+                <div className="About-Page-Bio-Image-Second-Section">
+                    <img src="assets/DjoleAbout.jpg">
+                    </img>
+                    <img src="assets/DjoleAbout.jpg">
+                    </img>
+                </div>
             </div>
         </div>
         
@@ -95,7 +105,18 @@ function AboutPage(){
                 </div>
                 
                 <div className='Education-Content-Image About-Page-Dekstop'>
-                    <img className='framed' src={UNIDjole} data-aos="flip-right"></img>
+                    <div className="About-Page-Bio-Image-First-Section">
+                        <img src="assets/DjoleAbout.jpg">
+                        </img>
+                        <img src="assets/DjoleAbout.jpg">
+                        </img>
+                    </div>
+                    <div className="About-Page-Bio-Image-Second-Section">
+                        <img src="assets/DjoleAbout.jpg">
+                        </img>
+                        <img src="assets/DjoleAbout.jpg">
+                        </img>
+                    </div>
                 </div>
             
         </div>

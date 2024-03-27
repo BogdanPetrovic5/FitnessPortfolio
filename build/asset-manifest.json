@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.bdd731bc.css",
-    "main.js": "/static/js/main.3fa50c4c.js",
+    "main.css": "/static/css/main.a995d75b.css",
+    "main.js": "/static/js/main.027b7514.js",
     "static/js/107.8e51db12.chunk.js": "/static/js/107.8e51db12.chunk.js",
     "static/media/weights.jpg": "/static/media/weights.7c64fd7438788b35d970.jpg",
+    "static/media/blog.jpg": "/static/media/blog.e32dd3d293770074495d.jpg",
+    "static/media/DjoleCover.png": "/static/media/DjoleCover.3f1cff8d6dc0b1adf841.png",
     "static/media/ruka.jpeg": "/static/media/ruka.7123c9cab76ed14c06a8.jpeg",
     "static/media/UNIDjole.jpg": "/static/media/UNIDjole.72ffaa7c44894792b5db.jpg",
     "static/media/podlaktica.jpg": "/static/media/podlaktica.38c872daa223c2f15c21.jpg",
@@ -24,7 +26,7 @@
     "static/media/health.png": "/static/media/health.78f8e018a6de54608739.png",
     "static/media/instagramAbout.png": "/static/media/instagramAbout.a5aa8b6fcc68bc96f796.png",
     "static/media/gallery.png": "/static/media/gallery.a353b34a360ee48a1c59.png",
-    "static/media/instagram.png": "/static/media/instagram.3b292f9a4e791f6102ff.png",
+    "static/media/instagram.png": "/static/media/instagram.225314d7533f4f925db6.png",
     "static/media/highschool.png": "/static/media/highschool.91a0163e507a7d84d37f.png",
     "static/media/like.png": "/static/media/like.a70b40dc374b406c5365.png",
     "static/media/online.png": "/static/media/online.afb6516bc8db61a978a4.png",
@@ -37,14 +39,15 @@
     "static/media/weight1.png": "/static/media/weight1.acc96013212c663eaeb7.png",
     "static/media/facebook.png": "/static/media/facebook.3e85846bf272a460a28e.png",
     "static/media/send.png": "/static/media/send.2d7691bc2dbc0bb14de0.png",
+    "static/media/tik-tok.png": "/static/media/tik-tok.fa591189dc466ada8972.png",
     "static/media/dumbell1.png": "/static/media/dumbell1.a66f519acec98cb89236.png",
     "index.html": "/index.html",
-    "main.bdd731bc.css.map": "/static/css/main.bdd731bc.css.map",
-    "main.3fa50c4c.js.map": "/static/js/main.3fa50c4c.js.map",
+    "main.a995d75b.css.map": "/static/css/main.a995d75b.css.map",
+    "main.027b7514.js.map": "/static/js/main.027b7514.js.map",
     "107.8e51db12.chunk.js.map": "/static/js/107.8e51db12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdd731bc.css",
-    "static/js/main.3fa50c4c.js"
+    "static/css/main.a995d75b.css",
+    "static/js/main.027b7514.js"
   ]
 }

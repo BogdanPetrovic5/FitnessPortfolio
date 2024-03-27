@@ -1,8 +1,26 @@
 .Main-Page{
     position: relative;
 }
+.Main-Page .Workout-Plans-Container{
+    background-color: #0c0c14;
+}
+.Main-Page .Workout-Plan-Advanced{
+    background-color: #191b1f;;
+}
+.Main-Page .About-Page-Bio{
+    background-color: #0c0c14;
+}
+.Main-Page .MyServices-Container{
+    background-color: #191b1f;
+    width: 98%;
+    align-self: center;
+    border-radius: 10px;
+}
 .Main-Page #Blog{
-    background-color: white !important;
+    background-color: #0c0c14;
+  
+    align-self:center;
+    
 }
 .Main-Page #Blog .Banner{
     display: none;
@@ -12,7 +30,8 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     gap: 50px;
     position: relative;
 }
@@ -20,7 +39,7 @@
     display: none;
 }
 .Main-Page #Blog .Content .Content-Articles{
-    width: 70% !important;
+    width: 70%;
     display: flex;
     justify-content: center;
     flex-direction: row !important;
@@ -29,17 +48,21 @@
     align-items: end;
     box-shadow: none;
 }
+.Main-Page #Blog .Content .Content-Articles .Article .Article-Img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 .Main-Page #Blog .Content .Content-Articles .Article{
-    width: 400px !important;
-    height: 600px !important;
+    width: 400px ;
+    height: 600px ;
  
   box-shadow: none;
-border-radius: 5px;
+border-radius: 10px;
 display: flex;
 flex-direction: column;
 position: relative;
-margin-bottom: 100px;
-box-shadow:  0px 10px 20px 0px rgba(221,221,221,0.3);;
+margin-bottom: 0px;
+background-color: white;
 }
 .Main-Page #Blog .Content .Content-Articles .Navigation-Buttons{
     display: none;
@@ -51,4 +74,42 @@ box-shadow:  0px 10px 20px 0px rgba(221,221,221,0.3);;
 .Main-Page .parent{
     margin-top: 0px !important;
     margin-bottom: 0 !important;
+}
+.Contact-Banner-Container{
+    width: 98%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0039;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.Contact-Banner-Title{
+    width: 72%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+}
+.Contact-Banner-Title h1{
+    font-size: 3.5em;
+    width: 30%;
+    margin: 0;
+    font-family: "Teko", sans-serif;
+    color: white;
+    font-weight:400;
+}
+.Contact-Banner-Title button{
+    height: 60px;
+ 
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 50px;
+    font-size: 0.8em;
 }

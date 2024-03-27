@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: row;
    justify-content: center;
-    align-self: flex-end !important;
+    align-self: center !important;
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -46,13 +46,14 @@
      border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   background-color: #24242c;
-  width: 75%;
+  border-radius: 10px !important;
+  width: 98%;
 }
 .About-Page-Container .Mobile-Gallery{
     display: none;
 }
 .About-Page-Bio-Paragraph{
-    width: 55%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -60,6 +61,26 @@
     position: relative;
     font-size: 25px;
     margin-top: 50px;
+}
+.About-Page-Bio-Paragraph button{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color: white;
+    border: 1px solid #FF0039;
+   
+    width: 25%;
+    border-radius: 25px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 200ms ease-in-out;
+
+}
+.About-Page-Bio-Paragraph button:hover{
+    border-color: #DCDCDC;
 }
 .About-Page-Bio-Paragraph .Absolute{
     right: 0 !important;
@@ -71,11 +92,11 @@
 .About-Page-Bio .About-Page-Bio-Paragraph p{
     align-self: flex-end;
     width: 85%;
-    font-size: 0.78em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: -5px;
-   color: white;
-   font-weight: 200;
+    font-size: 0.70em;
+    font-family: "Nunito", sans-serif;
+    margin-top: -50px;
+   color: #adb2b8;
+   font-weight: 400;
    text-align: right;
 }
 
@@ -149,18 +170,18 @@
     height: fit-content !important;
     flex-direction: row-reverse;
     justify-content: center;
-    align-self: flex-start;
+    
+    align-self: center;
     gap:50px;
     margin-bottom: 50px;
-    width: 75%;
+    width: 98%;
     overflow: hidden;
-    background-color: #24242c;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+   
+    
 }
 
 .Education-Content .Education-Content-Paragraph{
-    width: 55%;
+    width: 30%;
     display: flex;
     justify-content: left;
     flex-direction: column;
@@ -172,18 +193,18 @@
 .Education-Content .Education-Content-Paragraph p{
     align-self: flex-start;
     width: 95%;
-    font-size: 0.78em;
+    font-size: 0.79em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: -5px;
-   color: white;
+   color: #b7b7ca;
    font-weight: 200;
    text-align: left;
 }
 .Education-Content-Paragraph-Title-h1, .About-Paragraph-Desktop-h1{
     font-size: 2.4em;
     font-family:'Teko', sans-serif !important;
-    width:100%;
-    align-self: flex-end;
+    width:70%;
+
     font-weight: 1000 !important;
     text-align: right;
     color:white !important;
@@ -192,7 +213,9 @@
     position: relative;
     z-index: 1;
   }
-
+  .About-Paragraph-Desktop-h1{
+    align-self: flex-end !important;
+  }
   .Education-Content-Paragraph-Title-h1{
     text-align: left !important;
     align-self: flex-start;
@@ -201,21 +224,47 @@
     color: #FF0039;
   }
 .Education-Content-Image, .About-Page-Bio-Image{
-    width: 35%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    overflow: hidden;
 }
-.Education-Content-Image img, .About-Page-Bio-Image img{
+.About-Page-Bio-Image{
+    
+}
+.About-Page-Bio-Image-First-Section, .About-Page-Bio-Image-Second-Section{
+    width:45%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.About-Page-Bio-Image-First-Section{
+    margin-bottom: 100px;
+}
+.About-Page-Bio-Image-First-Section img{
+    width:100%;
+    border-radius: 25px;
+    
+}
+.About-Page-Bio-Image-Second-Section img{
+    width:100%;
+    border-radius: 25px;
+    
+}
+
+/* .Education-Content-Image img{
     width: 100%;
     max-height: 100% !important;
     border-radius: 25px;
     outline: none !important;
     background: none !important;
    
-}
+} */
 .Education-Content .Education-Content-Paragraph .Education-Content-Paragraph-Title{
     display: flex;
     flex-direction: row;
