@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a995d75b.css",
-    "main.js": "/static/js/main.027b7514.js",
+    "main.css": "/static/css/main.34192002.css",
+    "main.js": "/static/js/main.7e9a83d3.js",
     "static/js/107.8e51db12.chunk.js": "/static/js/107.8e51db12.chunk.js",
     "static/media/weights.jpg": "/static/media/weights.7c64fd7438788b35d970.jpg",
     "static/media/blog.jpg": "/static/media/blog.e32dd3d293770074495d.jpg",
@@ -17,7 +17,9 @@
     "static/media/LOGOFIZIO.png": "/static/media/LOGOFIZIO.403b2fb86c41885e15c5.png",
     "static/media/logo.png": "/static/media/logo.403b2fb86c41885e15c5.png",
     "static/media/bg.png": "/static/media/bg.9ac5d0a17e65868b9931.png",
+    "static/media/Decorations.png": "/static/media/Decorations.95bc696fe51438fb152e.png",
     "static/media/man.png": "/static/media/man.5b6adb8e38ee506fde52.png",
+    "static/media/curveLines.png": "/static/media/curveLines.be050949ddfa608fc373.png",
     "static/media/rehab.png": "/static/media/rehab.28079ad92cb4f3343923.png",
     "static/media/mortarboard.png": "/static/media/mortarboard.2ace15ca5e551f863a49.png",
     "static/media/newsletter.png": "/static/media/newsletter.43a1b76ad0323cfb4d9b.png",
@@ -42,12 +44,12 @@
     "static/media/tik-tok.png": "/static/media/tik-tok.fa591189dc466ada8972.png",
     "static/media/dumbell1.png": "/static/media/dumbell1.a66f519acec98cb89236.png",
     "index.html": "/index.html",
-    "main.a995d75b.css.map": "/static/css/main.a995d75b.css.map",
-    "main.027b7514.js.map": "/static/js/main.027b7514.js.map",
+    "main.34192002.css.map": "/static/css/main.34192002.css.map",
+    "main.7e9a83d3.js.map": "/static/js/main.7e9a83d3.js.map",
     "107.8e51db12.chunk.js.map": "/static/js/107.8e51db12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a995d75b.css",
-    "static/js/main.027b7514.js"
+    "static/css/main.34192002.css",
+    "static/js/main.7e9a83d3.js"
   ]
 }

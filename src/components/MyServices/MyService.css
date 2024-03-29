@@ -32,16 +32,18 @@
     text-stroke: 1px rgb(65, 65, 65);
 }
 .MyServices-Container-Title-h1 button{
-    align-self: flex-start;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+     padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
     color: white;
-    font-size: 1.2em;
-    font-family: 'Teko', sans serif;
     border: 1px solid #FF0039;
+   
+    
     border-radius: 25px;
-    cursor: pointer;
+    align-self: flex-start;
 }
 .MyServices-Container-Title-h1{
     width: 80%;
@@ -56,16 +58,31 @@
     z-index: 1;
     
 }
+.MyServices-Container-Title-h1 p{
+    align-self: flex-start;
+    margin-top: -30px;
+    opacity: 0.7;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 0.7em;
+}
+.MyServices-Container-Title-h1 img{
+    width: 40px;
+    height: 20px;
+    margin-bottom: 50px;
+}
 .MyServices-Container-Title-h1 h1{
     margin-left: 0 !important;
     margin-top: -20px;
-    font-size: 2.4em;
+    margin-bottom: 0;
+    font-size: 3em;
     text-transform: uppercase;
     text-align: left;
     color: white;
      font-family: "Teko", sans-serif;
     text-transform: capitalize !important;
     font-weight: 500;
+    width: 80%;
     font-optical-sizing: auto;
     font-style: normal;
     color: white;
@@ -154,10 +171,13 @@
 }
 .MyServices-Card p{
     width: 60%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
+    font-family: 'Nunit', sans-serif;
+    font-weight: 300;
     font-size: 0.6em;
+    letter-spacing: 0.5px;
     text-align: left;
+    opacity: 0.7;
+    
     margin-bottom: 80px;
     color: white;
 }

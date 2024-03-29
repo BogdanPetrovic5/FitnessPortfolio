@@ -4,7 +4,7 @@ import Weight from './images/weight1.png'
 import Rehab from './images/rehab.png'
 import Food from './images/health1.png'
 import Online from './images/online.png'
-
+import Decoration from './images/Decorations.png'
 function MyService(){
     return (
     <div className="MyServices-Container"  data-aos = 'fade-up'>
@@ -18,9 +18,11 @@ function MyService(){
                         Moje usluge
                     </h1>
                 </div>
-               <div className="MyServices-Container-Title-h1" data-aos = 'fade-left'>
-                <h1 className="AllTitles">Izaberi uslugu koja ti <span>odgovara! </span></h1>
-                    <button>
+                <div className="MyServices-Container-Title-h1" data-aos = 'fade-left'>
+                    <h1 className="AllTitles">Izaberi uslugu koja ti <span>odgovara! </span></h1>
+                <img src={Decoration}></img>
+                <p >Lorem Ipsum is simply dummy text of printing and typesetting industry.</p>
+                <button>
                     POGLEDAJ VIŠE
                 </button>
                </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './ServicesWorkoutPlans.css'
+import Decoration from './images/Decorations.png'
 function ServicesWorkoutPlans(){
     const [strengthCheck, setStrengthActive] = useState(true)
     const [hypertrophyCheck, setHypertrophyActive] = useState(false)
@@ -39,6 +40,7 @@ function ServicesWorkoutPlans(){
                 <h1 className="Workout-Plans-Container-Title-h1">
                    Izaberi ono sto ti odgovora!
                 </h1>
+                <img src={Decoration}></img>
             </div>
             <div className='Workout-Plans-Container-Wrap'>
                 <div className='Workout-Plans-Selection'>

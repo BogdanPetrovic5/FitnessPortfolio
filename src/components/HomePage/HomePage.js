@@ -42,9 +42,9 @@ function HomePage({articles}){
                       {/* <WPlans></WPlans> */}
                       {/* <Social></Social> */}
                       {/* <LGallery></LGallery> */}
-                        
-                      <Feedback></Feedback>
                       <ServicesWorkoutPlans></ServicesWorkoutPlans>
+                      <Feedback></Feedback>
+                      
                       
                       <Faq></Faq>
                       <Form id="Form"></Form>
