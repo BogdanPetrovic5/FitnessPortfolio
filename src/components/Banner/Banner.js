@@ -1,69 +1,68 @@
 import React from "react";
 import './Banner.css'
-import Books from './images/education.png'
-import Foods from './images/health.png'
-import Gym from './images/dumbell1.png'
+import Food from './images/diet.png'
+import Heatlh from './images/heart-beat.png'
+import Education from './images/graduation-cap.png'
+import Gym from './images/weight.png'
 function Banner(){
     return(
-        <div className="Banner-Home-Page" style={{ backgroundImage: `url(https://assets-global.website-files.com/64db59a28003b5f97686e7b6/64db59ddbcd0c6c9b18db041_pattern02.png)` }}>
-            <div className="Banner-Home-Page-Content" >
-                <div className='Banner-Home-Page-Content-Title'>
-                    <div data-aos = 'fade-right'>
-
-                    </div>
-                    <h1 data-aos = 'fade-right' className="Decoration-Titles">Moji stavovi</h1>
-                </div>
-                <div className="Banner-Home-Page-Content-Description">
-                    <h1 data-aos="fade-left" data-aos-duration = "800" className="AllTitles">
-                        Kroz pakao i ponore
+        <div className="Banner-Container">
+            <div className="Banner-Container-Description">
+               <div className="Banner-Container-Title">
+                    <h1>
+                        Moji stavovi
                     </h1>
+               </div>
+                <h1 className="Banner-Container-Title-h1"> 
+                    Cime se ja vodim u <span>zivotu?</span>  
+                </h1>
+            </div>
+            <div className="Banner-Container-Card-Wrap">
+                <div className="Banner-First-Two-Cards">
+                    <div className="Banner-Card">
+                        <img src={Heatlh}>
+                        
+                        </img>
+                        <h1>
+                           Zdravlje 
+                        </h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of printing and typesetting industry typesetting industry.
+                        </p>
+                    </div>
+                    <div className="Banner-Card">
+                    <img src={Education}>
+                        
+                        </img>
+                        <h1>
+                           Edukacija 
+                        </h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of printing and typesetting industry typesetting industry.
+                        </p>
+                    </div>
                 </div>
-                <div className="Banner-List">
-                    {/* <div className="List-Item" data-aos="fade-up" data-aos-duration="500">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                        <h1>
-                            LIFT HEAVY
-                        </h1>
+                <div className="Banner-Last-Two-Cards">
+                    <div className="Banner-Card">
                         <img src={Gym}>
+                        
                         </img>
-                    </div>
-                    <div className="List-Item" data-aos="fade-up" data-aos-duration="500" >
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <h1>
-                            EAT HEALTHY
+                            Treniraj najjace  
                         </h1>
-                        <img src={Foods}>
+                        <p>
+                            Lorem Ipsum is simply dummy text of printing and typesetting industry typesetting industry.
+                        </p>
+                    </div>
+                    <div className="Banner-Card">
+                    <img src={Food}>
+                        
                         </img>
-                    </div>
-                    <div className="List-Item" data-aos="fade-up" data-aos-duration="500" >
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <h1>
-                            EDUCATE HEAVY
+                           Jedi najdobro
                         </h1>
-                        <img src={Books}>
-                        </img>
-                    </div> */}
-                    <div className="List-Card Lift" data-aos ="fade-down" data-aos-duration = '800' data-aos-delay = "100">
-                        <h1>
-                            Treniraj jako
-                        </h1>
-                        <img src={Gym}></img>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                    </div>
-                    <div className="List-Card Eat" data-aos ="fade-down" data-aos-duration = '800' data-aos-delay = "150"> 
-                        <h1>
-                            Ne budi rob ishrane
-                        </h1>
-                        <img src={Foods}></img>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-                    </div>
-                    <div className="List-Card Educate" data-aos ="fade-down" data-aos-duration = '800' data-aos-delay = "200">
-                        <h1>
-                            Uci stalno
-                        </h1>
-                        <img src={Books}></img>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            
+                        <p>
+                            Lorem Ipsum is simply dummy text of printing and typesetting industry typesetting industry.
                         </p>
                     </div>
                 </div>

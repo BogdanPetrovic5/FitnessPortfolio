@@ -124,7 +124,7 @@ function AboutPage(){
         
         <Feedback></Feedback>
         <Form></Form>
-        <Social></Social>
+      
         
         <LGallery ></LGallery>
         

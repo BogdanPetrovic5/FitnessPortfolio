@@ -84,3 +84,128 @@
     align-self: center;
     text-align: center;
 }
+.Workout-Types{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.Workout-Types-Description{
+    font-size: 25px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Workout-Types-Title{
+    font-size: 25px;
+}
+.Workout-Types-Title h1{
+    font-size: 0.8em;
+    color: white;
+    opacity: 0.6;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.Workout-Types-Title-h1{
+    font-family: "Teko", sans-serif;
+    font-size: 1.7em;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    
+}
+.Workout-Types-Title-h1 span{
+    color: #FF0039;
+}
+.Workout-Types-Card-Wrap{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.Workout-Type-Card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    border-radius: 10px;
+    height: 800px;
+    position: relative;
+    transition: 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Workout-Type-Card h1{
+    font-size: 1.8em;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    position: relative;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+    text-align: center;
+}
+.Workout-Type-Card p{
+   
+    font-size: 0.8em;
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+}
+.Workout-Type-Card:hover{
+    flex-grow:0.5;
+    
+}
+.Workout-Card-Descirption{
+    width: 120%;
+    border: 1px solid #2e3338;
+    background: rgba(36, 36, 44, 0.46);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}   
+.Workout-Card-Descirption p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.Workout-Type-Card:hover p{
+    width: 90% ;
+    transition: 300ms ease-in-out;
+    opacity: 1 ;
+}
+.Workout-Type-Card:hover .Workout-Card-Descirption{
+    width: 90%;
+    
+}
+.Workout-Type-Card:hover h1{
+    color: #FF0039;
+    transition: 300ms ease-in-out;
+}
+.Workout-Type-Card::before{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgb(20, 20, 20);
+    opacity: 0.4;
+
+}

@@ -4,6 +4,7 @@ import Man from './images/man.png'
 import React, { useEffect, useState, useRef } from 'react';
 import Left from './images/left.png'
 import Right from './images/right.png'
+import Decoration from './images/Decorations.png'
 function Feedback(){
     const articlesData = [
         {
@@ -97,6 +98,9 @@ function Feedback(){
                 </div>
                 <div className='Feedback-Banner-Description'>
                     <h1 data-aos="fade-left" data-aos-duration = "800" className='AllTitles'> Rezultati mojih klijenata</h1>
+                    <img src={Decoration}>
+                    </img>
+                    <p >Lorem Ipsum is simply dummy text of printing and typesetting industry.</p>
                 </div>
                
                <div className='Results  ${slideDirection}`' ref={targetDivRef}>

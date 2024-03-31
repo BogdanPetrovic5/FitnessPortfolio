@@ -21,6 +21,15 @@ function ServicesWorkoutPlans(){
         setHypertrophyActive(false)
         setMixActive(true)
     }
+    const scrollToDetails = () =>{
+        const specifiLocation = document.getElementById('Workout-Details')
+        const offset = 200;
+        const offsetPosition = specifiLocation.offsetTop - offset
+        window.scrollTo({
+            top: offsetPosition,
+            behavior:'smooth',
+        })
+    }
     return(
         
         <div className="Workout-Plans-Container" data-aos="fade-up">
@@ -41,6 +50,7 @@ function ServicesWorkoutPlans(){
                    Izaberi ono sto ti odgovora!
                 </h1>
                 <img src={Decoration}></img>
+                <p>Detalji o znacenjima planova pogledaj <span onClick={()=>scrollToDetails()}>dole!</span></p>
             </div>
             <div className='Workout-Plans-Container-Wrap'>
                 <div className='Workout-Plans-Selection'>

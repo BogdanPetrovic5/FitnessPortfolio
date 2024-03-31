@@ -65,6 +65,8 @@
     font-family: 'Nunito', sans-serif;
     color: white;
     font-size: 0.7em;
+    text-align: left !important;
+    margin-bottom: 50px;
 }
 .MyServices-Container-Title-h1 img{
     width: 40px;
