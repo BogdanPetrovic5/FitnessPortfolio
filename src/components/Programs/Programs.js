@@ -7,6 +7,12 @@ import Decoration from './images/Decorations.png'
 import BB from './images/BB.jpg'
 import PL from './images/PL.jpg'
 import PB from './images/PB.jpg'
+import Yes from './images/check-mark.png'
+import No from './images/delete-cross.png'
+import BP from './images/Benchpresss.jpg'
+import DL from './images/Deadlift.jpg'
+import SQ from './images/Squat.jpg'
+import Form from '../ContactForm/Form';
 function Programs(){
     return(
         <div className='Programs-Container'>
@@ -57,8 +63,8 @@ function Programs(){
                         Ne znas sta koji plan znaci?<span> Pogledaj detaljnije!</span> 
                     </h1>
                 </div>
-                <div className='Workout-Types-Card-Wrap'>
-                    <div className='Workout-Type-Card' style={{ backgroundImage: `url(${BB})` }}>
+                <div className='Workout-Types-Card-Wrap' >
+                    <div className='Workout-Type-Card' style={{ backgroundImage: `url(${BB})` }} id='First-Workout-Card'>
                         <h1>
                             Bodybuilding
                         </h1>
@@ -68,7 +74,7 @@ function Programs(){
                             </p>
                         </div>
                     </div>
-                    <div className='Workout-Type-Card' style={{ backgroundImage: `url(${PB})` }}>
+                    <div className='Workout-Type-Card' style={{ backgroundImage: `url(${PB})` }} id='Second-Workout-Card'>
                     <h1>
                             Powerbuilding
                         </h1>
@@ -78,7 +84,7 @@ function Programs(){
                             </p>
                         </div>
                     </div>
-                    <div className='Workout-Type-Card' style={{ backgroundImage: `url(${PL})` }}>
+                    <div className='Workout-Type-Card' style={{ backgroundImage: `url(${PL})` }} id='Third-Workout-Card'>
                         <h1>
                             Powerlifting
                         </h1>
@@ -89,6 +95,182 @@ function Programs(){
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='Personal-Trainings-Container'>
+                <div className='Personal-Trainings-Banner'>
+                    <div className='Personal-Trainings-Title'>
+                        <h1>Online i Personalni/Polu personalni Treninzi</h1>
+                    </div>
+                    <h1 className='Personal-Trainings-Title-h1'>
+                        Ocekivanja od rada sa mnom <span> 1 na 1!</span>
+                    </h1>
+                </div>
+                <div className='Personal-Trainings-Wrap'>
+                    <div className='Personal-Trainings-Card'>
+                        <h1 className='Personal-Trainings-Card-Title'>
+                           Online-Trenizni 
+                        </h1>
+                        <div>
+                            <li>
+                                <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={No}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={No}></img>Lorem ipsum
+                            </li>
+                        </div>
+                        <div className='Card-HR'>
+
+                        </div>
+                        <h1 className='Personal-Trainings-Card-Price'>
+                            100&euro;
+                        </h1>
+                        <button>
+                        POČNI
+                        </button>
+                    </div>
+                    <div className='Personal-Trainings-Card'>
+                        <h1 className='Personal-Trainings-Card-Title'>
+                           Polu-Personalni Treninzi 
+                        </h1>
+                        <div>
+                        <li>
+                                <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                        </div>
+                        <div className='Card-HR'>
+
+                        </div>
+                        <h1 className='Personal-Trainings-Card-Price'>
+                            150&euro;
+                        </h1>
+                        <button>
+                        POČNI
+                        </button>
+                    </div>
+                    <div className='Personal-Trainings-Card'>
+                        <h1 className='Personal-Trainings-Card-Title'>
+                           Personalni Treninzi 
+                        </h1>
+                        <div>
+                        <li>
+                                <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                            <li>
+                            <img src={Yes}></img>Lorem ipsum
+                            </li>
+                        </div>
+                        <div className='Card-HR'>
+
+                        </div>
+                        <h1 className='Personal-Trainings-Card-Price'>
+                            250&euro;
+                        </h1>
+                        <button>
+                        POČNI
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className='Rehab-Container'>
+                <div className='Rehab-Banner'>
+                    <div className='Rehab-Banner-Title'>
+                        <h1>
+                            Rehabilitacija
+                        </h1>
+                    </div>
+                    <h1 className='Rehab-Banner-Title-h1'> 
+                        Imas bolove? I zelis da zivis normalno? <span>Kontaktiraj me!</span> 
+                    </h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    </p>
+                </div>
+                <div className='Rehab-Wrap'>
+                    <div className='Rehab-Shoulder Rehab-Card' style={{backgroundImage:`url(${BP})`}}>
+                       <div className='Rehab-Description'>
+                            <h1>
+                                Želiš li opet da radis Bench Press?
+                            </h1>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                       </div>
+                    </div>
+                     <div className='Rehab-Back Rehab-Card'  style={{backgroundImage:`url(${DL})`}}>
+                        <div className='Rehab-Description'>
+                            <h1>
+                                Želiš li opet da radis Mrtva Dizanja?
+                            </h1>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                    </div>
+                     <div className='Rehab-Knees Rehab-Card'  style={{backgroundImage:`url(${SQ})`}}>
+                        <div className='Rehab-Description'>
+                            <h1>
+                                Želiš li opet da radis Čučanj?
+                            </h1>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            </p>
+                        </div>
+                            
+                    </div>
+                </div>
+                <button>
+                Kontaktiraj me!
+                </button>
+            </div>
+            <Form></Form>
+            <div className='Contact-Banner-Container'>
+                        <div className='Contact-Banner-Title'>
+                            <h1 >
+                              Kreni da radiš sa mnom!
+                            </h1>
+                            <button>
+                              Kontaktiraj me!
+                            </button>
+                        </div>
             </div>
         </div>
     )

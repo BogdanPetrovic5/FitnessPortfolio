@@ -1,7 +1,9 @@
 .Main-Page{
     position: relative;
 }
-
+.Main-Page .Contact-Services-Titles{
+    display: none;
+}
 .Main-Page .Workout-Plans-Container{
     background-color: #0c0c14;
 }

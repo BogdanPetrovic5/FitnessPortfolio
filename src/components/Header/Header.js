@@ -98,7 +98,7 @@ function Header() {
           </span>
           
           <span><Link onClick={hideMenu}  to='/blog'>BLOG</Link></span>
-          <span>contact</span>
+          <span onClick={()=>scrollToContact()}>KONTACT</span>
           
         </div>
       </section>

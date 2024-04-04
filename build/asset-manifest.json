@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff83680f.css",
-    "main.js": "/static/js/main.ff4f8dc5.js",
+    "main.css": "/static/css/main.0130e3b7.css",
+    "main.js": "/static/js/main.20bc2dd0.js",
     "static/js/107.8e51db12.chunk.js": "/static/js/107.8e51db12.chunk.js",
     "static/media/PL.jpg": "/static/media/PL.c5e2aa63e10c33d1bf82.jpg",
     "static/media/BB.jpg": "/static/media/BB.b5453644ae937dfb4c19.jpg",
     "static/media/weights.jpg": "/static/media/weights.7c64fd7438788b35d970.jpg",
+    "static/media/Deadlift.jpg": "/static/media/Deadlift.c51db2e105c7f5efb963.jpg",
     "static/media/PB.jpg": "/static/media/PB.fd256d51e1870e93b688.jpg",
     "static/media/blog.jpg": "/static/media/blog.e32dd3d293770074495d.jpg",
+    "static/media/Squat.jpg": "/static/media/Squat.215bad67a26914ce60f8.jpg",
     "static/media/DjoleCover.png": "/static/media/DjoleCover.3f1cff8d6dc0b1adf841.png",
+    "static/media/Benchpresss.jpg": "/static/media/Benchpresss.362265026446df526f60.jpg",
     "static/media/ruka.jpeg": "/static/media/ruka.7123c9cab76ed14c06a8.jpeg",
     "static/media/UNIDjole.jpg": "/static/media/UNIDjole.72ffaa7c44894792b5db.jpg",
     "static/media/podlaktica.jpg": "/static/media/podlaktica.38c872daa223c2f15c21.jpg",
@@ -31,8 +34,10 @@
     "static/media/instagramAbout.png": "/static/media/instagramAbout.a5aa8b6fcc68bc96f796.png",
     "static/media/gallery.png": "/static/media/gallery.a353b34a360ee48a1c59.png",
     "static/media/instagram.png": "/static/media/instagram.225314d7533f4f925db6.png",
+    "static/media/delete-cross.png": "/static/media/delete-cross.e1b58e508292cbb57ccc.png",
     "static/media/highschool.png": "/static/media/highschool.91a0163e507a7d84d37f.png",
     "static/media/like.png": "/static/media/like.a70b40dc374b406c5365.png",
+    "static/media/check-mark.png": "/static/media/check-mark.08e107f7a5d831f05b30.png",
     "static/media/online.png": "/static/media/online.afb6516bc8db61a978a4.png",
     "static/media/tiktokAbout.png": "/static/media/tiktokAbout.98554bf7bf5e09fc9e35.png",
     "static/media/heart-beat.png": "/static/media/heart-beat.acdb7da3f755c79057ad.png",
@@ -47,12 +52,12 @@
     "static/media/send.png": "/static/media/send.2d7691bc2dbc0bb14de0.png",
     "static/media/tik-tok.png": "/static/media/tik-tok.fa591189dc466ada8972.png",
     "index.html": "/index.html",
-    "main.ff83680f.css.map": "/static/css/main.ff83680f.css.map",
-    "main.ff4f8dc5.js.map": "/static/js/main.ff4f8dc5.js.map",
+    "main.0130e3b7.css.map": "/static/css/main.0130e3b7.css.map",
+    "main.20bc2dd0.js.map": "/static/js/main.20bc2dd0.js.map",
     "107.8e51db12.chunk.js.map": "/static/js/107.8e51db12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff83680f.css",
-    "static/js/main.ff4f8dc5.js"
+    "static/css/main.0130e3b7.css",
+    "static/js/main.20bc2dd0.js"
   ]
 }

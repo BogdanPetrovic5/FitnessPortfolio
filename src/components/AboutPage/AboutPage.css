@@ -8,6 +8,9 @@
     width: 100%;
     overflow: hidden;
 }
+.About-Page-Container .Contact-Services-Titles{
+    display: none;
+}
 .About-Page-Container .Contact-Form{
     align-self: flex-start;
 }

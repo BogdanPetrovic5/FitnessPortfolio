@@ -24,7 +24,7 @@ function HomePageBlogBanner({articles}){
                     </h1>
                 </div>
             </div>
-            <div className='Blog-Container'>
+            <div className='Blog-Home-Container'>
                 <div className='Blog-Wrapper'>
                     <div className='Blog-First' style={{backgroundImage: `url(${blog})`}}>
                         <div className='Blog-Description'>

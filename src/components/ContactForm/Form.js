@@ -1,8 +1,14 @@
 import './Form.css';
 import React from 'react';
 import { useState } from 'react';
+import dumbell from './images/dumbell.png'
+import { useForm, ValidationError } from '@formspree/react';
+import Submit from '../Submitted/Submit';
 function Form(){
- 
+  const [state, handleSubmit] = useForm("xqkryrad");
+  if (state.succeeded) {
+      return <Submit></Submit>
+  }
   const letters = [
     { char: 'F', delay: '0' },
     { char: 'E', delay: '50' },
@@ -50,26 +56,42 @@ function Form(){
           
           <div className='Contact-Form-Wrap'>
           
-              <div className='Form'> 
+              <form className='Form' onSubmit={handleSubmit} action='https://formspree.io/f/xqkryrad'> 
                   <div className='Form-Name'>
                     <span id='name'>Name</span>
                     <input type='name' className='Name'></input>
                     <span id='email'>Email</span>
-                    <input type='email'></input>
+                    <input 
+                      id="email"
+                      type="email" 
+                      name="email"> 
+                    </input> 
+                    <ValidationError 
+                      prefix="Email" 
+                      field="email"
+                      errors={state.errors}
+                    />
                   </div>
                   <div className='Form-Details'>
                     <span>
                       Message
                     </span>
-                    <textarea>
+                    <textarea 
+                      id="message"
+                      name="message">
                       
                     </textarea>
+                    <ValidationError 
+                      prefix="Message" 
+                      field="message"
+                      errors={state.errors}
+                    />
                   </div>
                   <div className='Button-Wrap'>
-                    <button>SEND</button>
+                    <button type="submit">SEND</button>
                   </div>
                   
-              </div>
+              </form>
           </div>
           <div className='Contact-Form-Description'>
             <h1 className='Absolute'>
@@ -90,8 +112,29 @@ function Form(){
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
                 </p>
+
+              <div className='Contact-Services-Titles'>
+                <h1>
+                  Personalni i polupersonlani Trenizni!
+                </h1>
+                <img src={dumbell}>
+                </img>
+                <h1>
+                  Online Treninzi!
+                </h1>
+                <img src={dumbell}>
+                </img>
+                <h1>
+                  Rehabilitacija
+                </h1>
+                <img src={dumbell}>
+                </img>
+                <h1>
+                  Ishrana
+                </h1>
+              </div>
           </div>
-            
+       
         </section>
     )
 }
