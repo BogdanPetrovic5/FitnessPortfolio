@@ -5,6 +5,9 @@ import React, { useEffect, useState, useRef } from 'react';
 import { InstagramEmbed } from 'react-social-media-embed';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import blog from './images/blog.jpg'
+import Decoration from './images/Decorations.png'
+import Form from '../ContactForm/Form';
 function BlogPage({articles}){
     useEffect(()=>{
         const specifiLocation = document.getElementById('Blog')
@@ -170,16 +173,16 @@ function BlogPage({articles}){
     
     
       const [LowerEdge, setLowerEdge] = useState(0);
-      const [HigherEdge, setHigherEdge] = useState(3);
+      const [HigherEdge, setHigherEdge] = useState(6);
       const targetDivRef = useRef(null);
       const location = useLocation();
       const updateEdges = (direction) => {
         if (direction === 'next' && HigherEdge < articlesData.length) {
-          setLowerEdge(LowerEdge + 3);
-          setHigherEdge(HigherEdge + 3);
+          setLowerEdge(LowerEdge + 6);
+          setHigherEdge(HigherEdge + 6);
         } else if (direction === 'prev' && LowerEdge > 0) {
-          setLowerEdge(LowerEdge - 3);
-          setHigherEdge(HigherEdge - 3);
+          setLowerEdge(LowerEdge - 6);
+          setHigherEdge(HigherEdge - 6);
         }
         if (targetDivRef.current) {
             targetDivRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -195,114 +198,68 @@ function BlogPage({articles}){
         
       }
     return(
-        <div className="Container" id='Blog' data-aos='fade-up' data-aos-duration='1200'>   
+        <div className="Container" id='Blog' data-aos='fade-up'                           data-aos-duration='1200'>   
             <div className='Banner'>
                 <h1 className='AllTitles'>
                     BLOG
                 </h1>
             </div>
-            <div className='Content' ref={targetDivRef}>
-                <div className='Content-Articles' >
-                    {ArrayToShow.map((article, index) => (
-                        <div key={index} className='Article' onClick={()=> navigateToBlogDetails(article, index, articlesData)}>
-                            <div className='Article-Date'>
-                                <h1>{article.date}</h1>
-                            </div>
-                            <div className='Article-Img' style={{ backgroundImage: `url(${article.image})` }}></div>
-                            <div className='Article-Info'>
-                                <div className='Article-Info-Text'>
-                                <div className='Article-Title'>
-                                    <h1>{article.title}</h1>
-                                </div>
-                                <div className='Article-Paragraph'>
-                                    <p>{article.subject}</p>
-                                </div>
-                                <div className='Article-Tags'>
-                                    <img src="assets/trend.png" alt="Trend Icon" />
-                                    <p className='Tags'>{article.tags.join(', ')}</p>
-                                </div>
-                                </div>
-                            </div>
-                        
-                        </div>
-                
-                    ))}
-      
-                    <div className='Navigation-Buttons'>
-                        <div className='Buttons-Wrap'>
-                        
-                            <button
-                            src={LeftArrow}
-                            onClick={() => updateEdges('prev')}
-                            alt="Previous"
-                            className={LowerEdge === 0 ? 'first-button' : ''}
-                            >
-                            Prev
-                            </button>
-                        
-                            
-                        
-                        <button
-                        src={RightArrow}
-                        onClick={() => updateEdges('next')}
-                        alt="Next"
-                        className={HigherEdge >= articlesData.length ? 'last-button' : ''}
-                        >
-                        Next
-                        </button>
-                    
-                        </div>
-                    </div>
-                </div>
-                <div className='Content-Options'>
-                    <div className='Content-Options-Search'>
-                        <div class="input-wrap">
-                            <input placeholder="SEARCH" type="text" class="input"/>
-                            <span> <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
-                        <g>
-                        <path
-                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
-                        ></path>
-                        </g>
-                    </svg></span>
-                        </div>
-                        <button>SEARCH</button>
-                    </div>
-                    <div className='Content-Options-Categories'>
-                        <div className='Content-Options-Categories-Title'>
-                            <h1>Categories</h1>
-                            <div className='hr'></div>
-                        </div>
-                        <div className='Content-Options-Categories-List'>
-                            <span>
-                                Food
-                                <div className='hr'></div>
-                            </span>
-                            <span>
-                                Gym
-                                <div className='hr'></div>
-                            </span>
-                            <span>
-                                Lifestyle
-                                <div className='hr'></div>
-                            </span>
-                            <span>
-                                Mindset
-                                <div className='hr'></div>
-                            </span>
-                            <span>
-                                Pain
-                            </span>
-                        </div>
-                        
-                    </div>
-                    <div className='IG-Embed' style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', gap:'50px', marginBottom:'50px'}}>
-                        <InstagramEmbed url="https://www.instagram.com/p/CyvoH8YtmMs/" style={{ width: '100%'}}/ >
-                        <InstagramEmbed url="https://www.instagram.com/p/CzwEZ4wttt-/?img_index=5" style={{ width: '100%' }}/ >
-                    </div>
-                </div>
-            </div>
             
+            <div className='Container-Blog-Title'>
+                <div className='Blog-Title'>
+                    <h1>
+                        Članci
+                    </h1>
+                </div>
+                <h1 className='Container-Blog-Title-h1'>
+                    Pogledaj moje nove objave na <span>blogu!</span>
+                </h1>
+                <img src={Decoration}></img>
+                <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                </p>
+            </div>
+            <div className='Blog-Navigation-Bar'>
+                <button className='Prev' onClick={()=>updateEdges("prev")}>
+                    Nazad
+                </button>
+
+                <button className='Next' onClick={()=>updateEdges("next")}>
+                    Napred
+                </button>
+            </div>
+            <div className='Container-Blog-Article-Wrap'>
+                   
+                    {ArrayToShow.map((article, index) => (
+
+                        <div className='Blog-Article' style={{backgroundImage: `url(${blog})`}} onClick={()=>navigateToBlogDetails(article, index)}>
+                        <div className='Blog-Description'>
+                            <div>
+                                <span>
+                                    Januar 17, 2024
+                                </span>
+                                <h1>
+                                    {article.title}
+                                </h1>
+                            </div>
+                            
+                        </div>
+                        </div>
+                    ))}
+                    
+                
+            </div>
+            <Form></Form>
+            <div className='Contact-Banner-Container'>
+                        <div className='Contact-Banner-Title'>
+                            <h1 >
+                              Kreni da radiš sa mnom!
+                            </h1>
+                            <button>
+                              Kontaktiraj me!
+                            </button>
+                        </div>
+            </div>
         </div>
     )
 }

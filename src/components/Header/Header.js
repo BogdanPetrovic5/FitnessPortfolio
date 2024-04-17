@@ -66,21 +66,24 @@ function Header() {
         </div>
         <nav className='Header-Section-Nav'>
           <li  className={location.pathname === '/programs' ? 'Active-Route' : ''} >
-            <Link onClick={hideMenu} to= '/programs'> USLUGE</Link>
+            <Link onClick={hideMenu} to= '/programs'>Usluge</Link>
           </li>
           <li className={location.pathname === '/about' ? 'Active-Route' : ''}>
-            <Link onClick={hideMenu} to='/about'>O MENI</Link>
+            <Link onClick={hideMenu} to='/about'>O meni</Link>
           </li>
           <li className={location.pathname === '/blog' ? 'Active-Route' : ''}>
             <Link onClick={hideMenu}  to='/blog'>Blog</Link>
           </li>
           <li>
-            <a onClick={scrollToContact}>KONTAKT</a>
+            <a onClick={scrollToContact}>Kontakt</a>
           </li>
           <li>
-            <Link  to='/' >POČETNA</Link>
+            <Link  to='/' >Početna</Link>
           </li>
         </nav>
+        <button>
+          Treniraj!
+        </button>
         <div className='Drop-Down'>
           <div className={`background ${isClicked ? 'clicked' : ''}`}>
             <div className="menu__icon" onClick={handleMenuClick}>

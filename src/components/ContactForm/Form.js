@@ -59,7 +59,7 @@ function Form(){
               <form className='Form' onSubmit={handleSubmit} action='https://formspree.io/f/xqkryrad'> 
                   <div className='Form-Name'>
                     <span id='name'>Name</span>
-                    <input type='name' className='Name'></input>
+                    <input type='name' className='Name' name='name'></input>
                     <span id='email'>Email</span>
                     <input 
                       id="email"

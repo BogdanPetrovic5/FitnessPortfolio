@@ -61,7 +61,8 @@
     font-size: 1em;
     font-family: 'Teko', sans-serif;
     color: white;
-    
+    font-weight: 500;
+    align-self: center !important;
 }
 .Workout-Plans-Container-Title-h1{
     font-size: 2.4em;
@@ -69,6 +70,7 @@
     color: white;
     margin: 0;
     align-self: center;
+    text-align: center;
 }
 .Workout-Plans-Container-Wrap{
     width: 100%;

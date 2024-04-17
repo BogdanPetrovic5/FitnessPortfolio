@@ -13,7 +13,25 @@ import BP from './images/Benchpresss.jpg'
 import DL from './images/Deadlift.jpg'
 import SQ from './images/Squat.jpg'
 import Form from '../ContactForm/Form';
+import Submit from '../Submitted/Submit';
+import { useForm, ValidationError } from '@formspree/react';
 function Programs(){
+    const scrollToContact = () =>{
+        const specificSection = document.getElementById('Form');
+        if (specificSection) {
+            
+            const offset = 100; 
+            const offsetPosition = specificSection.offsetTop - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+      }
+    const [state, handleSubmit] = useForm("myyrbkzk");
+    if (state.succeeded) {
+        alert("Poruka uspesno poslata!")
+    }
     return(
         <div className='Programs-Container'>
             <div className='Banner'>
@@ -35,7 +53,7 @@ function Programs(){
             <div className='Custom-Trainings'>
                 <div className='Custom-Trainings-Banner'>
                     <div className='Custom-Trainings-Title'>
-                        <h1>Personalizovani Treninzi!</h1>
+                        <h1 className='Decoration-Titles'>Personalizovani Treninzi!</h1>
                     </div>
                     <h1 className='Custom-Trainings-Title-h1'>
                         Zelis li plan kereiran shodno tvojim zeljama i mogucnostima? <br></br>
@@ -47,17 +65,114 @@ function Programs(){
                     </p>
                 </div>
                
-                <iframe id="JotFormIFrame-240875380213050" title="Personalizovani plan. Popuni formu" onLoad={() => window.parent.scrollTo(0,0)} allowtransparency="true" allow="geolocation; microphone; camera; fullscreen" src="https://form.jotform.com/240875380213050" frameBorder="0" style={{width:'40%', height: '1000px', border: 'none' }}  scrolling="no"></iframe>
-                <script src='https://form.jotform.com/s/umd/latest/for-form-embed-handler.js'></script>
-                <script dangerouslySetInnerHTML={{ __html: `window.jotformEmbedHandler("iframe[id='JotFormIFrame-240875380213050'", "https://form.jotform.com/")` }}></script>
-                <div className='Above'>
+                <div className='Training-Form'>
+                    <form className='Training-Form-Wrap' onSubmit={handleSubmit} action="https://formspree.io/f/myyrbkzk"
+                    method="POST">
+                        <div className='Name'>
+                            <div>
+                                <span>
+                                    Ime
+                                </span>
+                                <input type='text' name='Ime'>
+                                </input>
+                            </div>
+                            <div>
+                                <span>
+                                    Prezime
+                                </span>
+                                <input type='text' name='Prezime'>
+                                </input>
+                            </div>
+                            
+                        </div>
+                        <div className='Personal-Info'>
+                            <div>
+                                <span>
+                                    Pol
+                                </span>
+                                <select name="pol" id="fruits">
+                                    <option value="apple">Muški</option>
+                                    <option value="banana">Ženski</option>
+                                    
+                                </select>
+                            </div>
+                           
+                            <div>
+                                <span>
+                                    Godine
+                                </span>
+                                <input type='number' name='Godine'>
+                                </input>
+                            </div>
+                           
+                            <div>
+                                <span>
+                                    Težina
+                                </span>
+                                <input type='number' name='Težina'>
+                                </input>
+                            </div>
+                            
+                            <div>
+                                <span>
+                                    Visina
+                                </span>
+                                <input type='number' name='Visina'>
+                                </input>
+                            </div>
+                            
+                        </div>
+                        <div className='Creditentials'>
+                            <div>
+                             <span>
+                                Email Adresa
+                            </span>   
+                
+                            <input type='email' name='Email adresa'>
+                            </input>
+                            <ValidationError 
+                                prefix="Email" 
+                                field="email"
+                                errors={state.errors}
+                            />
+                            </div>
+                            <div>
+                            <span>
+                                Broj telefona
+                            </span>
+                            <input type='number' name='Broj telefona'>
+                            </input>
+                            </div>
+                            
+                        </div>
+                        <div className='Training-Goals'>
+                            <span>
+                                Željeni broj treninga u nedelji?
+                            </span>
+                            <input type='text' name='Preferirani Broj treninga'>
+                            </input>
+                            <span>
+                                Ciljevi vezani za trening?
+                            </span>
+                            <textarea type='text' name='Cilj'>
 
+                            </textarea>
+                            <ValidationError 
+                                prefix="Message" 
+                                field="message"
+                                errors={state.errors}
+                            />
+                        </div>
+                        <button type="submit">
+                            Pošalji!
+                        </button>
+                    </form>
                 </div>
             </div>
             <div className='Workout-Types' id='Workout-Details'>
                 <div className='Workout-Types-Description'>
                     <div className='Workout-Types-Title'>
-                        <h1>Tipovi planova</h1>
+                        <h1 className='Decoration-Titles'>Tipovi planova</h1>
                     </div>
                     <h1 className='Workout-Types-Title-h1'>
                         Ne znas sta koji plan znaci?<span> Pogledaj detaljnije!</span> 
@@ -99,7 +214,7 @@ function Programs(){
             <div className='Personal-Trainings-Container'>
                 <div className='Personal-Trainings-Banner'>
                     <div className='Personal-Trainings-Title'>
-                        <h1>Online i Personalni/Polu personalni Treninzi</h1>
+                        <h1 className='Decoration-Titles'>Online i Personalni/Polu personalni Treninzi</h1>
                     </div>
                     <h1 className='Personal-Trainings-Title-h1'>
                         Ocekivanja od rada sa mnom <span> 1 na 1!</span>
@@ -213,7 +328,7 @@ function Programs(){
             <div className='Rehab-Container'>
                 <div className='Rehab-Banner'>
                     <div className='Rehab-Banner-Title'>
-                        <h1>
+                        <h1 className='Decoration-Titles'>
                             Rehabilitacija
                         </h1>
                     </div>
@@ -257,8 +372,8 @@ function Programs(){
                             
                     </div>
                 </div>
-                <button>
-                Kontaktiraj me!
+                <button onClick={()=>scrollToContact()}>
+                    Kontaktiraj me!
                 </button>
             </div>
             <Form></Form>
@@ -267,7 +382,7 @@ function Programs(){
                             <h1 >
                               Kreni da radiš sa mnom!
                             </h1>
-                            <button>
+                            <button onClick={()=>scrollToContact()}>
                               Kontaktiraj me!
                             </button>
                         </div>

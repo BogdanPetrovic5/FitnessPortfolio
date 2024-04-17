@@ -9,7 +9,7 @@ function Banner(){
         <div className="Banner-Container">
             <div className="Banner-Container-Description">
                <div className="Banner-Container-Title">
-                    <h1>
+                    <h1 className='Decoration-Titles'>
                         Moji stavovi
                     </h1>
                </div>

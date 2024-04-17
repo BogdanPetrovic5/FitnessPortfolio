@@ -85,9 +85,6 @@ function Feedback(){
            
             <div className='Feedback-Banner'>
                 <h1 className='Absolute'>UTISCI</h1>
-                <img className='Left Navigation-Icon' src={Left} onClick={() => updateEdges('prev')}/>
-
-                <img className='Right Navigation-Icon' src={Right}onClick={() => updateEdges('next')}/>
                 <div className='Feedback-Banner-Title'>
                     <div data-aos="fade-right" data-aos-duration = "800">
 
@@ -139,6 +136,14 @@ function Feedback(){
                         Zelis i ti da radis sa mnnom? Imas neka dodatna pitanja? Popuni formu ispod!
                     </h2>
                </div> */}
+               <div className='Feedback-Navigation-Bar '>
+                    <button className='Prev' onClick={()=>updateEdges("prev")}>
+                        Nazad
+                    </button>
+                    <button className='Next' onClick={()=>updateEdges("next")}>
+                        Napred
+                    </button>
+               </div>
             </div>
         </div>
     )

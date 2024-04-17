@@ -21,7 +21,18 @@ import BB from './images/BB.jpg'
 import PL from './images/PL.jpg'
 import PB from './images/PB.jpg'
 function HomePage({articles}){
-  
+    const scrollToContact = () =>{
+        const specificSection = document.getElementById('Form');
+        if (specificSection) {
+            
+            const offset = 100; 
+            const offsetPosition = specificSection.offsetTop - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+      }
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -48,7 +59,7 @@ function HomePage({articles}){
                       <div className='Workout-Types' id='Workout-Details'>
                 <div className='Workout-Types-Description'>
                     <div className='Workout-Types-Title'>
-                        <h1>Tipovi planova</h1>
+                        <h1 className='Decoration-Titles'>Tipovi planova</h1>
                     </div>
                     <h1 className='Workout-Types-Title-h1'>
                         Ne znas sta koji plan znaci?<span> Pogledaj detaljnije!</span> 
@@ -100,7 +111,7 @@ function HomePage({articles}){
                             <h1 >
                               Kreni da radiš sa mnom!
                             </h1>
-                            <button>
+                            <button onClick={()=>scrollToContact()}>
                               Kontaktiraj me!
                             </button>
                         </div>

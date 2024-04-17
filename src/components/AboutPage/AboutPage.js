@@ -123,13 +123,23 @@ function AboutPage(){
         <Banner></Banner>   
         
         <Feedback></Feedback>
-        <Form></Form>
+        
       
         
         <LGallery ></LGallery>
         
         <Faq></Faq>
-        
+        <Form></Form>
+        <div className='Contact-Banner-Container'>
+                        <div className='Contact-Banner-Title'>
+                            <h1 >
+                              Kreni da radiš sa mnom!
+                            </h1>
+                            <button>
+                              Kontaktiraj me!
+                            </button>
+                        </div>
+        </div>
         {/* <div className='Banner-Goal' >
             <h1>
                 MY MINDSET

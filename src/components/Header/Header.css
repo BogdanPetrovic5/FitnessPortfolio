@@ -1,21 +1,9 @@
 .Active-Route{
   position: relative;
 }
-.Active-Route::before{
-  content: "";
-  position: absolute;
-  width: 2px;
-  outline: 2px solid #111111;
-  height: 200%;
-  top:5%;
-  
-  
-  rotate:60deg;
-  transform: translateY(-50%);
-  background-color: #940000;
-}
+
 .Active-Route a{
-  color: #940000 !important;
+  color: #ff0039 !important;
 }
 .Header{
     width: 100%;
@@ -29,11 +17,12 @@
 
   }
   .Header .Header-Section{
-    width: 100%;
+    width: 70%;
     height: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-between !important;
   }
   .HiddenDropDown, .ActiveDropDown{
     display: none;
@@ -44,28 +33,42 @@
     background-color: transparent;
   }
   .Header .Header-Section .Header-Section-Logo{
-    width: 500px;
+    width: 15%;
     height: 100%;
+    
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    
   }
   .Header .Header-Section .Header-Section-Logo img{
     height: 80%;
-    width: 270px;
+    width:100%;
+  }
+  .Header-Section button{
+    width: 10%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ff0039;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    align-self: center;
+    cursor: pointer;
   }
   .Header .Header-Section .Header-Section-Nav{
-    width: calc(100% - 500px);
+    width: 40%;
     height: 100%;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-right: 50px;
+   
     font-size: 25px;
+    align-self: center !important;
   }
   .Header-Section-Nav a {
     text-decoration: none;
@@ -75,12 +78,15 @@
     text-decoration: none;
     color: #ffffff;
   }
+  .Drop-Down{
+    display: none;
+  }
   .Header .Header-Section .Header-Section-Nav li {
     list-style: none;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 0.70em;
-    text-transform: uppercase;
+    text-transform: capitalize !important;
     cursor: pointer;
     color: #ffffff;
     transition: color 500ms; /* Added transition property for color change */

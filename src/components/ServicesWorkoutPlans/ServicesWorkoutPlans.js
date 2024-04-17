@@ -38,12 +38,9 @@ function ServicesWorkoutPlans(){
                         PLANOVI
                 </h1>
                 <div className="Workout-Plans-Container-Title">
-                    
-                    <div>
-
-                    </div>
+                
                     <h1 className='Decoration-Titles'>
-                        PLANOVI TRENINGA
+                        Planovi Treninga
                     </h1>
                 </div>
                 <h1 className="Workout-Plans-Container-Title-h1">
@@ -55,13 +52,13 @@ function ServicesWorkoutPlans(){
             <div className='Workout-Plans-Container-Wrap'>
                 <div className='Workout-Plans-Selection'>
                     <li className={strengthCheck ? 'Selected' : ''} onClick={()=>handleStrenght()}>
-                        SNAGA
+                        POWERLIFTING
                     </li>
                     <li className={hypertrophyCheck ? 'Selected' : ''} onClick={()=>handleHypertrophy()}>
-                        HIPERTROFIJA
+                       BODYBUILDING
                     </li>
                     <li className={mixCheck ? 'Selected' : ''} onClick={()=>handleMix()}>
-                        MIX
+                        POWERBUILDING
                     </li>
                 </div>
                 {strengthCheck && ( <div className='Workout-Plans-Items'>
