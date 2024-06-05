@@ -40,10 +40,15 @@
     font-size: 1em;
     color: white;
     border: 1px solid #FF0039;
-   
+    text-decoration: none;
     
     border-radius: 25px;
     align-self: flex-start;
+}
+.MyServices-Container-Title-h1 button a{
+    color: white;
+    text-transform: none;
+    text-decoration: none;
 }
 .MyServices-Container-Title-h1{
     width: 80%;

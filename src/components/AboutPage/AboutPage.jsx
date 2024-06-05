@@ -104,7 +104,7 @@ function AboutPage(){
                     </p>
                 </div>
                 
-                <div className='Education-Content-Image About-Page-Dekstop'>
+                {/* <div className='Education-Content-Image About-Page-Dekstop'>
                     <div className="About-Page-Bio-Image-First-Section">
                         <img src="assets/DjoleAbout.jpg">
                         </img>
@@ -117,7 +117,7 @@ function AboutPage(){
                         <img src="assets/DjoleAbout.jpg">
                         </img>
                     </div>
-                </div>
+                </div> */}
             
         </div>
         <Banner></Banner>   

@@ -73,7 +73,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                39.0&euro;/ Mesec
+                                9.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI
@@ -92,7 +92,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                39.0&euro;/ Mesec
+                                19.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI
@@ -110,7 +110,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                39.0&euro;/ Mesec
+                                24.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI
@@ -131,7 +131,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                29.0&euro;/ Mesec
+                                9.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI
@@ -150,7 +150,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                39.0&euro;/ Mesec
+                                19.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI
@@ -168,7 +168,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                59.0&euro;/ Mesec
+                                24.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI
@@ -189,7 +189,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                69.0&euro;/ Mesec
+                                9.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI
@@ -208,7 +208,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                79.0&euro;/ Mesec
+                               19.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI
@@ -226,7 +226,7 @@ function ServicesWorkoutPlans(){
                             </p>
                             <div className='Horisontal-Line'></div>
                             <h1 className='Item-Price'>
-                                89.0&euro;/ Mesec
+                                24.99&euro;/ Mesec
                             </h1>
                             <button>
                                 NARUČI

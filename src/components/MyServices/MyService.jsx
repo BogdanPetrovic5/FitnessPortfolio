@@ -1,13 +1,28 @@
-import React from "react"
+import React, { useEffect } from "react"
 import './MyService.css'
 import Weight from './images/weight1.png'
 import Rehab from './images/rehab.png'
 import Food from './images/health1.png'
 import Online from './images/online.png'
 import Decoration from './images/Decorations.png'
+import { Link } from "react-router-dom"
 function MyService(){
+    const scrollToContact = () =>{
+        const specificSection = document.getElementById('My-Services');
+        if (specificSection) {
+            
+           
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+      }
+      useEffect(()=>{
+        scrollToContact()
+      })
     return (
-    <div className="MyServices-Container"  data-aos = 'fade-up'>
+    <div className="MyServices-Container"  data-aos = 'fade-up' id='My-Services'>
             <div className="MyServices-Container-Banner">
                 <h1 className="Absolute" >USLUGE</h1>
                 <div className="MyServices-Container-Title ">
@@ -23,7 +38,7 @@ function MyService(){
                 <img src={Decoration}></img>
                 <p >Lorem Ipsum is simply dummy text of printing and typesetting industry.</p>
                 <button>
-                    POGLEDAJ VIŠE
+                    <Link to='/programs'>Pogledaj više</Link>
                 </button>
                </div>
               

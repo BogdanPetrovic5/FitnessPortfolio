@@ -174,30 +174,31 @@
 .Education-Content {
     display: flex;
     height: fit-content !important;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: center;
     
     align-self: center;
     gap:50px;
+    margin-top: -50px;
     margin-bottom: 50px;
     width: 98%;
     overflow: hidden;
-   
+   align-items: center;
     
 }
 
 .Education-Content .Education-Content-Paragraph{
     width: 30%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-direction: column;
     font-size: 25px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     overflow: hidden;
 }
 
 .Education-Content .Education-Content-Paragraph p{
-    align-self: flex-start;
+    align-self: center;
     width: 95%;
     font-size: 0.79em;
     font-family: 'Nunito', sans-serif;
@@ -205,7 +206,7 @@
    color: #b7b7ca;
    font-weight: 300;
    opacity: 0.7;
-   text-align: left;
+   text-align: center;
 }
 .Education-Content-Paragraph-Title-h1, .About-Paragraph-Desktop-h1{
     font-size: 3em;
@@ -225,8 +226,8 @@
     align-self: flex-end !important;
   }
   .Education-Content-Paragraph-Title-h1{
-    text-align: left !important;
-    align-self: flex-start;
+    text-align: center !important;
+    align-self: center !important;
   }
   .Education-Content-Paragraph-Title-h1 span{
     color: #FF0039;
@@ -276,6 +277,7 @@
 .Education-Content .Education-Content-Paragraph .Education-Content-Paragraph-Title{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     font-size: 25px;
@@ -293,6 +295,7 @@
     height: 3px;
     width: 100px;
     background-color: #FF0039;
+    display: none;
 }
 
 

@@ -20,6 +20,7 @@ import ServicesWorkoutPlans from '../ServicesWorkoutPlans/ServicesWorkoutPlans';
 import BB from './images/BB.jpg'
 import PL from './images/PL.jpg'
 import PB from './images/PB.jpg'
+import { Helmet } from 'react-helmet';
 function HomePage({articles}){
     const scrollToContact = () =>{
         const specificSection = document.getElementById('Form');
@@ -42,8 +43,18 @@ function HomePage({articles}){
         return () => clearTimeout(timer);
       }, []);
     return(
-        
+       
             <div>
+                    <Helmet>
+                        <meta name="description" content="Đorđe Marinković | PT " />
+                        <meta name="keywords" content="Personal Trainer, Physiotherapist, Health, Food, Bodybuilding, Bodibilding, Personalni trener, Hrana, Zdravlje" />
+                        <meta property="og:title" content="Početna stranica" />
+                        <meta property="og:description" content="Dobrodošli na moj portfolio!" />
+                        <meta property="og:url" content="https://djoledjokica" />
+                        <meta property="og:type" content="website" />
+                        <link rel="canonical" href="https://djoledjokica" />
+  
+                    </Helmet>
                 {loading ? (<Load />) : (
                     <div className='Main-Page'>
                     
