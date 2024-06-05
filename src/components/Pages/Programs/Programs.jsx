@@ -1,6 +1,6 @@
-import WPlans from '../WorkoutPlans/WorkoutPlan';
-import MyService from '../MyServices/MyService';
-import ServicesWorkoutPlans from "../ServicesWorkoutPlans/ServicesWorkoutPlans"
+import WPlans from '../../ReusableComponents/WorkoutPlans/WorkoutPlan';
+import MyService from '../../ReusableComponents/MyServices/MyService';
+import ServicesWorkoutPlans from "../../ReusableComponents/ServicesWorkoutPlans/ServicesWorkoutPlans"
 import './Programs.css'
 import React from 'react';
 import Decoration from './images/Decorations.png'
@@ -12,8 +12,8 @@ import No from './images/delete-cross.png'
 import BP from './images/Benchpresss.jpg'
 import DL from './images/Deadlift.jpg'
 import SQ from './images/Squat.jpg'
-import Form from '../ContactForm/Form';
-import Submit from '../Submitted/Submit';
+import Form from '../../ReusableComponents/ContactForm/Form';
+
 import { useForm, ValidationError } from '@formspree/react';
 function Programs(){
     const scrollToContact = () =>{
@@ -38,18 +38,9 @@ function Programs(){
                 <h1>
                     USLUGE 
                 </h1>
-               
             </div>
-            {/* <div className='Programs-Content'>
-                <h1>
-                    UNDER THE CONSTRUCTION
-                </h1>
-            </div> */}
-            <MyService></MyService>
-           
-            <ServicesWorkoutPlans>
-
-            </ServicesWorkoutPlans>
+            <MyService/>
+            <ServicesWorkoutPlans/>
             <div className='Custom-Trainings'>
                 <div className='Custom-Trainings-Banner'>
                     <div className='Custom-Trainings-Title'>
@@ -376,16 +367,16 @@ function Programs(){
                     Kontaktiraj me!
                 </button>
             </div>
-            <Form></Form>
+            <Form/>
             <div className='Contact-Banner-Container'>
-                        <div className='Contact-Banner-Title'>
-                            <h1 >
-                              Kreni da radiš sa mnom!
-                            </h1>
-                            <button onClick={()=>scrollToContact()}>
-                              Kontaktiraj me!
-                            </button>
-                        </div>
+                <div className='Contact-Banner-Title'>
+                    <h1 >
+                        Kreni da radiš sa mnom!
+                    </h1>
+                    <button onClick={()=>scrollToContact()}>
+                        Kontaktiraj me!
+                    </button>
+                </div>
             </div>
         </div>
     )

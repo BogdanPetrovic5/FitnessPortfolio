@@ -1,24 +1,13 @@
 import './AboutPage.css'
 import React from 'react'
-import HSDjole from './DjoleSrednja.jpg';
-import HighSchool from './highschool.png'
-import UNIDjole from './UNIDjole.jpg'
-import MortarBoard from './mortarboard.png'
-import WPlans from '../WorkoutPlans/WorkoutPlan';
-import Faq from '../FAQ/Faq';
-import LGallery from '../LandingGallery/LGallery';
-import Banner from '../Banner/Banner';
-import MobileGallery from '../MobileGallery/MobileGallery';
+import Faq from '../../ReusableComponents/FAQ/Faq';
+import LGallery from '../../ReusableComponents/LandingGallery/LGallery';
+import Banner from '../../ReusableComponents/Banner/Banner';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
-import DjoleAbout1 from './DjoleAbout1.jpg'
-import DjoleAbout2 from './DjoleAbout2.jpg'
-import DjoleAbout3 from './DjoleAbout3.jpg'
-import bg from './bg.png'
-import Social from '../Socials/Social';
-import Feedback from '../ClientsFeedback/Feedback';
-import MyService from '../MyServices/MyService';
-import Form from '../ContactForm/Form';
+import Feedback from '../../ReusableComponents/ClientsFeedback/Feedback';
+import MyService from '../../ReusableComponents/MyServices/MyService';
+import Form from '../../ReusableComponents/ContactForm/Form';
 function AboutPage(){
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
@@ -104,20 +93,7 @@ function AboutPage(){
                     </p>
                 </div>
                 
-                {/* <div className='Education-Content-Image About-Page-Dekstop'>
-                    <div className="About-Page-Bio-Image-First-Section">
-                        <img src="assets/DjoleAbout.jpg">
-                        </img>
-                        <img src="assets/DjoleAbout.jpg">
-                        </img>
-                    </div>
-                    <div className="About-Page-Bio-Image-Second-Section">
-                        <img src="assets/DjoleAbout.jpg">
-                        </img>
-                        <img src="assets/DjoleAbout.jpg">
-                        </img>
-                    </div>
-                </div> */}
+            
             
         </div>
         <Banner></Banner>   
@@ -140,43 +116,6 @@ function AboutPage(){
                             </button>
                         </div>
         </div>
-        {/* <div className='Banner-Goal' >
-            <h1>
-                MY MINDSET
-            </h1>
-        </div> */}
-        {/* <div className='My-Goal'>
-            <h1 data-aos="fade-down"
-                data-aos-offset="150">
-                POKRET JE LEK
-            </h1>
-            <h1 data-aos="fade-down"
-                data-aos-offset="150" >
-                REZULTATI ZAHTEVAJU DUGOROČNU UPORNOST
-            </h1>
-            <h1 data-aos="fade-down"
-                data-aos-offset="150">
-                ODRICANJEM DO CILJA
-            </h1>
-           
-            <h1 data-aos="fade-down"
-               data-aos-offset="150" >
-               SITNE NAVIKE VELIKI USPESI
-            </h1>
-            <h1 data-aos="fade-down"
-                data-aos-offset="150">
-                SVE JE NA TEBI
-            </h1>
-            <h1 data-aos="fade-down"
-               data-aos-offset="150" >
-               SITNE NAVIKE VELIKI USPESI
-            </h1>
-            <h1 data-aos="fade-down"
-               data-aos-offset="150" >
-               SVE JE TVOJA ODGOVORNOST
-            </h1>
-        </div> */}
-        
      </div>   
     )
 }

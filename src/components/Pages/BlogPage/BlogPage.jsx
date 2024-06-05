@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import blog from './images/blog.jpg'
 import Decoration from './images/Decorations.png'
-import Form from '../ContactForm/Form';
+import Form from '../../ReusableComponents/ContactForm/Form';
 function BlogPage({articles}){
     useEffect(()=>{
         const specifiLocation = document.getElementById('Blog')
