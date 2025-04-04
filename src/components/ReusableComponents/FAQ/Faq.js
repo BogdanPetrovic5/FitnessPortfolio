@@ -34,7 +34,7 @@ function Faq(){
                     </div>
                    
                         <div className={selectedQuestion === 'First-Question' ? 'Answer open' : 'Answer'}>
-                            <h2>This is answer to the question bitch</h2>
+                            <h2>This is answer to the question</h2>
                             <button>Learn more</button>
                         </div>
                     
@@ -48,7 +48,7 @@ function Faq(){
 
                     </div>
                     <div className={selectedQuestion === 'Second-Question' ? 'Answer open' : 'Answer'}>
-                            <h2>This is answer to the question bitch</h2>
+                            <h2>This is answer to the question</h2>
                             <button>Learn more</button>
                         </div>
                 </div>
@@ -61,7 +61,7 @@ function Faq(){
 
                     </div>
                     <div className={selectedQuestion === 'Third-Question' ? 'Answer open' : 'Answer'}>
-                            <h2>This is answer to the question bitch</h2>
+                            <h2>This is answer to the question</h2>
                             <button>Learn more</button>
                         </div>
                 </div>
@@ -74,7 +74,7 @@ function Faq(){
 
                     </div>
                     <div className={selectedQuestion === 'Fourth-Question' ? 'Answer open' : 'Answer'}>
-                            <h2>This is answer to the question bitch</h2>
+                            <h2>This is answer to the question</h2>
                             <button>Learn more</button>
                         </div>
                 </div>
@@ -87,7 +87,7 @@ function Faq(){
 
                     </div>
                     <div className={selectedQuestion === 'Fifth-Question' ? 'Answer open' : 'Answer'}>
-                            <h2>This is answer to the question bitch</h2>
+                            <h2>This is answer to the question</h2>
                             <button>Learn more</button>
                         </div>
                 </div>
@@ -100,7 +100,7 @@ function Faq(){
 
                     </div>
                     <div className={selectedQuestion === 'Sixth-Question' ? 'Answer open' : 'Answer'}>
-                            <h2>This is answer to the question bitch</h2>
+                            <h2>This is answer to the question </h2>
                             <button>Learn more</button>
                         </div>
                 </div>
@@ -113,7 +113,7 @@ function Faq(){
 
                     </div>
                     <div className={selectedQuestion === 'Seventh-Question' ? 'Answer open' : 'Answer'}>
-                            <h2>This is answer to the question bitch</h2>
+                            <h2>This is answer to the question</h2>
                             <button>Learn more</button>
                         </div>
                 </div>

@@ -43,12 +43,12 @@ function Footer(){
                     </h1>
                     <li>
                         <Link>
-                            Usluge
+                            Services
                         </Link>
                     </li>
                     <li>
                         <Link>
-                            O meni
+                            About me
                         </Link>
                     </li>
                     <li>
@@ -58,38 +58,38 @@ function Footer(){
                     </li>
                     <li>
                         <Link>
-                            Početna
+                            Home
                         </Link>
                     </li>
                 </div>
                 <div className='Footer-Services'>
                     <h1>
-                        Usluge
+                        Services
                     </h1>
                     <li>
                         <Link>
-                            Online Treninzi
+                            Online coaching
                         </Link>
                     </li>
                     <li>
                         <Link>
-                            Planovi
+                            Plans
                         </Link>
                     </li>
                     <li>
                         <Link>
-                            Rehabilitacija
+                            Rehab
                         </Link>
                     </li>
                     <li>
                         <Link>
-                            Ishrana
+                            Diet
                         </Link>
                     </li>
                 </div>
                 <div className='Footer-Socials'>
                     <h1>
-                        Zaprati me
+                        Follow me
                     </h1>
                     <li>
                         <img src={Ig}></img>Instagram
@@ -101,46 +101,7 @@ function Footer(){
                     <img src={Fb}></img>Facebook
                     </li>
                 </div>
-                {/* <section className='Logo-Location'>
-                    <img src='/assets/djolencelogo2.png'></img>
-                    <p>
-                        Kragujevac, Srbija
-                    </p>
-                    <p>
-                        0000000000
-                    </p>
-                    <p>
-                        contact@email.com
-                    </p>
-                </section>
-                <section className='Footer-Nav'>
-                    <h1>Korisni linkovi</h1>
-                    <p><Link to='/'>Početna</Link></p>
-                    <p><Link to='/programs'>Programi</Link></p>
-                    <p><Link to='/about'>O meni</Link></p>
-                    <p><Link>Kontakt</Link></p>
-                    <p><Link to='/blog'>Blog</Link></p>
-                </section>
-                <section className='Footer-Newsletter'>
-                    <h1>Pretplati se</h1>
-                    <div class="search">
-                        <input type='email'>
-                        </input>
-                        <button>
-                            Pretplati se
-                        </button>
-                    </div>
-                    <p>&copy; 2024 Đorđe Marinković. Sva prava zadržana.</p>
-                    <div className='Footer-Social'>
-                        <img src={Tt} onClick={()=>openLink('Tt')}>
-                        </img>
-                        <img src={Ig} onClick={()=>openLink('ig')}>
-                        </img>
-                        <img src={Fb} onClick={()=>openLink('Fb')}>
-                        </img>
-                    </div>
-                    
-                </section> */}
+                
             </div>
             <div className='Footer-Copyright'>
                 <div className='Developer'>
@@ -150,7 +111,7 @@ function Footer(){
                 </div>
                 <div className='Copy-Right'>
                     <p>
-                        &copy; 2024 Đorđe Marinković. Sva prava zadržana.
+                        &copy; 2024 Đorđe Marinković. All Rights Reserved.
                     </p>
                 </div>
             </div>

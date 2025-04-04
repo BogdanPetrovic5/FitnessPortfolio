@@ -66,19 +66,19 @@ function Header() {
         </div>
         <nav className='Header-Section-Nav'>
           <li  className={location.pathname === '/programs' ? 'Active-Route' : ''} >
-            <Link onClick={hideMenu} to= '/programs'>Usluge</Link>
+            <Link onClick={hideMenu} to= '/programs'>Services</Link>
           </li>
           <li className={location.pathname === '/about' ? 'Active-Route' : ''}>
-            <Link onClick={hideMenu} to='/about'>O meni</Link>
+            <Link onClick={hideMenu} to='/about'>About me</Link>
           </li>
           <li className={location.pathname === '/blog' ? 'Active-Route' : ''}>
             <Link onClick={hideMenu}  to='/blog'>Blog</Link>
           </li>
           <li>
-            <a onClick={scrollToContact}>Kontakt</a>
+            <a onClick={scrollToContact}>Contact</a>
           </li>
           <li>
-            <Link  to='/' >Početna</Link>
+            <Link  to='/' >Home</Link>
           </li>
         </nav>
         <button>
@@ -94,14 +94,14 @@ function Header() {
           </div>
         </div>
         <div className={isClicked ? 'ActiveDropDown' : 'HiddenDropDown'}>
-          <span><Link onClick={hideMenu}  to='/'>POČETNA</Link></span>
-          <span><Link onClick={hideMenu} to='/programs'>USLUGE</Link></span>
+          <span><Link onClick={hideMenu}  to='/'>HOME</Link></span>
+          <span><Link onClick={hideMenu} to='/programs'>SERVICES</Link></span>
           <span>
-          <Link onClick={hideMenu}  to='/about'>O MENI</Link>
+          <Link onClick={hideMenu}  to='/about'>ABOUT</Link>
           </span>
           
           <span><Link onClick={hideMenu}  to='/blog'>BLOG</Link></span>
-          <span onClick={()=>scrollToContact()}>KONTACT</span>
+          <span onClick={()=>scrollToContact()}>CONTACT</span>
           
         </div>
       </section>
