@@ -82,7 +82,7 @@ function Header() {
           </li>
         </nav>
         <button>
-          Treniraj!
+          GO GYM!
         </button>
         <div className='Drop-Down'>
           <div className={`background ${isClicked ? 'clicked' : ''}`}>
