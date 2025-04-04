@@ -20,23 +20,23 @@ function Feedback(){
         
           {
             testemonial: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          name:"Nemanja Bogdani",
+          name:"Strahijna Pavlovic",
           image: './images/man.jpg',
           },
           {
             testemonial: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          name:"Djole Djokica",
+          name:"Nemanja Maksimiovic",
           image: './images/man.jpg',
           },
         
           {
             testemonial: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          name:"Djomla Djokica",
+          name:"Mladen Djokovic",
           image: './images/man.jpg',
           },
           {
             testemonial: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy',
-          name:"Kure Djokica",
+          name:"Nikola Petrovic",
           image: './images/man.jpg',
           }
     ]

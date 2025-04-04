@@ -48,7 +48,7 @@ function AboutPage(){
                         <div data-aos="fade-left" data-aos-duration="900">
 
                         </div>
-                        <h1 data-aos="fade-left" data-aos-duration = "800" className="Decoration-Titles">O Meni</h1>
+                        <h1 data-aos="fade-left" data-aos-duration = "800" className="Decoration-Titles">About me</h1>
                 </div>
                 <h1 className="About-Paragraph-Desktop-h1 AllTitles" data-aos="fade-right" data-aos-duration = "800">
                         Tvoj Personalni Trener I <span>Fizioterapeut</span>

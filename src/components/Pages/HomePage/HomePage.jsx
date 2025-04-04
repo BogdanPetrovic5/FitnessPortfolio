@@ -57,7 +57,7 @@ function HomePage({articles}){
                         <div className='Workout-Types' id='Workout-Details'>
                             <div className='Workout-Types-Description'>
                                 <div className='Workout-Types-Title'>
-                                    <h1 className='Decoration-Titles'>Tipovi planova</h1>
+                                    <h1 className='Decoration-Titles'>Types of Plans</h1>
                                 </div>
                                 <h1 className='Workout-Types-Title-h1'>
                                     Ne znas sta koji plan znaci?<span> Pogledaj detaljnije!</span> 
@@ -105,10 +105,10 @@ function HomePage({articles}){
                         <div className='Contact-Banner-Container'>
                             <div className='Contact-Banner-Title'>
                                 <h1 >
-                                Kreni da radiš sa mnom!
+                                Start working with me!
                                 </h1>
                                 <button onClick={()=>scrollToContact()}>
-                                Kontaktiraj me!
+                                Contact me!
                                 </button>
                             </div>
                         </div>

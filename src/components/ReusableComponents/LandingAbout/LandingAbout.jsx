@@ -28,12 +28,12 @@ function LAbout(){
             
            <div className='About-Page-Bio' data-aos='fade-up'>
             <div className='About-Page-Bio-Paragraph'>
-                <h1 className="Absolute">O MENI</h1>
+                <h1 className="Absolute">ABOUT ME</h1>
                 <div className="About-Paragraph-Desktop-Title">
                         <div >
 
                         </div>
-                        <h1 className="Decoration-Titles">O meni</h1>
+                        <h1 className="Decoration-Titles">About me</h1>
                 </div>
                 <h1 className="About-Paragraph-Desktop-h1 AllTitles">
                         Tvoj Perosnalni Trener I <span>Fizioterapeut</span>

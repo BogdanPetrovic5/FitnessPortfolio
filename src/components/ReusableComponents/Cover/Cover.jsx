@@ -18,7 +18,7 @@ function Cover(){
                      <div className='Title-Decoration' 
                             data-aos-duration="1000">
                             <div></div> 
-                            <h1>SA DJOLETOM KROZ PAKAO</h1>
+                            <h1>WITH DJOLE THROUGH HELL</h1>
                      </div>
                      <h1 className='Cover-Title-h1'>
                      Lorem Ipsum is simply <span>dummy text</span> 
@@ -34,19 +34,19 @@ function Cover(){
                                    <h1>
                                        130+   
                                    </h1>
-                                   <p>Klijenata</p>
+                                   <p>CLients</p>
                             </div>
                             <div className='Patients Overview-Item'>
                                    <h1>
                                        1000+ 
                                    </h1>
-                                   <p>Pacijenata</p>
+                                   <p>Patients</p>
                             </div>
                             <div className='Experience Overview-Item'>
                                    <h1>
                                        4+ 
                                    </h1>
-                                   <p>Godine iskustva</p>
+                                   <p>Years of experience</p>
                             </div>
                      </div>
                      <div className='Overview-Socials'>

@@ -30,13 +30,13 @@ function Programs(){
       }
     const [state, handleSubmit] = useForm("myyrbkzk");
     if (state.succeeded) {
-        alert("Poruka uspesno poslata!")
+        
     }
     return(
         <div className='Programs-Container'>
             <div className='Banner'>
                 <h1>
-                    USLUGE 
+                    SERVICES 
                 </h1>
             </div>
             <MyService/>
