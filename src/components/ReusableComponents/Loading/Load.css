@@ -11,11 +11,12 @@
 	overflow: hidden;
     align-items: center;
   }
-  .loading-screen img{
+  .loading-screen svg{
     backface-visibility: visible !important;
 	animation: flip 1.3s ease infinite;
-    width: 25%;
-    height: 50%;
+    width: 30%;
+    height: 55%;
+	fill: white;
   }
   @keyframes flip {
     0% {
