@@ -131,11 +131,7 @@ function Feedback(){
                    
                     
                </div>
-               {/* <div className='Contact-Me-Banner'>
-                    <h2 data-aos="fade-down" data-aos-duration = "800">
-                        Zelis i ti da radis sa mnnom? Imas neka dodatna pitanja? Popuni formu ispod!
-                    </h2>
-               </div> */}
+        
                <div className='Feedback-Navigation-Bar '>
                     <button className='Prev' onClick={()=>updateEdges("prev")}>
                         Nazad

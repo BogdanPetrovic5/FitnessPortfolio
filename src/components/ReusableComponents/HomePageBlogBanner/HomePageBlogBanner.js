@@ -4,7 +4,7 @@ import blog from './images/blog.jpg'
 function HomePageBlogBanner({articles}){
     const [articlesData, setArticlesData] = useState([]);
     useEffect(() => {
-        console.log(articles);
+        
         setArticlesData(articles);
     }, [articles]);
     return(

@@ -4923,6 +4923,10 @@ border-radius: 10px;
         letter-spacing: 3px;
         width: 100%;
       }
+      .loading-screen svg{
+        width: 15% !important;
+        height: 40% !important;
+      }
 }
 @media only screen and (min-width:1151px) and (max-width:1550px) {
   .Footer-Content{
@@ -5158,9 +5162,16 @@ border-radius: 10px;
         letter-spacing: 3px;
         width: 100%;
       }
-   
+      .loading-screen svg{
+        width: 15% !important;
+        height: 40% !important;
+      }
 }
 @media only screen and (min-width:1151px) and (max-width:1700px){
+  .loading-screen svg{
+    width: 12% !important;
+    height: 38% !important;
+  }
   .Footer-Content{
     width: 95% !important;
 
@@ -5314,7 +5325,7 @@ border-radius: 10px;
     overflow: hidden;
     
     align-items: center;
-    /* background-color: transparent !important; */
+ 
   }
   .MyServices-Wrap{
     margin-top: 10px !important;
@@ -5323,16 +5334,7 @@ border-radius: 10px;
     width: 100% !important;
   }
   .Workout-Title button{
-    padding: 20px;
-    font-size: 17px;
-    margin-top: 50px;
-  
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #B3001B;
     align-self: flex-start !important;
-    cursor: pointer;
-    
   }
 }
  .Decoration-Titles{
@@ -5343,4 +5345,10 @@ border-radius: 10px;
   }
 .AllTitles{
   font-size: 2.4em;
+}
+@media only screen and (min-width:1701px){
+  .loading-screen svg{
+    width: 12% !important;
+    height: 38% !important;
+  }
 }

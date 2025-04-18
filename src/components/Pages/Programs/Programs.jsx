@@ -1,4 +1,3 @@
-import WPlans from '../../ReusableComponents/WorkoutPlans/WorkoutPlan';
 import MyService from '../../ReusableComponents/MyServices/MyService';
 import ServicesWorkoutPlans from "../../ReusableComponents/ServicesWorkoutPlans/ServicesWorkoutPlans"
 import './Programs.css'

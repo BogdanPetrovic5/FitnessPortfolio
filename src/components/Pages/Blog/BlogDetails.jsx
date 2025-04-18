@@ -19,7 +19,7 @@ function BlogDetails(){
     
     let next = index + 1
     const article = articles[index];
-    const comments = article ? article.comments : [];
+    
     useEffect(() => {
         const specifiLocation = document.getElementById('Blog-Details-Container')
         const offset = 200;
