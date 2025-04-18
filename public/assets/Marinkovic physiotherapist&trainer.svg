@@ -1,70 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import './Header.css'
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { Link, useLocation  } from 'react-router-dom';
-function Header() {
-  const [isSticky, setSticky] = useState(false);
-  useEffect(() => {
-    AOS.init();
-  }, []);
- 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollThreshold = 500;
-      setSticky(window.scrollY > scrollThreshold);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const headerElement = document.getElementById('Header');
-
-    if (headerElement) {
-      if (isSticky) {
-        headerElement.classList.add("Anim");
-      } else {
-        headerElement.classList.remove("Anim");
-      }
-    }
-  }, [isSticky]);
-
-  const [isClicked, setIsClicked] = useState(false);
-
-  const handleMenuClick = () => {
-    setIsClicked(!isClicked);
-  };
-  const hideMenu = () =>{
-    setIsClicked(!isClicked)
-  }
-  const scrollToContact = () =>{
-    const specificSection = document.getElementById('Form');
-    if (specificSection) {
-        
-        const offset = 100; 
-        const offsetPosition = specificSection.offsetTop - offset;
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    }
-  }
-  const location = useLocation();
-
-  return (
-    <header className={`Header ${isSticky ? 'sticky' : ''}`} id='Header'>
-      <section className='Header-Section'>
-        <div className='Header-Section-Logo'>
-        <svg version="1.1" id="Layer_1" x="0px" y="0px"
-           viewBox="0 0 822 166" style={{ enableBackground: "new 0 0 822 166" }} xmlSpace="preserve">
-            <path d="M205.3,127c4,0,6.6,1,7.9,2.8c1.5,1.9,1.5,4.5,0.4,7.6c-1,2.8-2.7,5.3-5.2,7.3c-2.7,2.1-5.6,3.1-8.8,3.1h-6.7l-3.5,10.4
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 822 166" style="enable-background:new 0 0 822 166;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path d="M205.3,127c4,0,6.6,1,7.9,2.8c1.5,1.9,1.5,4.5,0.4,7.6c-1,2.8-2.7,5.3-5.2,7.3c-2.7,2.1-5.6,3.1-8.8,3.1h-6.7l-3.5,10.4
 	h-5.9l10.7-31.2H205.3z M201,141.8c1.5,0,2.7-0.4,4.1-1.2c1.2-0.9,2.2-1.9,2.6-3.2c0.5-1.4,0.4-2.5-0.4-3.2
 	c-0.6-0.9-1.9-1.2-3.3-1.2H198l-3,8.9H201z M240.3,127h5.9l-10.7,31.2h-5.9l4.3-12.6h-13.5l-4.2,12.6h-5.9l10.7-31.2h5.9l-4.3,12.6
 	h13.4L240.3,127z M270.4,127h7.1L260,145.6l-4.3,12.6h-5.9l4.2-12.6l-4.7-18.6h7.1l2.7,12.6L270.4,127z M286.6,139.2
@@ -121,65 +62,13 @@ function Header() {
 	c9.2-6.3,18.7-9.5,28.5-9.5c4,0,7.7,0.6,11.2,2c3.3,1.2,6.2,3.1,8.2,5.5l-12.3,15.2c-2.2-4.2-6.3-6.3-12.1-6.3
 	c-5,0-9.8,1.6-14.4,4.8c-4.6,3.1-7.8,6.9-9.3,11.5c-1.6,4.5-1.2,8.4,1.4,11.5C773,93.5,776.6,95.1,781.7,95.1L781.7,95.1z
 	 M789.6,41.6l14.2-14.9H822l-20.2,14.9H789.6z"/>
-            <path className='two' d="M2.3,159.4l149-0.9c0.6,0,1-0.3,1.2-0.9l41.9-109c0.5-1.2-0.8-2.3-1.9-1.6L1.6,156.9C0.4,157.6,0.9,159.5,2.3,159.4z"/>
-            <circle class="st0" cx="132.9" cy="41.2" r="38.1"/ >
-            <path className='one' d="M98.9,22.7C76.2,25.9,76.4,26.5,67,41.9c-4.4,7.8,0.6,23.2-3.9,30.5c-10,6.9-12.1,28.7-19.3,37.5
+<path d="M2.3,159.4l149-0.9c0.6,0,1-0.3,1.2-0.9l41.9-109c0.5-1.2-0.8-2.3-1.9-1.6L1.6,156.9C0.4,157.6,0.9,159.5,2.3,159.4z"/>
+<circle class="st0" cx="132.9" cy="41.2" r="38.1"/>
+<path d="M98.9,22.7C76.2,25.9,76.4,26.5,67,41.9c-4.4,7.8,0.6,23.2-3.9,30.5c-10,6.9-12.1,28.7-19.3,37.5
 	c-8.8,5.8-7.6,19.8-13.7,26.8c-1.8,12.2,11.1-1.4,15.6-2.9c-2.2,0.3-10.1,1.7-7.5-2.7c0.8-3.1,6-7.9,8.4-9.9
 	c3.5-8.3,12.2-19.9,18.5-26.4c6.4-2.5,10.3,2.3,17.1,2.4c-5.6,0.3-9.1,4.9-13.2,7.9c-2.3,3-10.3,2.7-9.1,6.9
 	c5.3,1.6,24,35.1,30.9,25.9c-45.2-46-11-13.4,3.2-41.4c-0.4-3.4-5.1-10.7-11.9-13.4c-7.8-2,2.1-12.4,3.2-16.4
 	c8.2,21.5,15.6,7.1,28,12.1c10.8,4.3,19.9-10.4-3.9-4.8c-4.1,0.2-9.3-1.8-13.4-1.8c-0.3-2.3-0.3-5.4-2.1-7.2
 	c-1.2-2.4,0.9-7.9-1.2-10.2c-2-2.1-4.4-2-4-4c3.2-2.6,10.2-2.9,7.1-7.8c5.4-13-12.3-8.8-15.6-0.5c-6.6,0.3,0-6.2,1-9
 	C84.9,32.3,101.4,28.9,98.9,22.7z"/>
-        </svg>
-        </div>
-        <nav className='Header-Section-Nav'>
-          <li  className={location.pathname === '/programs' ? 'Active-Route' : ''} >
-            <Link onClick={hideMenu} to= '/programs'>Services</Link>
-          </li>
-          <li className={location.pathname === '/about' ? 'Active-Route' : ''}>
-            <Link onClick={hideMenu} to='/about'>About me</Link>
-          </li>
-          <li className={location.pathname === '/blog' ? 'Active-Route' : ''}>
-            <Link onClick={hideMenu}  to='/blog'>Blog</Link>
-          </li>
-          <li>
-            <a onClick={scrollToContact}>Contact</a>
-          </li>
-          <li>
-            <Link  to='/' >Home</Link>
-          </li>
-        </nav>
-        <button>
-          GO GYM!
-        </button>
-        <div className='Drop-Down'>
-          <div id='nav-button' className={`background ${isClicked ? 'clicked' : ''}`}>
-            <div className="menu__icon" onClick={handleMenuClick}>
-              <span className={isClicked ? 'clicked' : ''}></span>
-              <span className={isClicked ? 'clicked' : ''}></span>
-              <span className={isClicked ? 'clicked' : ''}></span>
-            </div>
-          </div>
-        </div>
-        <div className={isClicked ? 'ActiveDropDown' : 'HiddenDropDown'}>
-          <span><Link onClick={hideMenu}  to='/'>HOME</Link></span>
-          <span><Link onClick={hideMenu} to='/programs'>SERVICES</Link></span>
-          <span>
-          <Link onClick={hideMenu}  to='/about'>ABOUT</Link>
-          </span>
-          
-          <span><Link onClick={hideMenu}  to='/blog'>BLOG</Link></span>
-          <span onClick={()=>scrollToContact()}>CONTACT</span>
-          
-        </div>
-      </section>
-    </header>
-  );
-}
-
-
-Header.propTypes = {
-  onNavClick: PropTypes.func.isRequired,
-};
-
-export default Header;
+</svg>

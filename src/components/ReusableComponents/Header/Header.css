@@ -42,9 +42,17 @@
     align-items: center;
     
   }
-  .Header .Header-Section .Header-Section-Logo img{
-    height: 80%;
+  .Header .Header-Section .Header-Section-Logo svg{
+    height: 100%;
     width:100%;
+    fill: white;
+  }
+  .Header .Header-Section .Header-Section-Logo svg .st0{
+   
+  }
+  .Header .Header-Section .Header-Section-Logo svg .one, 
+  .Header .Header-Section .Header-Section-Logo svg .two{
+    
   }
   .Header-Section button{
     width: 10%;

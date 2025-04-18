@@ -498,7 +498,7 @@ border-radius: 10px;
     width: 35px !important;
     height: 35px !important;
   }
-  .Header-Section-Logo img{
+  .Header-Section-Logo svg{
     width: 100% !important;
     height: 50% !important;
   }
@@ -1397,12 +1397,18 @@ border-radius: 10px;
 .Header .Header-Section .Header-Section-Logo{
   width: 70% !important;
 }
+.Drop-Down .background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .Drop-Down img{
   width: 30px !important;
   height: 30px !important;
 }
-.Header-Section-Logo img{
-  width: 100% !important;
+.Header-Section-Logo svg{
+  width: 80% !important;
   height: 50% !important;
 }
 
@@ -4144,8 +4150,12 @@ border-radius: 10px;
       transform: translateY(90%);
     }
   }
-  /* <reset-style> ============================ */
+
 .menu__icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: none;
   background: transparent;
   padding: 0;
@@ -4153,8 +4163,7 @@ border-radius: 10px;
   cursor: pointer;
   font-family: inherit;
 }
-/* ============================ */
-/* <style for bg> ======== */
+
 .background {
   border-radius: 16px;
   
@@ -4169,7 +4178,7 @@ border-radius: 10px;
   align-items: center;
 }
 
-/* <style for menu__icon> ======== */
+
 .menu__icon {
   width: 32px;
   height: 32px;
@@ -4182,8 +4191,8 @@ border-radius: 10px;
   width: 100%;
   height: 0.125rem;
   border-radius: 2px;
-  background-color: rgba(197, 197, 197,0.3);
-
+  /* background-color: rgba(197, 197, 197,0.3); */
+  background-color: white;
   transition: background-color .4s;
   position: relative;
 }
@@ -4230,7 +4239,7 @@ border-radius: 10px;
 
 .menu__icon span.clicked:nth-child(3) {
   animation: ease 0.8s menu-icon-bottom forwards;
-  background-color: rgba(197, 197, 197,0.3);
+  background-color: white;
 }
 
 .menu__icon span:not(.clicked) {
@@ -4345,6 +4354,10 @@ border-radius: 10px;
         
         justify-content: center !important;
         align-items: center !important;
+    }
+    .Header .Header-Section .Drop-Down #nav-button .menu_icon{
+    
+      
     }
     .Header .Header-Section .Drop-Down img{
         width: 50px;
