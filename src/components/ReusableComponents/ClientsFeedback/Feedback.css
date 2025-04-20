@@ -95,7 +95,6 @@
     gap: 20px;
     transition: 0.3s ease-in-out;
 
-  
 }
 .Feedback-Banner .Results-Holder .Results-Slider .Result-Item{
     flex-shrink: 0 !important;
@@ -104,6 +103,11 @@
     margin-top: 20px;
    
     margin-bottom: 50px;
+}
+.Scroll-Lock{
+    
+    touch-action: pan-x;
+    overscroll-behavior-y: contain;
 }
 .Result-Testemonial{
     width: 100%;

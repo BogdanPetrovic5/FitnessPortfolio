@@ -155,22 +155,30 @@ function Feedback(){
 
     const onPanMove = (e) =>{
         if(!isDragging) return;
+        const touch = e.touches[0];
+        const deltaX = touch.clientX - startX;
+        const deltaY = touch.clientY - startY;
+        if(Math.abs(deltaX) > Math.abs(deltaY)){
+          sliderRef.current.classList.add("Scroll-Lock")
+          const delta = (e.touches[0].clientX - startX) * 1.3;
+          const potentialMargin = currentMargin + delta;
+          const maxMargin = 0;
+          const minMarginResult = calculateMinMargin();
+          const newMinMargin = -(articlesData.length-1) * itemWidth;
+          setMinMargin(newMinMargin)
 
-        const delta = (e.touches[0].clientX - startX) * 1.3;
-        const potentialMargin = currentMargin + delta;
-        const maxMargin = 0;
-        const minMarginResult = calculateMinMargin();
-        const newMinMargin = -(articlesData.length-1) * itemWidth;
-        setMinMargin(newMinMargin)
 
-
-        if (minMarginResult === false && delta < 0) {
-          return; 
+          if (minMarginResult === false && delta < 0) {
+            return; 
+          }
+          
+          const finalMargin = Math.max(minMargin, Math.min(maxMargin, potentialMargin)); 
+          setMarginLeft(finalMargin);
+          updateSliderTransform(false, finalMargin);
+       
         }
 
-        const finalMargin = Math.max(minMargin, Math.min(maxMargin, potentialMargin)); 
-        setMarginLeft(finalMargin);
-        updateSliderTransform(false, finalMargin);
+        
     }
 
     const calculateMinMargin = (e) =>{
@@ -183,8 +191,7 @@ function Feedback(){
         }
         const sliderListRight = parseFloat(sliderList.right.toFixed(1));
         const lastItemRight = parseFloat(lastItem.right.toFixed(1));
-        console.log(sliderListRight)
-        console.log(lastItemRight)
+       
         if (lastItemRight <= sliderListRight) {
           
             return false;
@@ -196,6 +203,7 @@ function Feedback(){
     const onPanEnd = (e) => {
         const step = Math.floor(sliderWidth / itemWidth);
         setIsDragging(false)
+        sliderRef.current.classList.remove("Scroll-Lock")
         const threshold = containerWidth * 0.2
         const delta = e.changedTouches[0].clientX - startX
         let newIndex = index;
