@@ -78,15 +78,34 @@ function Feedback(){
        
     //   };
     useEffect(() => {
+        const el = sliderRef.current;
+        if (!el) return;
+
+        const handleTouchMovePreventScroll = (e) => {
+          if (!isDragging) return;
+
+          const touch = e.touches[0];
+          const dx = touch.clientX - startX;
+          const dy = touch.clientY - startY;
+
+          if (Math.abs(dx) > Math.abs(dy)) {
+           
+            e.preventDefault();
+          }
+        };
+
+        el.addEventListener('touchmove', handleTouchMovePreventScroll, { passive: false });
         if (itemWrapper.current) {
           setContainerWidth(itemWrapper.current.offsetWidth);
         }
         if(sliderRef.current){
+          
           setSliderWidth(sliderRef.current.offsetWidth)
         }
         if(lastItemRef.current){
           setItemWidth(lastItemRef.current.offsetWidth)
         }
+
         const handleResize = () => {
           if (itemWrapper.current) {
             setContainerWidth(itemWrapper.current.offsetWidth);
@@ -100,7 +119,13 @@ function Feedback(){
         };
 
         window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        return () => {
+          if (el) {
+            el.removeEventListener('touchmove', handleTouchMovePreventScroll);
+          }
+          window.removeEventListener('resize', handleResize);
+
+        }
       }, []);
 
     const sliderRef = useRef(null)   
@@ -109,6 +134,7 @@ function Feedback(){
     const [containerWidth, setContainerWidth] = useState(0);
     const [itemWidth, setItemWidth] = useState(0)
     const [sliderWidth, setSliderWidth] = useState(0);
+    const [startY, setStartY] = useState(0)
     const itemWrapper = useRef(null); 
 
     const [index, setIndex] = useState(0);
@@ -117,10 +143,13 @@ function Feedback(){
     const [startX, setStartX] = useState(0);
     const [marginLeft, setMarginLeft] = useState(0);
     const [minMargin, setMinMargin] = useState(0);
+    
+
     const onPanStart = (e) =>{
 
         setIsDragging(true);
         setStartX(e.touches[0].clientX);
+        setStartY(e.touches[0].clientY);
         setCurrentMargin(marginLeft);
     }
 
@@ -133,6 +162,8 @@ function Feedback(){
         const minMarginResult = calculateMinMargin();
         const newMinMargin = -(articlesData.length-1) * itemWidth;
         setMinMargin(newMinMargin)
+
+
         if (minMarginResult === false && delta < 0) {
           return; 
         }
@@ -165,7 +196,7 @@ function Feedback(){
     const onPanEnd = (e) => {
         const step = Math.floor(sliderWidth / itemWidth);
         setIsDragging(false)
-        const threshold = containerWidth * 0.7
+        const threshold = containerWidth * 0.2
         const delta = e.changedTouches[0].clientX - startX
         let newIndex = index;
         if (delta < -threshold && index < articlesData.length - 1) {
@@ -193,7 +224,7 @@ function Feedback(){
       const step = Math.floor(sliderWidth / itemWidth);
       if(Math.abs(marginLeft) + containerWidth <= maxMargin){
         const newMargin = marginLeft - (containerWidth + (20*step))
-        console.log(newMargin)
+   
         setMarginLeft(newMargin);
         updateSliderTransform(true,newMargin);
       }
@@ -203,7 +234,7 @@ function Feedback(){
       const step = Math.floor(sliderWidth / itemWidth);
       if(Math.abs(marginLeft) - containerWidth >= 0){
         const newMargin = marginLeft + (containerWidth + (20*step))
-        console.log(newMargin)
+       
         setMarginLeft(newMargin);
         updateSliderTransform(true,newMargin);
       }
@@ -236,7 +267,9 @@ function Feedback(){
                         onTouchStart={onPanStart}
                         onTouchMove={onPanMove}
                         onTouchEnd={onPanEnd}
+                       
                         style={{ transform: `translateX(${marginLeft}px)` }}
+                        
                         
                      >
                         
