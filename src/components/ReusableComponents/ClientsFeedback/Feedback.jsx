@@ -204,7 +204,7 @@ function Feedback(){
         const step = Math.floor(sliderWidth / itemWidth);
         setIsDragging(false)
         sliderRef.current.classList.remove("Scroll-Lock")
-        const threshold = containerWidth * 0.2
+        const threshold = containerWidth * 0.1
         const delta = e.changedTouches[0].clientX - startX
         let newIndex = index;
         if (delta < -threshold && index < articlesData.length - 1) {
