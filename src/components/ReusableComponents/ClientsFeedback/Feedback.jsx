@@ -78,7 +78,7 @@ function Feedback(){
        
     //   };
     useEffect(() => {
-        const setWidths = () => {
+      const setWidths = () => {
           const holder = itemWrapper.current;
           const items = sliderRef.current?.children;
       
@@ -94,47 +94,58 @@ function Feedback(){
       window.addEventListener('resize', setWidths);
     
        
+      if (itemWrapper.current) {
+        setContainerWidth(itemWrapper.current.offsetWidth);
+      }
+
+      if(sliderRef.current){
+        
+        setSliderWidth(sliderRef.current.offsetWidth)
+      }
+      if(lastItemRef.current){
+        setItemWidth(lastItemRef.current.offsetWidth)
+      }
+
+      const handleResize = () => {
         if (itemWrapper.current) {
           setContainerWidth(itemWrapper.current.offsetWidth);
         }
-
         if(sliderRef.current){
-          
           setSliderWidth(sliderRef.current.offsetWidth)
         }
         if(lastItemRef.current){
           setItemWidth(lastItemRef.current.offsetWidth)
         }
-
-        const handleResize = () => {
-          if (itemWrapper.current) {
-            setContainerWidth(itemWrapper.current.offsetWidth);
-          }
-          if(sliderRef.current){
-            setSliderWidth(sliderRef.current.offsetWidth)
-          }
-          if(lastItemRef.current){
-            setItemWidth(lastItemRef.current.offsetWidth)
-          }
-        };
-        const onTouchMove = (e) => {
-          const touch = e.touches[0];
-          const deltaX = touch.clientX - startX;
-          const deltaY = touch.clientY - startY;
-          const threshold = 10;
-          
-        
-        };
+      };
+      const handleTouchMove = (e) => {
+        const touch = e.touches[0];
       
-        
-        window.addEventListener('resize', handleResize);
-        return () => {
-          
-          window.removeEventListener('resize', handleResize);
-          window.removeEventListener('resize', setWidths)
-          window.removeEventListener('touchmove', onTouchMove);
+        if (Math.abs(e.touches[0].clientX - startX) > 5) {
+
+          e.preventDefault(); 
+         
         }
-      }, []);
+      };
+      
+      let startX = 0;
+
+      const handleTouchStart = (e) => {
+        startX = e.touches[0].clientX;
+      };
+  
+      if (sliderRef) {
+        sliderRef.current.addEventListener('touchstart', handleTouchStart, { passive: true }); 
+        sliderRef.current.addEventListener('touchmove', handleTouchMove, { passive: false }); 
+      }
+      window.addEventListener('resize', handleResize);
+      return () => {
+        sliderRef.current.removeEventListener('touchstart', handleTouchStart);
+        sliderRef.current.removeEventListener('touchmove', handleTouchMove);
+        window.removeEventListener('resize', handleResize);
+        window.removeEventListener('resize', setWidths)
+      
+      }
+    }, []);
 
     const sliderRef = useRef(null)   
     const lastItemRef = useRef(null);
@@ -173,8 +184,9 @@ function Feedback(){
       
         const threshold = 5;
         if(Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > threshold){    
-        
+           
             const delta = (e.touches[0].clientX - startX) * 1.3;
+            if(delta > 0 && marginLeft == 0 ) return
             setDelta(delta);
             setIsSkewed(true)
 
