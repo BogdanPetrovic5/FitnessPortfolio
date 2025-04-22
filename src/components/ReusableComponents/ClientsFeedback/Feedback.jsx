@@ -78,6 +78,21 @@ function Feedback(){
        
     //   };
     useEffect(() => {
+        const setWidths = () => {
+          const holder = itemWrapper.current;
+          const items = sliderRef.current?.children;
+      
+          if (holder && items) {
+            const width = holder.offsetWidth;
+            Array.from(items).forEach((item) => {
+              item.style.width = `${width}px`;
+            });
+          }
+        };
+    
+      setWidths();
+      window.addEventListener('resize', setWidths);
+    
         const el = sliderRef.current;
         if (!el) return;
 
@@ -98,6 +113,7 @@ function Feedback(){
         if (itemWrapper.current) {
           setContainerWidth(itemWrapper.current.offsetWidth);
         }
+
         if(sliderRef.current){
           
           setSliderWidth(sliderRef.current.offsetWidth)
@@ -124,13 +140,14 @@ function Feedback(){
             el.removeEventListener('touchmove', handleTouchMovePreventScroll);
           }
           window.removeEventListener('resize', handleResize);
-
+          window.removeEventListener('resize', setWidths)
         }
       }, []);
 
     const sliderRef = useRef(null)   
     const lastItemRef = useRef(null);
-    
+    const progressBar = useRef(null);
+
     const [containerWidth, setContainerWidth] = useState(0);
     const [itemWidth, setItemWidth] = useState(0)
     const [sliderWidth, setSliderWidth] = useState(0);
@@ -144,7 +161,8 @@ function Feedback(){
     const [marginLeft, setMarginLeft] = useState(0);
     const [minMargin, setMinMargin] = useState(0);
     
-
+    const [isSkewed, setIsSkewed] = useState(false);
+    const [delta,setDelta] = useState(0)
     const onPanStart = (e) =>{
 
         setIsDragging(true);
@@ -158,32 +176,33 @@ function Feedback(){
         const touch = e.touches[0];
         const deltaX = touch.clientX - startX;
         const deltaY = touch.clientY - startY;
-        if(Math.abs(deltaX) > Math.abs(deltaY)){
-          sliderRef.current.classList.add("Scroll-Lock")
-          const delta = (e.touches[0].clientX - startX) * 1.3;
-          const potentialMargin = currentMargin + delta;
-          const maxMargin = 0;
-          const minMarginResult = calculateMinMargin();
-          const newMinMargin = -(articlesData.length-1) * itemWidth;
-          setMinMargin(newMinMargin)
-
-
-          if (minMarginResult === false && delta < 0) {
-            return; 
-          }
-          
-          const finalMargin = Math.max(minMargin, Math.min(maxMargin, potentialMargin)); 
-          setMarginLeft(finalMargin);
-          updateSliderTransform(false, finalMargin);
-       
-        }
-
+        const maxMargin = itemWidth * articlesData.length
+      
         
+        if(Math.abs(deltaX) > Math.abs(deltaY)){    
+            const delta = (e.touches[0].clientX - startX) * 1.3;
+            setDelta(delta);
+            setIsSkewed(true)
+
+            const potentialMargin = currentMargin + delta;
+
+            const minMarginResult = calculateMinMargin();
+            const newMinMargin = -(articlesData.length-1) * itemWidth;
+            if (minMarginResult === false || delta < 0) {
+              return; 
+            }
+            setMinMargin(newMinMargin)
+            sliderRef.current.classList.add("Scroll-Lock")
+            const finalMargin = Math.max(minMargin, Math.min(maxMargin, potentialMargin)); 
+            setMarginLeft(finalMargin);
+            updateSliderTransform(false, finalMargin);
+
+        }
     }
 
     const calculateMinMargin = (e) =>{
       const step = Math.floor(sliderWidth / itemWidth);
-        const sliderList = document.getElementById('item')?.getBoundingClientRect();
+        const sliderList = itemWrapper.current?.getBoundingClientRect();
         const lastItem = lastItemRef.current?.getBoundingClientRect();
         
         if(!sliderList || !lastItem){
@@ -191,16 +210,18 @@ function Feedback(){
         }
         const sliderListRight = parseFloat(sliderList.right.toFixed(1));
         const lastItemRight = parseFloat(lastItem.right.toFixed(1));
-       
+        console.log(sliderList)
+        console.log(lastItem)
         if (lastItemRight <= sliderListRight) {
           
-            return false;
+            return true;
         }
         
           setMinMargin(-(articlesData.length - 1) * (containerWidth+ (20 * (step)))) 
           return true;
     }
     const onPanEnd = (e) => {
+      setIsSkewed(false)
         const step = Math.floor(sliderWidth / itemWidth);
         setIsDragging(false)
         sliderRef.current.classList.remove("Scroll-Lock")
@@ -213,9 +234,9 @@ function Feedback(){
        
       } else if (delta > threshold && index > 0) {
         newIndex = index - 1;
-      
+     
       }
-      const newMarginLeft = -newIndex * (containerWidth + (20 * step));
+      const newMarginLeft = -newIndex * (containerWidth + 20);
       setIndex(newIndex);
       setMarginLeft(newMarginLeft);
       updateSliderTransform(true, newMarginLeft);
@@ -231,7 +252,7 @@ function Feedback(){
       const maxMargin = itemWidth * articlesData.length
       const step = Math.floor(sliderWidth / itemWidth);
       if(Math.abs(marginLeft) + containerWidth <= maxMargin){
-        const newMargin = marginLeft - (containerWidth + (20*step))
+        const newMargin = marginLeft - (containerWidth + (20))
    
         setMarginLeft(newMargin);
         updateSliderTransform(true,newMargin);
@@ -241,7 +262,7 @@ function Feedback(){
     const prev = () =>{
       const step = Math.floor(sliderWidth / itemWidth);
       if(Math.abs(marginLeft) - containerWidth >= 0){
-        const newMargin = marginLeft + (containerWidth + (20*step))
+        const newMargin = marginLeft + (containerWidth + (20))
        
         setMarginLeft(newMargin);
         updateSliderTransform(true,newMargin);
@@ -274,15 +295,11 @@ function Feedback(){
                         ref={sliderRef}
                         onTouchStart={onPanStart}
                         onTouchMove={onPanMove}
-                        onTouchEnd={onPanEnd}
-                       
+                        onTouchEnd={onPanEnd}                 
                         style={{ transform: `translateX(${marginLeft}px)` }}
-                        
-                        
                      >
-                        
                         {ArrayToShow.map((article, index) => (
-                                <div className='Result-Item'  key={index} ref={index === articlesData.length - 1 ? lastItemRef : null}>
+                                <div className='Result-Item'   key={index} ref={index === articlesData.length - 1 ? lastItemRef : null}>
                                     <div className='hr'>
 
                                     </div>
@@ -315,6 +332,21 @@ function Feedback(){
                     <button className='Prev' onClick = {prev}>
                         Nazad
                     </button>
+                    <div className='Progression-Bar-Wrapper'>
+                        <div className='Progression-Bar' 
+                        style={{ 
+                          width: `${100 / articlesData.length}%`, 
+                          transform: `translateX(${index * 100}%) 
+                          scaleX(${isSkewed ? 1.2 : 1})`,
+                          transformOrigin: delta < 0 ? 'left' : 'right'
+                        }}
+                        ref={progressBar}
+                        >
+
+                        </div>
+                        <h1>swipe for more</h1>
+                    </div>
+
                     <button className='Next' onClick = {next}>
                         Napred
                     </button>

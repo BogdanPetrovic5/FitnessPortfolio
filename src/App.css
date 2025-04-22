@@ -3888,7 +3888,9 @@ border-radius: 10px;
     
     width: 100% !important;
 }
-
+.Next, .Prev{
+  display: none;
+}
   .Contact-Banner-Title{
     width: 96% !important;
   }
@@ -5238,7 +5240,7 @@ border-radius: 10px;
   
     flex-shrink: 0 !important;
    
-    width: 50%;
+   
     height: 100%;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -5426,7 +5428,7 @@ border-radius: 10px;
   
     flex-shrink: 0 !important;
    
-    width: 33.33%;
+    /* width: 33.33%; */
     height: 100%;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -5434,5 +5436,10 @@ border-radius: 10px;
   .loading-screen svg{
     width: 12% !important;
     height: 38% !important;
+  }
+}
+@media only screen and (min-width:1024px){
+  .Progression-Bar-Wrapper{
+    display: none;
   }
 }
