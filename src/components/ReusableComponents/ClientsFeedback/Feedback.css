@@ -3,7 +3,7 @@
     justify-content: center;
     width: 100%;
     background-color: #0c0c14 ;
-    overflow: hidden;
+    
 
     margin-top: 100px;
     
@@ -193,12 +193,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 .Feedback-Navigation-Bar .Progression-Bar-Wrapper{
     width: 100%;
     height: 4px;
     border-radius: 5px;
     background-color: #272727;
+    overflow: hidden;
     
 }
 .Feedback-Navigation-Bar .Progression-Bar-Wrapper .Progression-Bar{
@@ -207,10 +209,10 @@
     height: 100%;
     position: relative;
     transition: transform 0.3s ease-out;
-    
+   
 }
 
-.Feedback-Navigation-Bar .Progression-Bar-Wrapper h1{
+.Feedback-Navigation-Bar h1{
     font-family: 'Teko', sans-serif;
     color: white;
     font-size: 0.8em;
@@ -218,4 +220,5 @@
     bottom: -50px;
     right: 50%;
     transform: translateX(50%);
+    z-index: 4;
 }

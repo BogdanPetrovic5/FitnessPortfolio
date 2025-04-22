@@ -328,7 +328,7 @@ function Feedback(){
                 </div>
                
         
-               <div className='Feedback-Navigation-Bar '>
+               <div className='Feedback-Navigation-Bar'>
                     <button className='Prev' onClick = {prev}>
                         Nazad
                     </button>
@@ -344,9 +344,9 @@ function Feedback(){
                         >
 
                         </div>
-                        <h1>swipe for more</h1>
+                        
                     </div>
-
+                    <h1>swipe for more</h1>      
                     <button className='Next' onClick = {next}>
                         Napred
                     </button>
