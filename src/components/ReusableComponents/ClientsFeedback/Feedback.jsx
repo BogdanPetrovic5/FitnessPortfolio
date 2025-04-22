@@ -122,15 +122,11 @@ function Feedback(){
           const deltaX = touch.clientX - startX;
           const deltaY = touch.clientY - startY;
           const threshold = 10;
-          if( Math.abs(deltaX) > threshold){
-            
-            e.preventDefault(); 
-            onPanMove(e);
-          }
+          
         
         };
       
-        window.addEventListener('touchmove', onTouchMove, { passive: false });
+        
         window.addEventListener('resize', handleResize);
         return () => {
           
@@ -177,7 +173,7 @@ function Feedback(){
       
         const threshold = 5;
         if(Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > threshold){    
-       
+        
             const delta = (e.touches[0].clientX - startX) * 1.3;
             setDelta(delta);
             setIsSkewed(true)
