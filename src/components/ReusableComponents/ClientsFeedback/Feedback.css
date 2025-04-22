@@ -93,8 +93,9 @@
     flex-direction: row;
     justify-content: left;
     gap: 20px;
-    transition: 0.3s ease-in-out;
-
+    transition: 0.2s ease-in-out;
+  
+  
 }
 .Feedback-Banner .Results-Holder .Results-Slider .Result-Item{
     flex-shrink: 0 !important;
@@ -104,11 +105,7 @@
    
     margin-bottom: 50px;
 }
-.Scroll-Lock{
-    
-    touch-action: pan-x;
-    overscroll-behavior-y: contain;
-}
+
 .Result-Testemonial{
     width: 100%;
     display: flex;
@@ -208,7 +205,7 @@
     border-radius: 5px;
     height: 100%;
     position: relative;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.2s ease-out;
    
 }
 

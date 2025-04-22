@@ -93,23 +93,7 @@ function Feedback(){
       setWidths();
       window.addEventListener('resize', setWidths);
     
-        const el = sliderRef.current;
-        if (!el) return;
-
-        const handleTouchMovePreventScroll = (e) => {
-          if (!isDragging) return;
-
-          const touch = e.touches[0];
-          const dx = touch.clientX - startX;
-          const dy = touch.clientY - startY;
-
-          if (Math.abs(dx) > Math.abs(dy)) {
-           
-            e.preventDefault();
-          }
-        };
-
-        el.addEventListener('touchmove', handleTouchMovePreventScroll, { passive: false });
+       
         if (itemWrapper.current) {
           setContainerWidth(itemWrapper.current.offsetWidth);
         }
@@ -133,14 +117,26 @@ function Feedback(){
             setItemWidth(lastItemRef.current.offsetWidth)
           }
         };
-
+        const onTouchMove = (e) => {
+          const touch = e.touches[0];
+          const deltaX = touch.clientX - startX;
+          const deltaY = touch.clientY - startY;
+          const threshold = 10;
+          if( Math.abs(deltaX) > threshold){
+            
+            e.preventDefault(); 
+            onPanMove(e);
+          }
+        
+        };
+      
+        window.addEventListener('touchmove', onTouchMove, { passive: false });
         window.addEventListener('resize', handleResize);
         return () => {
-          if (el) {
-            el.removeEventListener('touchmove', handleTouchMovePreventScroll);
-          }
+          
           window.removeEventListener('resize', handleResize);
           window.removeEventListener('resize', setWidths)
+          window.removeEventListener('touchmove', onTouchMove);
         }
       }, []);
 
@@ -164,7 +160,7 @@ function Feedback(){
     const [isSkewed, setIsSkewed] = useState(false);
     const [delta,setDelta] = useState(0)
     const onPanStart = (e) =>{
-
+        
         setIsDragging(true);
         setStartX(e.touches[0].clientX);
         setStartY(e.touches[0].clientY);
@@ -173,13 +169,15 @@ function Feedback(){
 
     const onPanMove = (e) =>{
         if(!isDragging) return;
+  
         const touch = e.touches[0];
         const deltaX = touch.clientX - startX;
         const deltaY = touch.clientY - startY;
         const maxMargin = itemWidth * articlesData.length
       
-        
-        if(Math.abs(deltaX) > Math.abs(deltaY)){    
+        const threshold = 5;
+        if(Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > threshold){    
+       
             const delta = (e.touches[0].clientX - startX) * 1.3;
             setDelta(delta);
             setIsSkewed(true)
@@ -188,15 +186,15 @@ function Feedback(){
 
             const minMarginResult = calculateMinMargin();
             const newMinMargin = -(articlesData.length-1) * itemWidth;
-            if (minMarginResult === false || delta < 0) {
+            if (minMarginResult === false) {
               return; 
             }
             setMinMargin(newMinMargin)
-            sliderRef.current.classList.add("Scroll-Lock")
+           
             const finalMargin = Math.max(minMargin, Math.min(maxMargin, potentialMargin)); 
             setMarginLeft(finalMargin);
             updateSliderTransform(false, finalMargin);
-
+      
         }
     }
 
@@ -210,8 +208,7 @@ function Feedback(){
         }
         const sliderListRight = parseFloat(sliderList.right.toFixed(1));
         const lastItemRight = parseFloat(lastItem.right.toFixed(1));
-        console.log(sliderList)
-        console.log(lastItem)
+      
         if (lastItemRight <= sliderListRight) {
           
             return true;
@@ -221,10 +218,10 @@ function Feedback(){
           return true;
     }
     const onPanEnd = (e) => {
-      setIsSkewed(false)
+        setIsSkewed(false)
         const step = Math.floor(sliderWidth / itemWidth);
         setIsDragging(false)
-        sliderRef.current.classList.remove("Scroll-Lock")
+        
         const threshold = containerWidth * 0.1
         const delta = e.changedTouches[0].clientX - startX
         let newIndex = index;
@@ -240,11 +237,12 @@ function Feedback(){
       setIndex(newIndex);
       setMarginLeft(newMarginLeft);
       updateSliderTransform(true, newMarginLeft);
+    
     };
     const updateSliderTransform = (smooth, margin) => {
         if (sliderRef.current) {
           sliderRef.current.style.transition = smooth ? 'transform 0.2s ease-out' : 'none';
-          sliderRef.current.style.transform = `translateX(${marginLeft}px)`;
+          sliderRef.current.style.transform = `translateX(${margin}px)`;
         }
       };
     
@@ -296,7 +294,7 @@ function Feedback(){
                         onTouchStart={onPanStart}
                         onTouchMove={onPanMove}
                         onTouchEnd={onPanEnd}                 
-                        style={{ transform: `translateX(${marginLeft}px)` }}
+                        style={{ transform: `translateX(${marginLeft}px)`}}
                      >
                         {ArrayToShow.map((article, index) => (
                                 <div className='Result-Item'   key={index} ref={index === articlesData.length - 1 ? lastItemRef : null}>
