@@ -122,7 +122,12 @@ function Feedback(){
       
         if (Math.abs(e.touches[0].clientX - startX) > 5) {
 
-          e.preventDefault(); 
+          if (e.cancelable) {
+            e.preventDefault();
+          }
+          if (isDragging) {
+            onPanMove(e);
+          }
          
         }
       };
@@ -133,14 +138,17 @@ function Feedback(){
         startX = e.touches[0].clientX;
       };
   
-      if (sliderRef) {
-        sliderRef.current.addEventListener('touchstart', handleTouchStart, { passive: true }); 
+      if (sliderRef.current) {
+        sliderRef.current.addEventListener('touchstart', handleTouchStart, { passive: true}); 
         sliderRef.current.addEventListener('touchmove', handleTouchMove, { passive: false }); 
       }
       window.addEventListener('resize', handleResize);
       return () => {
-        sliderRef.current.removeEventListener('touchstart', handleTouchStart);
-        sliderRef.current.removeEventListener('touchmove', handleTouchMove);
+        if (sliderRef.current){
+          sliderRef.current.removeEventListener('touchstart', handleTouchStart);
+          sliderRef.current.removeEventListener('touchmove', handleTouchMove);
+        }
+       
         window.removeEventListener('resize', handleResize);
         window.removeEventListener('resize', setWidths)
       
@@ -172,6 +180,7 @@ function Feedback(){
         setStartX(e.touches[0].clientX);
         setStartY(e.touches[0].clientY);
         setCurrentMargin(marginLeft);
+        console.log(marginLeft)
     }
 
     const onPanMove = (e) =>{
@@ -192,11 +201,11 @@ function Feedback(){
 
             const potentialMargin = currentMargin + delta;
 
-            const minMarginResult = calculateMinMargin();
+            // const minMarginResult = calculateMinMargin();
             const newMinMargin = -(articlesData.length-1) * itemWidth;
-            if (minMarginResult === false) {
-              return; 
-            }
+            // if (minMarginResult === false) {
+            //   return; 
+            // }
             setMinMargin(newMinMargin)
            
             const finalMargin = Math.max(minMargin, Math.min(maxMargin, potentialMargin)); 
@@ -218,7 +227,7 @@ function Feedback(){
         const lastItemRight = parseFloat(lastItem.right.toFixed(1));
       
         if (lastItemRight <= sliderListRight) {
-          
+          console.log("DADAD")
             return true;
         }
         
@@ -233,19 +242,24 @@ function Feedback(){
         const threshold = containerWidth * 0.1
         const delta = e.changedTouches[0].clientX - startX
         let newIndex = index;
-        if (delta < -threshold && index < articlesData.length - 1) {
-          newIndex = index + 1;
-        
-       
-      } else if (delta > threshold && index > 0) {
-        newIndex = index - 1;
-     
-      }
+        if (delta < -threshold) {
+          if (index < articlesData.length - 1) {
+            newIndex = index + 1;
+          } else {
+            newIndex = 0;
+          }
+        } else if (delta > threshold) {
+          if (index > 0) {
+            newIndex = index - 1;
+          } else {
+            newIndex = articlesData.length - 1;
+          }
+        }
       const newMarginLeft = -newIndex * (containerWidth + 20);
       setIndex(newIndex);
       setMarginLeft(newMarginLeft);
       updateSliderTransform(true, newMarginLeft);
-    
+      
     };
     const updateSliderTransform = (smooth, margin) => {
         if (sliderRef.current) {

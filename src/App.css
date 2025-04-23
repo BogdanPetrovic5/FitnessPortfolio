@@ -5442,4 +5442,7 @@ border-radius: 10px;
   .Progression-Bar-Wrapper{
     display: none;
   }
+  .Feedback-Navigation-Bar h1{
+    display: none;
+  }
 }
