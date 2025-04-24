@@ -3888,7 +3888,7 @@ border-radius: 10px;
     
     width: 100% !important;
 }
-.Next, .Prev{
+.next, .prev{
   display: none;
 }
   .Contact-Banner-Title{
@@ -5439,10 +5439,10 @@ border-radius: 10px;
   }
 }
 @media only screen and (min-width:1024px){
-  .Progression-Bar-Wrapper{
-    display: none;
+  .progression-bar-wrapper{
+    display: none !important;
   }
-  .Feedback-Navigation-Bar h1{
-    display: none;
+  .feedback-navigation-bar h1{
+    display: none !important;
   }
 }

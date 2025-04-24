@@ -114,7 +114,7 @@
     justify-content: space-between;
     align-self: center;
   }
-  .Prev, .Next{
+  .prev, .next{
     margin-top: 50px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     padding: 10px 45px;

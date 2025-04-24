@@ -40,43 +40,31 @@ function Feedback(){
           image: './images/man.jpg',
           }
     ]
-    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    // const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
-    // let [LowerEdge, setLowerEdge] = useState(windowWidth <= 839 ? 0 : 0);
-    // let [HigherEdge, setHigherEdge] = useState(windowWidth <= 839 ? 1 : 3);
     const targetDivRef = useRef(null);
-    // let step = windowWidth <= 839 ? 1 : 3; 
     
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //     setWindowWidth(window.innerWidth);
-    //     setWindowHeight(window.innerHeight);
-    //     };
-      
-    //     window.addEventListener('resize', handleResize);
-        
-        
-    //     return () => {
-    //     window.removeEventListener('resize', handleResize);
-    //     };
-    // }, []);
-    // const updateEdges = (direction) => {
-    //     if (direction === 'next' && HigherEdge < articlesData.length) {
-    //       setLowerEdge(LowerEdge + step);
-    //       setHigherEdge(HigherEdge + step);
-    //     } else if (direction === 'prev' && LowerEdge > 0) {
-    //       setLowerEdge(LowerEdge - step);
-    //       setHigherEdge(HigherEdge - step);
-    //     }else if(direction === 'prev' && LowerEdge == 0){
-    //         setLowerEdge(articlesData.length - step)
-    //         setHigherEdge(articlesData.length)
-    //     }else if(direction === 'next' && HigherEdge == articlesData.length){
-    //         setLowerEdge(0)
-    //         setHigherEdge(0 + step)
-    //     }
-       
-    //   };
+    const sliderRef = useRef(null)   
+    const lastItemRef = useRef(null);
+    const progressBar = useRef(null);
+
+    const [containerWidth, setContainerWidth] = useState(0);
+    const [itemWidth, setItemWidth] = useState(0)
+    const [sliderWidth, setSliderWidth] = useState(0);
+    const [startY, setStartY] = useState(0)
+    const itemWrapper = useRef(null); 
+    const [hasEvent, setHasEvent] = useState(false)
+    const [index, setIndex] = useState(1);
+    const [progressBarIndex, setProgressBarIndex] = useState(0);
+
+    const [isDragging, setIsDragging] = useState(false);
+    const [currentMargin, setCurrentMargin] = useState(0);
+    const [startX, setStartX] = useState(0);
+    const [marginLeft, setMarginLeft] = useState(0);
+    const [minMargin, setMinMargin] = useState(0);
+    
+    const [isSkewed, setIsSkewed] = useState(false);
+    const [delta,setDelta] = useState(0)
+   
     useEffect(() => {
       const setWidths = () => {
           const holder = itemWrapper.current;
@@ -105,7 +93,7 @@ function Feedback(){
       if(lastItemRef.current){
         setItemWidth(lastItemRef.current.offsetWidth)
       }
-
+   
       const handleResize = () => {
         if (itemWrapper.current) {
           setContainerWidth(itemWrapper.current.offsetWidth);
@@ -141,46 +129,30 @@ function Feedback(){
       if (sliderRef.current) {
         sliderRef.current.addEventListener('touchstart', handleTouchStart, { passive: true}); 
         sliderRef.current.addEventListener('touchmove', handleTouchMove, { passive: false }); 
+        
       }
       window.addEventListener('resize', handleResize);
+      setMarginLeft(-1 * (containerWidth + 20));
       return () => {
         if (sliderRef.current){
           sliderRef.current.removeEventListener('touchstart', handleTouchStart);
           sliderRef.current.removeEventListener('touchmove', handleTouchMove);
+
         }
-       
         window.removeEventListener('resize', handleResize);
         window.removeEventListener('resize', setWidths)
-      
-      }
-    }, []);
-
-    const sliderRef = useRef(null)   
-    const lastItemRef = useRef(null);
-    const progressBar = useRef(null);
-
-    const [containerWidth, setContainerWidth] = useState(0);
-    const [itemWidth, setItemWidth] = useState(0)
-    const [sliderWidth, setSliderWidth] = useState(0);
-    const [startY, setStartY] = useState(0)
-    const itemWrapper = useRef(null); 
-
-    const [index, setIndex] = useState(0);
-    const [isDragging, setIsDragging] = useState(false);
-    const [currentMargin, setCurrentMargin] = useState(0);
-    const [startX, setStartX] = useState(0);
-    const [marginLeft, setMarginLeft] = useState(0);
-    const [minMargin, setMinMargin] = useState(0);
-    
-    const [isSkewed, setIsSkewed] = useState(false);
-    const [delta,setDelta] = useState(0)
-    const onPanStart = (e) =>{
         
+      }
+    }, [containerWidth, itemWrapper.current, sliderRef.current, lastItemRef.current]);
+
+    const onPanStart = (e) =>{
+      console.log("Start: ", index)
+      console.log(marginLeft)
         setIsDragging(true);
         setStartX(e.touches[0].clientX);
         setStartY(e.touches[0].clientY);
         setCurrentMargin(marginLeft);
-        console.log(marginLeft)
+        
     }
 
     const onPanMove = (e) =>{
@@ -195,19 +167,12 @@ function Feedback(){
         if(Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > threshold){    
            
             const delta = (e.touches[0].clientX - startX) * 1.3;
-            if(delta > 0 && marginLeft == 0 ) return
+            if(delta > 0 && marginLeft == containerWidth - 20) return
             setDelta(delta);
             setIsSkewed(true)
-
             const potentialMargin = currentMargin + delta;
-
-            // const minMarginResult = calculateMinMargin();
-            const newMinMargin = -(articlesData.length-1) * itemWidth;
-            // if (minMarginResult === false) {
-            //   return; 
-            // }
+            const newMinMargin = -(ArrayToShow.length-1) * itemWidth;
             setMinMargin(newMinMargin)
-           
             const finalMargin = Math.max(minMargin, Math.min(maxMargin, potentialMargin)); 
             setMarginLeft(finalMargin);
             updateSliderTransform(false, finalMargin);
@@ -215,61 +180,100 @@ function Feedback(){
         }
     }
 
-    const calculateMinMargin = (e) =>{
-      const step = Math.floor(sliderWidth / itemWidth);
-        const sliderList = itemWrapper.current?.getBoundingClientRect();
-        const lastItem = lastItemRef.current?.getBoundingClientRect();
-        
-        if(!sliderList || !lastItem){
-            return true
-        }
-        const sliderListRight = parseFloat(sliderList.right.toFixed(1));
-        const lastItemRight = parseFloat(lastItem.right.toFixed(1));
-      
-        if (lastItemRight <= sliderListRight) {
-          console.log("DADAD")
-            return true;
-        }
-        
-          setMinMargin(-(articlesData.length - 1) * (containerWidth+ (20 * (step)))) 
-          return true;
-    }
+  
     const onPanEnd = (e) => {
-        setIsSkewed(false)
-        const step = Math.floor(sliderWidth / itemWidth);
-        setIsDragging(false)
+      setIsSkewed(false)
+      const step = Math.floor(sliderWidth / itemWidth);
+      setIsDragging(false)
+      
+      const threshold = containerWidth * 0.1
+      const delta = e.changedTouches[0].clientX - startX
+      let newIndex = index;
+      let newProgressBarIndex = progressBarIndex
+      if (delta < -threshold) {
+        if (index < articlesData.length + 1) {
+          newIndex = index + 1;
+          newProgressBarIndex = progressBarIndex + 1;
+        } 
+      }else if (delta > threshold) {
+        if (index > 0) {
+          newIndex = index - 1;
+          newProgressBarIndex = progressBarIndex - 1;
+        } 
+      }
+      if (newIndex === 0) {
         
-        const threshold = containerWidth * 0.1
-        const delta = e.changedTouches[0].clientX - startX
-        let newIndex = index;
-        if (delta < -threshold) {
-          if (index < articlesData.length - 1) {
-            newIndex = index + 1;
-          } else {
-            newIndex = 0;
-          }
-        } else if (delta > threshold) {
-          if (index > 0) {
-            newIndex = index - 1;
-          } else {
-            newIndex = articlesData.length - 1;
-          }
-        }
+         
+          sliderRef.current.style.transition = "transform 0.2s ease-out"; 
+          sliderRef.current.removeEventListener("transitionend", handleTransitionEndToLast);
+          sliderRef.current.addEventListener("transitionend", handleTransitionEndToLast, { once: true });
+
+        
+      }
+
+      if (newIndex === articlesData.length + 1) {
+       
+        sliderRef.current.removeEventListener("transitionend", handleTransitionEndToFirst);
+        sliderRef.current.addEventListener("transitionend", handleTransitionEndToFirst, { once: true });
+      }
+      progressBar.current.classList.remove("remove-transition")
+    
+
       const newMarginLeft = -newIndex * (containerWidth + 20);
       setIndex(newIndex);
+      setProgressBarIndex(newProgressBarIndex)
       setMarginLeft(newMarginLeft);
       updateSliderTransform(true, newMarginLeft);
       
+
+    
+    };
+
+    
+
+    const handleTransitionEndToLast = () => {
+      if (!sliderRef.current) return;
+      sliderRef.current.style.transition = "none";
+      const realLastIndex = articlesData.length;
+      console.log(containerWidth);
+      const resetMargin = -realLastIndex * (containerWidth + 20);
+      console.log(resetMargin)
+      sliderRef.current.style.transform = `translateX(${resetMargin}px)`;
+      setIndex(realLastIndex);
+
+      requestAnimationFrame(() => {
+        setProgressBarIndex(articlesData.length - 1);
+        progressBar.current.classList.add("remove-transition")
+      });
+      setMarginLeft(resetMargin);
+      
+      setHasEvent(true)
+    };
+    
+    const handleTransitionEndToFirst = () => {
+      if (!sliderRef.current) return;
+      sliderRef.current.style.transition = "none";
+      const resetMargin = -1 * (containerWidth + 20);
+      sliderRef.current.style.transform = `translateX(${resetMargin}px)`;
+      setIndex(1);
+      requestAnimationFrame(() => {
+        setProgressBarIndex(0);
+        progressBar.current.classList.add("remove-transition")
+      });
+      setMarginLeft(resetMargin);
+      
     };
     const updateSliderTransform = (smooth, margin) => {
-        if (sliderRef.current) {
-          sliderRef.current.style.transition = smooth ? 'transform 0.2s ease-out' : 'none';
-          sliderRef.current.style.transform = `translateX(${margin}px)`;
-        }
-      };
-    
+      if (sliderRef.current) {
+        sliderRef.current.style.transition = smooth ? 'transform 0.2s ease-out' : 'none';
+        sliderRef.current.style.transform = `translateX(${margin}px)`;
+      }
+    };
+
+
+
     const next = () =>{
-      const maxMargin = itemWidth * articlesData.length
+      const maxMargin = itemWidth * (ArrayToShow.length - 1)
       const step = Math.floor(sliderWidth / itemWidth);
       if(Math.abs(marginLeft) + containerWidth <= maxMargin){
         const newMargin = marginLeft - (containerWidth + (20))
@@ -281,7 +285,7 @@ function Feedback(){
     }
     const prev = () =>{
       const step = Math.floor(sliderWidth / itemWidth);
-      if(Math.abs(marginLeft) - containerWidth >= 0){
+      if(Math.abs(marginLeft) - containerWidth >= containerWidth){
         const newMargin = marginLeft + (containerWidth + (20))
        
         setMarginLeft(newMargin);
@@ -290,7 +294,7 @@ function Feedback(){
       
      
     }
-    const ArrayToShow = articlesData.slice(0, articlesData.length);
+    const ArrayToShow = [articlesData[articlesData.length - 1], ...articlesData, articlesData[0]];
     return(
         <div className="Feedback-Container">
            
@@ -348,15 +352,15 @@ function Feedback(){
                 </div>
                
         
-               <div className='Feedback-Navigation-Bar'>
-                    <button className='Prev' onClick = {prev}>
+               <div className='feedback-navigation-bar'>
+                    <button className='prev' onClick = {prev}>
                         Nazad
                     </button>
-                    <div className='Progression-Bar-Wrapper'>
-                        <div className='Progression-Bar' 
+                    <div className='progression-bar-wrapper'>
+                        <div className='progression-Bar' 
                         style={{ 
-                          width: `${100 / articlesData.length}%`, 
-                          transform: `translateX(${index * 100}%) 
+                          width: `${100 / (articlesData.length)}%`, 
+                          transform: `translateX(${progressBarIndex * 100}%) 
                           scaleX(${isSkewed ? 1.2 : 1})`,
                           transformOrigin: delta < 0 ? 'left' : 'right'
                         }}
@@ -367,7 +371,7 @@ function Feedback(){
                         
                     </div>
                     <h1>swipe for more</h1>      
-                    <button className='Next' onClick = {next}>
+                    <button className='next' onClick = {next}>
                         Napred
                     </button>
                </div>
