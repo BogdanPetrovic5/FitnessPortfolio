@@ -1256,7 +1256,7 @@ border-radius: 10px;
     flex-direction: column !important;
     align-items: flex-start !important;
     justify-content: left;
-    margin-top: 85px;
+    margin-top: 80px;
     gap: 30px;
     margin-bottom: 100px;
   }
@@ -1278,6 +1278,7 @@ border-radius: 10px;
     gap: 20px;
     flex-direction: column;
     justify-content: space-evenly;
+ 
   } 
   .Overview-Socials{
     width: 100% !important;
@@ -1291,9 +1292,16 @@ border-radius: 10px;
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 2em;
     width: 100%;
+    align-self: center;
+    margin: 0;
   }
   .Main-Page .Cover .Title .Cover-Title{
-    margin-top: 100px !important;
+    
+    position: relative;
+   
+    
+    margin-top: 80px;
+    
   }
   .Work
   .Workout-Plans-Container{

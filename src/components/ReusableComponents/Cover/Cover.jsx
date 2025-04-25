@@ -20,17 +20,21 @@ function Cover(){
 
        const animateNumber = (ref, setState, target, time) =>{
               const observer = new IntersectionObserver((entries, observer)=>{
-                     entries.forEach(entry => {
-                            if(entry.isIntersecting){
-                                   let count = 0;
-                                   const interval = setInterval(()=>{
-                                          count++;
-                                          setState(count)
-                                          if(count == target) clearInterval(interval);
-                                   },time)
-                                   observer.unobserve(entry.target)
-                            }
-                     })
+                     if(ref.current){
+                            entries.forEach(entry => {
+                                   if(entry.isIntersecting){
+                                          let count = 0;
+                                          ref.current.classList.add("animate__animated", "animate__flipInX", "animate__faster");
+                                          const interval = setInterval(()=>{
+                                                 count++;
+                                                 setState(count)
+                                                 if(count == target) clearInterval(interval);
+                                          },time)
+                                          observer.unobserve(entry.target)
+                                   }
+                            })
+                     }
+                     
               }, {threshold: 0.5})
               observer.observe(ref.current);
        }
