@@ -8,15 +8,12 @@ function Footer(){
     const openLink = (linkType) =>{
         if(linkType === "ig"){
             window.location.href = 'https://www.instagram.com/marinkovic.djordjee/'
-            console.log('ASDASDASD')
         }
         if(linkType === "Tt"){
             window.location.href = 'https://www.tiktok.com/@imarinkovici'
-            console.log('ASDASDASD')
         }
         if(linkType === "Fb"){
             window.location.href = 'https://www.facebook.com/djordjedjole.marinkovic'
-            console.log('ASDASDASD')
         }
     }
     return(

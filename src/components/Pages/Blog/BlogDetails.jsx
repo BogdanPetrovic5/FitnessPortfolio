@@ -1,10 +1,5 @@
 import './Blog.css'
-import Tag from './images/tag.png'
-import Comment from './images/comment.png'
-import Likes from './images/like.png'
-import Share from './images/send.png'
-import Man from './images/man.png'
-import { InstagramEmbed } from 'react-social-media-embed';
+
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react'

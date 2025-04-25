@@ -1,8 +1,6 @@
 import './BlogPage.css'
-import LeftArrow from './images/leftarrow.png';
-import RightArrow from './images/rightarrow.png';
+
 import React, { useEffect, useState, useRef } from 'react';
-import { InstagramEmbed } from 'react-social-media-embed';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import blog from './images/blog.jpg'
@@ -198,7 +196,7 @@ function BlogPage({articles}){
         
       }
     return(
-        <div className="Container" id='Blog' data-aos='fade-up'                           data-aos-duration='1200'>   
+        <div className="Container" id='Blog' data-aos='fade-up' data-aos-duration='1200'>   
             <div className='Banner'>
                 <h1 className='AllTitles'>
                     BLOG

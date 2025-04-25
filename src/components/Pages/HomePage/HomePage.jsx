@@ -1,7 +1,7 @@
 import React from 'react'
 import './HomePage.css'
 import Cover from '../../ReusableComponents/Cover/Cover';
-import Load from '../../ReusableComponents/Loading/Load';
+
 import LAbout from '../../ReusableComponents/LandingAbout/LandingAbout';
 import Form from '../../ReusableComponents/ContactForm/Form';
 import Banner from '../../ReusableComponents/Banner/Banner';
