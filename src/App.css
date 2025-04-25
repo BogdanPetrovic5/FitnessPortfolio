@@ -502,7 +502,7 @@ border-radius: 10px;
     width: 100% !important;
     height: 50% !important;
   }
-  .Cover .Title .Overview{
+  .Main-Page .Cover .Title .Overview{
     width: 98%;
     display: flex;
     flex-direction: column ;
@@ -512,9 +512,9 @@ border-radius: 10px;
     gap: 50px;
     margin-bottom: 100px;
   }
-  .Overview-Item h1{
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item h1{
     font-family: 'Teko', sans-serif;
-    font-size: 1.6em !important;
+    font-size: 1.6em;
     margin: 0;
     color: #FF0039;
   
@@ -525,27 +525,27 @@ border-radius: 10px;
     margin-top: -10px !important;
     font-size: 0.5em !important;
   }
-  .Overview-Wrap{
-    width: 100% !important;
-    gap: 20px !important;
-    flex-direction: column !important;
-    justify-content: space-evenly !important;
+  .Main-Page .Cover .Title .Overview .Overview-Wrap{
+    width: 100%;
+    gap: 20px;
+    flex-direction: column ;
+    justify-content: space-evenly;
   } 
   .Overview-Socials{
     width: 100% !important;
     
     justify-content: space-evenly !important;
   }
-  .Cover .Title{
-    width: 90% !important;
+  .Main-Page .Cover .Title{
+    width: 90%;
   }
  
-  .Cover-Title-h1{
-    font-size: 2em !important;
-    width: 90% !important;
+  .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
+    font-size: 2em;
+    width: 90% ;
   }
-  .Cover-Title{
-    margin-top: 100px !important;
+  .Main-Page .Cover .Title .Cover-Title{
+    margin-top: 100px;
   }
  .About-Page-Bio, .Education-Content{
     gap: 0px !important;
@@ -1250,49 +1250,49 @@ border-radius: 10px;
   .About-Page-Bio-Paragraph button{
     width: 50% !important;
   }
-  .Title .Overview{
-    width: 98% !important;
+  .Main-Page .Cover .Title .Overview{
+    width: 98%;
     display: flex;
     flex-direction: column !important;
     align-items: flex-start !important;
     justify-content: left;
-    margin-top: 250px;
-    gap: 50px !important;
+    margin-top: 85px;
+    gap: 30px;
     margin-bottom: 100px;
   }
-  .Overview-Item h1{
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item h1{
     font-family: 'Teko', sans-serif;
-    font-size: 1.6em !important;
+    font-size: 1.8em;
     margin: 0;
     color: #FF0039;
   
   }
-  .Overview-Item p{
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item p{
     color: #c3c9d0;
     font-family: 'Nunito',sans-serif;
     margin-top: -10px !important;
-    font-size: 0.5em !important;
+    font-size: 0.6em !important;
   }
-  .Overview-Wrap{
-    width: 100% !important;
-    gap: 20px !important;
-    flex-direction: column !important;
-    justify-content: space-evenly !important;
+  .Main-Page .Cover .Title .Overview .Overview-Wrap{
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
   } 
   .Overview-Socials{
     width: 100% !important;
     
     justify-content: space-evenly !important;
   }
-  .Cover .Title{
-    width: 90% !important;
+  .Main-Page .Cover .Title{
+    width: 90%;
   }
  
-  .Cover-Title-h1{
-    font-size: 2em !important;
-    width: 90% !important;
+  .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
+    font-size: 2em;
+    width: 100%;
   }
-  .Cover-Title{
+  .Main-Page .Cover .Title .Cover-Title{
     margin-top: 100px !important;
   }
   .Work
@@ -1887,19 +1887,19 @@ border-radius: 10px;
   .About-Page-Bio-Paragraph button{
     width: 50% !important;
   }
-  .Title .Overview{
-    width: 90% !important;
+  .Main-Page .Cover .Title .Overview{
+    width: 100%;
     display: flex;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: column ;
+    align-items: flex-start ;
     justify-content: left;
-    margin-top: 250px;
-    gap: 50px !important;
+    margin-top: 200px;
+    gap: 30px ;
     margin-bottom: 100px;
   }
-  .Overview-Item h1{
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item h1{
     font-family: 'Teko', sans-serif;
-    font-size: 1.4em !important;
+    font-size: 1.7em;
     margin: 0;
     color: #FF0039;
   
@@ -1908,24 +1908,24 @@ border-radius: 10px;
     color: #c3c9d0;
     font-family: 'Nunito',sans-serif;
     margin-top: -15px !important;
-    font-size: 0.5em !important;
+    font-size: 0.6em !important;
   }
-  .Overview-Wrap{
-    width: 90% !important;
-    gap: 40px !important;
-    justify-content: space-evenly !important;
+  .Main-Page .Cover .Title .Overview .Overview-Wrap{
+    width: 100%;
+    gap: 40px ;
+    justify-content: space-evenly;
   } 
   .Overview-Socials{
     width: 80% !important;
     
     justify-content: left !important;
   }
-  .Cover .Title{
-    width: 90% !important;
+  .Main-Page .Cover .Title{
+    width: 90%;
   }
-  .Cover-Title-h1{
-    font-size: 2.3em !important;
-    width: 90% !important;
+  .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
+    font-size: 2.3em;
+    width: 100%
   }
   .Workout-Plans-Selection{
     width:95% !important;
@@ -2345,19 +2345,19 @@ border-radius: 10px;
   .About-Page-Bio-Paragraph button{
     width: 50% !important;
   }
-  .Title .Overview{
-    width: 90% !important;
+  .Main-Page .Cover .Title .Overview{
+    width: 90%;
     display: flex;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: column;
+    align-items: flex-start ;
     justify-content: left;
-    margin-top: 250px;
-    gap: 50px !important;
+    margin-top: 100px;
+    gap: 30px;
     margin-bottom: 100px;
   }
-  .Overview-Item h1{
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item h1{
     font-family: 'Teko', sans-serif;
-    font-size: 1.7em !important;
+    font-size: 1.8em;
     margin: 0;
     color: #FF0039;
   
@@ -2366,22 +2366,22 @@ border-radius: 10px;
     color: #c3c9d0;
     font-family: 'Nunito',sans-serif;
     margin-top: -20px;
-    font-size: 0.5em !important;
+    font-size: 0.6em !important;
   }
-  .Overview-Wrap{
-    width: 90% !important;
-    gap: 70px !important;
+  .Main-Page .Cover .Title .Overview .Overview-Wrap{
+    width: 90%;
+    gap: 70px;
   } 
   .Overview-Socials{
     width: 80% !important;
     justify-content: left !important;
   }
-  .Cover .Title{
-    width: 90% !important;
+  .Main-Page .Cover .Title{
+    width: 90%;
   }
-  .Cover-Title-h1{
-    font-size: 2.7em !important;
-    width: 70% !important;
+  .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
+    font-size: 2.7em;
+    width: 70%;
   }
   .Workout-Plans-Selection{
     width:90% !important;
@@ -2694,28 +2694,28 @@ border-radius: 10px;
   .About-Page-Bio-Paragraph button{
     width: 50% !important;
   }
-  .Title .Overview{
-    width: 90% !important;
+  .Main-Page .Cover .Title .Overview{
+    width: 90% ;
     display: flex;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: left;
-    margin-top: 250px;
-    gap: 50px !important;
+    margin-top: 100px;
+    gap: 30px;
     margin-bottom: 100px;
   }
-  .Overview-Wrap{
-    width: 80% !important;
+  .Main-Page .Cover .Title .Overview .Overview-Wrap{
+    width: 80% ;
   } 
   .Overview-Socials{
     width: 80% !important;
     justify-content: left !important;
   }
-  .Cover .Title{
-    width: 90% !important;
+  .Main-Page .Cover .Title{
+    width: 90%;
   }
-  .Cover-Title-h1{
-    font-size: 3em !important;
+  .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
+    font-size: 3em ;
   }
   .Workout-Plans-Selection{
     width:90% !important;
@@ -4735,11 +4735,11 @@ border-radius: 10px;
   .Blog-Home-Container{
     width: 65% !important;
   }
-  .Title .Overview{
-    width: 90% !important;
+  .Main-Page .Cover .Title .Overview{
+    width: 90% ;
    
   }
-  .Overview-Wrap{
+  .Main-Page .Cover .Title .Overview .Overview-Wrap{
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -4877,11 +4877,11 @@ border-radius: 10px;
   overflow: hidden;
 }
    
-  .Cover .Title{
-    width: 90% !important;
+  .Main-Page .Cover .Title{
+    width: 90%;
   }
-  .Cover-Title-h1{
-    font-size: 3em !important;
+  .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
+    font-size: 3em;
   }
   .Cover .Cover-Images{
     width: 55% !important;
@@ -5092,8 +5092,8 @@ border-radius: 10px;
 .Blog-Home-Container{
     width: 65% !important;
   }
-  .Cover-Title-h1{
-    font-size: 3em !important;
+  .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
+    font-size: 3em;
   }
   .Buttons-Wrap{
     width: 50% !important;
@@ -5336,8 +5336,8 @@ border-radius: 10px;
   .Feedback-Banner{
     width: 90% !important;
   }
-  .Cover .Title{
-    width: 90% !important;
+  .Main-Page .Cover .Title{
+    width: 90%;
   }
   .Cover .Cover-Images{
     width: 55% !important;

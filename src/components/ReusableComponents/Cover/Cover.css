@@ -68,8 +68,8 @@
 
 
 
-.Title{
-    width: 70% !important;
+.Cover .Title{
+    width: 70%;
     
     
     display: flex;
@@ -84,13 +84,13 @@
 .Cover-Title button{
 padding-top: 15px;
 padding-bottom: 15px;
-padding-left: 35px;
-padding-right: 35px;
+padding-left: 30px;
+padding-right: 30px;
   font-family: 'Teko', sans-serif;
   color: white;
   background-color:transparent;
   border: 1px solid #FF0039;
-  font-size: 1.1em;
+  font-size: 1em;
   background-color: #ff0039;
   position: relative;
   cursor: pointer;
