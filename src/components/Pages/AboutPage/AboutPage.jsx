@@ -19,7 +19,7 @@ function AboutPage(){
     useEffect(() => {
         const specificSection = document.getElementById('Gallery');
         if (specificSection && parameterValue === "Gallery") {
-            console.log("ASDSDA")
+           
             
             const offsetPosition = specificSection.offsetTop;
             window.scrollTo({

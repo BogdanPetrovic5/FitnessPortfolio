@@ -16,7 +16,7 @@ function BlogPage({articles}){
     })
     const [articlesData, setArticlesData] = useState([]);
     useEffect(() => {
-        console.log(articles);
+      
         setArticlesData(articles);
     }, [articles]);
 
