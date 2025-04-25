@@ -24,7 +24,7 @@ function Cover(){
                             entries.forEach(entry => {
                                    if(entry.isIntersecting){
                                           let count = 0;
-                                          ref.current.classList.add("animate__animated", "animate__flipInX", "animate__faster");
+                                       
                                           const interval = setInterval(()=>{
                                                  count++;
                                                  setState(count)
