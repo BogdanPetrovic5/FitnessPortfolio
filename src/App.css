@@ -1256,7 +1256,7 @@ border-radius: 10px;
     flex-direction: column !important;
     align-items: flex-start !important;
     justify-content: left;
-    margin-top: 80px;
+    margin-top: 0px;
     gap: 30px;
     margin-bottom: 100px;
   }
@@ -1300,7 +1300,8 @@ border-radius: 10px;
     position: relative;
    
     
-    margin-top: 80px;
+    margin-top: 20%;
+    margin-bottom: 80%;
     
   }
   .Work

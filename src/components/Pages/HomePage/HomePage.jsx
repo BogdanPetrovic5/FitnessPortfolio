@@ -32,7 +32,7 @@ function HomePage({articles}){
     useEffect(() => {
         const timer = setTimeout(() => {
           setLoading(false);
-        }, 1300);
+        }, 50000);
     
         return () => clearTimeout(timer);
       }, []);
@@ -48,7 +48,7 @@ function HomePage({articles}){
                     <link rel="canonical" href="https://djoledjokica" />
 
                 </Helmet>
-                {loading ? (<Load />) : (
+                
                     <div className='Main-Page'>
                       <Cover></Cover>
                       <LAbout></LAbout>
@@ -113,7 +113,7 @@ function HomePage({articles}){
                             </div>
                         </div>
                     </div>
-                )}
+                
                 
             </div> 
     );
