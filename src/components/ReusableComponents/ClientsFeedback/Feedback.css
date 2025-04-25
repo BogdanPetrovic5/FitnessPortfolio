@@ -208,9 +208,10 @@
    
 }
 .remove-transition{
+    animation: rightToLeft 0.2 ease-out!important;
     transition: none !important;
+   
 }
-
 .feedback-navigation-bar h1{
     font-family: 'Teko', sans-serif;
     color: white;

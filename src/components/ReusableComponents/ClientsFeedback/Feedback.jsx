@@ -64,7 +64,7 @@ function Feedback(){
     
     const [isSkewed, setIsSkewed] = useState(false);
     const [delta,setDelta] = useState(0)
-   
+  
     useEffect(() => {
       const setWidths = () => {
           const holder = itemWrapper.current;
@@ -105,6 +105,7 @@ function Feedback(){
           setItemWidth(lastItemRef.current.offsetWidth)
         }
       };
+   
       const handleTouchMove = (e) => {
         const touch = e.touches[0];
       
@@ -208,6 +209,7 @@ function Feedback(){
           sliderRef.current.removeEventListener("transitionend", handleTransitionEndToLast);
           sliderRef.current.addEventListener("transitionend", handleTransitionEndToLast, { once: true });
 
+          
         
       }
 
@@ -224,7 +226,7 @@ function Feedback(){
       setProgressBarIndex(newProgressBarIndex)
       setMarginLeft(newMarginLeft);
       updateSliderTransform(true, newMarginLeft);
-      
+      progressBar.current.classList.remove("jump-reverse")
 
     
     };
@@ -232,36 +234,59 @@ function Feedback(){
     
 
     const handleTransitionEndToLast = () => {
-      if (!sliderRef.current) return;
-      sliderRef.current.style.transition = "none";
+      if (!sliderRef.current || !progressBar.current) return;
+    
       const realLastIndex = articlesData.length;
-      console.log(containerWidth);
       const resetMargin = -realLastIndex * (containerWidth + 20);
-      console.log(resetMargin)
+      const bar = progressBar.current;
+    
+      sliderRef.current.style.transition = "none";
       sliderRef.current.style.transform = `translateX(${resetMargin}px)`;
       setIndex(realLastIndex);
-
-      requestAnimationFrame(() => {
-        setProgressBarIndex(articlesData.length - 1);
-        progressBar.current.classList.add("remove-transition")
-      });
       setMarginLeft(resetMargin);
-      
-      setHasEvent(true)
-    };
     
-    const handleTransitionEndToFirst = () => {
-      if (!sliderRef.current) return;
-      sliderRef.current.style.transition = "none";
-      const resetMargin = -1 * (containerWidth + 20);
-      sliderRef.current.style.transform = `translateX(${resetMargin}px)`;
-      setIndex(1);
+      bar.style.transition = "none";
+      bar.style.transform = `translateX(${(realLastIndex - 1) * 100}%) scaleX(0)`;
+      bar.classList.remove("jump-reverse");
+    
       requestAnimationFrame(() => {
-        setProgressBarIndex(0);
-        progressBar.current.classList.add("remove-transition")
+        void bar.offsetHeight;
+    
+        bar.style.transition = "transform 0.3s ease-out";
+        bar.style.transform = `translateX(${(realLastIndex - 1) * 100}%) scaleX(1)`;
+    
+        setTimeout(() => {
+          setProgressBarIndex(realLastIndex - 1);
+        }, 300);
       });
-      setMarginLeft(resetMargin);
+    };
+    const handleTransitionEndToFirst = () => {
+      if (!sliderRef.current || !progressBar.current) return;
+    
+      const resetMargin = -1 * (containerWidth + 20);  
+      const bar = progressBar.current;
+    
       
+      sliderRef.current.style.transition = "none";
+      sliderRef.current.style.transform = `translateX(${resetMargin}px)`;
+      setIndex(1); 
+      setMarginLeft(resetMargin);  
+    
+     
+      bar.style.transition = "none";
+      bar.style.transform = `translateX(-100%) scaleX(0)`; 
+    
+   
+    
+      requestAnimationFrame(() => {
+        void bar.offsetHeight;  
+
+        bar.style.transition = "transform 0.3s ease-out";
+        bar.style.transform = `translateX(0) scaleX(1)`;  
+        setTimeout(() => {
+          setProgressBarIndex(0);  
+        }, 300); 
+      });
     };
     const updateSliderTransform = (smooth, margin) => {
       if (sliderRef.current) {
@@ -358,13 +383,14 @@ function Feedback(){
                     </button>
                     <div className='progression-bar-wrapper'>
                         <div className='progression-Bar' 
-                        style={{ 
-                          width: `${100 / (articlesData.length)}%`, 
-                          transform: `translateX(${progressBarIndex * 100}%) 
-                          scaleX(${isSkewed ? 1.2 : 1})`,
-                          transformOrigin: delta < 0 ? 'left' : 'right'
-                        }}
-                        ref={progressBar}
+                          style={{ 
+                            width: `${100 / (articlesData.length)}%`, 
+                            transform: `translateX(${progressBarIndex * 100}%) 
+                            scaleX(${isSkewed ? 1.2 : 1})`,
+                            transformOrigin: delta < 0 ? 'left' : 'right',
+                            
+                          }}
+                          ref={progressBar}
                         >
 
                         </div>

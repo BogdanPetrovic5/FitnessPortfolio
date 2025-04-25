@@ -50,6 +50,7 @@ function HomePage({articles}){
                 </Helmet>
                 {loading ? (<Load />) : (
                     <div className='Main-Page'>
+                         <Feedback/>
                       <Cover></Cover>
                       <LAbout></LAbout>
                       <MyService></MyService>
@@ -96,7 +97,7 @@ function HomePage({articles}){
                                 </div>
                             </div>
                         </div>
-                        <Feedback/>
+                       
                       
                         <Faq/>
                         <Banner/>
