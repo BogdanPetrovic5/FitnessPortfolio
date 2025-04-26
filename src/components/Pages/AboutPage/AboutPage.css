@@ -33,7 +33,6 @@
 }
 
 
-
 .About-Page-Bio{
     
     display: flex;
@@ -67,16 +66,18 @@
     margin-top: 50px;
     overflow: hidden;
 }
-.About-Page-Bio-Paragraph button{
-    padding-left: 25px;
-    padding-right: 25px;
+.About-Page-Bio-Paragraph .button-learn-more-about-section{
+   
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'Teko', sans-serif;
     font-size: 1em;
     color: white;
     border: 1px solid #FF0039;
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
     width: 25%;
     border-radius: 25px;
     cursor: pointer;

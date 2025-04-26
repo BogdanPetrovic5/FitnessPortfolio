@@ -14,6 +14,7 @@ import {
 import HomePage from './components/Pages/HomePage/HomePage';
 import AboutPage from './components/Pages/AboutPage/AboutPage';
 import Programs from './components/Pages/Programs/Programs';
+import ScrollToTop from './components/ReusableComponents/ScrollToTopButton/ScrollToTop';
 function App() {
   const [loading, setLoading] = useState(true);
   const articles = [
@@ -158,16 +159,22 @@ function App() {
         ]
     }
   ]
-
+  
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1000);
 
-    return () => clearTimeout(timer);
+    
+    return () =>{
+      clearTimeout(timer);
+    }
   }, []);
+
+
   return (
-    <Router>
+    <>
       {loading ? (
         <Load /> 
       ) : (
@@ -181,9 +188,13 @@ function App() {
             <Route path='/programs' element={<Programs setLoading={setLoading}/>} />
           </Routes>
           <Footer />
+        
+              <ScrollToTop></ScrollToTop>
+
+         
         </div>
       )}
-    </Router>
+   </>
     
   );
 }

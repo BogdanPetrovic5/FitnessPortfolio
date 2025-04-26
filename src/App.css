@@ -505,7 +505,7 @@ border-radius: 10px;
   .Main-Page .Cover .Title .Overview{
     width: 98%;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: left;
     margin-top: 250px;
@@ -578,7 +578,7 @@ border-radius: 10px;
     margin-top: 5% !important;
     gap: 20px !important;
   }
-  .About-Page-Bio .About-Page-Bio-Paragraph button{
+  .About-Page-Bio .About-Page-Bio-Paragraph .button-learn-more-about-section{
     width: 50%;
   }
   .Workout-Title p{
@@ -1247,14 +1247,14 @@ border-radius: 10px;
   .Main-Page .MyServices-Container{
     width: 95% !important;
   }
-  .About-Page-Bio-Paragraph button{
-    width: 50% !important;
+  .About-Page-Bio-Paragraph .button-learn-more-about-section{
+    width: 55% !important;
   }
   .Main-Page .Cover .Title .Overview{
     width: 98%;
     display: flex;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: left;
     margin-top: 0px;
     gap: 30px;
@@ -1282,7 +1282,7 @@ border-radius: 10px;
   } 
   .Overview-Socials{
     width: 100% !important;
-    
+  
     justify-content: space-evenly !important;
   }
   .Main-Page .Cover .Title{
@@ -1893,8 +1893,8 @@ border-radius: 10px;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
 }
-  .About-Page-Bio-Paragraph button{
-    width: 50% !important;
+  .About-Page-Bio-Paragraph .button-learn-more-about-section{
+    width: 55% !important;
   }
   .Main-Page .Cover .Title .Overview{
     width: 100%;
@@ -2351,7 +2351,7 @@ border-radius: 10px;
 .Blog-Home-Container{
     width: 95% !important;
   }
-  .About-Page-Bio-Paragraph button{
+  .About-Page-Bio-Paragraph .button-learn-more-about-section{
     width: 50% !important;
   }
   .Main-Page .Cover .Title .Overview{
@@ -2700,7 +2700,7 @@ border-radius: 10px;
 .Blog-Home-Container{
     width: 75% !important;
   }
-  .About-Page-Bio-Paragraph button{
+  .About-Page-Bio-Paragraph .button-learn-more-about-section{
     width: 50% !important;
   }
   .Main-Page .Cover .Title .Overview{
@@ -2785,9 +2785,9 @@ border-radius: 10px;
     font-size: 5em !important;
   }
   .About-Page-Bio, .Education-Content{
-    gap: 10px !important;
+    gap: 10px;
     flex-direction: column-reverse !important;
-    width: 60% !important;
+    width: 90%;
   }
   .About-Page-Bio{
     align-items: flex-end !important;
@@ -5454,4 +5454,26 @@ border-radius: 10px;
   .feedback-navigation-bar h1{
     display: none !important;
   }
+}
+.scroll-to-top{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 4;
+  bottom: 2%;
+  right: 5%;
+  backdrop-filter: blur(2.7px) !important;
+  -webkit-backdrop-filter: blur(2.7px);
+  background-color: rgba(38, 38, 38, 0.37);
+  border: 1px solid #2e3338;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.scroll-to-top img{
+  width: 60%;
+  height: 60%;
 }

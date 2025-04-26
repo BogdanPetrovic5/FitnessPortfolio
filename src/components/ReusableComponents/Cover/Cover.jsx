@@ -24,11 +24,18 @@ function Cover(){
                             entries.forEach(entry => {
                                    if(entry.isIntersecting){
                                           let count = 0;
-                                       
+                                          const speedFactor = 1.12;
+
                                           const interval = setInterval(()=>{
-                                                 count++;
+                                                 count = Math.ceil(count * speedFactor + 1);
+                                                 
                                                  setState(count)
-                                                 if(count == target) clearInterval(interval);
+                                                 if (count >= target) {
+                                                        setState(target);
+                                                        clearInterval(interval);
+                                                 } else {
+                                                        setState(count);
+                                                 }
                                           },time)
                                           observer.unobserve(entry.target)
                                    }
@@ -39,9 +46,9 @@ function Cover(){
               observer.observe(ref.current);
        }
        useEffect(() => {
-              animateNumber(clientsRef, setClients, 130, 20);
-              animateNumber(patientsRef, setPatients, 1000, 2);
-              animateNumber(experienceRef, setExperience, 4, 300);
+              animateNumber(clientsRef, setClients, 130, 60);
+              animateNumber(patientsRef, setPatients, 1000, 85);
+              animateNumber(experienceRef, setExperience, 5, 500);
        }, []);
        return(
               <header className='Cover' 
@@ -58,8 +65,8 @@ function Cover(){
                                    <h2 className='Cover-Title-h1'>
                                    Lorem Ipsum is simply <span>dummy text</span> 
                                    </h2>
-                                   <Link to="/about" aria-label="Learn more about Personal Trainer's journey"> 
-                                          <button>LEARN MORE</button>
+                                   <Link className='button-learn-more' to="/about" aria-label="Learn more about Personal Trainer's journey"> 
+                                          LEARN MORE
                                    </Link>
                             </div>
                             

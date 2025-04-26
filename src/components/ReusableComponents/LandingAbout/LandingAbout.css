@@ -121,7 +121,7 @@ button {
   height: 3px;
   background-color: #FF0039;
 }
-.About-Paragraph-Desktop .About-Paragraph-Desktop-Title h1, .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title h1{
+.About-Paragraph-Desktop .About-Paragraph-Desktop-Title h2, .About-Page-Bio-Paragraph .About-Paragraph-Desktop-Title h2{
   font-size: 1.1em;
   font-family: 'Teko', sans-serif;
   color: white;

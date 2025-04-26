@@ -81,7 +81,7 @@
     z-index: 1;
     font-size: 25px;
 }
-.Cover-Title button{
+.Cover-Title .button-learn-more{
 padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 30px;
@@ -96,6 +96,7 @@ padding-right: 30px;
   cursor: pointer;
   transition: 500ms;
   border-radius: 50px;
+  text-decoration: none;
   
 }
 .Cover-Title{
@@ -107,7 +108,7 @@ padding-right: 30px;
   justify-content: center;
   align-items: flex-start;
 }
-.Cover-Title button:hover{
+.Cover-Title .button-learn-more:hover{
  
   border: 1px solid white;
 }
