@@ -172,7 +172,7 @@ padding-right: 30px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  width: 25%;
 }
 .Overview-Wrap{
   width: 65%;
@@ -180,7 +180,7 @@ padding-right: 30px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 90px;
+  
   border-radius: 10px;
   border: 1px solid #2e3338;
   background: rgba(36, 36, 44, 0.46);

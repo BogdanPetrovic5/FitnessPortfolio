@@ -531,13 +531,16 @@ border-radius: 10px;
     flex-direction: column ;
     justify-content: space-evenly;
   } 
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item{
+    width: 90%;
+  }
   .Overview-Socials{
     width: 100% !important;
     
     justify-content: space-evenly !important;
   }
   .Main-Page .Cover .Title{
-    width: 90%;
+    width: 98%;
   }
  
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
@@ -1273,6 +1276,7 @@ border-radius: 10px;
     margin-top: -10px !important;
     font-size: 0.6em !important;
   }
+
   .Main-Page .Cover .Title .Overview .Overview-Wrap{
     width: 100%;
     gap: 20px;
@@ -1280,13 +1284,16 @@ border-radius: 10px;
     justify-content: space-evenly;
  
   } 
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item{
+    width: 90%;
+  }
   .Overview-Socials{
     width: 100% !important;
   
     justify-content: space-evenly !important;
   }
   .Main-Page .Cover .Title{
-    width: 90%;
+    width: 98%;
   }
  
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
@@ -1924,13 +1931,16 @@ border-radius: 10px;
     gap: 40px ;
     justify-content: space-evenly;
   } 
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item{
+    width: 90%;
+  }
   .Overview-Socials{
     width: 80% !important;
     
     justify-content: left !important;
   }
   .Main-Page .Cover .Title{
-    width: 90%;
+    width: 98%;
   }
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 2.3em;
@@ -2379,14 +2389,17 @@ border-radius: 10px;
   }
   .Main-Page .Cover .Title .Overview .Overview-Wrap{
     width: 90%;
-    gap: 70px;
+    
   } 
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item{
+    width:32%;
+  }
   .Overview-Socials{
     width: 80% !important;
     justify-content: left !important;
   }
   .Main-Page .Cover .Title{
-    width: 90%;
+    width: 98%;
   }
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 2.7em;
@@ -2716,12 +2729,15 @@ border-radius: 10px;
   .Main-Page .Cover .Title .Overview .Overview-Wrap{
     width: 80% ;
   } 
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item{
+    width: 30%;
+  }
   .Overview-Socials{
     width: 80% !important;
     justify-content: left !important;
   }
   .Main-Page .Cover .Title{
-    width: 90%;
+    width: 98%;
   }
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 3em ;
@@ -4302,6 +4318,19 @@ border-radius: 10px;
   animation: ease .8s menu-icon-bottom forwards;
   background-color: rgb(255, 59, 48);
 } */
+
+.menu__icon span.unclicked:nth-child(1) {
+  animation: ease 0.8s menu-icon-top-2 forwards;
+}
+
+.menu__icon span.unclicked:nth-child(2) {
+  animation: ease 0.8s menu-icon-scaled-2 forwards;
+}
+
+.menu__icon span.unclicked:nth-child(3) {
+  animation: ease 0.8s menu-icon-bottom-2 forwards;
+}
+
 .menu__icon span.clicked {
   animation: ease 0.8s menu-icon-top forwards;
 }
@@ -4754,13 +4783,16 @@ border-radius: 10px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+   
     border-radius: 10px;
     border: 1px solid #2e3338;
     background: rgba(36, 36, 44, 0.46);
     backdrop-filter: blur(3.6px);
     -webkit-backdrop-filter: blur(3.6px);
   
+  }
+  .Main-Page .Cover .Title .Overview .Overview-Wrap .Overview-Item{
+    width: 30%;
   }
   .Workout-Plans-Selection{
     width:90% !important;
@@ -4887,7 +4919,7 @@ border-radius: 10px;
 }
    
   .Main-Page .Cover .Title{
-    width: 90%;
+    width: 98%;
   }
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 3em;
@@ -4953,7 +4985,7 @@ border-radius: 10px;
     justify-content: space-around;
   }
     .Header .Header-Section{
-        width: 100% !important;
+        width: 98% !important;
         
        
     }
@@ -5346,7 +5378,7 @@ border-radius: 10px;
     width: 90% !important;
   }
   .Main-Page .Cover .Title{
-    width: 90%;
+    width: 98%;
   }
   .Cover .Cover-Images{
     width: 55% !important;
