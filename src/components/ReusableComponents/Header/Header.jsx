@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import './Header.css'
 
@@ -37,12 +37,35 @@ function Header() {
   }, [isSticky]);
 
   const [isClicked, setIsClicked] = useState(false);
-
+  const spanRefFirst = useRef(null)
+  const spanRefSecond = useRef(null)
+  const spanRefThird = useRef(null)
   const handleMenuClick = () => {
+    if(isClicked == true){
+      spanRefFirst.current.classList.remove("clicked")
+      spanRefSecond.current.classList.remove("clicked")
+      spanRefThird.current.classList.remove("clicked")
+
+      spanRefFirst.current.classList.add("unclicked")
+      spanRefSecond.current.classList.add("unclicked")
+      spanRefThird.current.classList.add("unclicked")
+    }else{
+      spanRefFirst.current.classList.add("clicked")
+      spanRefSecond.current.classList.add("clicked")
+      spanRefThird.current.classList.add("clicked")
+
+      spanRefFirst.current.classList.remove("unclicked")
+      spanRefSecond.current.classList.remove("unclicked")
+      spanRefThird.current.classList.remove("unclicked")
+    }
     setIsClicked(!isClicked);
+    
   };
   const hideMenu = () =>{
+    
+
     setIsClicked(!isClicked)
+    
   }
   const scrollToContact = () =>{
     const specificSection = document.getElementById('Form');
@@ -155,9 +178,9 @@ function Header() {
         <div className='Drop-Down'>
           <div id='nav-button' className={`background ${isClicked ? 'clicked' : ''}`}>
             <div className="menu__icon" onClick={handleMenuClick}>
-              <span className={isClicked ? 'clicked' : 'unclicked'}></span>
-              <span className={isClicked ? 'clicked' : 'unclicked'}></span>
-              <span className={isClicked ? 'clicked' : 'unclicked'}></span>
+              <span ref={spanRefFirst} ></span>
+              <span ref={spanRefSecond} ></span>
+              <span ref={spanRefThird} ></span>
             </div>
           </div>
         </div>
