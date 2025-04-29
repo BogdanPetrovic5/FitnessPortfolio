@@ -147,8 +147,6 @@ function Feedback(){
     }, [containerWidth, itemWrapper.current, sliderRef.current, lastItemRef.current]);
 
     const onPanStart = (e) =>{
-      console.log("Start: ", index)
-      console.log(marginLeft)
         setIsDragging(true);
         setStartX(e.touches[0].clientX);
         setStartY(e.touches[0].clientY);

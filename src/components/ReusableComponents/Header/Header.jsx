@@ -42,8 +42,9 @@ function Header() {
   const spanRefThird = useRef(null)
 
   const sideMenuRef = useRef()
+  
   const handleMenuClick = () => {
-    handleMenuIconAnimation()
+    handleMenuAnimations()
     if(isClicked == true){
       setTimeout(()=>{
         setIsClicked(!isClicked)
@@ -53,7 +54,7 @@ function Header() {
     
     
   };
-  const handleMenuIconAnimation=()=>{
+  const handleMenuAnimations =()=>{
     if(isClicked == true){
       spanRefFirst.current.classList.remove("clicked")
       spanRefSecond.current.classList.remove("clicked")
@@ -78,7 +79,7 @@ function Header() {
   }
   const hideMenu = () =>{
     
-    handleMenuIconAnimation()
+    handleMenuAnimations()
     if(isClicked == true){
       setTimeout(()=>{
         setIsClicked(!isClicked)
