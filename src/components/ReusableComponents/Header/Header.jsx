@@ -79,7 +79,12 @@ function Header() {
   const hideMenu = () =>{
     
     handleMenuIconAnimation()
-    setIsClicked(!isClicked)
+    if(isClicked == true){
+      setTimeout(()=>{
+        setIsClicked(!isClicked)
+      },300)
+    }
+    else setIsClicked(!isClicked)
     
   }
   const scrollToContact = () =>{
