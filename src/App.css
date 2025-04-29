@@ -481,7 +481,7 @@ border-radius: 10px;
   color: white;
 }
   .Header .Header-Section{
-    width:100% !important;
+    width:95% !important;
     height: 100%;
     
     display: flex;
@@ -489,7 +489,7 @@ border-radius: 10px;
   }
 
   .Header .Header-Section .Header-Section-Logo{
-    width:50% !important;
+    width:70%;
   }
   .Header .Header-Section .Drop-Down{
     width: calc(100% - 200px) !important;
@@ -541,6 +541,7 @@ border-radius: 10px;
   }
   .Main-Page .Cover .Title{
     width: 98%;
+    align-items: center;
   }
  
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
@@ -550,20 +551,24 @@ border-radius: 10px;
   .Main-Page .Cover .Title .Cover-Title{
     margin-top: 100px;
   }
- .About-Page-Bio, .Education-Content{
+  .Main-Page .About-Page-Bio,
+  .About-Page-Container .About-Page-Bio, 
+  .About-Page-Container .Education-Content{
     gap: 0px !important;
-    flex-direction: column-reverse !important;
-    width: 95% !important;
+    flex-direction: column-reverse ;
+    width: 95% ;
   }
   .About-Page-Bio{
     align-items: flex-end !important;
 
   }
-  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
-    width: 98% !important;
-    align-self: center !important;
-    margin-bottom: 10% !important;
-    margin-top: 0px !important;
+  .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .Education-Content .Education-Content-Paragraph{
+    width: 98%;
+    align-self: center ;
+    margin-bottom: 10% ;
+    margin-top: 0px ;
     
   }
   .Education-Content-Paragraph-Title-h1, .About-Paragraph-Desktop-h1{
@@ -1254,7 +1259,7 @@ border-radius: 10px;
     width: 55% !important;
   }
   .Main-Page .Cover .Title .Overview{
-    width: 98%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1293,7 +1298,8 @@ border-radius: 10px;
     justify-content: space-evenly !important;
   }
   .Main-Page .Cover .Title{
-    width: 98%;
+    width: 95%;
+    align-items: center;
   }
  
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
@@ -1359,20 +1365,24 @@ border-radius: 10px;
   .Main-Page #Blog .Content .Content-Articles .Article{
     width: 100% !important;
   }
-  .About-Page-Bio, .Education-Content{
+  .Main-Page .About-Page-Bio,
+  .About-Page-Container .About-Page-Bio, 
+  .About-Page-Container .Education-Content{
     gap: 0px !important;
     flex-direction: column-reverse !important;
-    width: 95% !important;
+    width: 95%;
   }
   .About-Page-Bio{
     align-items: flex-end !important;
 
   }
-  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
-    width: 90% !important;
-    align-self: center !important;
-    margin-bottom: 10% !important;
-    margin-top: 0px !important;
+  .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .Education-Content .Education-Content-Paragraph{
+    width: 98%;
+    align-self: center ;
+    margin-bottom: 10% ;
+    margin-top: 0px;
     
   }
   .Education-Content-Paragraph-Title-h1, .About-Paragraph-Desktop-h1{
@@ -1475,10 +1485,11 @@ border-radius: 10px;
 
   } */
 
-.Header-Section{
+.Container .Header .Header-Section{
   display: flex;
-  flex-direction: row !important;
-  justify-content: space-around !important;
+  flex-direction: row ;
+  justify-content: space-between ;
+  width: 95%;
 }
 .Header .Header-Section .Header-Section-Logo{
   width: 70% !important;
@@ -1904,7 +1915,7 @@ border-radius: 10px;
     width: 55% !important;
   }
   .Main-Page .Cover .Title .Overview{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column ;
     align-items: flex-start ;
@@ -1940,7 +1951,8 @@ border-radius: 10px;
     justify-content: left !important;
   }
   .Main-Page .Cover .Title{
-    width: 98%;
+    width: 95%;
+    align-items: center;
   }
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 2.3em;
@@ -1964,11 +1976,13 @@ border-radius: 10px;
     align-items: flex-end !important;
 
   }
-  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
-    width: 90% !important;
-    align-self: center !important;
-    margin-bottom: 10% !important;
-    margin-top: 0 !important;
+  .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .Education-Content .Education-Content-Paragraph{
+    width: 90% ;
+    align-self: center;
+    margin-bottom: 10%;
+    margin-top: 0 ;
     
   }
   .About-Page-Bio-Image, .Education-Content-Image{
@@ -2399,7 +2413,8 @@ border-radius: 10px;
     justify-content: left !important;
   }
   .Main-Page .Cover .Title{
-    width: 98%;
+    width: 95%;
+    align-items: flex-start;
   }
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 2.7em;
@@ -2717,7 +2732,7 @@ border-radius: 10px;
     width: 50% !important;
   }
   .Main-Page .Cover .Title .Overview{
-    width: 90% ;
+    width: 100% ;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -2737,7 +2752,9 @@ border-radius: 10px;
     justify-content: left !important;
   }
   .Main-Page .Cover .Title{
-    width: 98%;
+    width: 90%;
+    
+    align-items: flex-start;
   }
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 3em ;
@@ -2754,8 +2771,10 @@ border-radius: 10px;
   .Feedback-Banner{
     width: 95% !important;
   }
-  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
-    width: 45% !important;
+  .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .Education-Content .Education-Content-Paragraph{
+    width: 45% ;
   }
   .About-Page-Bio-Image, .Education-Content-Image{
     width: 56% !important;
@@ -2809,13 +2828,17 @@ border-radius: 10px;
     align-items: flex-end !important;
 
   }
-  .About-Page-Bio-Paragraph, .Education-Content-Paragraph{
-    width: 90% !important;
-    align-self: center !important;
-    margin-top: 0 !important;
-    margin-bottom: 5% !important;
+  .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .Education-Content .Education-Content-Paragraph{
+    width: 90%;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 5% ;
   }
-  .About-Page-Bio-Image, .Education-Content-Image{
+  .Main-Page .About-Page-Bio .About-Page-Bio-Image, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Image,
+  .About-Page-Container .Education-Content .Education-Content-Image{
     width: 100% !important;
     display: flex;
     justify-content: center;
@@ -4447,7 +4470,7 @@ border-radius: 10px;
     .Header .Header-Section{
         display: flex;
         justify-content: space-between !important;
-        width: 100% !important;
+     
     }
     .Header .Header-Section nav{
         display: none !important;
@@ -4498,16 +4521,23 @@ border-radius: 10px;
      
      
       
-}@media only screen and (min-width:841px) and (max-width:1149px){
-  .About-Page-Bio, .Education-Content{
-    
-   
-    width: 95% !important;
-    
-   
-    margin-bottom: 50px !important;
-    
-    }
+}
+@media only screen and (min-width:841px) and (max-width:1149px){
+  .Main-Page .About-Page-Bio,
+  .About-Page-Container .About-Page-Bio, 
+  .About-Page-Container .Education-Content{
+    width: 95%;
+    margin-bottom: 50px;
+    gap: 3%;
+  }
+  .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .Education-Content .Education-Content-Paragraph{
+    width: 55%;
+  }
+  .About-Page-Bio-Image, .Education-Content-Image{
+    width: 40% !important;
+  }
 }
 @media only screen and (min-width:0px) and (max-width:1150px) {
   .Programs-Container .Contact-Form-Description-h1{
@@ -4919,7 +4949,8 @@ border-radius: 10px;
 }
    
   .Main-Page .Cover .Title{
-    width: 98%;
+    width: 90%;
+    align-items: flex-start;
   }
   .Main-Page .Cover .Title .Cover-Title .Cover-Title-h1{
     font-size: 3em;
@@ -5036,6 +5067,8 @@ border-radius: 10px;
         width: 15% !important;
         height: 40% !important;
       }
+ 
+
 }
 @media only screen and (min-width:1151px) and (max-width:1550px) {
   .Footer-Content{
@@ -5379,6 +5412,7 @@ border-radius: 10px;
   }
   .Main-Page .Cover .Title{
     width: 98%;
+    align-items: center;
   }
   .Cover .Cover-Images{
     width: 55% !important;
@@ -5390,8 +5424,10 @@ border-radius: 10px;
   .About-Page-Bio-Image{
     width: 45% !important;
   }
-  .Education-Content-Paragraph , .About-Page-Bio-Paragraph{
-    width: 45% !important;
+  .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
+  .About-Page-Container .Education-Content .Education-Content-Paragraph{
+    width: 45% ;
   }
   .Education-Content-Paragraph p, .About-Page-Bio-Paragraph p{
     width: 95% !important;

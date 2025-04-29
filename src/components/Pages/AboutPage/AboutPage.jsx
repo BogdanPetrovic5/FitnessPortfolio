@@ -50,9 +50,9 @@ function AboutPage(){
                         </div>
                         <h1 data-aos="fade-left" data-aos-duration = "800" className="Decoration-Titles">About me</h1>
                 </div>
-                <h1 className="About-Paragraph-Desktop-h1 AllTitles" data-aos="fade-right" data-aos-duration = "800">
+                <h2 className="About-Paragraph-Desktop-h1 AllTitles" data-aos="fade-right" data-aos-duration = "800">
                         Tvoj Personalni Trener I <span>Fizioterapeut</span>
-                </h1>
+                </h2>
                 <p data-aos="fade-left" >
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as n
 

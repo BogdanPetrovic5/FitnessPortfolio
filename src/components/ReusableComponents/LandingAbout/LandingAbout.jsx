@@ -27,7 +27,7 @@ function LAbout(){
     return(
     
             
-           <div className='About-Page-Bio' data-aos='fade-up'>
+          <div className='About-Page-Bio' data-aos='fade-up'>
             <div className='About-Page-Bio-Paragraph'>
                 <h1 className="Absolute">ABOUT ME</h1>
                 <div className="About-Paragraph-Desktop-Title">
