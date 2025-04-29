@@ -40,9 +40,17 @@ function Header() {
   const spanRefFirst = useRef(null)
   const spanRefSecond = useRef(null)
   const spanRefThird = useRef(null)
+
+  const sideMenuRef = useRef()
   const handleMenuClick = () => {
     handleMenuIconAnimation()
-    setIsClicked(!isClicked);
+    if(isClicked == true){
+      setTimeout(()=>{
+        setIsClicked(!isClicked)
+      },300)
+    }
+    else setIsClicked(!isClicked)
+    
     
   };
   const handleMenuIconAnimation=()=>{
@@ -54,6 +62,10 @@ function Header() {
       spanRefFirst.current.classList.add("unclicked")
       spanRefSecond.current.classList.add("unclicked")
       spanRefThird.current.classList.add("unclicked")
+
+      sideMenuRef.current.classList.remove("animate__animated", "animate__slideInRight", "animate__faster")
+      
+      sideMenuRef.current.classList.add("animate__animated", "animate__slideOutRight", "animate__faster")
     }else{
       spanRefFirst.current.classList.add("clicked")
       spanRefSecond.current.classList.add("clicked")
@@ -187,17 +199,19 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className={isClicked ? 'ActiveDropDown' : 'HiddenDropDown'}>
-          <span><Link onClick={hideMenu}  to='/'>HOME</Link></span>
-          <span><Link onClick={hideMenu} to='/programs'>SERVICES</Link></span>
-          <span>
-          <Link onClick={hideMenu}  to='/about'>ABOUT</Link>
-          </span>
-          
-          <span><Link onClick={hideMenu}  to='/blog'>BLOG</Link></span>
-          <span onClick={()=>scrollToContact()}>CONTACT</span>
-          
-        </div>
+        {isClicked && (
+            <div
+              ref={sideMenuRef}
+              className="ActiveDropDown animate__animated animate__slideInRight animate__faster"
+            >
+              <span><Link onClick={hideMenu} to="/">HOME</Link></span>
+              <span><Link onClick={hideMenu} to="/programs">SERVICES</Link></span>
+              <span><Link onClick={hideMenu} to="/about">ABOUT</Link></span>
+              <span><Link onClick={hideMenu} to="/blog">BLOG</Link></span>
+              <span onClick={scrollToContact}>CONTACT</span>
+            </div>
+        )}
+       
       </section>
     </header>
   );

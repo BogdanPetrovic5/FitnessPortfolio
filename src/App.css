@@ -4180,8 +4180,8 @@ border-radius: 10px;
     height: 100vh;
     margin-top: 120px;
     margin-left: 50%;
-    animation: rotateY 700ms ease-in-out forwards;
-    transform-origin: top center;
+    /* animation: rotateY 700ms ease-in-out forwards; */
+    /* transform-origin: top center; */
     z-index: 9999999999999;
     background: rgba(12, 12, 20, 0.8) !important;
    
