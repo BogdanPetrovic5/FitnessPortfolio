@@ -480,8 +480,8 @@ border-radius: 10px;
   margin-bottom: 80px;
   color: white;
 }
-  .Header .Header-Section{
-    width:95% !important;
+.Container .Header .Header-Section{
+    width:95%;
     height: 100%;
     
     display: flex;
@@ -1555,6 +1555,9 @@ border-radius: 10px;
 }
 }
 @media only screen and (min-width:440px) and (max-width: 625px){
+  .Container .Header .Header-Section{
+    width: 95%;
+  }
   .Workout-Plans-Selection li{
     color: white;
     font-family: 'Teko', sans-serif;
@@ -2101,6 +2104,9 @@ border-radius: 10px;
   }
 }
 @media only screen and (min-width:626px) and (max-width:840px) {
+  .Container .Header .Header-Section{
+    width: 95%;
+  }
   .Footer-Copyright{
     flex-direction: column !important;
     justify-content: center !important;
@@ -2501,7 +2507,9 @@ border-radius: 10px;
   
 }
 @media only screen and (min-width:841px) and (max-width:1023px){
-  
+  .Container .Header .Header-Section{
+    width: 90%;
+  }
   .Header .Header-Section .Header-Section-Logo{
     width: 30% !important;
   }
@@ -2813,15 +2821,12 @@ border-radius: 10px;
   .Absolute{
     font-size: 5em !important;
   }
-  .About-Page-Bio, .Education-Content{
+  .Main-Page .About-Page-Bio,.About-Page-Container .Education-Content{
     gap: 10px;
-    flex-direction: column-reverse !important;
+    flex-direction: column-reverse;
     width: 90%;
   }
-  .About-Page-Bio{
-    align-items: flex-end !important;
 
-  }
   .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
   .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
   .About-Page-Container .Education-Content .Education-Content-Paragraph{
@@ -4461,9 +4466,9 @@ border-radius: 10px;
     transform: scale(1);
   }
 }
-    .Header .Header-Section{
+  .Container .Header .Header-Section{
         display: flex;
-        justify-content: space-between !important;
+        justify-content: space-between ;
      
     }
     .Header .Header-Section nav{
@@ -4529,8 +4534,10 @@ border-radius: 10px;
   .About-Page-Container .Education-Content .Education-Content-Paragraph{
     width: 55%;
   }
-  .About-Page-Bio-Image, .Education-Content-Image{
-    width: 40% !important;
+  .Main-Page .About-Page-Bio .About-Page-Bio-Image, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Image,
+  .About-Page-Container .Education-Content .Education-Content-Image{
+    width: 40% ;
   }
 }
 @media only screen and (min-width:0px) and (max-width:1150px) {
@@ -4613,6 +4620,9 @@ border-radius: 10px;
 }
 
 @media only screen and (min-width:1024px) and (max-width:1150px) {
+  .Container .Header .Header-Section{
+    width: 90%;
+  }
   .Footer-Content{
     width: 95% !important;
   }
@@ -5009,11 +5019,7 @@ border-radius: 10px;
     align-items: center;
     justify-content: space-around;
   }
-    .Header .Header-Section{
-        width: 98% !important;
-        
-       
-    }
+ 
     .Drop-Down{
       display: none !important;
     }
@@ -5065,8 +5071,12 @@ border-radius: 10px;
 
 }
 @media only screen and (min-width:1151px) and (max-width:1550px) {
+
+  .Container .Header .Header-Section{
+    width: 90%;
+  }
   .Footer-Content{
-    width: 85% !important;
+    width: 90% !important;
   }
   .Training-Form-Wrap{
     width: 50% !important;
@@ -5304,6 +5314,9 @@ border-radius: 10px;
       }
 }
 @media only screen and (min-width:1151px) and (max-width:1700px){
+  .Container .Header .Header-Section{
+    width: 98%;
+  }
   .Feedback-Container .Feedback-Banner .Results-Holder .Results-Slider .Result-Item{
   
     flex-shrink: 0 !important;
@@ -5411,13 +5424,13 @@ border-radius: 10px;
   .Cover .Cover-Images{
     width: 55% !important;
   }
-  .Education-Content .Education-Content-Image, .About-Page-Bio-Image{
+  .Main-Page .About-Page-Bio .About-Page-Bio-Image, 
+  .About-Page-Container .About-Page-Bio .About-Page-Bio-Image,
+  .About-Page-Container .Education-Content .Education-Content-Image{
     width: 45% !important;
   }
  
-  .About-Page-Bio-Image{
-    width: 45% !important;
-  }
+
   .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
   .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
   .About-Page-Container .Education-Content .Education-Content-Paragraph{
