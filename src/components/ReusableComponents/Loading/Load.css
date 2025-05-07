@@ -11,13 +11,19 @@
 	overflow: hidden;
     align-items: center;
   }
+  .loading-screen .under-lay{
+	fill: rgba(82, 82, 82, 0.253);
+  }
   .loading-screen svg{
     backface-visibility: visible !important;
-	animation: flip 1.3s ease infinite;
+	
+	position: absolute;
     width: 30%;
     height: 55%;
-	fill: white;
+	
   }
+
+
   @keyframes flip {
     0% {
 		transform: perspective(700px) rotateY(0);

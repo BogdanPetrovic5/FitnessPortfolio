@@ -1,8 +1,34 @@
 import './Load.css'
+import React, { useEffect, useState, useRef } from 'react';
 function Load(){
+    const rectRef = useRef(null);
+
+    useEffect(() => {
+        const rect = rectRef.current;
+        if (!rect) return;
+
+        const duration = 1000;
+        const startTime = performance.now();
+
+        const animate = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const height = 98.9 * progress;
+            const y = 98.9 - height;
+
+            rect.setAttribute('height', height);
+            rect.setAttribute('y', y);
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        };
+
+        requestAnimationFrame(animate);
+    }, []);
     return (
         <div className="loading-screen">
-            <svg version="1.1" id="Layer_1" x="0px" y="0px"
+            <svg className='under-lay' version="1.1" id="Layer_1" x="0px" y="0px"
 	            viewBox="0 0 113.4 98.9" style={{ enableBackground: "new 0 0 113.4 98.9" }}>
             <g>
                 <g>
@@ -35,8 +61,36 @@ function Load(){
                 </g>
             </g>
             </svg>
+            <svg version="1.1" x="0px" y="0px"
+                viewBox="0 0 113.4 98.9" preserveAspectRatio="xMidYMid meet">
+                
+                <defs>
+                    <mask id="reveal-mask">
+                        <rect
+                            ref={rectRef}
+                            x="0"
+                            y="98.9"
+                            width="113.4"
+                            height="0"
+                            fill="white"
+                        />
+                    </mask>
+                </defs>
 
+                <g mask="url(#reveal-mask)" fill="#fff">
+                    {[...Array(4)].map((_, i) => (
+                        <g key={i}>
+                            <polygon points="85.6,30.5 98.1,17.8 94.6,17.8 94.4,17.8 64.2,17.8 64.2,30.6 64.2,85 64.2,85 64.2,97.9 64.2,98.3 77,85 77,85 
+                                77,30.6 85.4,30.6 85.4,30.7 85.5,30.6 85.6,30.6"/>
+                            <path d="M25.6,1C17.3,1,11.1,3,6.9,7c-4.2,4-6.3,9.3-6.3,16c0,6,1.3,17.6,5.3,21.9c4,4.3,9.3,6.5,16,6.5h24.9V85h0l12.8,13.3v-0.3
+                                V85v0V30.6V17.8H29.4h-0.2h-3.5l12.5,12.7v0.1h0.1l0,0v0h8.4v8.2H23.4c-3.1,0-5.7-0.9-7.8-2.6c-2.1-1.8-2.5-10.5-2.5-13.3
+                                c0-3,1-5.3,3.1-7c2.1-1.6,4.7-2.5,7.9-2.5h76.2v0L112.9,1V1H25.6z"/>
+                        </g>
+                    ))}
+                </g>
+            </svg>
         </div>
-    )
+    );
+    
 }
 export default Load;
