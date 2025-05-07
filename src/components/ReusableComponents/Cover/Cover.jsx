@@ -63,7 +63,7 @@ function Cover(){
                                           <h1>WITH DJOLE THROUGH HELL</h1>
                                    </div>
                                    <h2 className='Cover-Title-h1'>
-                                   Lorem Ipsum is simply <span>dummy text</span> 
+                                          Lorem Ipsum is simply <span>dummy text</span> 
                                    </h2>
                                    <Link className='button-learn-more' to="/about" aria-label="Learn more about Personal Trainer's journey"> 
                                           LEARN MORE
@@ -93,15 +93,15 @@ function Cover(){
                                    </div>
                                    <div className='Overview-Socials'>
                                           <div className='Overview-Socials-TikTok Soc'>
-                                                 <img src={TT} alt='TikTok social media icon for personal trainer'>
+                                                 <img src={TT} alt='TikTok social media icon for personal trainer' loading='lazy'>
                                                  </img>
                                           </div>
                                           <div className='Overview-Socials-Facebook Soc'>
-                                          <img src={IG} alt='Instagram social media icon for personal trainer'>
+                                                 <img src={IG} alt='Instagram social media icon for personal trainer'loading='lazy'>
                                                  </img>
-                                          </div >
+                                          </div>
                                           <div className='Overview-Socials-Instagram Soc'>
-                                          <img src={FB} alt='Facebook social media icon for personal trainer'>
+                                                 <img src={FB} alt='Facebook social media icon for personal trainer' loading='lazy'>
                                                  </img>
                                           </div>
                                    </div>

@@ -104,7 +104,7 @@ function Header() {
 
   return (
     <header className={`Header ${isSticky ? 'sticky' : ''}`} id='Header'>
-      <section className='Header-Section'>
+      <nav className='Header-Section' aria-label="Primary">
         <div className='Header-Section-Logo'>
           <svg version="1.1" id="Layer_1" x="0px" y="0px"
             viewBox="0 0 822 166" style={{ enableBackground: "new 0 0 822 166" }} xmlSpace="preserve">
@@ -218,7 +218,7 @@ function Header() {
             </div>
         )}
        
-      </section>
+      </nav>
     </header>
   );
 }

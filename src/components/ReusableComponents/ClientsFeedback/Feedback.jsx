@@ -319,24 +319,27 @@ function Feedback(){
     }
     const ArrayToShow = [articlesData[articlesData.length - 1], ...articlesData, articlesData[0]];
     return(
-        <div className="Feedback-Container">
+        <section className="Feedback-Container">
            
             <div className='Feedback-Banner'>
+              <header>
                 <h1 className='Absolute'>UTISCI</h1>
-                <div className='Feedback-Banner-Title'>
-                    <div data-aos="fade-right" data-aos-duration = "800">
+                  <div className='Feedback-Banner-Title'>
+                      <div data-aos="fade-right" data-aos-duration = "800">
 
-                    </div>
-                    <h1 data-aos="fade-right" data-aos-duration = "800" className="Decoration-Titles">
-                        Utisci 
-                    </h1>
-                </div>
-                <div className='Feedback-Banner-Description'>
-                    <h1 data-aos="fade-left" data-aos-duration = "800" className='AllTitles'> Rezultati mojih klijenata</h1>
-                    <img src={Decoration}>
-                    </img>
-                    <p >Lorem Ipsum is simply dummy text of printing and typesetting industry.</p>
-                </div>
+                      </div>
+                      <h2 data-aos="fade-right" data-aos-duration = "800" className="Decoration-Titles">
+                          Utisci 
+                      </h2>
+                  </div>
+                  <div className='Feedback-Banner-Description'>
+                      <h3 data-aos="fade-left" data-aos-duration = "800" className='AllTitles'> Rezultati mojih klijenata</h3>
+                      <img src={Decoration} loading='lazy' alt="Dekoracija sekcije sa utiscima" >
+                      </img>
+                      <p >Pročitajte kako sam pomogao mojim klijentima da postignu svoje ciljeve kroz personalizovane treninge i fizioterapiju. Svaka priča je dokaz posvećenosti i rezultata.</p>
+                  </div>
+                </header>
+                
                 <div className='Results-Holder' id='item' ref={itemWrapper}>
                     <div className='Results-Slider' 
                         ref={sliderRef}
@@ -344,15 +347,19 @@ function Feedback(){
                         onTouchMove={onPanMove}
                         onTouchEnd={onPanEnd}                 
                         style={{ transform: `translateX(${marginLeft}px)`}}
+                    
                      >
                         {ArrayToShow.map((article, index) => (
-                                <div className='Result-Item'   key={index} ref={index === articlesData.length - 1 ? lastItemRef : null}>
+                                <article 
+                                className='Result-Item'   
+                                key={index}
+                                ref={index === articlesData.length - 1 ? lastItemRef : null}>
                                     <div className='hr'>
 
                                     </div>
-                                    <div className='Result-Testemonial'>
+                                    <blockquote className='Result-Testemonial'>
                                         <div className='Quote-Icon'>
-                                            <img src={Quote}>
+                                            <img src={Quote} alt="Ikonica navodnika za utisak" loading='lazy'>
                                             </img>
                                         </div>
                                         <div className='Quote'>
@@ -360,22 +367,22 @@ function Feedback(){
                                                 {article.testemonial}
                                             </p>
                                         </div>
-                                    </div>
-                                    <div className='Result-Item-Description'>
-                                        <div className='Result-Item-Picture'>
-                                            <img src={Man}></img>
-                                        </div>
+                                    </blockquote>
+                                    <footer className='Result-Item-Description'>
+                                        <figure className='Result-Item-Picture'>
+                                            <img src={Man} loading='lazy'></img>
+                                        </figure>
                                         <div className='Result-Item-Name'>
                                             <h2>{article.name}</h2>
                                         </div>
-                                    </div>
-                                </div>
+                                    </footer>
+                                </article>
                         ))}
                     </div>
                 </div>
                
         
-               <div className='feedback-navigation-bar'>
+              <nav className='feedback-navigation-bar' aria-label="Navigacija kroz utiske">
                     <button className='prev' onClick = {prev}>
                         Nazad
                     </button>
@@ -398,9 +405,9 @@ function Feedback(){
                     <button className='next' onClick = {next}>
                         Napred
                     </button>
-               </div>
-            </div>
-        </div>
+              </nav>
+           </div>
+        </section>
     )
 }
 export default Feedback

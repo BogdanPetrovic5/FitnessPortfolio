@@ -1964,15 +1964,12 @@ border-radius: 10px;
   .Main-Page #Blog .Content .Content-Articles .Article{
     width: 100% !important;
   }
-  .About-Page-Bio, .Education-Content{
-    gap: 10px !important;
-    flex-direction: column-reverse !important;
-    width: 95% !important;
+  .Main-Page .About-Page-Bio,.About-Page-Container .Education-Content{
+    gap: 10px;
+    flex-direction: column-reverse;
+    width: 95%;
   }
-  .About-Page-Bio{
-    align-items: flex-end !important;
-
-  }
+ 
   .Main-Page .About-Page-Bio .About-Page-Bio-Paragraph, 
   .About-Page-Container .About-Page-Bio .About-Page-Bio-Paragraph, 
   .About-Page-Container .Education-Content .Education-Content-Paragraph{

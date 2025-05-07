@@ -66,6 +66,11 @@
     margin-top: 50px;
     overflow: hidden;
 }
+.About-Page-Bio-Paragraph header{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
 .About-Page-Bio-Paragraph .button-learn-more-about-section{
    
     padding-top: 10px;
