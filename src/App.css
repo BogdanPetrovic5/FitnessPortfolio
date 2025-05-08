@@ -90,6 +90,10 @@
   
 }
 @media only screen and (min-width:0px) and (max-width: 299px){
+  .loading-screen svg{
+    width: 55% !important;
+    height: 80% !important; 
+  }
   .Workout-Plans-Selection li{
     color: white;
     font-family: 'Teko', sans-serif;
@@ -889,6 +893,10 @@ border-radius: 10px;
   }
 }
 @media only screen and (min-width:300px) and (max-width: 439px){
+  .loading-screen svg{
+    width: 45% !important;
+    height: 75% !important; 
+  }
   .Footer-Copyright{
     flex-direction: column !important;
     justify-content: center !important;
@@ -1555,6 +1563,10 @@ border-radius: 10px;
 }
 }
 @media only screen and (min-width:440px) and (max-width: 625px){
+  .loading-screen svg{
+    width: 40% !important;
+    height: 70% !important; 
+  }
   .Container .Header .Header-Section{
     width: 95%;
   }
@@ -2101,6 +2113,10 @@ border-radius: 10px;
   }
 }
 @media only screen and (min-width:626px) and (max-width:840px) {
+  .loading-screen svg{
+    width: 30% !important;
+    height: 60% !important; 
+  }
   .Container .Header .Header-Section{
     width: 95%;
   }
