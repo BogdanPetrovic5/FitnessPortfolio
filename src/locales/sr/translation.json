@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "services": "Usluge",
+    "about": "O meni",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "home":"Početna"
+  },
+  "home": {
+    "welcome": "Welcome to our website"
+  },
+  "about": {
+    "title": "About us"
+  },
+  "contact": {
+    "title": "Get in touch"
+  }
+}

@@ -66,7 +66,7 @@
     cursor: pointer;
   }
   .Header .Header-Section .Header-Section-Nav{
-    width: 40%;
+    width: 50%;
     height: 100%;
     color: white;
     display: flex;
@@ -89,6 +89,8 @@
   .Drop-Down{
     display: none;
   }
+ 
+  
   .Header .Header-Section .Header-Section-Nav li {
     list-style: none;
     font-family: 'Nunito', sans-serif;
@@ -97,9 +99,30 @@
     text-transform: capitalize !important;
     cursor: pointer;
     color: #ffffff;
-    transition: color 500ms; /* Added transition property for color change */
+    transition: color 500ms; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: unset !important;
   }
-  
+  .Header .Header-Section .Header-Section-Nav li figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Header .Header-Section .Header-Section-Nav li figure img{
+    height: 20px;
+    width: 20px;
+  }
+  .Header .Header-Section .Header-Section-Nav li.language{
+    padding: 0px;
+    left: 0;
+
+  }
+  .Header .Header-Section .Header-Section-Nav li.language .language-options{
+    top: unset;
+    bottom: -120px;
+  }
   /* .Header .Header-Section .Header-Section-Nav li:last-child {
     background-color: #940000;
     padding: 10px 25px;

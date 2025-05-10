@@ -5,6 +5,7 @@ import BlogPage from './components/Pages/BlogPage/BlogPage';
 import BlogDetails from './components/Pages/Blog/BlogDetails';
 import Load from './components/ReusableComponents/Loading/Load';
 import React, { useState, useEffect } from 'react'
+import './i18n'; 
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,6 +16,7 @@ import HomePage from './components/Pages/HomePage/HomePage';
 import AboutPage from './components/Pages/AboutPage/AboutPage';
 import Programs from './components/Pages/Programs/Programs';
 import ScrollToTop from './components/ReusableComponents/ScrollToTopButton/ScrollToTop';
+import LanguageChooser from './components/ReusableComponents/LanguageChooser/LanguageChoose';
 function App() {
   const [loading, setLoading] = useState(true);
   const articles = [
@@ -189,8 +191,8 @@ function App() {
           </Routes>
           <Footer />
         
-              <ScrollToTop></ScrollToTop>
-
+          <ScrollToTop></ScrollToTop>
+          <LanguageChooser></LanguageChooser>
          
         </div>
       )}

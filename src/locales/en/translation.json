@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "services": "Services",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "home":"Home"
+  },
+  "home": {
+    "welcome": "Welcome to our website"
+  },
+  "about": {
+    "title": "About us"
+  },
+  "contact": {
+    "title": "Get in touch"
+  }
+}

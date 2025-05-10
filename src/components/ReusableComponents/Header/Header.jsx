@@ -5,8 +5,13 @@ import './Header.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link, useLocation  } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageChooser from '../LanguageChooser/LanguageChoose';
 function Header() {
+   const {t,i18n} = useTranslation();
   const [isSticky, setSticky] = useState(false);
+ 
+ 
   useEffect(() => {
     AOS.init();
   }, []);
@@ -88,6 +93,7 @@ function Header() {
     else setIsClicked(!isClicked)
     
   }
+
   const scrollToContact = () =>{
     const specificSection = document.getElementById('Form');
     if (specificSection) {
@@ -101,7 +107,8 @@ function Header() {
     }
   }
   const location = useLocation();
-
+ 
+  
   return (
     <header className={`Header ${isSticky ? 'sticky' : ''}`} id='Header'>
       <nav className='Header-Section' aria-label="Primary">
@@ -178,20 +185,23 @@ function Header() {
         </div>
         <nav className='Header-Section-Nav'>
           <li  className={location.pathname === '/programs' ? 'Active-Route' : ''} >
-            <Link onClick={hideMenu} to= '/programs'>Services</Link>
+            <Link onClick={hideMenu} to= '/programs'>{t('navbar.services')}</Link>
           </li>
           <li className={location.pathname === '/about' ? 'Active-Route' : ''}>
-            <Link onClick={hideMenu} to='/about'>About me</Link>
+            <Link onClick={hideMenu} to='/about'>{t('navbar.about')}</Link>
           </li>
           <li className={location.pathname === '/blog' ? 'Active-Route' : ''}>
-            <Link onClick={hideMenu}  to='/blog'>Blog</Link>
+            <Link onClick={hideMenu}  to='/blog'>{t('navbar.blog')}</Link>
           </li>
           <li>
-            <a onClick={scrollToContact}>Contact</a>
+            <a onClick={scrollToContact}>{t('navbar.contact')}</a>
           </li>
+        
           <li>
-            <Link  to='/' >Home</Link>
+            <Link  to='/' >{t('navbar.home')}</Link>
           </li>
+          
+        
         </nav>
         <button>
           GO GYM!
@@ -210,11 +220,11 @@ function Header() {
               ref={sideMenuRef}
               className="ActiveDropDown animate__animated animate__slideInRight animate__faster"
             >
-              <span><Link onClick={hideMenu} to="/">HOME</Link></span>
-              <span><Link onClick={hideMenu} to="/programs">SERVICES</Link></span>
-              <span><Link onClick={hideMenu} to="/about">ABOUT</Link></span>
-              <span><Link onClick={hideMenu} to="/blog">BLOG</Link></span>
-              <span onClick={scrollToContact}>CONTACT</span>
+              <span><Link onClick={hideMenu} to="/">{t('navbar.home')}</Link></span>
+              <span><Link onClick={hideMenu} to="/programs">{t('navbar.services')}</Link></span>
+              <span><Link onClick={hideMenu} to="/about">{t('navbar.about')}</Link></span>
+              <span><Link onClick={hideMenu} to="/blog">{t('navbar.blog')}</Link></span>
+              <span onClick={scrollToContact}>{t('navbar.contact')}</span>
             </div>
         )}
        
