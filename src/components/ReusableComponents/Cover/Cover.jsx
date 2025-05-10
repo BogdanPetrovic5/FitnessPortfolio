@@ -9,11 +9,13 @@ import IG from './images/instagram.png'
 import TT from './images/tik-tok.png'
 import FB from './images/facebook.png'
 import { Link, useLocation  } from 'react-router-dom';
+import { useTranslation, Trans } from 'react-i18next';
+
 function Cover(){
        const [clients, setClients] = useState(0);
        const [patients, setPatients] = useState(0);
        const [experience, setExperience] = useState(0);
-
+       const {t} = useTranslation();
        const clientsRef = useRef(null);
        const patientsRef = useRef(null);
        const experienceRef = useRef(null);
@@ -60,10 +62,10 @@ function Cover(){
                                    <div className='Title-Decoration' 
                                           data-aos-duration="1000">
                                           <div></div> 
-                                          <h1>WITH DJOLE THROUGH HELL</h1>
+                                          <h1>{t('cover.title')}</h1>
                                    </div>
                                    <h2 className='Cover-Title-h1'>
-                                          Lorem Ipsum is simply <span>dummy text</span> 
+                                         {t('cover.subtitle.title')}<span>{t('cover.subtitle.span')}</span> 
                                    </h2>
                                    <Link className='button-learn-more' to="/about" aria-label="Learn more about Personal Trainer's journey"> 
                                           LEARN MORE

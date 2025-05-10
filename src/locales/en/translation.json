@@ -6,8 +6,21 @@
     "contact": "Contact",
     "home":"Home"
   },
-  "home": {
-    "welcome": "Welcome to our website"
+  "cover": {
+    "title": "WITH DJOLE THROUGH HELL",
+    "subtitle": {
+      "title":"From pain to power.",
+      "span":"Your transformation starts here."
+    },
+    "button": "LEARN MORE",
+    "overview": {
+      "clients": "Clients",
+      "clients_sub": "Pushing limits every day",
+      "patients": "Patients",
+      "patients_sub": "Rehab and return stronger",
+      "experience": "Years of experience",
+      "experience_sub": "Proven results over time"
+    }
   },
   "about": {
     "title": "About us"

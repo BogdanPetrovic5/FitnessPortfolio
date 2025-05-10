@@ -6,9 +6,23 @@
     "contact": "Kontakt",
     "home":"Početna"
   },
-  "home": {
-    "welcome": "Welcome to our website"
+  "cover": {
+    "title": "SA ĐOLETOM KROZ PAKAO",
+    "subtitle": {
+      "title":"Od bola do snage.",
+      "span":"Tvoja transformacija počinje sada."
+    },
+    "button": "Saznaj više",
+    "overview": {
+      "clients": "Klijenata",
+      "clients_sub": "Granice se pomeraju svakog dana",
+      "patients": "Pacijenata",
+      "patients_sub": "Opet na nogama, jači nego ikad",
+      "experience": "Godina iskustva",
+      "experience_sub": "Rezultati koji traju"
+    }
   },
+ 
   "about": {
     "title": "About us"
   },
