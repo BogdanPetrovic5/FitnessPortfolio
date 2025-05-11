@@ -22,9 +22,15 @@
       "experience_sub": "Rezultati koji traju"
     }
   },
- 
-  "about": {
-    "title": "About us"
+ "about": {
+    "sectionTitle": "O MENI",
+    "title": "O meni",
+    "subtitle": {
+      "title":"Tvoj lični trener i ",
+      "span":"fizioterapeut"
+    },
+    "paragraph": "Sa više od decenije iskustva u transformaciji tela i života, spajam trening snage sa rehabilitacijom kako bih klijentima pomogao da dostignu vrhunsku formu. Bilo da želiš da izgradiš mišiće, oporaviš se od povrede ili poboljšaš držanje, svaki plan prilagođavam tvojim ciljevima i potrebama. Doslednost, disciplina i pravilna tehnika su osnova svake uspešne transformacije.",
+    "button": "Saznaj više"
   },
   "contact": {
     "title": "Get in touch"

@@ -22,10 +22,11 @@ function LanguageChooser(){
       setIsOpen(false);
     };
     return(
-        <li className={isOpen ? 'language no-radius' : 'language'} ref={languageButton} onClick={() => setIsOpen(!isOpen)}>
+        <div  className={`language ${isOpen ? 'no-radius' : ''}`} ref={languageButton} onClick={() => setIsOpen(!isOpen)}>
             <figure>
               <img src={selectedLang.icon} alt="" />
             </figure>
+            <div className='blur-layer'></div>
             <div className={`language-options ${isOpen ? 'open' : ''}`}>
               {languages.map((lang) => (
                 <figure key={lang.code} onClick={() => handleSelect(lang)}>
@@ -33,7 +34,7 @@ function LanguageChooser(){
                 </figure>
               ))}
             </div>
-        </li>
+        </div>
     )
     
 }

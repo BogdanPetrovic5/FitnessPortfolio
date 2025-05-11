@@ -12,7 +12,7 @@
       "title":"From pain to power.",
       "span":"Your transformation starts here."
     },
-    "button": "LEARN MORE",
+    "button": "Learn More",
     "overview": {
       "clients": "Clients",
       "clients_sub": "Pushing limits every day",
@@ -22,9 +22,17 @@
       "experience_sub": "Proven results over time"
     }
   },
-  "about": {
-    "title": "About us"
+   "about": {
+    "sectionTitle": "ABOUT ME",
+    "title": "About me",
+    "subtitle": {
+      "title": "Your personal coach and",
+      "span":"physiotherapist."
+    },
+    "paragraph": "With over a decade of experience in transforming bodies and lives, I blend strength training with rehabilitative care to help clients reach peak performance. Whether you're aiming to build muscle, recover from injury, or improve posture, I tailor every plan to your personal goals and needs. Consistency, discipline, and proper technique are at the core of every success story.",
+    "button": "LEARN MORE"
   },
+  
   "contact": {
     "title": "Get in touch"
   }

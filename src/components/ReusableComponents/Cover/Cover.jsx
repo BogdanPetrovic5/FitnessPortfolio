@@ -68,7 +68,7 @@ function Cover(){
                                          {t('cover.subtitle.title')}<span>{t('cover.subtitle.span')}</span> 
                                    </h2>
                                    <Link className='button-learn-more' to="/about" aria-label="Learn more about Personal Trainer's journey"> 
-                                          LEARN MORE
+                                          {t('cover.button')}
                                    </Link>
                             </div>
                             
@@ -78,19 +78,19 @@ function Cover(){
                                                  <h1 ref={clientsRef}>
                                                         {clients}+   
                                                  </h1>
-                                                 <p>Clients</p>
+                                                 <p>{t('cover.overview.clients')}</p>
                                           </div>
                                           <div className='Patients Overview-Item'>
                                                  <h1 ref={patientsRef}>
                                                         {patients}+ 
                                                  </h1>
-                                                 <p>Patients</p>
+                                                 <p>{t('cover.overview.patients')}</p>
                                           </div>
                                           <div className='Experience Overview-Item'>
                                                  <h1 ref={experienceRef}>
                                                         {experience}+ 
                                                  </h1>
-                                                 <p>Years of experience</p>
+                                                 <p>{t('cover.overview.experience')}</p>
                                           </div>
                                    </div>
                                    <div className='Overview-Socials'>
