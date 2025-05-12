@@ -18,10 +18,10 @@ function LanguageChooser(){
   
     const [isOpen, setIsOpen] = useState(false);
   
-    const handleSelect = (lang) => {
+    const handleSelect = (lang,event) => {
       i18n.changeLanguage(lang.code);
       setSelectedLang(lang);
-      
+      event.stopPropagation();
       toggleLanguageOptionsWithAnimation()
     };
     const toggleLanguageOptionsWithAnimation = () =>{
@@ -51,7 +51,10 @@ function LanguageChooser(){
             <div className={`blur-layer ${isOpen ? 'blur-layer-no-radius' : ''}`} ref={blurLayer}></div>
             <div className={`language-options ${isOpen ? 'open' : ''}`} ref={languageOptions}>
               {languages.map((lang) => (
-                <figure key={lang.code} onClick={() => handleSelect(lang)}>
+                <figure key={lang.code} onClick={(e) => {
+                    e.stopPropagation(); 
+                    handleSelect(lang,e);
+                }}>
                   <img src={lang.icon} alt={lang.label} />
                 </figure>
               ))}
