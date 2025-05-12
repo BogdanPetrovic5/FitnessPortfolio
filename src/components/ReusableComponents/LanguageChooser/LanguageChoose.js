@@ -22,9 +22,9 @@ function LanguageChooser(){
       i18n.changeLanguage(lang.code);
       setSelectedLang(lang);
       
-      setIsOpen(false);
+      toggleLanguageOptionsWithAnimation()
     };
-    const toggle = () =>{
+    const toggleLanguageOptionsWithAnimation = () =>{
       if(isOpen == true){
         languageOptions.current.classList.add("scale-down");
        
@@ -39,6 +39,9 @@ function LanguageChooser(){
     
         setIsOpen(true);
       }
+    }
+    const toggle = () =>{
+      toggleLanguageOptionsWithAnimation();
     }
     return(
         <div  className={`language ${isOpen ? 'no-radius' : ''}`} ref={languageButton} onClick={() => toggle()}>
