@@ -16,7 +16,14 @@ function BlogDetails(){
     const article = articles[index];
     
     useEffect(() => {
+       
         const specifiLocation = document.getElementById('Blog-Details-Container')
+        if(specifiLocation == null){
+             window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
         const offset = 200;
         const offsetPosition = specifiLocation.offsetTop - offset
         window.scrollTo({

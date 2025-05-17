@@ -31,7 +31,24 @@
     -webkit-text-stroke: 1px rgb(65, 65, 65); /* For Safari/Chrome */
     text-stroke: 1px rgb(65, 65, 65);
 }
-.MyServices-Container-Title-h1 button{
+.MyServices-Container-Title-h1 a{
+      padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    color: white;
+    border: 1px solid #FF0039;
+    text-decoration: none;
+    
+    border-radius: 25px;
+    align-self: flex-start;
+    
+    text-transform: none;
+    text-decoration: none;
+}
+/* .MyServices-Container-Title-h1 button{
      padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
@@ -44,12 +61,12 @@
     
     border-radius: 25px;
     align-self: flex-start;
-}
-.MyServices-Container-Title-h1 button a{
+} */
+/* .MyServices-Container-Title-h1 button a{
     color: white;
     text-transform: none;
     text-decoration: none;
-}
+} */
 .MyServices-Container-Title-h1{
     width: 80%;
     display: flex;
@@ -78,7 +95,7 @@
     height: 20px;
     margin-bottom: 50px;
 }
-.MyServices-Container-Title-h1 h1{
+.MyServices-Container-Title-h1 h3{
     margin-left: 0 !important;
     margin-top: -20px;
     margin-bottom: 0;
@@ -94,7 +111,7 @@
     font-style: normal;
     color: white;
 }
-.MyServices-Container-Title-h1 h1 span{
+.MyServices-Container-Title-h1 h3 span{
     color: #FF0039 !important;
 }
 .MyServices-Container-Title{
@@ -111,7 +128,7 @@
     z-index: 1;
     overflow: hidden;
 }
-.MyServices-Container-Title h1{
+.MyServices-Container-Title h2{
     font-size:1.3em;
     text-transform: uppercase;
     color: white;
@@ -160,7 +177,7 @@
     position: relative;
     overflow: hidden;
 }
-.MyServices-Card h1{
+.MyServices-Card h4{
    
     font-size: 1.2em;
     text-align: center;

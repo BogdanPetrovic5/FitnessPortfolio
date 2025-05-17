@@ -34,5 +34,115 @@
   },
   "contact": {
     "title": "Get in touch"
+  },
+  "myServices": {
+    "banner": {
+      "absoluteTitle": "USLUGE",
+      "sectionTitle": "Moje usluge",
+      "mainTitle": "Izaberi uslugu koja ti",
+      "mainTitleSpan": "odgovara!",
+      "description": "Izaberi trening ili program koji najbolje odgovara tvojim ciljevima i načinu života.",
+      "button": "Pogledaj više"
+    },
+    "cards": {
+      "training": {
+        "title": "Planovi treninga",
+        "alt": "Ikonica tegova za planove treninga",
+        "description": "Individualno prilagođeni planovi treninga za postizanje tvojih ciljeva – bilo da želiš da smanjiš težinu, ojačaš mišiće ili poboljšaš kondiciju."
+      },
+      "rehab": {
+        "title": "Rehabilitacija",
+        "alt": "Ikonica rehabilitacije",
+        "description": "Stručna pomoć u oporavku nakon povreda ili operacija uz individualizovane vežbe i praćenje napretka."
+      },
+      "online": {
+        "title": "Online personalni treninzi",
+        "alt": "Ikonica za online trening",
+        "description": "Vežbaj od kuće uz online podršku i instrukcije prilagođene tvojoj rutini i ciljevima."
+      },
+      "nutrition": {
+        "title": "Ishrana",
+        "alt": "Ikonica ishrane",
+        "description": "Personalizovani planovi ishrane koji ti pomažu da unaprediš zdravlje i postigneš balans u svakodnevnoj ishrani."
+      }
+      
+    }
+    
+    
+  },
+  "workoutPlans": {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "absoluteTitle": "TRENING PLANOVI",
+    "title": "Personalizovani Planovi Treninga",
+    "subTitle": "Izaberi onaj koji odgovara tvojim ciljevima",
+    "description": {
+      "title": "Za detaljna objašnjenja svakog plana skroluj",
+      "span": "dole"
+    },
+   "offers": {
+      "bodybuilding": {
+        "standard": {
+          "itemTitle": "Standardni Plan",
+          "description": "Ovaj plan uključuje 3 treninga nedeljno – idealan za one koji žele da steknu kontinuitet i izgrade snagu.",
+          "price": "€8.99 / mesečno",
+          "button": "PORUČI"
+        },
+        "advanced": {
+          "itemTitle": "Napredni Plan",
+          "description": "Dobijate 3 intenzivna treninga nedeljno, prilagođena naprednim vežbačima sa strategijama progresivnog opterećenja.",
+          "price": "€17.99 / mesečno",
+          "button": "PORUČI"
+        },
+        "premium": {
+          "itemTitle": "Premijum Plan",
+          "description": "Uključuje 3 prilagođena treninga nedeljno, redovne provere i kompletnu podršku za vrhunske rezultate.",
+          "price": "€23.99 / mesečno",
+          "button": "PORUČI"
+        }
+      },
+      "powerlifting": {
+        "standard": {
+          "itemTitle": "Standardni Plan",
+          "description": "Ovaj plan uključuje 3 treninga nedeljno – idealan za one koji žele da steknu kontinuitet i izgrade snagu.",
+          "price": "€9.99 / mesečno",
+          "button": "PORUČI"
+        },
+        "advanced": {
+          "itemTitle": "Napredni Plan",
+          "description": "Dobijate 3 intenzivna treninga nedeljno, prilagođena naprednim vežbačima sa strategijama progresivnog opterećenja.",
+          "price": "€19.99 / mesečno",
+          "button": "PORUČI"
+        },
+        "premium": {
+          "itemTitle": "Premijum Plan",
+          "description": "Uključuje 3 prilagođena treninga nedeljno, redovne provere i kompletnu podršku za vrhunske rezultate.",
+          "price": "€24.99 / mesečno",
+          "button": "PORUČI"
+        }
+      },
+      "powerbuilding": {
+        "standard": {
+          "itemTitle": "Standardni Plan",
+          "description": "Ovaj plan uključuje 3 treninga nedeljno – idealan za one koji žele da steknu kontinuitet i izgrade snagu.",
+          "price": "€10.99 / mesečno",
+          "button": "PORUČI"
+        },
+        "advanced": {
+          "itemTitle": "Napredni Plan",
+          "description": "Dobijate 3 intenzivna treninga nedeljno, prilagođena naprednim vežbačima sa strategijama progresivnog opterećenja.",
+          "price": "€20.99 / mesečno",
+          "button": "PORUČI"
+        },
+        "premium": {
+          "itemTitle": "Premijum Plan",
+          "description": "Uključuje 3 prilagođena treninga nedeljno, redovne provere i kompletnu podršku za vrhunske rezultate.",
+          "price": "€25.99 / mesečno",
+          "button": "PORUČI"
+        }
+      }
+    }
+
   }
+  
 }

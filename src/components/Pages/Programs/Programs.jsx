@@ -1,7 +1,7 @@
 import MyService from '../../ReusableComponents/MyServices/MyService';
 import ServicesWorkoutPlans from "../../ReusableComponents/ServicesWorkoutPlans/ServicesWorkoutPlans"
 import './Programs.css'
-import React from 'react';
+import React, { useEffect } from 'react';
 import Decoration from './images/Decorations.png'
 import BB from './images/BB.jpg'
 import PL from './images/PL.jpg'
@@ -15,8 +15,16 @@ import Form from '../../ReusableComponents/ContactForm/Form';
 
 import { useForm, ValidationError } from '@formspree/react';
 function Programs(){
+
+    useEffect(()=>{
+         window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+        });
+    })
     const scrollToContact = () =>{
         const specificSection = document.getElementById('Form');
+       
         if (specificSection) {
             
             const offset = 100; 

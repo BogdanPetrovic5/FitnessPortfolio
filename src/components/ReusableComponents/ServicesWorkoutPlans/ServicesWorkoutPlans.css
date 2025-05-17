@@ -24,6 +24,7 @@
     opacity: .6;
     font-family: 'Nunito', sans-serif;
     align-self: center;
+    text-align: center;
 }
 .Workout-Plans-Container-Banner p span{
     cursor: pointer;
@@ -57,7 +58,7 @@
     height: 3px;
     background-color: #FF0039;;
 }
-.Workout-Plans-Container-Title h1{
+.Workout-Plans-Container-Title h2{
     font-size: 1em;
     font-family: 'Teko', sans-serif;
     color: white;
@@ -83,7 +84,7 @@
     margin-bottom: 100px;
     width: 70%;
     list-style: none;
-    border-bottom: 1px solid rgb(50, 50, 58);
+    
     align-self: center;
     font-size: 25px;
     display: flex;
@@ -91,13 +92,22 @@
     justify-content: center;
   
 }
-.Workout-Plans-Selection li{
+.Workout-Plans-Selection ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(50, 50, 58);
+    width: 100%;
+}
+.Workout-Plans-Selection ul li{
     color: white;
     font-family: 'Teko', sans-serif;
     cursor: pointer;
     padding-left: 25px;
     padding-right: 25px;
     border: 2px solid transparent;
+    list-style: none;
 }
 .Workout-Plans-Selection li:hover{
     border-bottom:2px solid #FF0039;
@@ -162,6 +172,8 @@
     font-size: 1.6em;
     letter-spacing: 1px;
     font-family: 'Teko', sans-serif;
+    margin:20px 0px;
+
 }
 .Item-Description button{
     width: 50%;

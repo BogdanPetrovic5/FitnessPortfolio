@@ -35,5 +35,111 @@
   
   "contact": {
     "title": "Get in touch"
-  }
+  },
+  "myServices": {
+    "banner": {
+      "absoluteTitle": "SERVICES",
+      "sectionTitle": "My Services",
+      "mainTitle": "Choose the service that",
+      "mainTitleSpan": "suits you!",
+      "description": "Pick a training or program that best fits your goals and lifestyle.",
+      "button": "See more"
+    },
+    "cards": {
+      "training": {
+        "title": "Training Plans",
+        "alt": "Weight icon for training plans",
+        "description": "Individually tailored training plans to help you reach your goals—whether it’s losing weight, building muscle, or improving endurance."
+      },
+      "rehab": {
+        "title": "Rehabilitation",
+        "alt": "Rehabilitation icon",
+        "description": "Professional support for recovery after injuries or surgeries with personalized exercises and progress tracking."
+      },
+      "online": {
+        "title": "Online Personal Training",
+        "alt": "Online training icon",
+        "description": "Train from home with online support and instructions tailored to your routine and goals."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "alt": "Nutrition icon",
+        "description": "Personalized meal plans to help you improve your health and achieve balance in your daily diet."
+      }
+    }
+  },
+  "workoutPlans": {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "absoluteTitle" : "TRAINING PLANS",
+      "title": "Personalized Workout Plans",
+      "subTitle": "Choose One That Fits Your Goals",
+      "description": {
+        "title":"For detailed explanations of each plan scroll",
+        "span":"below"
+      },
+      "offers": {
+        "bodybuilding":{
+          "standard":{
+            "itemTitle":"Standard Plan",
+            "description":"This plan includes 3 weekly training sessions – ideal for those looking to establish consistency and build strength.",
+            "price":"€8.99 / Month",
+            "button":"ORDER"
+          },
+          "advanced":{
+            "itemTitle":"Advanced Plan",
+            "description":"Get 3 intense workouts per week tailored to advanced lifters with progressive overload strategies.",
+            "price":"€17.99 / Month",
+            "button":"ORDER"
+          },
+          "premium":{
+            "itemTitle":"Premium Plan",
+            "description":"Includes 3 custom workouts per week, check-ins, and full guidance to hit peak performance.",
+            "price":"€23.99 / Month",
+            "button":"ORDER"
+          }
+        },
+        "powerlifting":{
+          "standard":{
+            "itemTitle":"Standard Plan",
+            "description":"This plan includes 3 weekly training sessions – ideal for those looking to establish consistency and build strength.",
+            "price":"€9.99 / Month",
+            "button":"ORDER"
+          },
+          "advanced":{
+            "itemTitle":"Advanced Plan",
+            "description":"Get 3 intense workouts per week tailored to advanced lifters with progressive overload strategies.",
+            "price":"€19.99 / Month",
+            "button":"ORDER"
+          },
+          "premium":{
+            "itemTitle":"Premium Plan",
+            "description":"Includes 3 custom workouts per week, check-ins, and full guidance to hit peak performance.",
+            "price":"€24.99 / Month",
+            "button":"ORDER"
+          }
+        },
+        "powerbuilding":{
+          "standard":{
+            "itemTitle":"Standard Plan",
+            "description":"This plan includes 3 weekly training sessions – ideal for those looking to establish consistency and build strength.",
+            "price":"€10.99 / Month",
+            "button":"ORDER"
+          },
+          "advanced":{
+            "itemTitle":"Advanced Plan",
+            "description":"Get 3 intense workouts per week tailored to advanced lifters with progressive overload strategies.",
+            "price":"€20.99 / Month",
+            "button":"ORDER"
+          },
+          "premium":{
+            "itemTitle":"Premium Plan",
+            "description":"Includes 3 custom workouts per week, check-ins, and full guidance to hit peak performance.",
+            "price":"€25.99 / Month",
+            "button":"ORDER"
+          }
+        }
+      }
+     
+    }
 }

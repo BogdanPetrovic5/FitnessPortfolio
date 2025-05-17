@@ -174,7 +174,13 @@ function App() {
     }
   }, []);
 
+    const originalScrollTo = window.scrollTo;
 
+    window.scrollTo = function(...args) {
+      console.log("⚠️ ScrollTo called with args:", args);
+      console.trace(); // Prikazuje stack trace
+      originalScrollTo.apply(window, args);
+    };
   return (
     <>
       {loading ? (
