@@ -197,7 +197,7 @@ function Header() {
             <a onClick={scrollToContact}>{t('navbar.contact')}</a>
           </li>
         
-          <li>
+          <li  className={location.pathname === '/' ? 'Active-Route' : ''}>
             <Link  to='/' >{t('navbar.home')}</Link>
           </li>
           

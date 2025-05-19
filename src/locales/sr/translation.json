@@ -143,6 +143,28 @@
       }
     }
 
+  },
+  "workoutTypes": {
+    "title": "Tipovi Treninga",
+    "subTitle": {
+      "text": "Ne znate šta svaki plan znači?",
+      "span": "Saznajte više!"
+    },
+    
+    "bodybuilding": {
+      "title": "Bodybuilding",
+      "description": "Bodybuilding se fokusira na maksimalni rast mišića kroz veći obim treninga, izolaciju mišića i razvoj estetskog izgleda tela.",
+      "image": "BB"
+    },
+    "powerbuilding": {
+      "title": "Powerbuilding",
+      "description": "Powerbuilding kombinuje fokus na snagu iz powerliftinga sa ciljevima izgradnje mišića iz bodybuilding-a — najbolje iz oba sveta.",
+      "image": "PB"
+    },
+    "powerlifting": {
+      "title": "Powerlifting",
+      "description": "Powerlifting je usredsređen na izgradnju maksimalne snage u čučnju, benč presu i mrtvom dizanju kroz trening sa malim brojem ponavljanja i velikim intenzitetom.",
+      "image": "PL"
+    }
   }
-  
 }

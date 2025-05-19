@@ -136,7 +136,7 @@
     gap: 30px;
     margin-top: 50px;
 }
-.Workout-Type-Card{
+/* .Workout-Type-Card{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,7 +144,7 @@
     border-radius: 10px;
     height: 800px;
     position: relative;
-    transition: 900ms ease-in-out;
+    transition:300ms ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,6 +152,33 @@
     font-size: 25px;
     overflow: hidden;
     cursor: pointer;
+}
+.Workout-Type-Card:hover{
+   flex-grow: 2;
+} */
+
+.Workout-Type-Card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    max-width: 350px;
+    border-radius: 10px;
+    height: 800px;
+    position: relative;
+    transition: max-width 400ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Workout-Type-Card:hover {
+    width: 620px;
+    max-width: 620px;
 }
 .Workout-Type-Card h1{
     font-size: 1.8em;
@@ -172,9 +199,7 @@
     z-index: 1;
     transition: 300ms ease-in-out;
 }
-.Workout-Type-Card:hover{
-   flex-grow: 2;
-}
+
 .Workout-Card-Descirption{
     width: 120%;
     border: 1px solid #2e3338;

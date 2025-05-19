@@ -141,5 +141,28 @@
         }
       }
      
+  },
+  "workoutTypes": {
+    "title":"Workout Types",
+    "subTitle":{
+      "text":"Don't know what each plan means?",
+      "span":"Learn more!"
+    },
+    
+    "bodybuilding": {
+      "title": "Bodybuilding",
+      "description": "Bodybuilding focuses on maximizing muscle hypertrophy through higher training volume, muscle isolation, and aesthetic physique development.",
+      "image": "BB"
+    },
+    "powerbuilding": {
+      "title": "Powerbuilding",
+      "description": "Powerbuilding combines the strength focus of powerlifting with the muscle-building goals of bodybuilding — the best of both worlds.",
+      "image": "PB"
+    },
+    "powerlifting": {
+      "title": "Powerlifting",
+      "description": "Powerlifting is centered around building maximal strength in the squat, bench press, and deadlift through low-rep, high-intensity training.",
+      "image": "PL"
     }
+  }
 }
